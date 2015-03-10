@@ -1,0 +1,88 @@
+.transition {
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+body, html {
+    height: 100%;
+    min-height: 100%;
+    background: #595959;
+}
+#content {
+	position: relative;
+	height: 100%;
+	>div {
+		position: relative;
+		height: 100%;
+	}
+}
+#wrapper {
+    padding-left: 0;
+    position: relative;
+    height: 100%;
+}
+
+#page-wrapper {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    height: 100%;
+    padding: 15px;    
+}
+
+.btn {
+    &.rotate-icon {
+        .fa {
+            -webkit-transform: rotate(45deg);
+            -moz-transform: rotate(45deg);
+            -o-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }        
+    }
+}
+.panel {
+    &.dark-panel {
+        background: #F7F7F7;
+    }
+}
+
+ .m-t-sm {
+    margin-top: 3px;
+}
+
+table {
+    td.sm-pad {
+        padding: 2px !important;
+    }
+}
+table {
+    td.no-pad {
+        padding: 0 !important;
+    }
+}
+.add-btn {
+    margin:3px 0 0 0;
+}
+.page-header.navbar .top-menu .navbar-nav>li.dropdown .dropdown-toggle {
+    padding-bottom: 30px;
+}
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 200px;
+    }
+
+    .main-wrap {
+        padding: 0 15px 15px 15px;        
+    }
+    .no-pad-h {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    #page-wrapper { 
+        display: table;
+        padding: 0;
+    }
+}

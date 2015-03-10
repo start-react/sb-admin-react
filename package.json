@@ -1,0 +1,68 @@
+{
+  "name": "sb-admin-react",
+  "version": "0.0.0",
+  "description": "Starter theme for React JS Dashboard Apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "backbone": "^1.1.2",
+    "bootstrap": "^3.2.0",
+    "codemirror": "^3.24.0",
+    "es6-promise": "^1.0.0",
+    "flux": "^2.0.1",
+    "font-awesome": "^4.3.0",
+    "jquery": "^2.1.1",
+    "jquery-ui": "^1.10.5",
+    "jquery.ui.widget": "^1.10.3",
+    "json5": "^0.2.0",
+    "less": "^1.7.5",
+    "less-loader": "^0.7.7",
+    "lodash": "^2.4.1",
+    "nprogress-npm": "^0.1.3",
+    "path": "^0.11.14",
+    "q": "^1.0.1",
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.13.3",
+    "react-hot-loader": "^0.4.3",
+    "react-router": "^0.11.6",
+    "routes": "^1.2.0",
+    "superagent": "^0.18.2",
+    "util": "^0.10.3"
+  },
+  "devDependencies": {
+    "bundle-loader": "^0.5.3",
+    "css-loader": "~0.6.6",
+    "gulp": "^3.8.8",
+    "gulp-concat": "^2.4.0",
+    "gulp-jshint": "^1.8.4",
+    "gulp-rename": "^1.2.0",
+    "gulp-sass": "^0.7.3",
+    "gulp-uglify": "^1.0.1",
+    "gulp-util": "^3.0.1",
+    "jshint-loader": "~0.6.0",
+    "jsx-loader": "~0.12.2",
+    "karma": "~0.10.9",
+    "karma-chrome-launcher": "~0.1.2",
+    "karma-firefox-launcher": "~0.1.3",
+    "karma-jasmine": "~0.1.5",
+    "karma-phantomjs-launcher": "~0.1.1",
+    "karma-script-launcher": "~0.1.0",
+    "react-hot-loader": "^0.4.3",
+    "style-loader": "~0.6.3",
+    "url-loader": "~0.5.4",
+    "webpack": "^1.4.13",
+    "webpack-dev-server": "~1.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/start-react/sb-admin-react.git"
+  },
+  "author": "suraj",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/start-react/sb-admin-react/issues"
+  },
+  "homepage": "https://github.com/start-react/sb-admin-react"
+}
