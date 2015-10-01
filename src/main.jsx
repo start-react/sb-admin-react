@@ -26,7 +26,6 @@ const DOM_APP_EL_ID = "app";
 
 // Initialize routes depending on session
 let routes;
-
 if (Session.isLoggedIn()) {
   routes = LoggedInRouter.getRoutes();
 } else {
@@ -72,6 +71,7 @@ let fetchData = function(routes, params) {
     .map(route => {
       return route.handler.fetchData(params).then(resp => {
         data[route.name] = resp;
+        data.tag = route.name;
       })
     })
   ).then(() => data);

@@ -1,6 +1,9 @@
 /*! React Starter Kit | MIT License | http://www.reactstarterkit.com/ */
 
 import React, { PropTypes, Component } from 'react';
+import Session from "../../common/session";
+
+import { Link } from "react-router";
 
 class LandingPage extends Component {
 
@@ -26,7 +29,7 @@ class LandingPage extends Component {
                     <h3 className="panel-title">Please Sign In</h3>
                 </div>
                 <div className="panel-body">
-                    <form role="form">
+                    <form role="form" onSubmit={this.verifyLogin.bind(this)}>
                         <fieldset>
                             <div className="form-group">
                                 <input onChange={this.setLoginID.bind(this)} className="form-control" placeholder="login ID" ref="loginID" type="text" autofocus="" />
@@ -34,7 +37,7 @@ class LandingPage extends Component {
                             <div className="form-group">
                                 <input onChange={this.setPassword.bind(this)} className="form-control" placeholder="Password" ref="password" type="password" />
                             </div>
-                            <button className="btn btn-lg btn-success btn-block" onClick={this.verifyLogin.bind(this)}>Login</button>
+                            <button className="btn btn-lg btn-success btn-block"><Link to="Dashboard">Login</Link></button>
                         </fieldset>
                     </form>
                 </div>
@@ -46,19 +49,23 @@ class LandingPage extends Component {
   };
 
   verifyLogin(e) {
-    // var test = this.refs.loginID;
 
-    console.log("verify login", this.state.loginID, this.state.password);
+    //console.log("verify login", this.state.loginID, this.state.password);
 
-    // APIService.getAuthenticatedToken(this.state.loginID + ':' + this.state.password);
-    if(this.state.loginID == 'sahusoft' && this.state.password == 'agiledevelopment'){
+/*    if(this.state.loginID == 'sahusoft' && this.state.password == 'agiledevelopment'){
       console.log("correct login");
-      document.location.href = '/dashboard/first';
-      //Link.handleClick(e);
+      Session.setLoggedIn(this.state.loginID);
+      Link.transitionTo('/dashboard');
     }
     else
       console.log("incorrect login");
-    
+  */
+
+      Session.setLoggedIn("sahusoft");
+      // Link.transitionTo('/dashboard');
+
+    return false;
+
   };
 
   setLoginID(e) {

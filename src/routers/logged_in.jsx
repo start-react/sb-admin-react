@@ -2,20 +2,13 @@ import React from "react";
 import { Route, DefaultRoute, RouteHandler, Link } from "react-router";
 
 import HomePage from "../pages/home/page";
-
+import Dashboard from "../pages/dashboard/page";
+import ModalApp from "../pages/StatusModal/page";
 
 export default class LoggedInRouter extends React.Component {
   render() {
     return (
       <div id="container">
-        <div id="navigation">
-          <header>
-            <ul>
-              <li><Link to="home">Home</Link></li>
-            </ul>
-          </header>
-        </div>
-
         <RouteHandler {...this.props} />
       </div>
     );
@@ -24,9 +17,20 @@ export default class LoggedInRouter extends React.Component {
   static getRoutes = function() {
     return (
       <Route name="app" path="/" handler={LoggedInRouter}>
+        <Route name="modal" path="/modalnotinuse" handler={HomePage} />
+        <Route name="Dashboard" path="/dashboard" handler={HomePage} />
+        <Route name="Sales" path="/sales" handler={HomePage} />
         <DefaultRoute name="home" handler={HomePage} />
       </Route>
     );
   }
 
 }
+// <div id="navigation">
+//           <header>
+//             <ul>
+//               <li><Link to="home">Home</Link></li>
+//               <li><button id="modal-button"></button></li>
+//             </ul>
+//           </header>
+//         </div>

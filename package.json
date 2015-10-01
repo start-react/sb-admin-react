@@ -52,10 +52,12 @@
     "express": "^4.12.3",
     "extract-text-webpack-plugin": "^0.8.2",
     "file-loader": "^0.8.4",
+    "jquery": "^2.1.4",
     "postcss-loader": "^0.6.0",
     "postcss-nested": "^1.0.0",
     "react": "^0.13.3",
-    "react-bootstrap": "^0.25.2",
+    "react-bootstrap": "0.25.2",
+    "react-modal": "^0.5.0",
     "react-router": "^0.13.3",
     "style-loader": "^0.12.3",
     "webpack": "^1.12.1"
