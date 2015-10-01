@@ -33,6 +33,8 @@ app.get('/style.css', function(req, res) {
   }
 });
 
+app.use(express.static(__dirname + '/build'));
+
 // Serve index page
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/build/index.html');

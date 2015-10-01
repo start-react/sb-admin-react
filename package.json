@@ -30,6 +30,7 @@
   "homepage": "https://github.com/pheuter/essential-react",
   "devDependencies": {
     "coveralls": "^2.11.2",
+    "css-loader": "^0.18.0",
     "istanbul": "^0.3.7",
     "istanbul-instrumenter-loader": "^0.1.2",
     "karma": "^0.13.9",
@@ -50,9 +51,11 @@
     "css-loader": "^0.18.0",
     "express": "^4.12.3",
     "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
     "postcss-loader": "^0.6.0",
     "postcss-nested": "^1.0.0",
     "react": "^0.13.3",
+    "react-bootstrap": "^0.25.2",
     "react-router": "^0.13.3",
     "style-loader": "^0.12.3",
     "webpack": "^1.12.1"

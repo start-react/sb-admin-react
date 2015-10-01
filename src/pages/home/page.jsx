@@ -2,7 +2,6 @@ import React from "react";
 import { getData } from "../../common/request";
 import styles from "./style.css";
 
-
 export default class HomePage extends React.Component {
   componentWillMount() {
     console.log("[HomePage] will mount with server response: ", this.props.data.home);
@@ -14,7 +13,7 @@ export default class HomePage extends React.Component {
     return (
       <div className={styles.content}>
         <h1>{title}</h1>
-        <p className={styles.welcomeText}>Thanks for joining!</p>
+        <p className={styles.welcomeText}>Thasnks for joining!</p>
       </div>
     );
   }
