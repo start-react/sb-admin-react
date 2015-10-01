@@ -205,9 +205,9 @@ export default class HomePage extends React.Component {
                             </MenuItem>
                             <MenuItem divider />
                             <MenuItem eventKey="3">
-                                <a href="">
+                                <Link to="landing">
                                     <i className="fa fa-sign-out fa-fw"></i> Logout
-                                </a>
+                                </Link>
                             </MenuItem>
                         </NavDropdown>
             </Nav>

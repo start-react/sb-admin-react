@@ -19,6 +19,7 @@ export default class LoggedOutRouter extends React.Component {
     return (
       <Route name="app" path="/" handler={LoggedOutRouter}>
         <Route name="Dashboard" path="/dashboard" handler={HomePage} />
+        <Route name="Sales" path="/sales" handler={HomePage} />
         <DefaultRoute name="landing" handler={LandingPage} />
       </Route>
     );

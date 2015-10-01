@@ -7,7 +7,7 @@ class Session {
 
   constructor(config = {}) {
     this._config = config;
-    this._config.user = "sahusoft";
+    //this._config.user = "sahusoft";
   }
 
   isLoggedIn() {
@@ -21,7 +21,7 @@ class Session {
   setLoggedOut() {
   	this._config.user = false;
   }
-  
+
 }
 
 let session = new Session(window);
