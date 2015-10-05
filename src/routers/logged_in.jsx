@@ -17,6 +17,7 @@ export default class LoggedInRouter extends React.Component {
   static getRoutes = function() {
     return (
       <Route name="app" path="/" handler={LoggedInRouter}>
+        <Route name="test" path="/test" handler={LoginPage} />
         <Route name="modal" path="/modalnotinuse" handler={HomePage} />
         <Route name="Dashboard" path="/dashboard" handler={HomePage} />
         <Route name="Sales" path="/sales" handler={HomePage} />

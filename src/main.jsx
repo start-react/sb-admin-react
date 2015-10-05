@@ -11,7 +11,7 @@ import Router from "react-router";
 
 // Common utilities
 import Session from "./common/session";
-
+import ProfileStore from './stores/profile-store';
 // Base styling
 import "./common/base.css";
 
@@ -26,7 +26,8 @@ const DOM_APP_EL_ID = "app";
 
 // Initialize routes depending on session
 let routes;
-if (Session.isLoggedIn()) {
+// if (Session.isLoggedIn()) {
+if(ProfileStore.isLoggedIn()) {
   routes = LoggedInRouter.getRoutes();
 } else {
   routes = LoggedOutRouter.getRoutes();

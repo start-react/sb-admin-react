@@ -12,6 +12,8 @@ export default class HomePage extends React.Component {
   componentWillMount() {
     // console.log("[HomePage] will mount with server response: ", this.props.data.home);
     console.log("[HomePage] will mount with server response: ", this.props.data);
+     console.log("set status");
+     this.setState({showModal: false});
   }
 
   componentDidMount() {
@@ -20,11 +22,14 @@ export default class HomePage extends React.Component {
   }
 
   render() {
+    
+    console.log(this.state);
     // let { title } = this.props.data.home;
     return (
         <div id="wrapper">
         <Navbar brand={<img src={ require('../../common/logo.png') } /> } fluid={true}  style={ {margin: 0} }>
             <Nav style={ {margin: 0} } >
+                <NavItem onClick={this.showModal.bind(this)}><button className="btn btn-success btn-xs">Show Status</button></NavItem>
                 <NavDropdown eventKey={1} title=<i className="fa fa-envelope fa-fw"></i> id="basic-nav-dropdown">
                             <MenuItem eventKey="1">
                                 
@@ -241,8 +246,8 @@ export default class HomePage extends React.Component {
 
 
             <div id="page-wrapper" className="page-wrapper" ref="pageWrapper">
-                <ModalApp />
-                {this.props.data.tag=='modal'?<ModalApp />:this.props.data.tag}
+                {this.props.data.tag}
+                {this.state.showModal?<ModalApp />:''}
             </div>
             
     </div>
@@ -253,4 +258,9 @@ export default class HomePage extends React.Component {
   static fetchData = function(params) {
     return getData("/home");
   }
+
+  showModal = function(){
+    this.setState({'showModal': !this.state.showModal});
+  }
+
 }

@@ -30,7 +30,7 @@ const customStyles = {
 var ModalApp = React.createClass({
  
   getInitialState: function() {
-    return { modalIsOpen: false };
+    return { modalIsOpen: true };
   },
  
   openModal: function() {
@@ -82,7 +82,7 @@ var ModalApp = React.createClass({
 
     return (
       <div>
-        <button className="btn btn-success" onClick={this.openModal}>View Status</button>
+       
         <div className="col-md-4 col-md-offset-4 welcome-panel">
           <Modal
             isOpen={this.state.modalIsOpen}
@@ -117,5 +117,6 @@ var ModalApp = React.createClass({
   } 
 });
 
+// <button className="btn btn-success" onClick={this.openModal}>View Status</button>
 export default ModalApp;
 // React.render(<ModalApp/>, appElement);

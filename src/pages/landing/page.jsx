@@ -5,11 +5,17 @@ import Session from "../../common/session";
 
 import { Link } from "react-router";
 
+var Reflux = require("reflux");
+var ProfileStore = require('../../stores/profile-store');
+var ProfileActions = require('../../actions/profile-actions');
+
 class LandingPage extends Component {
 
   static contextTypes = {
     //onSetTitle: PropTypes.func.isRequired,
   };
+
+  mixins = [Reflux.connect(ProfileStore)];
 
   render() {
     const title = 'Log In';
@@ -26,7 +32,7 @@ class LandingPage extends Component {
                 <div>
                 </div>
                 <div className="panel-heading">
-                    <h3 className="panel-title">Please Sign In</h3>
+                    <h3 className="panel-title" onClick={ProfileActions.loggedIn}>Please Sign In</h3>
                 </div>
                 <div className="panel-body">
                     <form role="form" onSubmit={this.verifyLogin.bind(this)}>
@@ -61,10 +67,11 @@ class LandingPage extends Component {
       console.log("incorrect login");
   */
 
-      Session.setLoggedIn("sahusoft");
+      // Session.setLoggedIn("sahusoft");
       // Link.transitionTo('/dashboard');
-
-    return false;
+      e.stopPropagation();
+      // ProfileStore.setLoggedIn();
+   // return false;
 
   };
 
