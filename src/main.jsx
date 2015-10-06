@@ -27,6 +27,7 @@ const DOM_APP_EL_ID = "app";
 // Initialize routes depending on session
 let routes;
 // if (Session.isLoggedIn()) {
+  console.log("main", ProfileStore.isLoggedIn());
 if(ProfileStore.isLoggedIn()) {
   routes = LoggedInRouter.getRoutes();
 } else {

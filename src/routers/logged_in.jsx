@@ -4,6 +4,7 @@ import { Route, DefaultRoute, RouteHandler, Link } from "react-router";
 import HomePage from "../pages/home/page";
 import Dashboard from "../pages/dashboard/page";
 import ModalApp from "../pages/StatusModal/page";
+import LoginPage from "../components/login-page/page";
 
 export default class LoggedInRouter extends React.Component {
   render() {
@@ -14,7 +15,7 @@ export default class LoggedInRouter extends React.Component {
     );
   }
 
-  static getRoutes = function() {
+  static getRoutes = function() {  console.log("LoggedInRouter");
     return (
       <Route name="app" path="/" handler={LoggedInRouter}>
         <Route name="test" path="/test" handler={LoginPage} />

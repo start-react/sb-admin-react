@@ -1,7 +1,7 @@
 var Reflux = require('reflux');
 
 var ProfileActions = Reflux.createActions(
-	['loggedIn']
+	['loggedIn', 'showModal']
 )
 
 export default ProfileActions;

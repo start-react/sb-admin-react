@@ -3,8 +3,8 @@ import Modal from "react-modal";
 import {Link} from "react-router";
 import { getData } from "../../common/request";
 import styles from "./style.css";
-import Dashboard from "../dashboard/page";
-import ModalApp from "../StatusModal/page";
+import Dashboard from "../../pages/dashboard/page";
+import ModalApp from "../../pages/StatusModal/page";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
 import $ from "jQuery";
 
@@ -13,25 +13,21 @@ var ProfileStore = require('../../stores/profile-store');
 var ProfileActions = require('../../actions/profile-actions');
 
 
-export default class HomePage extends React.Component {
-  componentWillMount() {
+var HomePage = React.createClass({
+  componentWillMount: function() {
     // console.log("[HomePage] will mount with server response: ", this.props.data.home);
     console.log("[HomePage] will mount with server response: ", this.props.data);
      // this.setState({showModal: false});
-  }
+  },
 
-  componentDidMount() {
+  componentDidMount: function() {
     var pageWrapper = this.refs.pageWrapper.getDOMNode();
     $(pageWrapper).css('min-height', $(window).height());
-  }
+  },
 
-  constructor(){
-    Reflux.connect(ProfileStore);
-    super(ProfileStore);
-    this.state = {data: ProfileStore.data};
-  }
+  mixins: [Reflux.connect(ProfileStore)],
 
-  render() {
+  render: function() {
     
     console.log(this.state);
     // let { title } = this.props.data.home;
@@ -265,14 +261,16 @@ export default class HomePage extends React.Component {
     </div>
 
     );
-  }
+  },
 
-  static fetchData = function(params) {
-    return getData("/home");
-  }
+  // static fetchData = function(params) {
+  //   return getData("/home");
+  // }
 
-  showModal = function(){
+  showModal: function(){
     this.setState({'showModal': !this.state.showModal});
   }
 
-}
+});
+
+export default HomePage;

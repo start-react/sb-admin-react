@@ -15,7 +15,13 @@ class LandingPage extends Component {
     //onSetTitle: PropTypes.func.isRequired,
   };
 
-  mixins = [Reflux.connect(ProfileStore)];
+  // mixins = [Reflux.connect(ProfileStore)];
+
+  // constructor(){
+  //   Reflux.connect(ProfileStore);
+  //   super(ProfileStore);
+  //   this.state = {data: ProfileStore.data};
+  // }
 
   render() {
     const title = 'Log In';
@@ -43,7 +49,7 @@ class LandingPage extends Component {
                             <div className="form-group">
                                 <input onChange={this.setPassword.bind(this)} className="form-control" placeholder="Password" ref="password" type="password" />
                             </div>
-                            <button className="btn btn-lg btn-success btn-block"><Link to="Dashboard">Login</Link></button>
+                            <Link to="Dashboard"><button className="btn btn-lg btn-success btn-block" onClick={ProfileActions.loggedIn}>Login</button></Link>
                         </fieldset>
                     </form>
                 </div>
@@ -55,24 +61,8 @@ class LandingPage extends Component {
   };
 
   verifyLogin(e) {
-
-    //console.log("verify login", this.state.loginID, this.state.password);
-
-/*    if(this.state.loginID == 'sahusoft' && this.state.password == 'agiledevelopment'){
-      console.log("correct login");
-      Session.setLoggedIn(this.state.loginID);
-      Link.transitionTo('/dashboard');
-    }
-    else
-      console.log("incorrect login");
-  */
-
-      // Session.setLoggedIn("sahusoft");
-      // Link.transitionTo('/dashboard');
-      e.stopPropagation();
-      // ProfileStore.setLoggedIn();
-   // return false;
-
+    e.stopPropagation();
+    ProfileActions.loggedIn;
   };
 
   setLoginID(e) {

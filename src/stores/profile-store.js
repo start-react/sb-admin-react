@@ -19,6 +19,7 @@ var ProfileStore = Reflux.createStore({
 		console.log("onLoggedIn");
 		person.LoggedIn = true;
 		this.trigger({person});
+		console.log({person});
 	},
 
 	onLoggedOut(){
@@ -27,19 +28,43 @@ var ProfileStore = Reflux.createStore({
 		this.trigger({person});
 	},
 
-	getInitialState(){
-		return {person};
+	onShowModal(){
+		console.log("onShowModal");
+		this.data.showModal = true;
+        this.trigger(this.data);
+        console.log("store data", this.data);
 	},
+	// getInitialState(){
+	// 	return {person};
+	// },
 
 	setLoggedIn(){
-		console.log('setLoggedIn');
+		
 		person.LoggedIn = true;
 		this.trigger({person});
 	},
 
 	isLoggedIn(){
+		console.log("check", {person});
 		return person.LoggedIn;
-	}
+	},
+
+	getName(){
+		return this.data;
+	},
+
+	data: {showModal: false},
+
+	init() {
+        setInterval(()=>{
+            this.data.showModal = !(this.data.showModal);
+            this.trigger(this.data);
+        }, 5000)
+    },
+
+    getInitialState() {
+        return this.data;
+    }
 });
 
 export default ProfileStore;

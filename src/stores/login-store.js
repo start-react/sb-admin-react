@@ -13,21 +13,30 @@ import {when, request} from 'jQuery';
 
 var CHANGE_EVENT = 'change';
 
-var _user = [];
+var _user = { name: "Billy Bob",
+				loggedIn: false,
+				authToken: ''};
 
 function _login(user){
 	console.log("store login function", user);
 
-	var loginDetails = Encode.encodeBase64(user.loginID + ',' + user.password);
-	console.log("encode test", loginDetails);
+	_user.loggedIn = true;
+	_user.authToken = "token";
 
-// 	var Api = ResourceApiUtils.create('https://bluescreenapi.lancasterfarms.com/hello/@world');
+	console.log("_user", _user);
 
-// 	Api.getList().then(function(response) {
-//   	console.log(response);
-// }, function(error) {
-//   //error
-// });
+
+	// var loginDetails = Encode.encodeBase64(user.loginID + ',' + user.password);
+	// console.log("encode test", loginDetails);
+
+
+	// var Api = ResourceApiUtils.create('https://bluescreenapi.lancasterfarms.com/hello/@world');
+
+	// Api.getList().then(function(response) {
+	//   	console.log(response);
+	// }, function(error) {
+	//   	console.log("error", error);
+	// });
 	
 	// var prom = APIService.getTest();
 	// 	prom.then(function(data){
