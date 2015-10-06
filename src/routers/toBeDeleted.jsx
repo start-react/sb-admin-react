@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, DefaultRoute, RouteHandler, Link } from "react-router";
 
-import HomePage from "../pages/home/page";
+import HomePage from "../components/home/page";
 import Dashboard from "../pages/dashboard/page";
 import ModalApp from "../pages/StatusModal/page";
 import LoginPage from "../components/login-page/page";

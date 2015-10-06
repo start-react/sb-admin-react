@@ -11,28 +11,22 @@ import Router from "react-router";
 
 // Common utilities
 import Session from "./common/session";
-import ProfileStore from './stores/profile-store';
+import AppStore from './stores/app-store';
 // Base styling
 import "./common/base.css";
 
 // Routers
-import LoggedOutRouter from "./routers/logged_out";
-import LoggedInRouter from "./routers/logged_in";
+import Routes from "./routers/routes";
 
 
 // ID of the DOM element to mount app on
 const DOM_APP_EL_ID = "app";
 
-
 // Initialize routes depending on session
 let routes;
-// if (Session.isLoggedIn()) {
-  console.log("main", ProfileStore.isLoggedIn());
-if(ProfileStore.isLoggedIn()) {
-  routes = LoggedInRouter.getRoutes();
-} else {
-  routes = LoggedOutRouter.getRoutes();
-}
+
+routes = Routes.getRoutes();
+
 
 /**
  * Given a set of routes and params associated with the current active state,

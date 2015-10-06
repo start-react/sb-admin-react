@@ -1,23 +1,23 @@
 import React from "react";
 import Modal from "react-modal";
-import {Link} from "react-router";
+import {Link, Router} from "react-router";
 import { getData } from "../../common/request";
 import styles from "./style.css";
-import Dashboard from "../../pages/dashboard/page";
-import ModalApp from "../../pages/StatusModal/page";
+import Dashboard from "../dashboard/page";
+import Sales from "../sales/page";
+import ModalApp from "../status-modal/page";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
 import $ from "jQuery";
 
 var Reflux = require("reflux");
-var ProfileStore = require('../../stores/profile-store');
-var ProfileActions = require('../../actions/profile-actions');
+var AppStore = require('../../stores/app-store');
+var AppActions = require('../../actions/app-actions');
 
 
 var HomePage = React.createClass({
   componentWillMount: function() {
     // console.log("[HomePage] will mount with server response: ", this.props.data.home);
     console.log("[HomePage] will mount with server response: ", this.props.data);
-     // this.setState({showModal: false});
   },
 
   componentDidMount: function() {
@@ -25,18 +25,25 @@ var HomePage = React.createClass({
     $(pageWrapper).css('min-height', $(window).height());
   },
 
-  mixins: [Reflux.connect(ProfileStore)],
+  mixins: [Reflux.connect(AppStore)],
 
   render: function() {
-    
     console.log(this.state);
+    switch(this.props.data.tag){
+        case 'Dashboard':
+            var Component = Dashboard;
+            break;
+        case 'Sales':
+            var Component = Sales;
+            break;
+    }
     // let { title } = this.props.data.home;
     return (
         <div id="wrapper">
         <Navbar brand={<img src={ require('../../common/logo.png') } /> } fluid={true}  style={ {margin: 0} }>
             <Nav style={ {margin: 0} } >
                 <NavItem>{this.state.showModal}</NavItem>
-                <NavItem onClick={ProfileActions.showModal}><button className="btn btn-success btn-xs">Show Status</button></NavItem>
+                <NavItem onClick={AppActions.showModal}><button className="btn btn-success btn-xs">Show Status</button></NavItem>
                 <NavDropdown eventKey={1} title=<i className="fa fa-envelope fa-fw"></i> id="basic-nav-dropdown">
                             <MenuItem eventKey="1">
                                 
@@ -46,7 +53,7 @@ var HomePage = React.createClass({
                                             <em>Yesterday</em>
                                         </span>
                                     </div>
-                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</div>
                                 
                             </MenuItem>
                             <MenuItem divider />
@@ -204,7 +211,7 @@ var HomePage = React.createClass({
                                 </a>
                             </MenuItem>
                         </NavDropdown>
-                        <NavDropdown eventKey={4} title=<i className="fa fa-user fa-fw"></i> id="basic-nav-dropdown">
+                        <NavDropdown className="pull-right" eventKey={4} title=<i className="fa fa-user fa-fw"></i> id="basic-nav-dropdown">
                             <MenuItem eventKey="1">
                                 
                                     <i className="fa fa-user fa-fw"></i> User Profile
@@ -217,9 +224,9 @@ var HomePage = React.createClass({
                             </MenuItem>
                             <MenuItem divider />
                             <MenuItem eventKey="3">
-                                <Link to="landing">
-                                    <i className="fa fa-sign-out fa-fw"></i> Logout
-                                </Link>
+                                
+                                    <Link to="Logout"><i className="fa fa-sign-out fa-fw"></i> Logout</Link>
+                                
                             </MenuItem>
                         </NavDropdown>
             </Nav>
@@ -253,24 +260,25 @@ var HomePage = React.createClass({
 
 
             <div id="page-wrapper" className="page-wrapper" ref="pageWrapper">
-                {this.props.data.tag}
+                <Component />
                 
             </div>
 
-        <div>{this.state.data.showModal?<ModalApp />:''}</div>    
+        <div>{this.state.showModal?<ModalApp />:''}</div>    
     </div>
 
     );
   },
 
-  // static fetchData = function(params) {
-  //   return getData("/home");
-  // }
+  statics: {
+    fetchData: function(params) {
+        return getData("/home");
+      }
+  },
 
-  showModal: function(){
-    this.setState({'showModal': !this.state.showModal});
+  handleLogout: function(){
+    console.log("logging out");
   }
-
 });
 
 export default HomePage;

@@ -1,15 +1,15 @@
 import React, { PropTypes, Component } from 'react';
 
-class Dashboard extends Component {
+class Sales extends Component {
 
   render() {
     return (
           <div>
-            Hello, welcome to this beautiful farm!
+            Hurray sales are up !!!!
           </div>
     );
   };
 
 }
 
-export default Dashboard;
+export default Sales;

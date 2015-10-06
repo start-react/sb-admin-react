@@ -6,8 +6,8 @@ import Session from "../../common/session";
 import { Link } from "react-router";
 
 var Reflux = require("reflux");
-var ProfileStore = require('../../stores/profile-store');
-var ProfileActions = require('../../actions/profile-actions');
+var ProfileStore = require('../../stores/app-store');
+var ProfileActions = require('../../actions/app-actions');
 
 class LandingPage extends Component {
 
