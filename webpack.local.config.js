@@ -20,7 +20,7 @@ module.exports = {
   entry:  [
     "webpack-dev-server/client?http://localhost:9090",
     "webpack/hot/only-dev-server",
-    "./src/main"
+    "./src/app"
   ],
 
   // This will not actually create a bundle.js file in ./build. It is used

@@ -3,20 +3,19 @@
  */
 
 // Polyfill
+
 import "babel-core/polyfill";
 
 // Libraries
 import React from "react";
 import Router from "react-router";
 
-// Common utilities
-import Session from "./common/session";
-import AppStore from './stores/app-store';
+
 // Base styling
 import "./common/base.css";
 
 // Routers
-import Routes from "./routers/routes";
+import Routes from "./routers/Routes";
 
 
 // ID of the DOM element to mount app on
@@ -59,6 +58,7 @@ routes = Routes.getRoutes();
  *
  * @return {Promise}        data containing responses mapped by route name
  */
+/*
 let fetchData = function(routes, params) {
   let data = {};
 
@@ -71,11 +71,11 @@ let fetchData = function(routes, params) {
       })
     })
   ).then(() => data);
-}
+}*/
 
 // Start the router
 Router.run(routes, Router.HistoryLocation, function(Handler, state) {
-  fetchData(state.routes, state.params).then((data) => {
-    React.render(<Handler data={data} />, document.getElementById(DOM_APP_EL_ID));
-  });
+  //fetchData(state.routes, state.params).then((data) => {
+    React.render(<Handler state={state} />, document.getElementById(DOM_APP_EL_ID));
+  //});
 });

@@ -1,15 +1,15 @@
 import React, { PropTypes, Component } from 'react';
 
-class Dashboard extends Component {
+class Second extends Component {
 
   render() {
     return (
           <div>
-            Hello, welcome to this beautiful farm!
+            This is the second page
           </div>
     );
   };
 
 }
 
-export default Dashboard;
+export default Second;

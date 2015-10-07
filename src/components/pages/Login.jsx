@@ -1,8 +1,9 @@
 var React = require('react');
-var AppActions = require('../../actions/app-actions');
 var Router = require('react-router');
 var Reflux = require('reflux');
-var AppStore = require('../../stores/app-store');
+
+var AuthActions = require('../../actions/AuthActions');
+var AuthStore = require('../../stores/AuthStore');
 
 var LoginPage = React.createClass({
     
@@ -14,12 +15,12 @@ var LoginPage = React.createClass({
         return {loginID: '', password: ''};
     },
 
-    mixins: [Reflux.connect(AppStore), Router.Navigation],
+    mixins: [Reflux.connect(AuthStore), Router.Navigation],
 
     render: function(){
 
         if(this.state.AuthToken != '')
-            this.transitionTo('Dashboard');
+            this.transitionTo('dashboard');
 
         return <div className="col-md-4 col-md-offset-4">
 
@@ -64,7 +65,7 @@ var LoginPage = React.createClass({
         e.preventDefault();
 
         if(this.state.loginID != '' && this.state.password != '')
-            AppActions.handleLogin(this.state.loginID, this.state.password);
+            AuthActions.handleLogin(this.state.loginID, this.state.password);
     }
 });
 

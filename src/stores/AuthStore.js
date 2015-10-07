@@ -1,19 +1,26 @@
 var React = require('react');
 var Reflux = require('reflux');
 
-var APIService = require('../utils/APIService');
-var UserAPIService = require('../Utils/UserAPIService');
+var AuthAPIService = require('../Utils/AuthAPIService');
+var AuthActions = require('../actions/AuthActions');
 
-var ProfileActions = require('../actions/app-actions');
-var UtilsAPI = require('../utils/utils-api');
+var AuthStore = Reflux.createStore({
 
-var person = {
-	name: "Billy Bob",
-	LoggedIn: false
-};
+	listenables: [AuthActions],
 
-var ProfileStore = Reflux.createStore({
-	listenables: [ProfileActions],
+	data: {
+		showModal: false,
+		loggedIn: false,
+		user: {
+			name: "Billy Bob",
+			AuthToken: ''
+		},
+
+	},
+
+	getInitialState() {
+        return this.data;
+    },
 
 	onLoggedIn(token){
 		console.log("onLoggedIn", token);
@@ -51,7 +58,7 @@ var ProfileStore = Reflux.createStore({
 		//console.log("onHandleLogin", loginID, password);
 		//UtilsAPI.test();
 		// APIService.test();
-		UserAPIService.login(loginID, password);
+		AuthAPIService.login(loginID, password);
 
 	},
 
@@ -64,13 +71,7 @@ var ProfileStore = Reflux.createStore({
 		return person.name;
 	},
 
-	data: {showModal: false,
-			LoggedIn: false,
-			AuthToken: ''},
-
-	getInitialState() {
-        return this.data;
-    }
+	
 });
 
-export default ProfileStore;
+export default AuthStore;

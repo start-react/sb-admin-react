@@ -1,30 +1,29 @@
 import React from "react";
 import { Route, DefaultRoute, RouteHandler } from "react-router";
 
-import LandingPage from "../pages/landing/page";
-import HomePage from "../components/home/page";
-import Dashboard from "../pages/dashboard/page";
-import LoginPage from "../components/login-page/page";
-import LogoutPage from "../components/logout-page/page";
+import BaseLayout from "../components/layouts/Base";
+import DashboardLayout from "../components/layouts/Dashboard";
 
+import DashboardFirstPage from "../components/pages/dashboard/First";
+import DashboardSecondPage from "../components/pages/dashboard/Second";
+import LoginPage from "../components/pages/Login";
+import LogoutPage from "../components/pages/Logout";
 
-export default class LoggedOutRouter extends React.Component {
-  render() {
+export default class Routes {
+
+  static getRoutes = function() {
     return (
-      <div id="container">
-        <RouteHandler {...this.props} />
-      </div>
-    );
-  }
-
-  static getRoutes = function() { console.log("LoggedOutRouter");
-    return (
-      <Route name="app" path="/" handler={LoggedOutRouter}>
-        <Route name="Dashboard" path="/dashboard" handler={HomePage} />
-        <Route name="Sales" path="/sales" handler={HomePage} />
-        <Route name="Logout" path="/logout" handler={LogoutPage} />
-        <DefaultRoute name="landing" handler={LoginPage} />
+      <Route name="base" path="/" handler={BaseLayout}>
+        <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
+          <Route name="dashboard.first" path="/first" handler={DashboardFirstPage} />
+          <Route name="dashboard.second" path="/second" handler={DashboardSecondPage} />
+          <DefaultRoute name="dashboard.index" handler={DashboardFirstPage} />
+        </Route>
+        <Route name="login" path="/login" handler={LoginPage} />
+        <Route name="logout" path="/logout" handler={LogoutPage} />
+        <DefaultRoute name="index" handler={LoginPage} />
       </Route>
     );
   }
+
 }

@@ -1,6 +1,6 @@
 import React, { PropTypes, Component } from 'react';
 
-class Dashboard extends Component {
+class First extends Component {
 
   render() {
     return (
@@ -12,4 +12,4 @@ class Dashboard extends Component {
 
 }
 
-export default Dashboard;
+export default First;
