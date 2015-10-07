@@ -6,72 +6,105 @@ var AuthActions = require('../../actions/AuthActions');
 var AuthStore = require('../../stores/AuthStore');
 
 var LoginPage = React.createClass({
-    
-    getInitialState: function(){
-        return {loginID: '', password: ''};
-    },
 
-    mixins: [Reflux.connect(AuthStore), Router.Navigation],
+  getInitialState: function(){
+    return {
+      loginID: '',
+      password: '',
+      isSubmitted: false
+    };
+  },
 
-    render: function(){
+  mixins: [
+    Reflux.connect(AuthStore, 'authStore'),
+    Router.Navigation
+  ],
 
-        if(this.state.user.AuthToken != '')
-            this.transitionTo('dashboard');
+  getError: function(){
 
-        return <div className="col-md-4 col-md-offset-4">
-
-                <div className="text-center" style={{padding:'30px'}}>
-                  <img className="Header-brandImg" src={require('../../common/logo.png')} width="200" height="38" alt="React" />
-                </div>
-                {this.state.loginError
-                    ?<div className="alert alert-danger" style={ {'color': 'red'} }>
-                      * {this.state.loginError}
-                    </div>
-                    :''
-                }
-                <div className="login-panel panel panel-default">
-                    <div className="panel-heading">
-                        <h3 className="panel-title">Please Sign In</h3>
-                    </div>
-                    <div className="panel-body">
-                        <form role="form" onSubmit={this.handleLogin}>
-                            <fieldset>
-                                <div className="form-group">
-                                    <input onChange={this.setLoginID} className="form-control" placeholder="Username" ref="loginID" type="text" autofocus="" />
-                                </div>
-                                <div className="form-group">
-                                    <input onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" />
-                                </div>
-                                <button className="btn btn-lg btn-success btn-block" disabled={this.state.loading}>{this.state.loading?'Loading...':'Login'}</button>
-                            </fieldset>
-                        </form>
-                        
-                    </div>
-                </div>
-
-            </div>
-
-    },
-
-    setLoginID: function(e) {
-        this.setState({loginID: e.target.value});
-        this.setState({loginError: ''});
-    },
-
-    setPassword: function(e) {
-        this.setState({password: e.target.value});
-        this.setState({loginError: ''});
-    },
-
-    handleLogin: function(e){
-        e.stopPropagation();
-        e.preventDefault();
-
-        if(this.state.loginID != '' && this.state.password != '')
-            AuthActions.handleLogin(this.state.loginID, this.state.password);
-        else
-            AuthActions.loginError('Please provide Username and Password');
+    if( (!this.state.loginID || !this.state.password) && this.state.isSubmitted ) {
+      return <div className="alert alert-danger" style={ {'color': 'red'} }>
+        *Please provide a username and password
+      </div>;
     }
+
+    if(this.state.authStore.loginErrorMessage && this.state.isSubmitted) {
+      return <div className="alert alert-danger" style={ {'color': 'red'} }>
+        *{this.state.authStore.loginErrorMessage}
+      </div>;
+    }
+
+
+  },
+
+  render: function(){
+    console.log(this.state);
+
+    if(this.state.authStore.user.AuthToken != '')
+      this.transitionTo('dashboard');
+
+    return <div className="col-md-4 col-md-offset-4">
+
+    <div className="text-center" style={{padding:'30px'}}>
+      <img className="Header-brandImg" src={require('../../common/logo.png')} width="200" height="38" alt="React" />
+    </div>
+      {this.getError()}
+    <div className="login-panel panel panel-default">
+      <div className="panel-heading">
+      <h3 className="panel-title">Please Sign In</h3>
+      </div>
+      <div className="panel-body">
+      <form role="form" onSubmit={this.handleLogin}>
+      <fieldset>
+      <div className="form-group">
+      <input onChange={this.setLoginID} className="form-control" placeholder="Username" ref="loginID" type="text" autofocus="" />
+      </div>
+      <div className="form-group">
+      <input onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" />
+      </div>
+      <button className="btn btn-lg btn-success btn-block" disabled={this.state.authStore.loading}>{this.state.authStore.loading?'Loading...':'Login'}</button>
+      </fieldset>
+      </form>
+
+      </div>
+      </div>
+
+    </div>
+
+  },
+
+  setLoginID: function(e) {
+
+    this.setState({
+      loginID: e.target.value,
+      loginError: ''
+    });
+
+  },
+
+  setPassword: function(e) {
+
+    this.setState({
+      password: e.target.value,
+      loginError: ''
+    });
+
+  },
+
+  handleLogin: function(e){
+    
+    this.setState({
+      isSubmitted: true
+    });
+
+    e.stopPropagation();
+    e.preventDefault();
+
+    if(this.state.loginID != '' && this.state.password != '')
+      AuthActions.handleLogin(this.state.loginID, this.state.password);
+
+  }
+
 });
 
 export default LoginPage;

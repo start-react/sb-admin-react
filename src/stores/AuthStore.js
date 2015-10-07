@@ -16,7 +16,7 @@ var AuthStore = Reflux.createStore({
 			AuthToken: '',
 			isTokenExpired: false
 		},
-		loginError: '',
+		loginErrorMessage: '',
 		loading: false
 	},
 
@@ -27,16 +27,15 @@ var AuthStore = Reflux.createStore({
 	onLoggedIn(token){
 		console.log("onLoggedIn", token);
 
-		this.data.LoggedIn = true;
+		this.data.loggedIn = true;
 		this.data.user.AuthToken = token;
 		this.data.loading = false;
 		this.trigger(this.data);
 		console.log(this.data);
 	},
 
-	onLoggedOut(){
-		console.log("onLoggedOut");
-		this.data.LoggedIn = false;
+	onHandleLogout(){
+		this.data.loggedIn = false;
 		this.data.user.name = '';
 		this.data.user.AuthToken = '';
 		this.data.loading = false;
@@ -59,7 +58,7 @@ var AuthStore = Reflux.createStore({
 	onHandleLogin(loginID, password){
 		AuthAPIService.login(loginID, password);
 		this.data.user.name = loginID;
-		this.data.loginError = '';
+		this.data.loginErrorMessage = '';
 		this.data.loading = true;
 		this.trigger(this.data);
 	},
@@ -67,7 +66,7 @@ var AuthStore = Reflux.createStore({
 	onLoginError(message){
 		console.log("onLoginError", message);
 		this.data.loading = false;
-		this.data.loginError = message;
+		this.data.loginErrorMessage = message;
 		this.trigger(this.data);
 	},
 
@@ -77,7 +76,7 @@ var AuthStore = Reflux.createStore({
 	},
 	isLoggedIn(){
 		console.log("check", this.data, {person});
-		return this.data.LoggedIn;
+		return this.data.loggedIn;
 	},
 
 	getName(){

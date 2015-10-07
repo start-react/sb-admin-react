@@ -7,8 +7,9 @@ var AuthActions = Reflux.createActions(
 		'showModal',
 		'hideModal',
 		'handleLogin',
-		'loginError',
-		'showAuthStatusModal'
+		'showAuthStatusModal',
+		'handleLogout',
+		'loginError'
 	]
 )
 

@@ -74,9 +74,6 @@ let fetchData = function(routes, params) {
 }*/
 
 // Start the router
-Router.run(routes, Router.HistoryLocation, function(Handler, state) {
-  //fetchData(state.routes, state.params).then((data) => {
-    console.log("route", state);
-    React.render(<Handler state={state} />, document.getElementById(DOM_APP_EL_ID));
-  //});
+Router.run(routes, function(Handler) {
+  React.render(<Handler />, document.getElementById(DOM_APP_EL_ID));
 });

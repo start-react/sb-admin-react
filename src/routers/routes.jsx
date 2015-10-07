@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, DefaultRoute, RouteHandler } from "react-router";
+import { Router, Route, DefaultRoute, RouteHandler } from "react-router";
 
 import BaseLayout from "../components/layouts/Base";
 import DashboardLayout from "../components/layouts/Dashboard";
@@ -13,15 +13,16 @@ export default class Routes {
 
   static getRoutes = function() {
     return (
-      <Route name="base" path="/" handler={BaseLayout}>
-        <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
-          <Route name="dashboard.first" path="/first" handler={DashboardFirstPage} />
-          <Route name="dashboard.second" path="/second" handler={DashboardSecondPage} />
+        <Route name="base" path="/" handler={BaseLayout}>
+          <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
+            <Route name="dashboard.first" path="/first" handler={DashboardFirstPage} />
+            <Route name="dashboard.second" path="/second" handler={DashboardSecondPage} />
+            <DefaultRoute name="dashboard.default" handler={DashboardFirstPage} />
+          </Route>
+          <Route name="login" path="/login" handler={LoginPage} />
+          <Route name="logout" path="/logout" handler={LogoutPage} />
+          <DefaultRoute name="index" handler={LoginPage} />
         </Route>
-        <Route name="login" path="/login" handler={LoginPage} />
-        <Route name="logout" path="/logout" handler={LogoutPage} />
-        <DefaultRoute name="index" handler={LoginPage} />
-      </Route>
     );
   }
 
