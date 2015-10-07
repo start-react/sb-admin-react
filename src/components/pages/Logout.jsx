@@ -6,18 +6,20 @@ var AuthActions = require('../../actions/AuthActions');
 
 var LogoutPage = React.createClass({
     
-    componentWillUnmount: function(){
+    componentWillMount: function(){
+        AuthActions.handleLogout();
     },
     
     mixins: [Reflux.connect(AuthStore), Router.Navigation],
 
     render: function(){
-    	console.log("logging out");
 
-    	console.log(this.state);
-    	if(this.state.user.AuthToken == '')
+    	if(this.state.user.AuthToken == '') {
     		this.transitionTo('login');
-    	return <div>Redirecting</div>;
+    		return <div></div>;
+    	}
+        
+    	return <div className="container">Redirecting</div>;
     }
 
 });
