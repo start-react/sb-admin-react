@@ -26,7 +26,7 @@ let routes;
 
 routes = Routes.getRoutes();
 
-
+console.log("routes", routes);
 /**
  * Given a set of routes and params associated with the current active state,
  * call #fetchData(params) on all Route Handlers that define that static method.
@@ -76,6 +76,7 @@ let fetchData = function(routes, params) {
 // Start the router
 Router.run(routes, Router.HistoryLocation, function(Handler, state) {
   //fetchData(state.routes, state.params).then((data) => {
+    console.log("route", state);
     React.render(<Handler state={state} />, document.getElementById(DOM_APP_EL_ID));
   //});
 });

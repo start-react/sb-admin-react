@@ -17,7 +17,6 @@ export default class Routes {
         <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
           <Route name="dashboard.first" path="/first" handler={DashboardFirstPage} />
           <Route name="dashboard.second" path="/second" handler={DashboardSecondPage} />
-          <DefaultRoute name="dashboard.index" handler={DashboardFirstPage} />
         </Route>
         <Route name="login" path="/login" handler={LoginPage} />
         <Route name="logout" path="/logout" handler={LogoutPage} />
@@ -27,3 +26,4 @@ export default class Routes {
   }
 
 }
+// <DefaultRoute name="dashboard.index" handler={DashboardFirstPage} />

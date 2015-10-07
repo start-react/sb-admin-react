@@ -198,7 +198,7 @@ var HomePage = React.createClass({
                                 </a>
                             </MenuItem>
                         </NavDropdown>
-                        <NavDropdown className="pull-right" eventKey={4} title=<i className="fa fa-user fa-fw"></i> id="basic-nav-dropdown">
+                        <NavDropdown className="pull-right" eventKey={4} title=<i className="fa fa-user"> {this.state.user.name}</i> id="basic-nav-dropdown">
                             <MenuItem eventKey="1">
                                 
                                     <i className="fa fa-user fa-fw"></i> User Profile
@@ -233,11 +233,11 @@ var HomePage = React.createClass({
                                 </div>
                             </li>
                             <li>
-                                <Link to="dashboard"><i className="fa fa-dashboard fa-fw"></i>Dashboard</Link>
+                                <Link to="dashboard.first"><i className="fa fa-dashboard fa-fw"></i>First</Link>
                             </li>
                             
                             <li>
-                                <Link to="dashboard.first"><i className="fa fa-bar-chart-o fa-fw"></i>Sales</Link>
+                                <Link to="dashboard.second"><i className="fa fa-bar-chart-o fa-fw"></i>Second</Link>
                             </li>
                         </ul>
                     </div>

@@ -19,7 +19,7 @@ export default class AuthAPIService {
 
 		})
 		.catch(function(res){
-			AuthActions.loggedIn(res.data);
+			AuthActions.loginError(res.data);
 		});
 	}	
 
