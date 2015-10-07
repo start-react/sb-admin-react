@@ -9,11 +9,12 @@ var AuthStore = Reflux.createStore({
 	listenables: [AuthActions],
 
 	data: {
-		showModal: false,
+		showUserModal: false,
 		loggedIn: false,
 		user: {
 			name: "Billy Bob",
-			AuthToken: ''
+			AuthToken: '',
+			isTokenExpired: false
 		},
 		loginError: '',
 		loading: false
@@ -44,13 +45,14 @@ var AuthStore = Reflux.createStore({
 
 	onShowModal(){
 		console.log("onShowModal");
-		this.data.showModal = true;
+		this.data.showUserModal = true;
         this.trigger(this.data);
 	},
 
 	onHideModal(){
 		console.log("onHideModal");
-		this.data.showModal = false;
+		this.data.showUserModal = false;
+		this.data.user.isTokenExpired = false;
         this.trigger(this.data);
 	},
 
@@ -69,6 +71,10 @@ var AuthStore = Reflux.createStore({
 		this.trigger(this.data);
 	},
 
+	onShowAuthStatusModal(){
+		this.data.user.isTokenExpired = true;
+		this.trigger(this.data);
+	},
 	isLoggedIn(){
 		console.log("check", this.data, {person});
 		return this.data.LoggedIn;

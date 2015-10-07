@@ -27,7 +27,7 @@ const customStyles = {
 };
  
  
-var ModalApp = React.createClass({
+var UserStatusModal = React.createClass({
  
   getInitialState: function() {
     return { modalIsOpen: true };
@@ -98,8 +98,8 @@ var ModalApp = React.createClass({
                 Hello, Billy Bob!<br /><br />
 
                 <center>
-                <input className="form-control" placeholder="Password" ref="password" type="password" /><br /><br />
-                <button className="btn btn-danger btn-xs" onClick={this.closeModal}>Lets get back</button>
+                <button className="btn btn-danger btn-sm" onClick={this.closeModal}>Punch in</button><br /><br />
+                <button className="btn btn-success btn-xs" onClick={this.closeModal}>Skip it</button>
                 </center>
               </div>
               <div className="panel-footer">
@@ -119,5 +119,5 @@ var ModalApp = React.createClass({
 });
 
 // <button className="btn btn-success" onClick={this.openModal}>View Status</button>
-export default ModalApp;
+export default UserStatusModal;
 // React.render(<ModalApp/>, appElement);

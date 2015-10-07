@@ -29,7 +29,7 @@ var HomePage = React.createClass({
         <div id="wrapper">
         <Navbar brand={<img src={ require('../../../common/logo.png') } /> } fluid={true}  style={ {margin: 0} }>
             <Nav style={ {margin: 0} } >
-                <NavItem>{this.state.showModal}</NavItem>
+                <NavItem onClick={AuthActions.showAuthStatusModal}><button className="btn btn-success btn-xs">Expired Token</button></NavItem>
                 <NavItem onClick={AuthActions.showModal}><button className="btn btn-success btn-xs">Show Status</button></NavItem>
                 <NavDropdown eventKey={1} title=<i className="fa fa-envelope fa-fw"></i> id="basic-nav-dropdown">
                             <MenuItem eventKey="1">

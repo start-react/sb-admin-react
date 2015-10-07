@@ -14,7 +14,6 @@ var LoginPage = React.createClass({
     mixins: [Reflux.connect(AuthStore), Router.Navigation],
 
     render: function(){
-        console.log(this.state);
 
         if(this.state.user.AuthToken != '')
             this.transitionTo('dashboard');
@@ -65,7 +64,6 @@ var LoginPage = React.createClass({
     },
 
     handleLogin: function(e){
-        console.log("handleLogin", this.state);
         e.stopPropagation();
         e.preventDefault();
 
