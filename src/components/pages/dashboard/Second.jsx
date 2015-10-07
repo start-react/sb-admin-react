@@ -4,9 +4,11 @@ class Second extends Component {
 
   render() {
     return (
-          <div>
-            This is the second page
-          </div>
+
+      <div>
+        This is the second page
+      </div>
+          
     );
   };
 

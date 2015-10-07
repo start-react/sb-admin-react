@@ -1,19 +1,7 @@
 var React = require('react');
 var Modal = require('react-modal');
-import {Link} from 'react-router';
 
-var appElement = document.getElementById('app');
 var AuthActions = require('../../../actions/AuthActions');
-/*
-By default the modal is anchored to document.body. All of the following overrides are available.
- 
-* element
-Modal.setAppElement(appElement);
- 
-* query selector - uses the first element found if you pass in a class.
-Modal.setAppElement('#your-app-element');
- 
-*/
  
 const customStyles = {
   content : {
@@ -25,7 +13,6 @@ const customStyles = {
     transform             : 'translate(-50%, -50%)'
   }
 };
- 
  
 var UserStatusModal = React.createClass({
  
@@ -118,6 +105,4 @@ var UserStatusModal = React.createClass({
   } 
 });
 
-// <button className="btn btn-success" onClick={this.openModal}>View Status</button>
 export default UserStatusModal;
-// React.render(<ModalApp/>, appElement);

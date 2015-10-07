@@ -14,7 +14,6 @@ var HomePage = React.createClass({
     
   componentWillMount: function() {
     // console.log("[HomePage] will mount with server response: ", this.props.data.home);
-    console.log("[HomePage] will mount with server response: ", this.props.data);
   },
 
   adjustResize: function(){
@@ -53,26 +52,25 @@ var HomePage = React.createClass({
                 <NavItem onClick={AuthActions.showAuthStatusModal}><button className="btn btn-success btn-xs">Expired Token</button></NavItem>
                 <NavItem onClick={AuthActions.showModal}><button className="btn btn-success btn-xs">Show Status</button></NavItem>
                 
+                <NavDropdown className="pull-right" eventKey={4} title=<i className="fa fa-user"> {this.state.user.name}</i> id="basic-nav-dropdown">
+                    <MenuItem eventKey="1">
                         
+                            <i className="fa fa-user fa-fw"></i> User Profile
                         
-                        <NavDropdown className="pull-right" eventKey={4} title=<i className="fa fa-user"> {this.state.user.name}</i> id="basic-nav-dropdown">
-                            <MenuItem eventKey="1">
-                                
-                                    <i className="fa fa-user fa-fw"></i> User Profile
-                                
-                            </MenuItem>
-                            <MenuItem eventKey="2">
-                                <a href="">
-                                    <i className="fa fa-gear fa-fw"></i> Settings
-                                </a>
-                            </MenuItem>
-                            <MenuItem divider />
-                            <MenuItem eventKey="3">
-                                
-                                    <Link to="logout"><i className="fa fa-sign-out fa-fw"></i> Logout</Link>
-                                
-                            </MenuItem>
-                        </NavDropdown>
+                    </MenuItem>
+                    <MenuItem eventKey="2">
+                        <a href="">
+                            <i className="fa fa-gear fa-fw"></i> Settings
+                        </a>
+                    </MenuItem>
+                    <MenuItem divider />
+                    <MenuItem eventKey="3">
+                        
+                            <Link to="logout"><i className="fa fa-sign-out fa-fw"></i> Logout</Link>
+                        
+                    </MenuItem>
+                </NavDropdown>
+
             </Nav>
             {/*<nav className="navbar navbar-default navbar-static-top" style={ {'margin-bottom':0} } role="navigation">*/}
                 
@@ -116,11 +114,8 @@ var HomePage = React.createClass({
   statics: {
     fetchData: function(params) {
       }
-  },
-
-  handleLogout: function(){
-    console.log("logging out");
   }
+  
 });
 
 export default HomePage;

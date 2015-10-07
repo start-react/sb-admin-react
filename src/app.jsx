@@ -26,7 +26,6 @@ let routes;
 
 routes = Routes.getRoutes();
 
-console.log("routes", routes);
 /**
  * Given a set of routes and params associated with the current active state,
  * call #fetchData(params) on all Route Handlers that define that static method.

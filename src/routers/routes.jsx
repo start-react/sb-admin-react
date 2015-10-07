@@ -27,4 +27,3 @@ export default class Routes {
   }
 
 }
-// <DefaultRoute name="dashboard.index" handler={DashboardFirstPage} />
