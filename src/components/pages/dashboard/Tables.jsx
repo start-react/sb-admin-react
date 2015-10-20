@@ -1,17 +1,17 @@
 import React, { PropTypes, Component } from 'react';
 
-class Second extends Component {
+class Tables extends Component {
 
   render() {
     return (
 
       <div>
-        This is the second page
+        This is the tables page.
       </div>
-          
+      
     );
   };
 
 }
 
-export default Second;
+export default Tables;

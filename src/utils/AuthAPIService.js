@@ -8,20 +8,21 @@ export default class AuthAPIService {
 
 		var encodedValue = Base64.encode(userID + ':' + password);
 
-		axios({
-			method: 'get',
-			url: 'https://bluescreenapi.lancasterfarms.com/login',
-			headers: {'Authorization': 'Basic ' + encodedValue},
-		})
-		.then(function(res){
+		// axios({
+		// 	method: 'get',
+		// 	url: '',
+		// 	headers: {'Authorization': 'Basic ' + encodedValue},
+		// })
+		// .then(function(res){
+		// 	console.log(res);
+		// 	if(res.status == 200)
+		// 		AuthActions.loggedIn(res.data);
 
-			if(res.status == 200)
-				AuthActions.loggedIn(res.data);
-
-		})
-		.catch(function(res){
-			AuthActions.loginError(res.data);
-		});
+		// })
+		// .catch(function(res){
+		// 	AuthActions.loginError(res.data);
+		// });
+		AuthActions.loggedIn();
 
 	}	
 

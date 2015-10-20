@@ -3,6 +3,8 @@ var Reflux = require('reflux');
 
 var AuthAPIService = require('../Utils/AuthAPIService');
 var AuthActions = require('../actions/AuthActions');
+var AuthConstants = require('../constants/AuthConstants');
+var UserAPIService = require('../Utils/UserAPIService');
 
 var AuthStore = Reflux.createStore({
 
@@ -12,9 +14,7 @@ var AuthStore = Reflux.createStore({
 		showUserModal: false,
 		loggedIn: false,
 		user: {
-			name: "Billy Bob",
-			AuthToken: '',
-			isTokenExpired: false
+			name: "SB Admin"
 		},
 		loginErrorMessage: '',
 		loading: false
@@ -26,10 +26,9 @@ var AuthStore = Reflux.createStore({
 
   },
 
-	onLoggedIn(token){
+	onLoggedIn(data){
 
 		this.data.loggedIn = true;
-		this.data.user.AuthToken = token;
 		this.data.loading = false;
 		this.trigger(this.data);
 
@@ -46,7 +45,7 @@ var AuthStore = Reflux.createStore({
 	},
 
 	onShowModal(){
-
+		
 		this.data.showUserModal = true;
     this.trigger(this.data);
 
@@ -56,7 +55,7 @@ var AuthStore = Reflux.createStore({
 
 		this.data.showUserModal = false;
 		this.data.user.isTokenExpired = false;
-    this.trigger(this.data);
+    	this.trigger(this.data);
 
 	},
 
@@ -84,7 +83,7 @@ var AuthStore = Reflux.createStore({
 		this.trigger(this.data);
 
 	}
-	
+
 });
 
 export default AuthStore;

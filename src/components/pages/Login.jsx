@@ -44,7 +44,7 @@ var LoginPage = React.createClass({
     return <div className="col-md-4 col-md-offset-4">
 
               <div className="text-center" style={{padding:'30px'}}>
-                <img className="Header-brandImg" src={require('../../common/logo.png')} width="200" height="38" alt="React" />
+                "SB Admin React"
               </div>
 
               {this.getError()}

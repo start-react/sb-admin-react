@@ -1,12 +1,12 @@
 import React, { PropTypes, Component } from 'react';
 
-class First extends Component {
+class Grid extends Component {
 
   render() {
     return (
 
       <div>
-        Hello, welcome to this beautiful farm!
+        This is Grid page.
       </div>
       
     );
@@ -14,4 +14,4 @@ class First extends Component {
 
 }
 
-export default First;
+export default Grid;
