@@ -5,9 +5,15 @@ class Blank extends Component {
   render() {
     return (
 
-      <div>
-        This is Blank page.
-      </div>
+    	<div>
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-12">
+                        <h1 className="page-header">Blank</h1>
+                    </div>
+                </div>
+            </div>
+    	</div>
       
     );
   };

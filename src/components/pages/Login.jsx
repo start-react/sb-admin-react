@@ -38,8 +38,7 @@ var LoginPage = React.createClass({
 
   render: function(){
     
-    if(this.state.authStore.user.AuthToken != '')
-      this.transitionTo('dashboard');
+      
 
     return <div className="col-md-4 col-md-offset-4">
 
@@ -96,16 +95,17 @@ var LoginPage = React.createClass({
   },
 
   handleLogin: function(e){
+    this.transitionTo('dashboard');
     
-    this.setState({
-      isSubmitted: true
-    });
+    // this.setState({
+    //   isSubmitted: true
+    // });
 
-    e.stopPropagation();
-    e.preventDefault();
+    // e.stopPropagation();
+    // e.preventDefault();
 
-    if(this.state.loginID != '' && this.state.password != '')
-      AuthActions.handleLogin(this.state.loginID, this.state.password);
+    // if(this.state.loginID != '' && this.state.password != '')
+    //   AuthActions.handleLogin(this.state.loginID, this.state.password);
 
   }
 

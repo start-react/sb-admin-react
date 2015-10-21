@@ -5,7 +5,6 @@ import BaseLayout from "../components/layouts/Base";
 import DashboardLayout from "../components/layouts/Dashboard";
 
 import DashboardHomePage from "../components/pages/dashboard/Home";
-import DashboardChartsPage from "../components/pages/dashboard/Charts";
 import DashboardTablesPage from "../components/pages/dashboard/Tables";
 import DashboardFormsPage from "../components/pages/dashboard/Forms";
 import DashboardPanelsWellsPage from "../components/pages/dashboard/Panels-wells";
@@ -15,6 +14,8 @@ import DashboardTypographyPage from "../components/pages/dashboard/Typography";
 import DashboardIconsPage from "../components/pages/dashboard/Icons";
 import DashboardGridPage from "../components/pages/dashboard/Grid";
 import DashboardBlankPage from "../components/pages/dashboard/Blank";
+import DashboardFlotChartsPage from "../components/pages/dashboard/Flot-charts";
+import DashboardMorrisjsChartsPage from "../components/pages/dashboard/Morrisjs-charts";
 import LoginPage from "../components/pages/Login";
 import LogoutPage from "../components/pages/Logout";
 
@@ -25,7 +26,8 @@ export default class Routes {
         <Route name="base" path="/" handler={BaseLayout}>
           <Route name="dashboard" path="/dashboard" handler={DashboardLayout}>
             <Route name="dashboard.home" path="/home" handler={DashboardHomePage} />
-            <Route name="dashboard.charts" path="/charts" handler={DashboardChartsPage} />
+            <Route name="dashboard.flot-charts" path="/flot-charts" handler={DashboardFlotChartsPage} />
+            <Route name="dashboard.morrisjs-charts" path="/morrisjs-charts" handler={DashboardMorrisjsChartsPage} />
             <Route name="dashboard.tables" path="/tables" handler={DashboardTablesPage} />
             <Route name="dashboard.forms" path="/forms" handler={DashboardFormsPage} />
             <Route name="dashboard.panels-wells" path="/panels-wells" handler={DashboardPanelsWellsPage} />

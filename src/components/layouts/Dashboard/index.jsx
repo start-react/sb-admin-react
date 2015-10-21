@@ -13,21 +13,10 @@ var AuthActions = require('../../../actions/AuthActions');
 var HomePage = React.createClass({
     
   componentWillMount: function() {
-    // console.log("[HomePage] will mount with server response: ", this.props.data.home);
     this.setState({Height: $(window).height()});
   },
 
-  // adjustResize: function(){
-    
-  //   var pageWrapper = this.refs.pageWrapper.getDOMNode();
-  //   $(pageWrapper).css('min-height', $(window).height());
-      
-  // },
-
   componentDidMount: function() {
-
-    // $(window).resize(this.adjustResize);
-    // this.adjustResize();
 
   },
 
@@ -184,7 +173,14 @@ var HomePage = React.createClass({
                             </li>
                             
                             <li>
-                                <Link to="dashboard.charts"><i className="fa fa-bar-chart-o fa-fw"></i> &nbsp;Charts</Link>
+                                <NavDropdown title=<span><i className="fa fa-bar-chart-o fa-fw"></i> &nbsp;Charts</span> > 
+                                  <MenuItem eventKey="1">
+                                    <Link to="dashboard.flot-charts">Flot Charts</Link> 
+                                  </MenuItem> 
+                                  <MenuItem eventKey="2">
+                                    <Link to="dashboard.morrisjs-charts">Morris.js Charts</Link> 
+                                  </MenuItem>
+                                </NavDropdown>
                             </li>
 
                             <li> 
