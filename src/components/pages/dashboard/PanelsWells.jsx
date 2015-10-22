@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab} from 'react-bootstrap';
+import {Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader} from 'react-bootstrap';
 
 var PanelsWells = React.createClass({
 
@@ -9,7 +9,7 @@ var PanelsWells = React.createClass({
       <div>
             <div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Panels and Wells</h1>
+                    <PageHeader>Panels and Wells</PageHeader>
                 </div>
             </div>
             <div className="row">

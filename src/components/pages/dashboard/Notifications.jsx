@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel, Alert, Button, OverlayTrigger, Tooltip, Popover, Modal} from 'react-bootstrap';
+import {Panel, Alert, Button, OverlayTrigger, Tooltip, Popover, Modal, PageHeader} from 'react-bootstrap';
 
 var Notifications = React.createClass({
 
@@ -31,7 +31,7 @@ var Notifications = React.createClass({
         <div>
             <div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Notifications</h1>
+                    <PageHeader>Notifications</PageHeader>
                 </div>
             </div>
             <div className="row">

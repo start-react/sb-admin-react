@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel} from 'react-bootstrap';
+import {Panel, PageHeader} from 'react-bootstrap';
 
 var Grid = React.createClass({
 
@@ -9,7 +9,7 @@ var Grid = React.createClass({
       <div>
             <div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Grid</h1>
+                    <PageHeader>Grid</PageHeader>
                 </div>
             </div>
             <div className="row">

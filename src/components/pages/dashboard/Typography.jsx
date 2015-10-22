@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel} from 'react-bootstrap';
+import {Panel, PageHeader} from 'react-bootstrap';
 
 var Typography = React.createClass({
 
@@ -9,7 +9,7 @@ var Typography = React.createClass({
       <div>
             <div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Typography</h1>
+                    <PageHeader>Typography</PageHeader>
                 </div>
             </div>
             <div className="row">

@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader} from "react-bootstrap";
+import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader, ListGroup, ListGroupItem, Button} from "react-bootstrap";
 
 import StatWidget from "../../common/StatWidget.js";
 
@@ -53,12 +53,13 @@ var Home = React.createClass({
                     <Panel header={<span>
                         <i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
                             <div className="pull-right">
-
                                 <DropdownButton title="Dropdown" bsSize="xs" pullRight>
-                                  <MenuItem eventKey="1">Dropdown link</MenuItem>
-                                  <MenuItem eventKey="2">Dropdown link</MenuItem>
+                                  <MenuItem eventKey="1">Action</MenuItem>
+                                  <MenuItem eventKey="2">Another action</MenuItem>
+                                  <MenuItem eventKey="3">Something else here</MenuItem>
+                                  <MenuItem divider />
+                                  <MenuItem eventKey="4">Separated link</MenuItem>
                                 </DropdownButton>
-
                             </div>
                         </span>}
                     >
@@ -68,27 +69,19 @@ var Home = React.createClass({
 
                     </Panel>
 
-                    <Panel header=<span><i className="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                                        <div className="pull-right">
-                                            <div className="btn-group">
-                                                <NavDropdown title=<a>Actions</a> pullRight >
-                              						<MenuItem eventKey="1">
-                                                		Action
-                                                	</MenuItem>
-                                                	<MenuItem eventKey="2">
-            		     								Another action
-            		     							</MenuItem>
-                                                	<MenuItem eventKey="3">
-            		     								Something else here
-                                                    </MenuItem>
-                                                    <MenuItem divider />
-                                                	<MenuItem eventKey="4">
-            		     								Separated link
-            		     							</MenuItem>
-                                                </NavDropdown>
-                                            </div>
-                                        </div>
-                                    </span> >
+                    <Panel header={<span>
+                        <i className="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                            <div className="pull-right">
+                                <DropdownButton title="Dropdown" bsSize="xs" pullRight>
+                                  <MenuItem eventKey="1">Action</MenuItem>
+                                  <MenuItem eventKey="2">Another action</MenuItem>
+                                  <MenuItem eventKey="3">Something else here</MenuItem>
+                                  <MenuItem divider />
+                                  <MenuItem eventKey="4">Separated link</MenuItem>
+                                </DropdownButton>
+                            </div>
+                        </span>}
+                    >
                         <div>
                             Panel contents
                         </div>
@@ -104,56 +97,44 @@ var Home = React.createClass({
 
                 <div className="col-lg-4">
                     <Panel header=<span><i className="fa fa-bell fa-fw"></i> Notifications Panel</span> >
-                        <div>
-                            <div className="list-group">
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-comment fa-fw"></i> New Comment
-                                    <span className="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span className="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span className="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-tasks fa-fw"></i> New Task
-                                    <span className="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span className="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span className="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span className="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span className="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" className="list-group-item">
-                                    <i className="fa fa-money fa-fw"></i> Payment Received
-                                    <span className="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                                </a>
-                            </div>
-                            <a href="#" className="btn btn-default btn-block">View All Alerts</a>
-                        </div>
+                        <ListGroup>
+                            <ListGroupItem href="javascript:void(0)"><i className="fa fa-comment fa-fw"></i> New Comment
+                                <span className="pull-right text-muted small"><em>4 minutes ago</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-twitter fa-fw"></i> 3 New Followers
+                                <span className="pull-right text-muted small"><em>12 minutes ago</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-envelope fa-fw"></i> Message Sent
+                                <span className="pull-right text-muted small"><em>27 minutes ago</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-tasks fa-fw"></i> New Task
+                                <span className="pull-right text-muted small"><em>43 minutes ago</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-upload fa-fw"></i> Server Rebooted
+                                <span className="pull-right text-muted small"><em>11:32 AM</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-bolt fa-fw"></i> Server Crashed!
+                                <span className="pull-right text-muted small"><em>11:13 AM</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-warning fa-fw"></i> Server Not Responding
+                                <span className="pull-right text-muted small"><em>10:57 AM</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-shopping-cart fa-fw"></i> New Order Placed
+                                <span className="pull-right text-muted small"><em>9:49 AM</em></span>
+                            </ListGroupItem>
+                            <ListGroupItem href="javascript:void(0)">
+                                <i className="fa fa-money fa-fw"></i> Payment Received
+                                <span className="pull-right text-muted small"><em>Yesterday</em></span>
+                            </ListGroupItem>
+                        </ListGroup>
+                        <Button block>View All Alerts</Button>
                     </Panel>
 
                     <Panel header=<span><i className="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example</span> >

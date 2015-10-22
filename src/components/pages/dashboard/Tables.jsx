@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Pagination, Panel, Well, Button} from "react-bootstrap";
+import {Pagination, Panel, Well, Button, PageHeader} from "react-bootstrap";
 
 var Tables = React.createClass({
 
@@ -7,7 +7,9 @@ var Tables = React.createClass({
     return (
 
       <div>
-        <div className="col-lg-12"> <h1 className="page-header">Tables</h1> </div>
+        <div className="col-lg-12"> 
+          <PageHeader>Tables</PageHeader> 
+        </div>
 
         <div className="col-lg-12"> 
         	<Panel header=<span>DataTables Advanced Tables</span> >

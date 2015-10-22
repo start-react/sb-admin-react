@@ -7,15 +7,15 @@ import DashboardLayout from "../components/layouts/Dashboard";
 import DashboardHomePage from "../components/pages/dashboard/Home";
 import DashboardTablesPage from "../components/pages/dashboard/Tables";
 import DashboardFormsPage from "../components/pages/dashboard/Forms";
-import DashboardPanelsWellsPage from "../components/pages/dashboard/Panels-wells";
+import DashboardPanelsWellsPage from "../components/pages/dashboard/PanelsWells";
 import DashboardButtonsPage from "../components/pages/dashboard/Buttons";
 import DashboardNotificationsPage from "../components/pages/dashboard/Notifications";
 import DashboardTypographyPage from "../components/pages/dashboard/Typography";
 import DashboardIconsPage from "../components/pages/dashboard/Icons";
 import DashboardGridPage from "../components/pages/dashboard/Grid";
 import DashboardBlankPage from "../components/pages/dashboard/Blank";
-import DashboardFlotChartsPage from "../components/pages/dashboard/Flot-charts";
-import DashboardMorrisjsChartsPage from "../components/pages/dashboard/Morrisjs-charts";
+import DashboardFlotChartsPage from "../components/pages/dashboard/FlotCharts";
+import DashboardMorrisjsChartsPage from "../components/pages/dashboard/MorrisjsCharts";
 import LoginPage from "../components/pages/Login";
 import LogoutPage from "../components/pages/Logout";
 

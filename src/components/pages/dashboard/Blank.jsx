@@ -1,4 +1,5 @@
 import React, { PropTypes, Component } from 'react';
+import {PageHeader} from 'react-bootstrap';
 
 var Blank = React.createClass({
 
@@ -6,13 +7,13 @@ var Blank = React.createClass({
     return (
 
     	<div>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-lg-12">
-                        <h1 className="page-header">Blank</h1>
-                    </div>
-                </div>
+        <div className="container-fluid">
+          <div className="row">
+            <div className="col-lg-12">
+              <PageHeader>Blank</PageHeader>
             </div>
+          </div>
+        </div>
     	</div>
       
     );

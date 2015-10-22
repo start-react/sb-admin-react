@@ -1,12 +1,14 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel} from 'react-bootstrap';
+import {Panel, PageHeader} from 'react-bootstrap';
 
 var Icons = React.createClass({
 
   render: function() {
     return (
       <div>
-        <div className="col-lg-12"> <h1 className="page-header">Icons</h1> </div>
+        <div className="col-lg-12"> 
+            <PageHeader>Icons</PageHeader> 
+        </div>
         <div className="col-lg-12"> 
         	<Panel header=<span>All available icons</span> >
     			<div className="row"> 

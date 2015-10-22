@@ -1,5 +1,5 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel, Button} from 'react-bootstrap';
+import {Panel, Button, PageHeader} from 'react-bootstrap';
 
 var MorrisjsCharts = React.createClass({
 
@@ -9,7 +9,7 @@ var MorrisjsCharts = React.createClass({
       	<div>
             <div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Morris.js Charts</h1>
+                    <PageHeader>Morris.js Charts</PageHeader>
                 </div>
             </div>
 
