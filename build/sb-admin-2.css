@@ -356,3 +356,7 @@ table.dataTable thead .sorting:after {
 .navbar-nav {
     float: right;
 }
+
+.stat .panel-body {
+    display:none;
+}

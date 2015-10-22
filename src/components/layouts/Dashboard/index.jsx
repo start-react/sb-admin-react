@@ -4,6 +4,7 @@ import Router, { Link, RouteHandler } from "react-router";
 import styles from "./style.css";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
 import $ from "jQuery";
+import classNames from "classnames";
 
 var Reflux = require("reflux");
 var AuthStore = require('../../../stores/AuthStore');
@@ -23,6 +24,14 @@ var HomePage = React.createClass({
   componentWillUnmount: function(){
     
     $(window).unbind('resize',this.adjustResize);
+
+  },
+
+  getInitialState: function(){
+    
+    return {
+      uiElementsCollapsed: false
+    };
 
   },
 
@@ -190,26 +199,29 @@ var HomePage = React.createClass({
                                 <Link to="dashboard.forms"><i className="fa fa-edit fa-fw"></i> Forms</Link> 
                             </li>
                             <li> 
-                                <NavDropdown title=<span><i className="fa fa-wrench fa-fw"></i>&nbsp;UI Elements</span> > 
-                                  <MenuItem eventKey="1">
-                                    <Link to="dashboard.panels-wells">Panels and Wells</Link> 
-                                  </MenuItem> 
-                                  <MenuItem eventKey="2">
-                                    <Link to="dashboard.buttons">Buttons</Link> 
-                                  </MenuItem>
-                                  <MenuItem eventKey="3">
-                                    <Link to="dashboard.notifications">Notifications</Link>
-                                  </MenuItem>
-                                  <MenuItem eventKey="4"> 
-                                    <Link to="dashboard.typography">Typography</Link>
-                                  </MenuItem> 
-                                  <MenuItem eventKey="5">
-                                    <Link to="dashboard.icons"> Icons</Link>
-                                  </MenuItem> 
-                                  <MenuItem eventKey="6">
-                                    <Link to="dashboard.grid">Grid</Link> 
-                                  </MenuItem> 
-                                </NavDropdown>
+                                <a href="javascript:void(0)" onClick={ () => { this.setState({uiElementsCollapsed: !this.state.uiElementsCollapsed}); return false; } }><i className="fa fa-edit fa-fw"></i> UI Elements</a> 
+
+                                <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
+                                    <li>
+                                      <Link to="dashboard.panels-wells">Panels and Wells</Link> 
+                                    </li>
+                                    <li>
+                                      <Link to="dashboard.buttons">Buttons</Link> 
+                                    </li>
+                                    <li>
+                                      <Link to="dashboard.notifications">Notifications</Link>
+                                    </li>
+                                    <li>
+                                      <Link to="dashboard.typography">Typography</Link> 
+                                    </li>
+                                    <li>
+                                      <Link to="dashboard.icons"> Icons</Link>
+                                    </li>
+                                    <li>
+                                      <Link to="dashboard.grid">Grid</Link>
+                                    </li>
+                                </ul>
+
                             </li> 
                             <li> 
                               <NavDropdown title=<span><i className="fa fa-sitemap fa-fw"></i>&nbsp;Multi-Level Dropdown</span> > 

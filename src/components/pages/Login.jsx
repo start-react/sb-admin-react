@@ -57,11 +57,11 @@ var LoginPage = React.createClass({
                   <form role="form" onSubmit={this.handleLogin}>
                     <fieldset>
                       <div className="form-group">
-                        <input onChange={this.setLoginID} className="form-control" placeholder="Username" ref="loginID" type="text" autofocus="" />
+                        <input onChange={this.setLoginID} className="form-control" placeholder="Username" ref="loginID" type="text" autofocus="" name="name" />
                       </div>
 
                       <div className="form-group">
-                        <input onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" />
+                        <input onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" name="password" />
                       </div>
 
                       <button className="btn btn-lg btn-success btn-block" disabled={this.state.authStore.loading}>{this.state.authStore.loading?'Loading...':'Login'}</button>
@@ -95,17 +95,10 @@ var LoginPage = React.createClass({
   },
 
   handleLogin: function(e){
+
     this.transitionTo('dashboard');
-    
-    // this.setState({
-    //   isSubmitted: true
-    // });
 
-    // e.stopPropagation();
-    // e.preventDefault();
-
-    // if(this.state.loginID != '' && this.state.password != '')
-    //   AuthActions.handleLogin(this.state.loginID, this.state.password);
+    return false;
 
   }
 

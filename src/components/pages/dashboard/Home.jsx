@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
-import {NavDropdown, MenuItem, Navbar, Nav, NavItem, Panel} from "react-bootstrap";
+import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader} from "react-bootstrap";
 
-import BoxMotif from "../../common/Box-motif";
+import StatWidget from "../../common/StatWidget.js";
 
 var Home = React.createClass({
 
@@ -10,159 +10,62 @@ var Home = React.createClass({
       	<div>
         	<div className="row">
                 <div className="col-lg-12">
-                    <h1 className="page-header">Dashboard</h1>
+                     <PageHeader>Dashboard</PageHeader>
                 </div>
             </div>
             <div className="row">
                 <div className="col-lg-3 col-md-6">
-                    <BoxMotif style = "primary"
-                            icon = "fa fa-comments fa-5x"
-                            count = "26"
-                            headerText = "New Comments!" 
-                            footerText = "View Details" />
+                    <StatWidget style="primary"
+                            icon="fa fa-comments fa-5x"
+                            count="26"
+                            headerText="New Comments!" 
+                            footerText="View Details"
+                            linkTo="/" />
                 </div>
                 <div className="col-lg-3 col-md-6">
-                    <BoxMotif style = "panel-green"
+                    <StatWidget style = "panel-green"
                             icon = "fa fa-tasks fa-5x"
                             count = "12"
-                            headerText = "New Tasks!" 
-                            footerText = "View Details" />
+                            headerText="New Tasks!" 
+                            footerText="View Details"
+                            linkTo="/" />
                 </div>
                 <div className="col-lg-3 col-md-6">
-                    <BoxMotif style = "panel-yellow"
-                            icon = "fa fa-shopping-cart fa-5x"
-                            count = "124"
-                            headerText = "New Orders!" 
-                            footerText = "View Details" />
+                    <StatWidget style="panel-yellow"
+                            icon="fa fa-shopping-cart fa-5x"
+                            count="124"
+                            headerText="New Orders!" 
+                            footerText="View Details"
+                            linkTo="/" />
                 </div>
                 <div className="col-lg-3 col-md-6">
-                    <BoxMotif style = "panel-red"
-                            icon = "fa fa-support fa-5x"
-                            count = "13"
-                            headerText = "Support Tickets!" 
-                            footerText = "View Details" />
-                </div>
-            </div>
-            <div className="row">
-                <div className="col-lg-3 col-md-6">
-                    <div className="panel panel-primary">
-                        <div className="panel-heading">
-                            <div className="row">
-                                <div className="col-xs-3">
-                                    <i className="fa fa-comments fa-5x"></i>
-                                </div>
-                                <div className="col-xs-9 text-right">
-                                    <div className="huge">26</div>
-                                    <div>New Comments!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div className="panel-footer">
-                                <span className="pull-left">View Details</span>
-                                <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
-                                <div className="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-6">
-                    <div className="panel panel-green">
-                        <div className="panel-heading">
-                            <div className="row">
-                                <div className="col-xs-3">
-                                    <i className="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div className="col-xs-9 text-right">
-                                    <div className="huge">12</div>
-                                    <div>New Tasks!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div className="panel-footer">
-                                <span className="pull-left">View Details</span>
-                                <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
-                                <div className="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-6">
-                    <div className="panel panel-yellow">
-                        <div className="panel-heading">
-                            <div className="row">
-                                <div className="col-xs-3">
-                                    <i className="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div className="col-xs-9 text-right">
-                                    <div className="huge">124</div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div className="panel-footer">
-                                <span className="pull-left">View Details</span>
-                                <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
-                                <div className="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-
-                <div className="col-lg-3 col-md-6">
-                    <div className="panel panel-red">
-                        <div className="panel-heading">
-                            <div className="row">
-                                <div className="col-xs-3">
-                                    <i className="fa fa-support fa-5x"></i>
-                                </div>
-                                <div className="col-xs-9 text-right">
-                                    <div className="huge">13</div>
-                                    <div>Support Tickets!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div className="panel-footer">
-                                <span className="pull-left">View Details</span>
-                                <span className="pull-right"><i className="fa fa-arrow-circle-right"></i></span>
-                                <div className="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
+                    <StatWidget style="panel-red"
+                            icon="fa fa-support fa-5x"
+                            count="13"
+                            headerText="Support Tickets!" 
+                            footerText="View Details"
+                            linkTo="/" />                            
                 </div>
             </div>
 
             <div className="row">
                 <div className="col-lg-8">
-                    <Panel header=<span><i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                                        <div className="pull-right">
-                                            <div className="btn-group">
-                                                <NavDropdown title=<a>Actions</a> pullRight >
-                              						<MenuItem eventKey="1">
-                                                		Action
-                                                	</MenuItem>
-                                                	<MenuItem eventKey="2">
-            		     								Another action
-            		     							</MenuItem>
-                                                	<MenuItem eventKey="3">
-            		     								Something else here
-                                                    </MenuItem>
-                                                    <MenuItem divider />
-                                                	<MenuItem eventKey="4">
-            		     								Separated link
-            		     							</MenuItem>
-                                                </NavDropdown>
-                                            </div>
-                                        </div>
-                                    </span>  >
+                    <Panel header={<span>
+                        <i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
+                            <div className="pull-right">
+
+                                <DropdownButton title="Dropdown" bsSize="xs" pullRight>
+                                  <MenuItem eventKey="1">Dropdown link</MenuItem>
+                                  <MenuItem eventKey="2">Dropdown link</MenuItem>
+                                </DropdownButton>
+
+                            </div>
+                        </span>}
+                    >
                         <div>
                             Panel contents
                         </div>
+
                     </Panel>
 
                     <Panel header=<span><i className="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
