@@ -1,9 +1,11 @@
 import React, { PropTypes, Component } from 'react';
 import {NavDropdown, MenuItem, Navbar, Nav, NavItem, Panel} from "react-bootstrap";
 
-class Home extends Component {
+import BoxMotif from "../../common/Box-motif";
 
-  render() {
+var Home = React.createClass({
+
+  render: function() {
     return (
       	<div>
         	<div className="row">
@@ -11,7 +13,36 @@ class Home extends Component {
                     <h1 className="page-header">Dashboard</h1>
                 </div>
             </div>
-
+            <div className="row">
+                <div className="col-lg-3 col-md-6">
+                    <BoxMotif style = "primary"
+                            icon = "fa fa-comments fa-5x"
+                            count = "26"
+                            headerText = "New Comments!" 
+                            footerText = "View Details" />
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <BoxMotif style = "panel-green"
+                            icon = "fa fa-tasks fa-5x"
+                            count = "12"
+                            headerText = "New Tasks!" 
+                            footerText = "View Details" />
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <BoxMotif style = "panel-yellow"
+                            icon = "fa fa-shopping-cart fa-5x"
+                            count = "124"
+                            headerText = "New Orders!" 
+                            footerText = "View Details" />
+                </div>
+                <div className="col-lg-3 col-md-6">
+                    <BoxMotif style = "panel-red"
+                            icon = "fa fa-support fa-5x"
+                            count = "13"
+                            headerText = "Support Tickets!" 
+                            footerText = "View Details" />
+                </div>
+            </div>
             <div className="row">
                 <div className="col-lg-3 col-md-6">
                     <div className="panel panel-primary">
@@ -233,8 +264,8 @@ class Home extends Component {
             </div>
       	</div>
     );
-  };
+  }
 
-}
+});
 
 export default Home;

@@ -1,9 +1,10 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel, Button} from 'react-bootstrap';
+import {Panel, Button, Input, Label, FormControls, Row, Col} from 'react-bootstrap';
 
-class Forms extends Component {
+var Forms = React.createClass({
 
-  render() {
+  render: function() {
+    
     return (
 
         <div>
@@ -17,176 +18,93 @@ class Forms extends Component {
                     <Panel header=<span>Basic Form Elements</span> >
                         <div className="row">
                             <div className="col-lg-6">
-                                <form role="form">
-                                    <div className="form-group">
-                                        <label>Text Input</label>
-                                        <input className="form-control" />
-                                        <p className="help-block">Example block-level help text here.</p>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Text Input with Placeholder</label>
-                                        <input className="form-control" placeholder="Enter text" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Static Control</label>
-                                        <p className="form-control-static">email@example.com</p>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>File input</label>
-                                        <input type="file" />
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Text area</label>
-                                        <textarea className="form-control" rows="3"></textarea>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Checkboxes</label>
-                                        <div className="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="" />Checkbox 1
-                                            </label>
-                                        </div>
-                                        <div className="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="" />Checkbox 2
-                                            </label>
-                                        </div>
-                                        <div className="checkbox">
-                                            <label>
-                                                <input type="checkbox" value="" />Checkbox 3
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Inline Checkboxes</label>
-                                        <label className="checkbox-inline">
-                                            <input type="checkbox" />1
-                                        </label>
-                                        <label className="checkbox-inline">
-                                            <input type="checkbox" />2
-                                        </label>
-                                        <label className="checkbox-inline">
-                                            <input type="checkbox" />3
-                                        </label>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Radio Buttons</label>
-                                        <div className="radio">
-                                            <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked="" />Radio 1
-                                            </label>
-                                        </div>
-                                        <div className="radio">
-                                            <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2" />Radio 2
-                                            </label>
-                                        </div>
-                                        <div className="radio">
-                                            <label>
-                                                <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" />Radio 3
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Inline Radio Buttons</label>
-                                        <label className="radio-inline">
-                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked="" />1
-                                        </label>
-                                        <label className="radio-inline">
-                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2" />2
-                                        </label>
-                                        <label className="radio-inline">
-                                            <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3" />3
-                                        </label>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Selects</label>
-                                        <select className="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
-                                    <div className="form-group">
-                                        <label>Multiple Selects</label>
-                                        <select multiple="" className="form-control">
-                                            <option>1</option>
-                                            <option>2</option>
-                                            <option>3</option>
-                                            <option>4</option>
-                                            <option>5</option>
-                                        </select>
-                                    </div>
+                                <form>
+                                    <Input type="text" label="Text Input" help="Example block-level help text here." />
+                                    <Input type="text" label="Text Input with Placeholder" placeholder="Enter text" />
+                                    <FormControls.Static label="Static Control">email@example.com</FormControls.Static>
+                                    <Input type="file" label="File Input" />
+                                    <Input type="textarea" label="Text area" rows="3" />
+                                    <h5><strong>Checkboxes</strong></h5>
+                                    <Input type="checkbox" label="Checkbox 1" />
+                                    <Input type="checkbox" label="Checkbox 2" />
+                                    <Input type="checkbox" label="Checkbox 3" />
+                                    
+                                    <Row>
+                                        <Col xs={4}>
+                                            <h5><strong>Inline Checkboxes</strong></h5>
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="checkbox" label="1" />
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="checkbox" label="2" />
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="checkbox" label="3" />
+                                        </Col>
+                                    </Row>
+                                    
+                                    <h5><strong>Radio Buttons</strong></h5>
+                                    <Input type="radio" label="Radio 1" />
+                                    <Input type="radio" label="Radio 2" />
+                                    <Input type="radio" label="Radio 3" />
+                                    
+                                    <Row>
+                                        <Col xs={4}>
+                                            <h5><strong>Inline Radio Buttons</strong></h5>
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="radio" label="1" />
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="radio" label="2" />
+                                        </Col>
+                                        <Col xs={1}>
+                                            <Input type="radio" label="3" />
+                                        </Col>
+                                    </Row>
+                                    
+                                    <Input type="select" label="Select" placeholder="select">
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                        <option value="1">5</option>
+                                    </Input>
+                                    <Input type="select" label="Multiple Selects" multiple>
+                                        <option value="1">1</option>
+                                        <option value="1">2</option>
+                                        <option value="1">3</option>
+                                        <option value="1">4</option>
+                                        <option value="1">5</option>
+                                    </Input>
                                     <Button type="submit">Submit Button</Button>
                                     <Button type="reset">Reset Button</Button>
                                 </form>
                             </div>
                             <div className="col-lg-6">
                                 <h1>Disabled Form States</h1>
-                                <form role="form">
-                                    <fieldset disabled="">
-                                        <div className="form-group">
-                                            <label for="disabledSelect">Disabled input</label>
-                                            <input className="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled="" />
-                                        </div>
-                                        <div className="form-group">
-                                            <label for="disabledSelect">Disabled select menu</label>
-                                            <select id="disabledSelect" className="form-control">
-                                                <option>Disabled select</option>
-                                            </select>
-                                        </div>
-                                        <div className="checkbox">
-                                            <label>
-                                                <input type="checkbox" />Disabled Checkbox
-                                            </label>
-                                        </div>
-                                        <Button bsStyle="primary" type="submit">Disabled Button</Button>
-                                    </fieldset>
+                                <form>
+                                    <Input type="text" label="Disabled input" placeholder="Disabled input" disabled />
+                                    <Input type="select" label="Disabled select menu" disabled>
+                                        <option>Disabled select</option>
+                                    </Input>
+                                    <Input type="checkbox" label="Disabled Checkbox" disabled />
+                                    <Button bsStyle="primary" type="submit" disabled>Disabled Button</Button>
                                 </form>
                                 <h1>Form Validation States</h1>
-                                <form role="form">
-                                    <div className="form-group has-success">
-                                        <label className="control-label" for="inputSuccess">Input with success</label>
-                                        <input type="text" className="form-control" id="inputSuccess" />
-                                    </div>
-                                    <div className="form-group has-warning">
-                                        <label className="control-label" for="inputWarning">Input with warning</label>
-                                        <input type="text" className="form-control" id="inputWarning" />
-                                    </div>
-                                    <div className="form-group has-error">
-                                        <label className="control-label" for="inputError">Input with error</label>
-                                        <input type="text" className="form-control" id="inputError" />
-                                    </div>
+                                <form>
+                                    <Input type="text" label="Input with success" bsStyle="success" />
+                                    <Input type="text" label="Input with warning" bsStyle="warning" />
+                                    <Input type="text" label="Input with error" bsStyle="error" />
                                 </form>
                                 <h1>Input Groups</h1>
-                                <form role="form">
-                                    <div className="form-group input-group">
-                                        <span className="input-group-addon">@</span>
-                                        <input type="text" className="form-control" placeholder="Username" />
-                                    </div>
-                                    <div className="form-group input-group">
-                                        <input type="text" className="form-control" />
-                                        <span className="input-group-addon">.00</span>
-                                    </div>
-                                    <div className="form-group input-group">
-                                        <span className="input-group-addon"><i className="fa fa-eur"></i>
-                                        </span>
-                                        <input type="text" className="form-control" placeholder="Font Awesome Icon" />
-                                    </div>
-                                    <div className="form-group input-group">
-                                        <span className="input-group-addon">$</span>
-                                        <input type="text" className="form-control" />
-                                        <span className="input-group-addon">.00</span>
-                                    </div>
-                                    <div className="form-group input-group">
-                                        <input type="text" className="form-control" />
-                                        <span className="input-group-btn">
-                                            <Button><i className="fa fa-search"></i>
-                                            </Button>
-                                        </span>
-                                    </div>
+                                <form>
+                                    <Input type="text" addonBefore="@" placeholder="Username" />
+                                    <Input type="text" addonAfter=".00" />
+                                    <Input type="text" addonBefore=<i className="fa fa-eur"></i> placeholder="Font Awesome Icon" />
+                                    <Input type="text" addonBefore="$" addonAfter=".00" />
+                                    <Input type="text" buttonAfter= <Button><i className="fa fa-search"></i></Button> />
                                 </form>
                             </div>
                         </div>
@@ -196,8 +114,8 @@ class Forms extends Component {
         </div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Forms;

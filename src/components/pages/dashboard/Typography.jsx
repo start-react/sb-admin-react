@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel} from 'react-bootstrap';
 
-class Typography extends Component {
+var Typography = React.createClass({
 
-  render() {
+  render: function() {
     return (
 
       <div>
@@ -172,8 +172,8 @@ class Typography extends Component {
       </div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Typography;

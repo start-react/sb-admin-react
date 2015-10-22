@@ -1,18 +1,34 @@
 import React, { PropTypes, Component } from 'react';
-import {Panel, Alert, Button} from 'react-bootstrap';
+import {Panel, Alert, Button, OverlayTrigger, Tooltip, Popover, Modal} from 'react-bootstrap';
 
-class Notifications extends Component {
+var Notifications = React.createClass({
 
-  getInitialState() {
+
+  getInitialState: function() {
     return {
-      alertVisible: true
+      alertVisibleA: true,
+      alertVisibleB: true,
+      alertVisibleC: true,
+      alertVisibleD: true,
+      showModal: false
     };
-  };
+  },
 
-  render() {
+  close: function() {
+    this.setState({ showModal: false });
+  },
+
+  open: function() {
+    this.setState({ showModal: true });
+  },
+
+  render: function() {
+
+    let popover = <Popover title="popover">very popover. such engagement</Popover>;
+    let tooltip = <Tooltip>wow.</Tooltip>;
+
     return (
-
-      <div>
+        <div>
             <div className="row">
                 <div className="col-lg-12">
                     <h1 className="page-header">Notifications</h1>
@@ -22,107 +38,127 @@ class Notifications extends Component {
                 <div className="col-lg-6">
                     <Panel header=<span>Alert Styles</span> >
                         <Alert bsStyle="success">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
                         </Alert>
                         <Alert bsStyle="info">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
                         </Alert>
                         <Alert bsStyle="warning">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
                         </Alert>
                         <Alert bsStyle="danger">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
                         </Alert>
                     </Panel>
                 </div>
                 <div className="col-lg-6">
                     <Panel header=<span>Dismissable Alerts</span> >
-                        <Alert bsStyle="success" onDismiss={this.handleAlertDismiss.bind(this)}>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
+                        {this.state.alertVisibleA? 
+                        <Alert bsStyle="success" onDismiss={this.handleAlertDismiss.bind(this, 'A')} >
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
                         </Alert>
-                        <div className="alert alert-info alert-dismissable">
-                            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
-                        </div>
-                        <div className="alert alert-warning alert-dismissable">
-                            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
-                        </div>
-                        <div className="alert alert-danger alert-dismissable">
-                            <button type="button" className="close" data-dismiss="alert" aria-hidden="true">×</button>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#" className="alert-link">Alert Link</a>.
-                        </div>
+                        : null}
+                        {this.state.alertVisibleB? 
+                        <Alert bsStyle="info" onDismiss={this.handleAlertDismiss.bind(this, 'B')} >
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                        </Alert>
+                        : null}
+                        {this.state.alertVisibleC? 
+                        <Alert bsStyle="warning" onDismiss={this.handleAlertDismiss.bind(this, 'C')} >
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                        </Alert>
+                        : null}
+                        {this.state.alertVisibleD? 
+                        <Alert bsStyle="danger" onDismiss={this.handleAlertDismiss.bind(this, 'D')} >
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                        </Alert>
+                        : null}
                     </Panel>
                 </div>
             </div>
             <div className="row">
                 <div className="col-lg-6">
                     <Panel header=<span>Modals</span> >
-                        <Button bsStyle="primary" bsSize="large" data-toggle="modal" data-target="#myModal">
+                        <Button bsStyle="primary" bsSize="large" onClick={this.open} >
                             Launch Demo Modal
                         </Button>
-                        <div className="modal fade" id="myModal" tabIndex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                            <div className="modal-dialog">
-                                <div className="modal-content">
-                                    <div className="modal-header">
-                                        <button type="button" className="close" data-dismiss="modal" aria-hidden="true">×</button>
-                                        <h4 className="modal-title" id="myModalLabel">Modal title</h4>
-                                    </div>
-                                    <div className="modal-body">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </div>
-                                    <div className="modal-footer">
-                                        <button type="button" className="btn btn-default" data-dismiss="modal">Close</button>
-                                        <button type="button" className="btn btn-primary">Save changes</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <Modal show={this.state.showModal} onHide={this.close}>
+                          <Modal.Header closeButton>
+                            <Modal.Title>Modal Title</Modal.Title>
+                          </Modal.Header>
+                          <Modal.Body>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>   
+                          </Modal.Body>
+                          <Modal.Footer>
+                            <Button onClick={this.close}>Close</Button>
+                            <Button bsStyle="primary"> Save changes</Button>
+                          </Modal.Footer>
+                        </Modal>
                     </Panel>
                 </div>
                 <div className="col-lg-6">
                     <Panel header=<span>Tooltips and Popovers</span> >
                         <h4>Tooltip Demo</h4>
-                        <div className="tooltip-demo">
-                            <Button data-toggle="tooltip" data-placement="left" title="Tooltip on left">Tooltip on left</Button>
-                            <Button data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</Button>
-                            <Button data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</Button>
-                            <Button data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</Button>
+                        <div>
+                            <OverlayTrigger placement="left" overlay=<Tooltip>Check this out!</Tooltip> >
+                                <Button>Tooltip on left</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="top" overlay=<Tooltip>Check this out!</Tooltip> >
+                                <Button>Tooltip on top</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="bottom" overlay=<Tooltip>Check this out!</Tooltip> >
+                                <Button>Tooltip on bottom</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger placement="right" overlay=<Tooltip>Check this out!</Tooltip> >
+                                <Button>Tooltip on right</Button>
+                            </OverlayTrigger>
                         </div>
                         <br />
                         <h4>Clickable Popover Demo</h4>
-                        <div className="tooltip-demo">
-                            <Button data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-                                Popover on left
-                            </Button>
-                            <Button data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-                                Popover on top
-                            </Button>
-                            <Button data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-                                Popover on bottom
-                            </Button>
-                            <Button data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="" title="">
-                                Popover on right
-                            </Button>
+                        <div>
+                            <OverlayTrigger trigger="click" placement="left" overlay={<Popover title="Popover left"><strong>Hello!</strong> Check this info.</Popover>}>
+                                <Button>Popover on left</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger trigger="click" placement="top" overlay={<Popover title="Popover top"><strong>Hello!</strong> Check this info.</Popover>}>
+                                <Button>Popover on top</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger trigger="click" placement="bottom" overlay={<Popover title="Popover bottom"><strong>Hello!</strong> Check this info.</Popover>}>
+                                <Button>Popover on bottom</Button>
+                            </OverlayTrigger>
+                            <OverlayTrigger trigger="click" placement="right" overlay={<Popover title="Popover right"><strong>Hello!</strong> Check this info.</Popover>}>
+                                <Button>Popover on right</Button>
+                            </OverlayTrigger>
                         </div>
                     </Panel>
                 </div>
             </div>
-      </div>
+        </div>
       
     );
 
     
-  };
+  },
 
-  handleAlertDismiss() {
-    this.setState({alertVisible: false});
-  };
+  handleAlertDismiss: function(option) {
+    var that = this;
+    switch (option){
+        case 'A':
+            this.setState({alertVisibleA: false});
+            break;
+        case 'B':
+            this.setState({alertVisibleB: false});
+            break;
+        case 'C':
+            this.setState({alertVisibleC: false});
+            break;
+        case 'D':
+            this.setState({alertVisibleD: false});
+            break;
+    };
 
-  handleAlertShow() {
-    this.setState({alertVisible: true});
-  };
+    
+  }
 
-}
+});
 
 export default Notifications;

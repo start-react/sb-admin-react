@@ -1,8 +1,8 @@
 import React, { PropTypes, Component } from 'react';
 
-class Blank extends Component {
+var Blank = React.createClass({
 
-  render() {
+  render: function() {
     return (
 
     	<div>
@@ -16,8 +16,8 @@ class Blank extends Component {
     	</div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Blank;

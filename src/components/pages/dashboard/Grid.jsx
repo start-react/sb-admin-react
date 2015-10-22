@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel} from 'react-bootstrap';
 
-class Grid extends Component {
+var Grid = React.createClass({
 
-  render() {
+  render: function() {
     return (
 
       <div>
@@ -276,8 +276,8 @@ class Grid extends Component {
       </div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Grid;

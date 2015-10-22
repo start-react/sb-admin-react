@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel} from 'react-bootstrap';
 
-class Icons extends Component {
+var Icons = React.createClass({
 
-  render() {
+  render: function() {
     return (
       <div>
         <div className="col-lg-12"> <h1 className="page-header">Icons</h1> </div>
@@ -20,9 +20,9 @@ class Icons extends Component {
       </div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Icons;
 

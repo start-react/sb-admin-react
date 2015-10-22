@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Button} from 'react-bootstrap';
 
-class Buttons extends Component {
+var Buttons = React.createClass({
 
-  render() {
+  render: function() {
     return (
 
       <div>
@@ -185,8 +185,8 @@ class Buttons extends Component {
       </div>
       
     );
-  };
+  }
 
-}
+});
 
 export default Buttons;

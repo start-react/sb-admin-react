@@ -1,8 +1,9 @@
 import React, { PropTypes, Component } from 'react';
 import {Pagination, Panel, Well, Button} from "react-bootstrap";
-class Tables extends Component {
 
-  render() {
+var Tables = React.createClass({
+
+  render: function() {
     return (
 
       <div>
@@ -15,12 +16,12 @@ class Tables extends Component {
                 <div id="dataTables-example_wrapper" className="dataTables_wrapper form-inline dt-bootstrap no-footer">
                   
                   <div className="row">
-                    <div className="col-sm-6">
+                    <div className="col-sm-9">
                       <div className="dataTables_length" id="dataTables-example_length">
                         <label>Show <select name="dataTables-example_length" aria-controls="dataTables-example" className="form-control input-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label>
                       </div>
                     </div>
-                    <div className="col-sm-6">
+                    <div className="col-sm-3">
                       <div id="dataTables-example_filter" className="dataTables_filter">
                         <label>Search:<input type="search" className="form-control input-sm" placeholder="" aria-controls="dataTables-example" /></label>
                       </div>
@@ -202,8 +203,8 @@ class Tables extends Component {
 
       </div> 
     );
-  };
+  }
 
-}
+});
 
 export default Tables;
