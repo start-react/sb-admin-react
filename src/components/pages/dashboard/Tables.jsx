@@ -12,7 +12,7 @@ var Tables = React.createClass({
         </div>
 
         <div className="col-lg-12"> 
-        	<Panel header=<span>DataTables Advanced Tables</span> >
+        	<Panel header={<span>DataTables Advanced Tables</span>} >
        			<div> 
        				<div className="dataTable_wrapper">
                 <div id="dataTables-example_wrapper" className="dataTables_wrapper form-inline dt-bootstrap no-footer">
@@ -136,7 +136,7 @@ var Tables = React.createClass({
 
         <div className="row ng-scope"> 
           <div className="col-lg-6"> 
-            <Panel header=<span>Kitchen Sink </span> >
+            <Panel header={<span>Kitchen Sink </span>} >
                 <div className="table-responsive"> 
                   <table className="table table-striped table-bordered table-hover"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>
@@ -146,7 +146,7 @@ var Tables = React.createClass({
             </Panel>
           </div>
           <div className="col-lg-6"> 
-            <Panel header=<span>Basic Table</span> >
+            <Panel header={<span>Basic Table</span>} >
                 <div className="table-responsive"> 
                   <table className="table"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>
@@ -159,7 +159,7 @@ var Tables = React.createClass({
 
         <div className="row ng-scope"> 
           <div className="col-lg-6"> 
-            <Panel header=<span>Striped Rows </span> >
+            <Panel header={<span>Striped Rows </span>} >
                 <div className="table-responsive"> 
                   <table className="table table-striped"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>
@@ -169,7 +169,7 @@ var Tables = React.createClass({
             </Panel>
           </div>
           <div className="col-lg-6"> 
-            <Panel header=<span>Bordered Table </span> >
+            <Panel header={<span>Bordered Table </span>} >
                 <div className="table-responsive table-bordered"> 
                   <table className="table"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>
@@ -182,7 +182,7 @@ var Tables = React.createClass({
 
         <div className="row ng-scope"> 
           <div className="col-lg-6"> 
-            <Panel header=<span>Hover Rows </span> >
+            <Panel header={<span>Hover Rows </span>} >
                 <div className="table-responsive"> 
                   <table className="table table-hover"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>
@@ -192,7 +192,7 @@ var Tables = React.createClass({
             </Panel>
           </div>
           <div className="col-lg-6"> 
-            <Panel header=<span>Context Classes </span> >
+            <Panel header={<span>Context Classes </span>} >
                 <div className="table-responsive"> 
                   <table className="table"> 
                     <thead> <tr> <th># </th><th>First Name </th><th>Last Name </th><th>Username   </th></tr></thead>

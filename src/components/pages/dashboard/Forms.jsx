@@ -18,7 +18,7 @@ var Forms = React.createClass({
         <div className="row">
           <div className="col-lg-12">
 
-            <Panel header=<span>Basic Form Elements</span> >
+            <Panel header={<span>Basic Form Elements</span>} >
               <div className="row">
                 <div className="col-lg-6">
                   <form>
