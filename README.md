@@ -33,7 +33,7 @@ $ npm start
 
 ## Roadmap
 
-- Add sample AJAX calls and make the directives more modular
+- Add sample AJAX calls and make the components more modular
 - Add chart examples
 
 
