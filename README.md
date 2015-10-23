@@ -32,6 +32,10 @@ $ npm install
 $ npm start
 ```
 
+####4. To build
+```sh
+$ npm run build
+```
 
 ## Roadmap
 
