@@ -41,16 +41,16 @@ var Notifications = React.createClass({
             <div className="col-lg-6">
               <Panel header={<span>Alert Styles</span>} >
                 <Alert bsStyle="success">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 <Alert bsStyle="info">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 <Alert bsStyle="warning">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 <Alert bsStyle="danger">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
               </Panel>
             </div>
@@ -60,22 +60,22 @@ var Notifications = React.createClass({
                 {this.state.alertVisibleA?
 
                 <Alert bsStyle="success" onDismiss={this.handleAlertDismiss.bind(this, 'A')} >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 : null}
                 {this.state.alertVisibleB? 
                 <Alert bsStyle="info" onDismiss={this.handleAlertDismiss.bind(this, 'B')} >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 : null}
                 {this.state.alertVisibleC? 
                 <Alert bsStyle="warning" onDismiss={this.handleAlertDismiss.bind(this, 'C')} >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 : null}
                 {this.state.alertVisibleD? 
                 <Alert bsStyle="danger" onDismiss={this.handleAlertDismiss.bind(this, 'D')} >
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="#/notifications" className="alert-link">Alert Link</a>.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. <a href="javascript:void(0)" className="alert-link">Alert Link</a>.
                 </Alert>
                 
                 : null}

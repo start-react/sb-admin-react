@@ -202,7 +202,7 @@ var Grid = React.createClass({
             <Panel>
               <h3 id="grid-responsive-resets">Responsive column resets</h3>
               <p>With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a
-                <code>.clearfix</code> and our <a href="#responsive-utilities">responsive utility classes</a>.</p>
+                <code>.clearfix</code> and our <a href="javascript:void(0)">responsive utility classes</a>.</p>
               <div className="row show-grid">
                 <div className="col-xs-6 col-sm-3">
                   .col-xs-6 .col-sm-3
