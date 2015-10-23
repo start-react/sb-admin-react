@@ -175,7 +175,7 @@ var HomePage = React.createClass({
                     <Link to="dashboard.home"><i className="fa fa-dashboard fa-fw"></i> &nbsp;Dashboard</Link>
                   </li>
                         
-                  <li>
+                  <li className={classNames({'active': !this.state.chartsElementsCollapsed})}>
                     <a href="javascript:void(0)" onClick={ () => { this.setState({chartsElementsCollapsed: !this.state.chartsElementsCollapsed}); return false; } }>
                       <i className="fa fa-bar-chart-o fa-fw"></i> &nbsp;Charts<span className="fa arrow"></span>
                     </a>
@@ -197,7 +197,7 @@ var HomePage = React.createClass({
                     <Link to="dashboard.forms"><i className="fa fa-edit fa-fw"></i> Forms</Link> 
                   </li>
                     
-                  <li> 
+                  <li className={classNames({'active': !this.state.uiElementsCollapsed})}> 
                     <a href="javascript:void(0)" onClick={ () => { this.setState({uiElementsCollapsed: !this.state.uiElementsCollapsed}); return false; } }><i className="fa fa-edit fa-fw"></i> UI Elements<span className="fa arrow"></span></a> 
 
                     <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
@@ -222,7 +222,7 @@ var HomePage = React.createClass({
                     </ul>
                   </li>
                     
-                  <li>
+                  <li className={classNames({'active': !this.state.multiLevelDropdownCollapsed})}>
                     <a href="javascript:void(0)" onClick={ () => { this.setState({multiLevelDropdownCollapsed: !this.state.multiLevelDropdownCollapsed}); return false; } }>
                       <i className="fa fa-sitemap fa-fw"></i>&nbsp;Multi-Level Dropdown<span className="fa arrow"></span>
                     </a>
@@ -233,7 +233,7 @@ var HomePage = React.createClass({
                       <li>
                         <a href="javascript:void(0)">Second Level Item</a>
                       </li>
-                      <li>
+                      <li className={classNames({'active': !this.state.thirdLevelDropdownCollapsed})}>
                         <a href="javascript:void(0)" onClick={ () => { this.setState({thirdLevelDropdownCollapsed: !this.state.thirdLevelDropdownCollapsed}); return false; } }>
                           Third Level<span className="fa arrow"></span>
                         </a>
@@ -255,7 +255,7 @@ var HomePage = React.createClass({
                     </ul>
                   </li> 
                     
-                  <li>
+                  <li className={classNames({'active': !this.state.samplePagesCollapsed})}>
                     <a href="javascript:void(0)" onClick={ () => { this.setState({samplePagesCollapsed: !this.state.samplePagesCollapsed}); return false; } }>
                       <i className="fa fa-files-o fa-fw"></i>&nbsp;Sample Pages<span className="fa arrow"></span>
                     </a> 
