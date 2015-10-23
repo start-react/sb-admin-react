@@ -210,8 +210,12 @@ body {
     overflow-y: scroll;
 }
 
+.login-brand-text {
+    margin-top: 12%;
+}
+
 .login-panel {
-    margin-top: 25%;
+    margin-top: 12%;
 }
 
 .flot-chart {

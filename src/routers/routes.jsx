@@ -1,5 +1,5 @@
 import React from "react";
-import { Router, Route, DefaultRoute, RouteHandler } from "react-router";
+import { Router, Route, DefaultRoute, RouteHandler, Redirect } from "react-router";
 
 import BaseLayout from "../components/layouts/Base";
 import DashboardLayout from "../components/layouts/Dashboard";
@@ -42,7 +42,8 @@ var Routes = React.createClass({
             </Route>
             <Route name="login" path="/login" handler={LoginPage} />
             <Route name="logout" path="/logout" handler={LogoutPage} />
-            <DefaultRoute name="index" handler={LoginPage} />
+            <DefaultRoute name="default" handler={DashboardLayout} />
+            <Redirect from="/" to="dashboard.home" />
           </Route>
       );
     }

@@ -39,7 +39,7 @@ var HomePage = React.createClass({
     return (
         <div id="wrapper">
 
-          <Navbar brand="SB Admin React" fluid={true}  style={ {margin: 0} }>
+          <Navbar brand="SB Admin React - StartReact.com" fluid={true}  style={ {margin: 0} }>
           
             <Nav style={ {margin: 0} } >
           
@@ -141,7 +141,7 @@ var HomePage = React.createClass({
                   <i className="fa fa-gear fa-fw"></i> Settings
                 </MenuItem> 
                 <MenuItem eventKey="3">
-                  <a href="http://www.strapui.com/">
+                  <a href="http://www.strapui.com/" onClick={ () => { window.location='http://www.strapui.com/'; } }>
                     <i className="fa fa-eye fa-fw"></i> Premium Angular Themes
                   </a>
                 </MenuItem> 

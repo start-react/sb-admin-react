@@ -18,7 +18,12 @@ var LoginPage = React.createClass({
   
     return <div className="col-md-4 col-md-offset-4">
 
-        <Panel header={<h3>Please Sign In</h3>} className="login-panel" >
+        <div className="text-center">
+          <h1 className="login-brand-text">SB Admin React</h1>
+          <h3 className="text-muted">Created by <a href="http://startreact.com">StartReact.com</a> team</h3>
+        </div>
+
+        <Panel header={<h3>Please Sign In</h3>} className="login-panel">
 
           <form role="form" onSubmit={this.handleLogin}>
             <fieldset>
