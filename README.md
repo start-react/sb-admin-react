@@ -33,8 +33,10 @@ $ npm start
 
 ## Roadmap
 
-- Add sample AJAX calls and make the components more modular
+- Add sample AJAX calls (using Flux / Reflux) and make the components more modular
 - Add chart examples
+- Lazy loading of pages
+- Load CSS using Webpack
 
 
 ### Automation tools used
