@@ -35,11 +35,12 @@ var HomePage = React.createClass({
   },
 
   render: function() {
+    var title = <span><a href="http://startreact.com/" title="Start React" rel="home"><img src="http://startreact.com/wp-content/themes/dazzling-child/images/logo.png" alt="Start React" title="Start React" height="35px" />&nbsp;SB Admin React - StartReact.com</a></span>;
 
     return (
         <div id="wrapper">
 
-          <Navbar brand="SB Admin React - StartReact.com" fluid={true}  style={ {margin: 0} }>
+          <Navbar brand={title} fluid={true}  style={ {margin: 0} }>
           
             <Nav style={ {margin: 0} } >
           
