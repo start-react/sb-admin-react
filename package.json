@@ -59,6 +59,7 @@
     "jquery": "^2.1.4",
     "lazy": "^1.0.11",
     "normalizr": "^1.1.0",
+    "nprogress": "^0.2.0",
     "postcss-loader": "^0.6.0",
     "postcss-nested": "^1.0.0",
     "react": "^0.13.3",

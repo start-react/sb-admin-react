@@ -1,7 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import {NavDropdown, MenuItem, DropdownButton, Navbar, Nav, NavItem, Panel, PageHeader, ListGroup, ListGroupItem, Button} from "react-bootstrap";
 
-import StatWidget from "../../common/StatWidget.js";
+import StatWidget from "../../../common/StatWidget.js";
 
 var Home = React.createClass({
 

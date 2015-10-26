@@ -112,10 +112,10 @@ var Tables = React.createClass({
                     </div>
                   </div>
                   <div className="row">
-                    <div className="col-sm-8">
+                    <div className="col-sm-6">
                       <div className="dataTables_info" id="dataTables-example_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
                     </div>
-                    <div className="col-sm-4">
+                    <div className="col-sm-6" pullRight >
                       <Pagination activePage={1}
                         items={6} perPage={10} 
                         first={true} last={true}
