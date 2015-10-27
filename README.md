@@ -6,6 +6,8 @@ This project is a port of the famous Free Admin Bootstrap Theme [SB Admin v2.0](
 
 Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
 
+## [Demo](http://start-react.github.io/sb-admin-react/)
+
 ## Installation
 ####1. Clone this project or Download that ZIP file
 
@@ -30,11 +32,17 @@ $ npm install
 $ npm start
 ```
 
+####4. To build
+```sh
+$ npm run build
+```
 
 ## Roadmap
 
-- Add sample AJAX calls and make the components more modular
+- Add sample AJAX calls (using Flux / Reflux) and make the components more modular
 - Add chart examples
+- Lazy loading of pages
+- Load CSS using Webpack
 
 
 ### Automation tools used
