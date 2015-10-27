@@ -1,7 +1,6 @@
 import React from "react";
 import Router, { Link, RouteHandler } from "react-router";
 
-import styles from "./style.css";
 import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
 import $ from "jQuery";
 import classNames from "classnames";
@@ -37,11 +36,13 @@ var HomePage = React.createClass({
   render: function() {
 
     return (
-        <div id="wrapper">
+        <div id="wrapper" className="content">
 
-          <Navbar brand="SB Admin React - StartReact.com" fluid={true}  style={ {margin: 0} }>
+          <Navbar brand={<span>
+            <a href="http://startreact.com/" title="Start React" rel="home">
+              <img src={require('../../../common/img/logo.png')} alt="Start React" title="Start React" height="35px" />&nbsp;SB Admin React - StartReact.com</a></span>} fluid={true}  style={ {margin: 0} }>
           
-            <Nav style={ {margin: 0} } >
+            <Nav style={ {margin: 0} } pullRight >
           
               <NavDropdown title=<i className="fa fa-envelope fa-fw"></i> pullRight >
                 <MenuItem eventKey="1">
