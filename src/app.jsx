@@ -12,7 +12,11 @@ import Router from "react-router";
 
 
 // Base styling
-import "./common/base.css";
+import "./common/sb-admin-2.css";
+import "../node_modules/nprogress/nprogress.css";
+import 'bootstrap.min.css';
+import 'bootstrap-social.css';
+import 'font-awesome.min.css';
 
 // Routers
 import Routes from "./routers/Routes";
