@@ -7,8 +7,9 @@ var AsyncElement = {
   loadedComponent: null,
 
   load: function () {
-    if (this.constructor.loadedComponent)
+    if (this.constructor.loadedComponent){
       return;
+    };
 
     
     this.bundle(function (component) {
@@ -19,8 +20,7 @@ var AsyncElement = {
   },
 
   componentDidMount: function () {
-    NProgress.configure({parent: "#page-wrapper"});
-    NProgress.start();
+    NProgress.done();
     setTimeout(this.load, 1000);
   },
 
@@ -32,6 +32,9 @@ var AsyncElement = {
       this.props.activeRoute = <RouteHandler/>;
       return <Component {...this.props}/>;
     }
+    NProgress.done();
+    NProgress.configure({ showSpinner: false });
+    NProgress.start();
     return this.preRender();
   }
 };
