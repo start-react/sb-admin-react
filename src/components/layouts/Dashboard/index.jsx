@@ -142,7 +142,7 @@ var HomePage = React.createClass({
                 </MenuItem> 
                 <MenuItem eventKey="3">
                   <a href="http://www.strapui.com/" onClick={ () => { window.location='http://www.strapui.com/'; } }>
-                    <i className="fa fa-eye fa-fw"></i> Premium Angular Themes
+                    <i className="fa fa-eye fa-fw"></i> Premium React Themes
                   </a>
                 </MenuItem> 
                 <MenuItem divider />
@@ -270,7 +270,7 @@ var HomePage = React.createClass({
                   </li>
                     
                   <li>
-                    <a href="http://www.strapui.com/">Premium Angular Themes</a>
+                    <a href="http://www.strapui.com/">Premium React Themes</a>
                   </li>
 
                 </ul>
