@@ -3,14 +3,18 @@ import Router from 'react-router';
 import { Route, RouteHandler, Link } from 'react-router';
 import NProgress from 'NProgress';
 
+NProgress.configure({ showSpinner: false });
+
 var AsyncElement = {
   loadedComponent: null,
 
   load: function () {
+
     if (this.constructor.loadedComponent){
       return;
     };
 
+    NProgress.start();
     
     this.bundle(function (component) {
       NProgress.done();
@@ -19,12 +23,12 @@ var AsyncElement = {
     }.bind(this));
   },
 
-  componentDidMount: function () {
-    NProgress.done();
-    setTimeout(this.load, 1000);
+  componentDidMount: function() {
+    this.load();
   },
 
   render: function () {
+
     var Component = this.constructor.loadedComponent;
     if (Component) {
       // can't find RouteHandler in the loaded component, so we just grab
@@ -32,10 +36,9 @@ var AsyncElement = {
       this.props.activeRoute = <RouteHandler/>;
       return <Component {...this.props}/>;
     }
-    NProgress.done();
-    NProgress.configure({ showSpinner: false });
-    NProgress.start();
+
     return this.preRender();
+
   }
 };
 
