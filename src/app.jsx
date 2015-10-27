@@ -12,7 +12,7 @@ import Router from "react-router";
 
 
 // Base styling
-import "./common/styles/app.css";
+import "./common/styles/app.less";
 
 // Routers
 import Routes from "./routers/Routes";
