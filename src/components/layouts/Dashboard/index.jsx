@@ -38,9 +38,9 @@ var HomePage = React.createClass({
     return (
         <div id="wrapper" className="content">
 
-          <Navbar brand={<span>
-            <a href="http://startreact.com/" title="Start React" rel="home">
-              <img src={require('../../../common/img/logo.png')} alt="Start React" title="Start React" height="35px" />&nbsp;SB Admin React - StartReact.com</a></span>} fluid={true}  style={ {margin: 0} }>
+          <Navbar brand={<span><img src={require('../../../common/img/logo.png')} alt="Start React" title="Start React" />
+            <span>&nbsp;SB Admin React - </span>
+            <a href="http://startreact.com/" title="Start React" rel="home">StartReact.com</a></span>} fluid={true}  style={ {margin: 0} }>
           
             <Nav style={ {margin: 0} } pullRight >
           
