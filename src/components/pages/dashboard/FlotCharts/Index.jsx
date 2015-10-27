@@ -8,7 +8,7 @@ var PreFlotCharts = React.createClass({
   bundle: require('bundle?lazy!./FlotCharts.jsx'),
 
   preRender: function () {
-  	return <div>Loading Flot Charts...</div>;
+  	return <div></div>;
   }
 });
 

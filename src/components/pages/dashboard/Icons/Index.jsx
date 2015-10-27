@@ -8,7 +8,7 @@ var PreIcons = React.createClass({
   bundle: require('bundle?lazy!./Icons.jsx'),
 
   preRender: function () {
-  	return <div>Loading Icons...</div>;
+  	return <div></div>;
   }
 });
 

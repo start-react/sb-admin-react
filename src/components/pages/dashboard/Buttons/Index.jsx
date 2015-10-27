@@ -8,7 +8,7 @@ var PreButtons = React.createClass({
   bundle: require('bundle?lazy!./Buttons.jsx'),
 
   preRender: function () {
-  	return <div>Loading Buttons...</div>;
+  	return <div></div>;
   }
 });
 

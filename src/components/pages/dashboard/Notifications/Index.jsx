@@ -8,7 +8,7 @@ var PreNotifications = React.createClass({
   bundle: require('bundle?lazy!./Notifications.jsx'),
 
   preRender: function () {
-  	return <div>Loading Notifications...</div>;
+  	return <div></div>;
   }
 });
 

@@ -8,7 +8,7 @@ var PreGrid = React.createClass({
   bundle: require('bundle?lazy!./Grid.jsx'),
 
   preRender: function () {
-  	return <div>Loading Grid...</div>;
+  	return <div></div>;
   }
 });
 

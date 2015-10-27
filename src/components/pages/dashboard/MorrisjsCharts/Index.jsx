@@ -8,7 +8,7 @@ var PreMorrisjsCharts = React.createClass({
   bundle: require('bundle?lazy!./MorrisjsCharts.jsx'),
 
   preRender: function () {
-  	return <div>Loading Morrisjs Charts...</div>;
+  	return <div></div>;
   }
 });
 

@@ -5,7 +5,6 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bo
 import $ from "jQuery";
 import classNames from "classnames";
 
-
 var HomePage = React.createClass({
     
   componentWillMount: function() {
@@ -35,12 +34,13 @@ var HomePage = React.createClass({
   },
 
   render: function() {
-    var title = <span><a href="http://startreact.com/" title="Start React" rel="home"><img src="http://startreact.com/wp-content/themes/dazzling-child/images/logo.png" alt="Start React" title="Start React" height="35px" />&nbsp;SB Admin React - StartReact.com</a></span>;
 
     return (
         <div id="wrapper" className="content">
 
-          <Navbar brand={title} fluid={true}  style={ {margin: 0} }>
+          <Navbar brand={<span>
+            <a href="http://startreact.com/" title="Start React" rel="home">
+              <img src={require('../../../common/img/logo.png')} alt="Start React" title="Start React" height="35px" />&nbsp;SB Admin React - StartReact.com</a></span>} fluid={true}  style={ {margin: 0} }>
           
             <Nav style={ {margin: 0} } pullRight >
           

@@ -8,7 +8,7 @@ var PreTypography = React.createClass({
   bundle: require('bundle?lazy!./Typography.jsx'),
 
   preRender: function () {
-  	return <div>Loading Typography...</div>;
+  	return <div></div>;
   }
 });
 

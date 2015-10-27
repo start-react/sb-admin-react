@@ -8,7 +8,7 @@ var PreForms = React.createClass({
   bundle: require('bundle?lazy!./Forms.jsx'),
 
   preRender: function () {
-  	return <div>Loading Forms...</div>;
+  	return <div></div>;
   }
 });
 

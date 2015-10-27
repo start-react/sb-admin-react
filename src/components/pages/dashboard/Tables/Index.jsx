@@ -8,7 +8,7 @@ var PreTables = React.createClass({
   bundle: require('bundle?lazy!./Tables.jsx'),
 
   preRender: function () {
-  	return <div>Loading Tables...</div>;
+  	return <div></div>;
   }
 });
 

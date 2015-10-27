@@ -8,7 +8,7 @@ var PreBlank = React.createClass({
   bundle: require('bundle?lazy!./Blank.jsx'),
 
   preRender: function () {
-  	return <div>Loading Blank...</div>;
+  	return <div></div>;
   }
 });
 

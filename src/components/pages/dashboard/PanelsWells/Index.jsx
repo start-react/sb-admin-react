@@ -8,7 +8,7 @@ var PrePanelsWells = React.createClass({
   bundle: require('bundle?lazy!./PanelsWells.jsx'),
 
   preRender: function () {
-  	return <div>Loading Panels and Wells...</div>;
+  	return <div></div>;
   }
 });
 
