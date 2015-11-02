@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreMorrisjsCharts = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./MorrisjsCharts.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'morrisjs-charts',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./MorrisjsCharts'))
+    });
   }
-});
-
-export default PreMorrisjsCharts;
+}

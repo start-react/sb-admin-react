@@ -1,8 +1,12 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Button, PageHeader} from 'react-bootstrap';
+import NProgress from 'nProgress';
 
 var MorrisjsCharts = React.createClass({
-
+  componentDidMount: function(){
+    NProgress.done();
+  },
+  
   render: function() {
     return (
 

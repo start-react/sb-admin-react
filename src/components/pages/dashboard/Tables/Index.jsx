@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreTables = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Tables.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'tables',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./Tables'))
+    });
   }
-});
-
-export default PreTables;
+}

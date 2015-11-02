@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreBlank = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Blank.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'blank',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./Blank'))
+    });
   }
-});
-
-export default PreBlank;
+}

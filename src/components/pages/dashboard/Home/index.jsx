@@ -1,15 +1,12 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreHome = React.createClass({
+module.exports = {
+  path: 'home',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+    	cb(null, require('./Home'));
+    });
 
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Home.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
   }
-});
-
-export default PreHome;
+}

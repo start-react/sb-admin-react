@@ -1,7 +1,11 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Button, Input, Label, FormControls, Row, Col, PageHeader} from 'react-bootstrap';
+import NProgress from 'nProgress';
 
 var Forms = React.createClass({
+  componentDidMount: function(){
+    NProgress.done();
+  },
 
   render: function() {
     

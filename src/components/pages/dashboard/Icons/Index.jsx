@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreIcons = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Icons.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'icons',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./Icons'))
+    });
   }
-});
-
-export default PreIcons;
+}

@@ -1,8 +1,11 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Alert, Button, OverlayTrigger, Tooltip, Popover, Modal, PageHeader} from 'react-bootstrap';
+import NProgress from 'nProgress';
 
 var Notifications = React.createClass({
-
+  componentDidMount: function(){
+    NProgress.done();
+  },
 
   getInitialState: function() {
     return {

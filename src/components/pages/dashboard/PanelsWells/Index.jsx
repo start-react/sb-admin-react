@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PrePanelsWells = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./PanelsWells.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'panels-wells',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./PanelsWells'))
+    });
   }
-});
-
-export default PrePanelsWells;
+}

@@ -1,8 +1,12 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader} from 'react-bootstrap';
+import NProgress from 'nProgress';
 
 var PanelsWells = React.createClass({
-
+  componentDidMount: function(){
+    NProgress.done();
+  },
+  
   render: function() {
     return (
       <div>

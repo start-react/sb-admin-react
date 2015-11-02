@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreGrid = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Grid.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'grid',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./Grid'))
+    });
   }
-});
-
-export default PreGrid;
+}

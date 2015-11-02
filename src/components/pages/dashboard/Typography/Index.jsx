@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreTypography = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./Typography.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'typography',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./Typography'))
+    });
   }
-});
-
-export default PreTypography;
+}

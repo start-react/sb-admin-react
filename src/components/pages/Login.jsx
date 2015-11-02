@@ -1,6 +1,7 @@
 import React from 'react';
-import Router from 'react-router';
+import Router, {Link} from 'react-router';
 import {Panel, Input, Button} from 'react-bootstrap';
+import { History } from 'history';
 
 var LoginPage = React.createClass({
 
@@ -12,7 +13,7 @@ var LoginPage = React.createClass({
     };
   },
 
-  mixins: [Router.Navigation],
+  mixins: [History],
 
   render: function(){
   
@@ -35,7 +36,9 @@ var LoginPage = React.createClass({
                 <Input onChange={this.setPassword} className="form-control" placeholder="Password" ref="password" type="password" name="password" />
               </div>
               <Input type="checkbox" label="Remember Me" />
-              <Button type="submit" bsSize="large" bsStyle="success" block>Login</Button>
+              <Button type="submit" bsSize="large" bsStyle="success" block>
+                Login
+              </Button>
               
             </fieldset>
           </form>
@@ -66,8 +69,9 @@ var LoginPage = React.createClass({
   },
 
   handleLogin: function(e){
-
-    this.transitionTo('dashboard');
+    e.preventDefault();
+    this.props.history.pushState(null, '/home');
+    // this.transitionTo('dashboard');
 
     return false;
 

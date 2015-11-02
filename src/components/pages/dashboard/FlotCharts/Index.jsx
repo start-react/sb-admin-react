@@ -1,15 +1,11 @@
-import React from 'react';
-import AsyncElement from '../../../common/AsyncElement';
+import NProgress from 'nProgress';
 
-var PreFlotCharts = React.createClass({
-
-  mixins: [ AsyncElement ],
-
-  bundle: require('bundle?lazy!./FlotCharts.jsx'),
-
-  preRender: function () {
-  	return <div></div>;
+module.exports = {
+  path: 'flot-charts',
+  getComponent(location, cb) {
+  	NProgress.start();
+    require.ensure([], (require) => {
+      cb(null, require('./FlotCharts'))
+    });
   }
-});
-
-export default PreFlotCharts;
+}
