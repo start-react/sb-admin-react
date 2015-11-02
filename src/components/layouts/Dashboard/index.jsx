@@ -286,7 +286,7 @@ var HomePage = React.createClass({
           </Navbar>
 
           <div id="page-wrapper" className="page-wrapper" ref="pageWrapper" style={{minHeight: this.state.Height}}>
-            {this.props.children}
+            {this.props.children  || this.props.history.pushState(null, '/home')}
           </div>
 
         </div>
