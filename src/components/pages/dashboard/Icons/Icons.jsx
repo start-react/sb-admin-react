@@ -1,12 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, PageHeader} from 'react-bootstrap';
-import NProgress from 'nProgress';
 
 var Icons = React.createClass({
-  componentDidMount: function(){
-    NProgress.done();
-  },
-  
   render: function() {
     return (
       <div>

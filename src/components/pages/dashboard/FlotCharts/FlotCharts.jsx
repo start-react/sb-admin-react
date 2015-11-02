@@ -1,12 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import {Panel, Button, PageHeader} from 'react-bootstrap';
-import NProgress from 'nProgress';
 
 var FlotCharts = React.createClass({
-  componentDidMount: function(){
-    NProgress.done();
-  },
-
   render: function() {
     return (
 

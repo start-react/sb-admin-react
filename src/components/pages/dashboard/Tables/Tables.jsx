@@ -1,12 +1,7 @@
 import React, { PropTypes, Component } from 'react';
 import {Pagination, Panel, Well, Button, PageHeader} from "react-bootstrap";
-import NProgress from 'nProgress';
 
 var Tables = React.createClass({
-  componentDidMount: function(){
-    NProgress.done();
-  },
-  
   render: function() {
     return (
 
