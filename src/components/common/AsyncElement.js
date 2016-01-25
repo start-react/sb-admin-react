@@ -1,7 +1,7 @@
 import React from 'react';
 import Router from 'react-router';
 import { Route, RouteHandler, Link } from 'react-router';
-import NProgress from 'NProgress';
+import NProgress from 'nprogress';
 
 NProgress.configure({ showSpinner: false });
 
