@@ -24,9 +24,6 @@ var Notifications = React.createClass({
 
   render: function() {
 
-    let popover = <Popover title="popover">very popover. such engagement</Popover>;
-    let tooltip = <Tooltip>wow.</Tooltip>;
-
     return (
       <div>
 
@@ -149,7 +146,6 @@ var Notifications = React.createClass({
   },
 
   handleAlertDismiss: function(option) {
-    var that = this;
     switch (option){
       case 'A':
         this.setState({alertVisibleA: false});
