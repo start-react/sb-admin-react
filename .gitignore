@@ -1,6 +1,10 @@
-# Build
-build/app.js
-build/style.css
+# Build, all can be recreated by
+# npm run build, therefore don't store
+build/*.js
+build/*.woff*
+build/*.ttf
+build/*.eot
+build/*.svg
 
 # Logs
 logs

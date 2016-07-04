@@ -18,7 +18,7 @@ $ git clone https://github.com/start-react/sb-admin-react.git
 ####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
 
 More details here
-https://nodejs.org/en/download/ 
+https://nodejs.org/en/download/
 
 ####3. On the command prompt run the following commands
 
@@ -26,7 +26,7 @@ https://nodejs.org/en/download/
 $ cd `project-directory`
 ```
 ```sh
-$ npm install 
+$ npm install
 ```
 ```sh
 $ npm start
@@ -35,6 +35,11 @@ $ npm start
 ####4. To build
 ```sh
 $ npm run build
+```
+
+####5. To clean up old build products
+```sh
+$ npm run clean
 ```
 
 ## Roadmap
