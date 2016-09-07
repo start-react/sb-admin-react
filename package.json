@@ -10,7 +10,7 @@
     "test": "PHANTOMJS_BIN=./node_modules/.bin/phantomjs ./node_modules/karma/bin/karma start karma.config.js",
     "test-cross-browser": "./node_modules/karma/bin/karma start karma.cross-browser.config.js",
     "coveralls": "cat coverage/lcov.info | coveralls",
-    "clean": "rm build/app.js"
+    "clean": "rm -f build/*.{js,ttf,eot,woff,woff2,svg}"
   },
   "repository": {
     "type": "git",
@@ -39,6 +39,7 @@
     "karma-sauce-launcher": "^0.2.10",
     "karma-sinon-chai": "^0.3.0",
     "karma-webpack": "^1.5.0",
+    "mocha": "^2.5.3",
     "phantomjs": "^1.9.16",
     "react-hot-loader": "^1.2.3",
     "webpack-dev-server": "^1.7.0"
