@@ -48,7 +48,7 @@ app.post('/landing', function(req, res) {
 
 app.post('/home', function(req, res) {
   res.json({
-    title: "Home Page test"
+    title: "Home Page"
   });
 });
 
