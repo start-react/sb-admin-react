@@ -173,7 +173,7 @@ var HomePage = React.createClass({
               </Nav>
             </ul> 
             <div className="navbar-default sidebar" style={ { 'marginLeft': '-20px' } } role="navigation">
-              <div className="sidebar-nav navbar-collapse">
+              <div className="sidebar-nav navbar-collapse collapse">
                 
                 <ul className="nav in" id="side-menu">
 
