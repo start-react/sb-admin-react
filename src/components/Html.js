@@ -13,6 +13,7 @@ function Html({ title, description, style, script, children }) {
         <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
         <link rel="stylesheet" href="/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="/css/sb-admin.css" />
         <style id="css" dangerouslySetInnerHTML={{ __html: style }} />
       </head>
       <body>

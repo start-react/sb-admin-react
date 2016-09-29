@@ -25,6 +25,9 @@ async function copy({ watch } = {}) {
     ncp('src/public', 'build/public'),
     ncp('src/content', 'build/content'),
   ]);
+  await Promise.all([
+    ncp('src/components/common/styles', 'build/public/css'),
+  ]);
 
   await Promise.all([
     ncp('node_modules/font-awesome/css', 'build/public/css'),

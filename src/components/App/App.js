@@ -47,6 +47,7 @@ class App extends Component {
   }
 
   componentWillUnmount() {
+
     this.removeCss();
   }
 
@@ -54,9 +55,9 @@ class App extends Component {
     return !this.props.error ? (
       <div>
         <Header />
-        {this.props.children}
-        <Feedback />
-        <Footer />
+        <div id="page-wrapper" className="page-wrapper">
+          {this.props.children}
+        </div>
       </div>
     ) : this.props.children;
   }

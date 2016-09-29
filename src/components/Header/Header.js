@@ -17,9 +17,11 @@ import {
   ProgressBar,
 } from 'react-bootstrap';
 import Link from '../Link';
-import s from './Header.css';
+// import s from './Header.css';
 import Navbar, {Brand} from 'react-bootstrap/lib/Navbar';
+import history from '../../core/history';
 import $ from "jquery";
+import Sidebar from '../Sidebar';
 
 const logo = require('./logo.png');
 
@@ -32,7 +34,7 @@ function Header() {
               <img src={logo} alt="Start React" title="Start React" />
               <span>&nbsp;SB Admin React - </span>
                 <a href="http://startreact.com/" title="Start React" rel="home">StartReact.com</a>
-                <button type="button" className="navbar-toggle" onClick={toggleMenu()} style={{position: 'absolute', right: 0, top: 0}}>
+                <button type="button" className="navbar-toggle" onClick={() => {toggleMenu();}} style={{position: 'absolute', right: 0, top: 0}}>
                   <span className="sr-only">Toggle navigation</span>
                   <span className="icon-bar"></span>
                   <span className="icon-bar"></span>
@@ -45,7 +47,7 @@ function Header() {
               <NavDropdown title={<span><i className="fa fa-envelope fa-fw"></i></span>} id="navDropdown1">
                 <MenuItem eventKey="1">
                   <div> <strong>John Smith</strong> <span className="pull-right text-muted"> <em>Yesterday</em> </span> </div>
-                  <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
+                  <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                 </MenuItem>
                 <MenuItem divider />
                 <MenuItem eventKey="2">
@@ -63,12 +65,12 @@ function Header() {
                 </MenuItem>
               </NavDropdown>
 
-           <NavDropdown title={<span><i className="fa fa-tasks fa-fw"></i> </span>} id = 'navDropdown2'>
+           <NavDropdown title={<span><i className="fa fa-tasks fa-fw"></i> </span>} id = 'navDropdown2222'>
                   <MenuItem eventKey="1" style={ {width: 300} }>
                     <div>
                       <p> <strong>Task 1</strong> <span className="pull-right text-muted">40% Complete</span> </p>
                       <div>
-                        <ProgressBar active bsStyle="success" now={40} />
+                        <ProgressBar  bsStyle="success" now={40} />
                       </div>
                     </div>
                   </MenuItem>
@@ -77,7 +79,7 @@ function Header() {
                     <div>
                       <p> <strong>Task 2</strong> <span className="pull-right text-muted">20% Complete</span> </p>
                       <div>
-                        <ProgressBar active bsStyle="info" now={20} />
+                        <ProgressBar  bsStyle="info" now={20} />
                       </div>
                     </div>
                   </MenuItem>
@@ -86,7 +88,7 @@ function Header() {
                     <div>
                       <p> <strong>Task 3</strong> <span className="pull-right text-muted">60% Complete</span> </p>
                       <div>
-                        <ProgressBar active bsStyle="warning" now={60} />
+                        <ProgressBar  bsStyle="warning" now={60} />
                       </div>
                     </div>
                   </MenuItem>
@@ -95,7 +97,7 @@ function Header() {
                     <div>
                       <p> <strong>Task 4</strong> <span className="pull-right text-muted">80% Complete</span> </p>
                       <div>
-                        <ProgressBar active bsStyle="danger" now={80} />
+                        <ProgressBar  bsStyle="danger" now={80} />
                       </div>
                     </div>
                   </MenuItem>
@@ -143,16 +145,13 @@ function Header() {
                     <span> <i className = "fa fa-eye fa-fw" /> Premium React Themes </span>
                   </MenuItem>
                   <MenuItem divider />
-                  <MenuItem eventKey = "4">
+                  <MenuItem eventKey = "4" onClick = {(event) => { history.push('/login');}}>
                     <span> <i className = "fa fa-sign-out fa-fw" /> Logout </span>
                   </MenuItem>
                 </NavDropdown>
-
-
-
-
             </Nav>
           </ul>
+          <Sidebar />
     </Navbar>
     </div>
   );
@@ -166,4 +165,4 @@ function toggleMenu(){
     }
   }
 
-export default withStyles(s)(Header);
+export default Header;
