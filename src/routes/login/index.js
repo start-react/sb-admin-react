@@ -9,13 +9,26 @@
 
 import React from 'react';
 import Login from './Login';
+import App from '../../components/App';
 
 export default {
 
   path: '/login',
 
-  action() {
-    return <Login />;
+  action({ render, context }) {
+    return render(
+      <App context={context} login={'login'}>
+        <Login />
+      </App>,
+    );
   },
+
+  // action(render, context) {
+  //   return (
+  //     <App context={context} login={false}>
+  //       <Login />
+  //     </App>
+  //   );
+  // },
 
 };

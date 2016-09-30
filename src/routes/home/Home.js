@@ -74,7 +74,7 @@ function Home({ news }, context) {
             <Panel header={<span>
               <i className="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
                   <div className="pull-right">
-                      <DropdownButton title="Dropdown" bsSize="xs" pullRight>
+                      <DropdownButton title="Dropdown" bsSize="xs" pullRight id="dropdownButton1" >
                         <MenuItem eventKey="1">Action</MenuItem>
                         <MenuItem eventKey="2">Another action</MenuItem>
                         <MenuItem eventKey="3">Something else here</MenuItem>
@@ -93,7 +93,7 @@ function Home({ news }, context) {
             <Panel header={<span>
               <i className="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
                   <div className="pull-right">
-                      <DropdownButton title="Dropdown" bsSize="xs" pullRight>
+                      <DropdownButton title="Dropdown" bsSize="xs" pullRight id="dropdownButton2">
                         <MenuItem eventKey="1">Action</MenuItem>
                         <MenuItem eventKey="2">Another action</MenuItem>
                         <MenuItem eventKey="3">Something else here</MenuItem>

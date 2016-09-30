@@ -14,7 +14,8 @@ import App from '../components/App';
 import home from './home';
 import contact from './contact';
 import login from './login';
-import table from './Tables';
+import table from './dashboard-pages/Tables';
+import button from './dashboard-pages/Buttons';
 import register from './register';
 import content from './content';
 import error from './error';
@@ -29,6 +30,7 @@ export default {
     contact,
     login,
     table,
+    button,
     register,
 
     // place new routes before...
