@@ -320,130 +320,131 @@ function Table(props, context) {
             </div>
           </Panel>
         </div>
-
-        <div className="row ng-scope">
-          <div className="col-lg-6">
-            <Panel header={<span>Striped Rows </span>} >
-              <div className="table-responsive">
-                <table className="table table-striped">
-                  <thead>
-                    <tr>
-                      <th># </th>
-                      <th>First Name </th>
-                      <th>Last Name </th>
-                      <th>Username </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1 </td>
-                      <td>Mark </td>
-                      <td>Otto </td>
-                      <td>@mdo </td>
-                    </tr>
-                    <tr>
-                      <td>2 </td>
-                      <td>Jacob </td>
-                      <td>Thornton </td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <td>3 </td>
-                      <td>Larry </td>
-                      <td>the Bird </td>
-                      <td>@twitter </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </Panel>
-          </div>
-          <div className="col-lg-6">
-            <Panel header={<span>Bordered Table </span>} >
-              <div className="table-responsive table-bordered">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th># </th>
-                      <th>First Name </th>
-                      <th>Last Name </th>
-                      <th>Username </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>1 </td>
-                      <td>Mark </td>
-                      <td>Otto </td>
-                      <td>@mdo</td>
-                    </tr>
-                    <tr>
-                      <td>2 </td>
-                      <td>Jacob </td>
-                      <td>Thornton</td>
-                      <td>@fat</td>
-                    </tr>
-                    <tr>
-                      <td>3 </td>
-                      <td>Larry </td>
-                      <td>the Bird </td>
-                      <td>@twitter </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </Panel>
-          </div>
-        </div>
-
-        <div className="row ng-scope">
-          <div className="col-lg-6">
-            <Panel header={<span>Hover Rows </span>} >
-              <div className="table-responsive">
-                <table className="table table-hover">
-                  <thead>
-                    <tr><th># </th><th>First Name </th><th>Last Name </th><th>Username</th></tr>
-                  </thead>
-                  <tbody>
-                    <tr><td>1 </td><td>Mark </td><td>Otto </td><td>@mdo</td></tr>
-                    <tr><td>2 </td><td>Jacob </td><td>Thornton </td><td>@fat</td></tr>
-                    <tr><td>3 </td><td>Larry </td><td>the Bird </td><td>@twitter </td></tr>
-                  </tbody>
-                </table>
-              </div>
-            </Panel>
-          </div>
-          <div className="col-lg-6">
-            <Panel header={<span>Context Classes </span>} >
-              <div className="table-responsive">
-                <table className="table">
-                  <thead>
-                    <tr>
-                      <th># </th><th>First Name </th><th>Last Name </th><th>Username </th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr className="success">
-                      <td>1 </td><td>Mark </td><td>Otto </td><td>@mdo</td>
-                    </tr>
-                    <tr className="info">
-                      <td>2 </td><td>Jacob </td><td>Thornton </td><td>@fat</td>
-                    </tr>
-                    <tr className="warning">
-                      <td>3 </td><td>Larry </td><td>the Bird </td><td>@twitter</td>
-                    </tr>
-                    <tr className="danger">
-                      <td>4 </td><td>John </td><td>Smith </td><td>@jsmith </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </Panel>
-          </div>
-        </div>
-
       </div>
+
+      <div className="row ng-scope">
+        <div className="col-lg-6">
+          <Panel header={<span>Striped Rows </span>} >
+            <div className="table-responsive">
+              <table className="table table-striped">
+                <thead>
+                  <tr>
+                    <th># </th>
+                    <th>First Name </th>
+                    <th>Last Name </th>
+                    <th>Username </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 </td>
+                    <td>Mark </td>
+                    <td>Otto </td>
+                    <td>@mdo </td>
+                  </tr>
+                  <tr>
+                    <td>2 </td>
+                    <td>Jacob </td>
+                    <td>Thornton </td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3 </td>
+                    <td>Larry </td>
+                    <td>the Bird </td>
+                    <td>@twitter </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Panel>
+        </div>
+        <div className="col-lg-6">
+          <Panel header={<span>Bordered Table </span>} >
+            <div className="table-responsive table-bordered">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th># </th>
+                    <th>First Name </th>
+                    <th>Last Name </th>
+                    <th>Username </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1 </td>
+                    <td>Mark </td>
+                    <td>Otto </td>
+                    <td>@mdo</td>
+                  </tr>
+                  <tr>
+                    <td>2 </td>
+                    <td>Jacob </td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                  </tr>
+                  <tr>
+                    <td>3 </td>
+                    <td>Larry </td>
+                    <td>the Bird </td>
+                    <td>@twitter </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Panel>
+        </div>
+      </div>
+
+      <div className="row ng-scope">
+        <div className="col-lg-6">
+          <Panel header={<span>Hover Rows </span>} >
+            <div className="table-responsive">
+              <table className="table table-hover">
+                <thead>
+                  <tr><th># </th><th>First Name </th><th>Last Name </th><th>Username</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>1 </td><td>Mark </td><td>Otto </td><td>@mdo</td></tr>
+                  <tr><td>2 </td><td>Jacob </td><td>Thornton </td><td>@fat</td></tr>
+                  <tr><td>3 </td><td>Larry </td><td>the Bird </td><td>@twitter </td></tr>
+                </tbody>
+              </table>
+            </div>
+          </Panel>
+        </div>
+        <div className="col-lg-6">
+          <Panel header={<span>Context Classes </span>} >
+            <div className="table-responsive">
+              <table className="table">
+                <thead>
+                  <tr>
+                    <th># </th><th>First Name </th><th>Last Name </th><th>Username </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr className="success">
+                    <td>1 </td><td>Mark </td><td>Otto </td><td>@mdo</td>
+                  </tr>
+                  <tr className="info">
+                    <td>2 </td><td>Jacob </td><td>Thornton </td><td>@fat</td>
+                  </tr>
+                  <tr className="warning">
+                    <td>3 </td><td>Larry </td><td>the Bird </td><td>@twitter</td>
+                  </tr>
+                  <tr className="danger">
+                    <td>4 </td><td>John </td><td>Smith </td><td>@jsmith </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </Panel>
+        </div>
+      </div>
+
     </div>
+
   );
 }
 
