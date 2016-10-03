@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
-import { Panel, Button, Label, FormControls, Row, Col, PageHeader, ControlLabel, FormControl, HelpBlock, FormGroup, Checkbox, Form, Radio,InputGroup, Glyphicon } from 'react-bootstrap';
+import {
+  Panel,
+  Button,
+  Col,
+  PageHeader,
+  ControlLabel,
+  FormControl,
+  HelpBlock,
+  FormGroup,
+  Checkbox,
+  Form,
+  Radio,
+  InputGroup,
+  Glyphicon } from 'react-bootstrap';
 
-class Forms extends Component {
+import FormControlFeedback from 'react-bootstrap/lib/FormControlFeedback';
+import FormControlStatic from 'react-bootstrap/lib/FormControlStatic';
+import InputGroupAddon from 'react-bootstrap/lib/InputGroupAddon';
+
+class Forms extends Component { //eslint-disable-line
   render() {
     return (
       <div>
@@ -24,7 +41,7 @@ class Forms extends Component {
                       <FormControl
                         type="text"
                       />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                       <HelpBlock>Example block-level help text here.</HelpBlock>
                     </FormGroup>
 
@@ -34,14 +51,14 @@ class Forms extends Component {
                         type="text"
                         placeholder="Enter Text"
                       />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                     </FormGroup>
 
                     <FormGroup>
                       <ControlLabel>Static text</ControlLabel>
-                      <FormControl.Static>
+                      <FormControlStatic>
                         email@example.com
-                      </FormControl.Static>
+                      </FormControlStatic>
                     </FormGroup>
 
                     <FormGroup
@@ -51,7 +68,7 @@ class Forms extends Component {
                       <FormControl
                         type="file"
                       />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                     </FormGroup>
 
                     <FormGroup controlId="formControlsTextarea">
@@ -159,17 +176,17 @@ class Forms extends Component {
                     <FormGroup controlId="formValidationSuccess2" validationState="success">
                       <ControlLabel>Input with success</ControlLabel>
                       <FormControl type="text" />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                     </FormGroup>
                     <FormGroup controlId="formValidationWarning1" validationState="warning">
                       <ControlLabel>Input with warning</ControlLabel>
                       <FormControl type="text" />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                     </FormGroup>
                     <FormGroup controlId="formValidationWarning1" validationState="error">
                       <ControlLabel>Input with Error</ControlLabel>
                       <FormControl type="text" />
-                      <FormControl.Feedback />
+                      <FormControlFeedback />
                     </FormGroup>
                   </Form>
 
@@ -177,30 +194,30 @@ class Forms extends Component {
                   <Form>
                     <FormGroup>
                       <InputGroup>
-                        <InputGroup.Addon>@</InputGroup.Addon>
+                        <InputGroupAddon>@</InputGroupAddon>
                         <FormControl type="text" />
                       </InputGroup>
                     </FormGroup>
                     <FormGroup>
                       <InputGroup>
                         <FormControl type="text" />
-                        <InputGroup.Addon>.00</InputGroup.Addon>
+                        <InputGroupAddon>.00</InputGroupAddon>
                       </InputGroup>
                     </FormGroup>
                     <FormGroup>
                       <InputGroup>
-                        <InputGroup.Addon>$</InputGroup.Addon>
+                        <InputGroupAddon>$</InputGroupAddon>
                         <FormControl type="text" />
-                        <InputGroup.Addon>.00</InputGroup.Addon>
+                        <InputGroupAddon>.00</InputGroupAddon>
                       </InputGroup>
                     </FormGroup>
 
                     <FormGroup>
                       <InputGroup>
                         <FormControl type="text" />
-                        <InputGroup.Addon>
+                        <InputGroupAddon>
                           <Glyphicon glyph="music" />
-                        </InputGroup.Addon>
+                        </InputGroupAddon>
                       </InputGroup>
                     </FormGroup>
                   </Form>

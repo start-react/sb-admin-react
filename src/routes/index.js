@@ -24,6 +24,7 @@ import morrisjscharts from './dashboard-pages/MorrisjsCharts';
 import notification from './dashboard-pages/Notification';
 import panelwells from './dashboard-pages/PanelWells';
 import typography from './dashboard-pages/Typography';
+import blank from './dashboard-pages/Blank';
 import register from './register';
 import content from './content';
 import error from './error';
@@ -48,6 +49,7 @@ export default {
     panelwells,
     typography,
     register,
+    blank,
 
     // place new routes before...
     content,

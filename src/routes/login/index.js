@@ -8,8 +8,8 @@
  */
 
 import React from 'react';
-import Login from './Login';
 import App from '../../components/App';
+import Login from './Login';
 
 export default {
 
@@ -17,18 +17,11 @@ export default {
 
   action({ render, context }) {
     return render(
-      <App context={context} login={'login'}>
+      <App context={context} login={true}>
         <Login />
-      </App>,
+      </App>
     );
   },
 
-  // action(render, context) {
-  //   return (
-  //     <App context={context} login={false}>
-  //       <Login />
-  //     </App>
-  //   );
-  // },
 
 };

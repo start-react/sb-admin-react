@@ -52,7 +52,6 @@ class App extends Component {
   }
 
   render() {
-
     return !this.props.error ? (
       !this.props.login ? (
         <div>

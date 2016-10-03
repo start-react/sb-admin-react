@@ -96,7 +96,9 @@ class Sidebar extends Component {
             </li>
 
             <li className={classNames({ active: !this.state.uiElementsCollapsed })}>
-              <a href="#" onClick={ () => { this.setState({uiElementsCollapsed: !this.state.uiElementsCollapsed}); return false; } }><i className="fa fa-edit fa-fw" /> UI Elements<span className="fa arrow"></span></a>
+              <a href="#" onClick={ () => { this.setState({uiElementsCollapsed: !this.state.uiElementsCollapsed}); return false; } }>
+                <i className="fa fa-edit fa-fw" /> UI Elements<span className="fa arrow"></span>
+                </a>
 
               <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
                 <li>
@@ -132,33 +134,64 @@ class Sidebar extends Component {
               </ul>
             </li>
 
-            <li className={classNames({ active: !this.state.multiLevelDropdownCollapsed})}>
-              <a href="#" onClick={ (e) => { e.preventDefault(); his.setState({multiLevelDropdownCollapsed: !this.state.multiLevelDropdownCollapsed }); return false; } }>
-                <i className="fa fa-sitemap fa-fw" />&nbsp;Multi-Level Dropdown<span className="fa arrow"></span>
+            <li className={classNames({ active: !this.state.multiLevelDropdownCollapsed })}>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  this.setState({
+                    multiLevelDropdownCollapsed: !this.state.multiLevelDropdownCollapsed,
+                  });
+                  return false;
+                }}
+              >
+                <i className="fa fa-sitemap fa-fw" />
+                &nbsp;Multi-Level Dropdown
+                <span className="fa arrow" />
               </a>
-              <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.multiLevelDropdownCollapsed})}>
+              <ul
+                className={
+                  classNames({
+                    'nav nav-second-level': true, collapse: this.state.multiLevelDropdownCollapsed,
+                  })}
+              >
                 <li>
-                  <a href="javascript:void(0)">Second Level Item</a>
+                  <a href="" onClick={(e) => { e.preventDefault(); }}>Second Level Item</a>
                 </li>
                 <li>
-                  <a href="javascript:void(0)">Second Level Item</a>
+                  <a href="" onClick={(e) => { e.preventDefault(); }}>Second Level Item</a>
                 </li>
                 <li className={classNames({ active: !this.state.thirdLevelDropdownCollapsed })}>
-                  <a href="javascript:void(0)" onClick={ () => { this.setState({thirdLevelDropdownCollapsed: !this.state.thirdLevelDropdownCollapsed }); return false; } }>
-                    Third Level<span className="fa arrow"></span>
+                  <a
+                    href=""
+                    onClick={(e) => {
+                      e.preventDefault();
+                      this.setState({
+                        thirdLevelDropdownCollapsed: !this.state.thirdLevelDropdownCollapsed,
+                      });
+                      return false;
+                    }}
+                  >
+                    Third Level<span className="fa arrow" />
                   </a>
-                  <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.thirdLevelDropdownCollapsed })}>
+                  <ul
+                    className={
+                      classNames({
+                        'nav nav-second-level': true,
+                        collapse: this.state.thirdLevelDropdownCollapsed,
+                      })}
+                  >
                     <li>
-                      <a href="javascript:void(0)">Third Level Item</a>
+                      <a href="" onClick={(e) => { e.preventDefault(); }}>Third Level Item</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Third Level Item</a>
+                      <a href="" onClick={(e) => { e.preventDefault(); }}>Third Level Item</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Third Level Item</a>
+                      <a href="" onClick={(e) => { e.preventDefault(); }}>Third Level Item</a>
                     </li>
                     <li>
-                      <a href="javascript:void(0)">Third Level Item</a>
+                      <a href="" onClick={(e) => { e.preventDefault(); }}>Third Level Item</a>
                     </li>
                   </ul>
                 </li>
@@ -166,15 +199,36 @@ class Sidebar extends Component {
             </li>
 
             <li className={classNames({ active: !this.state.samplePagesCollapsed })}>
-              <a href="#" onClick={ () => { this.setState({samplePagesCollapsed: !this.state.samplePagesCollapsed }); return false; } }>
-                <i className="fa fa-files-o fa-fw" />&nbsp;Sample Pages<span className="fa arrow"></span>
+              <a
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
+                  this.setState({
+                    samplePagesCollapsed: !this.state.samplePagesCollapsed,
+                  });
+                  return false;
+                }}
+              >
+                <i className="fa fa-files-o fa-fw" />
+                &nbsp;Sample Pages
+                <span className="fa arrow" />
               </a>
-              <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.samplePagesCollapsed })}>
+              <ul
+                className={
+                  classNames({
+                    'nav nav-second-level': true,
+                    collapse: this.state.samplePagesCollapsed,
+                  })}
+              >
                 <li>
-                  <Link to="dashboard.blank">Blank Page</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/blank'); }} >
+                    Blank
+                  </a>
                 </li>
                 <li>
-                  <Link to="login">Login Page</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/login'); }} >
+                    Login
+                  </a>
                 </li>
               </ul>
             </li>
