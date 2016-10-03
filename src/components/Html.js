@@ -10,8 +10,9 @@ function Html({ title, description, style, script, children }) {
         <title>{title}</title>
         <meta name="description" content={description} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
         <link rel="stylesheet" href="/css/bootstrap.min.css" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+        <link rel="stylesheet" href="/css/bootstrap-social.css" />
         <link rel="stylesheet" href="/css/font-awesome.min.css" />
         <link rel="stylesheet" href="/css/sb-admin.css" />
         <style id="css" dangerouslySetInnerHTML={{ __html: style }} />

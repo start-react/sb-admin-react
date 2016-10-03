@@ -16,6 +16,14 @@ import contact from './contact';
 import login from './login';
 import table from './dashboard-pages/Tables';
 import button from './dashboard-pages/Buttons';
+import flotcharts from './dashboard-pages/FlotCharts';
+import forms from './dashboard-pages/Forms';
+import grid from './dashboard-pages/Grid';
+import icons from './dashboard-pages/Icons';
+import morrisjscharts from './dashboard-pages/MorrisjsCharts';
+import notification from './dashboard-pages/Notification';
+import panelwells from './dashboard-pages/PanelWells';
+import typography from './dashboard-pages/Typography';
 import register from './register';
 import content from './content';
 import error from './error';
@@ -31,6 +39,14 @@ export default {
     login,
     table,
     button,
+    flotcharts,
+    forms,
+    grid,
+    icons,
+    morrisjscharts,
+    notification,
+    panelwells,
+    typography,
     register,
 
     // place new routes before...

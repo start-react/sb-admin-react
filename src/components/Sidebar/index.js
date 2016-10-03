@@ -70,23 +70,29 @@ class Sidebar extends Component {
               }
               >
                 <li>
-                  <Link to="dashboard.flot-charts">Flot Charts</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/flotcharts'); }} >
+                    FlotCharts
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.morrisjs-charts">Morris.js Charts</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/morrisjscharts'); }} >
+                    Morrisjs Charts
+                  </a>
                 </li>
               </ul>
             </li>
 
 
             <li>
-              <a href="" onClick={(e) => { event.preventDefault(); history.push('/table'); }} >
+              <a href="" onClick={(e) => { e.preventDefault(); history.push('/table'); }} >
                 <i className="fa fa-table fa-fw" /> &nbsp;Tables
               </a>
             </li>
 
             <li>
-              <Link to="dashboard.forms"><i className="fa fa-edit fa-fw" /> Forms</Link>
+              <a href="" onClick={(e) => { e.preventDefault(); history.push('/forms'); }} >
+                <i className="fa fa-table fa-fw" /> &nbsp;Forms
+              </a>
             </li>
 
             <li className={classNames({ active: !this.state.uiElementsCollapsed })}>
@@ -94,22 +100,34 @@ class Sidebar extends Component {
 
               <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
                 <li>
-                  <Link to="dashboard.panels-wells">Panels and Wells</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/panelwells'); }} >
+                    Panels And Wells
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.buttons">Buttons</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/button'); }} >
+                    Buttons
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.notifications">Notifications</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/notification'); }} >
+                    Notification
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.typography">Typography</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/typography'); }} >
+                    Typography
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.icons"> Icons</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/icons'); }} >
+                    Icons
+                  </a>
                 </li>
                 <li>
-                  <Link to="dashboard.grid">Grid</Link>
+                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/grid'); }} >
+                    Grid
+                  </a>
                 </li>
               </ul>
             </li>

@@ -11,17 +11,18 @@ import React, { PropTypes } from 'react';
 // import { Panel, Input, Button } from 'react-bootstrap';
 import Button from 'react-bootstrap/lib/Button';
 import Panel from 'react-bootstrap/lib/Panel';
-import Input from 'react-bootstrap/lib/InputGroup';
-
+import { FormControl, Checkbox } from 'react-bootstrap';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
 import s from './Login.css';
+import history from '../../core/history';
 
 const title = 'Log In';
 
-// function handleLogin() {
-//   console.log('login function');
-// }
 
+function submitHandler(e) {
+  e.preventDefault();
+  history.push('/');
+}
 
 function Login(props, context) {
   context.setTitle(title);
@@ -34,28 +35,27 @@ function Login(props, context) {
 
       <Panel header={<h3>Please Sign In</h3>} className="login-panel">
 
-        <form role="form">
+        <form role="form" onSubmit={(e) => { submitHandler(e); }}>
           <fieldset>
             <div className="form-group">
-              <Input
+              <FormControl
+                type="text"
                 className="form-control"
                 placeholder="Username"
-                type="text"
                 name="name"
               />
             </div>
 
             <div className="form-group">
-              <Input
+              <FormControl
                 className="form-control"
                 placeholder="Password"
                 type="password"
                 name="password"
               />
             </div>
-            <Input type="checkbox" label="Remember Me" />
+            <Checkbox label="Remember Me" > Remember Me </Checkbox>
             <Button type="submit" bsSize="large" bsStyle="success" block>Login</Button>
-
           </fieldset>
         </form>
 
