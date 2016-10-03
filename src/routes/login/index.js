@@ -10,7 +10,6 @@
 import React from 'react';
 import App from '../../components/App';
 import Login from './Login';
-import LoginElement from './loginElement';
 
 export default {
 
@@ -19,7 +18,7 @@ export default {
   action({ render, context }) {
     return render(
       <App context={context} login={true}>
-        <LoginElement />
+        <Login />
       </App>
     );
   },

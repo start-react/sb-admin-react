@@ -140,7 +140,7 @@ module.exports =
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(152);
+  var _assets = __webpack_require__(151);
   
   var _assets2 = _interopRequireDefault(_assets);
   
@@ -2115,59 +2115,59 @@ module.exports =
   
   var _login2 = _interopRequireDefault(_login);
   
-  var _Tables = __webpack_require__(100);
+  var _Tables = __webpack_require__(99);
   
   var _Tables2 = _interopRequireDefault(_Tables);
   
-  var _Buttons = __webpack_require__(106);
+  var _Buttons = __webpack_require__(105);
   
   var _Buttons2 = _interopRequireDefault(_Buttons);
   
-  var _FlotCharts = __webpack_require__(109);
+  var _FlotCharts = __webpack_require__(108);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
-  var _Forms = __webpack_require__(112);
+  var _Forms = __webpack_require__(111);
   
   var _Forms2 = _interopRequireDefault(_Forms);
   
-  var _Grid = __webpack_require__(118);
+  var _Grid = __webpack_require__(117);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
-  var _Icons = __webpack_require__(121);
+  var _Icons = __webpack_require__(120);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
-  var _MorrisjsCharts = __webpack_require__(124);
+  var _MorrisjsCharts = __webpack_require__(123);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
-  var _Notification = __webpack_require__(127);
+  var _Notification = __webpack_require__(126);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
-  var _PanelWells = __webpack_require__(135);
+  var _PanelWells = __webpack_require__(134);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
-  var _Typography = __webpack_require__(138);
+  var _Typography = __webpack_require__(137);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
-  var _Blank = __webpack_require__(141);
+  var _Blank = __webpack_require__(140);
   
   var _Blank2 = _interopRequireDefault(_Blank);
   
-  var _register = __webpack_require__(143);
+  var _register = __webpack_require__(142);
   
   var _register2 = _interopRequireDefault(_register);
   
-  var _content = __webpack_require__(147);
+  var _content = __webpack_require__(146);
   
   var _content2 = _interopRequireDefault(_content);
   
-  var _error = __webpack_require__(151);
+  var _error = __webpack_require__(150);
   
   var _error2 = _interopRequireDefault(_error);
   
@@ -2338,7 +2338,6 @@ module.exports =
     }, {
       key: 'render',
       value: function render() {
-        console.log('props -->\n', this.props, '\n*******123\n');
         return !this.props.error ? !this.props.login ? (0, _jsx3.default)('div', {}, void 0, _ref, (0, _jsx3.default)('div', {
           id: 'page-wrapper',
           className: 'page-wrapper'
@@ -4094,22 +4093,16 @@ module.exports =
   
   var _Login2 = _interopRequireDefault(_Login);
   
-  var _loginElement = __webpack_require__(99);
-  
-  var _loginElement2 = _interopRequireDefault(_loginElement);
-  
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  var _ref2 = (0, _jsx3.default)(_loginElement2.default, {});
+  var _ref2 = (0, _jsx3.default)(_Login2.default, {}); /**
+                                                        * React Starter Kit (https://www.reactstarterkit.com/)
+                                                        *
+                                                        * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                                        *
+                                                        * This source code is licensed under the MIT license found in the
+                                                        * LICENSE.txt file in the root directory of this source tree.
+                                                        */
   
   exports.default = {
   
@@ -4307,72 +4300,11 @@ module.exports =
   
   var _jsx3 = _interopRequireDefault(_jsx2);
   
-  var _getPrototypeOf = __webpack_require__(56);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(57);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(58);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(59);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(60);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
   var _react = __webpack_require__(14);
   
   var _react2 = _interopRequireDefault(_react);
   
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var _ref = (0, _jsx3.default)('div', {}, void 0, ' logout page called ');
-  
-  var LoginElement = function (_Component) {
-    (0, _inherits3.default)(LoginElement, _Component);
-  
-    function LoginElement() {
-      (0, _classCallCheck3.default)(this, LoginElement);
-      return (0, _possibleConstructorReturn3.default)(this, (LoginElement.__proto__ || (0, _getPrototypeOf2.default)(LoginElement)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(LoginElement, [{
-      key: 'render',
-      value: function render() {
-        return _ref;
-      }
-    }]);
-    return LoginElement;
-  }(_react.Component);
-  
-  exports.default = LoginElement;
-
-/***/ },
-/* 100 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _jsx2 = __webpack_require__(1);
-  
-  var _jsx3 = _interopRequireDefault(_jsx2);
-  
-  var _react = __webpack_require__(14);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Table = __webpack_require__(101);
+  var _Table = __webpack_require__(100);
   
   var _Table2 = _interopRequireDefault(_Table);
   
@@ -4399,7 +4331,7 @@ module.exports =
   };
 
 /***/ },
-/* 101 */
+/* 100 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -4416,7 +4348,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Tables = __webpack_require__(102);
+  var _Tables = __webpack_require__(101);
   
   var _Tables2 = _interopRequireDefault(_Tables);
   
@@ -4456,7 +4388,7 @@ module.exports =
   exports.default = displayTable;
 
 /***/ },
-/* 102 */
+/* 101 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -4501,15 +4433,15 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Pagination = __webpack_require__(103);
+  var _Pagination = __webpack_require__(102);
   
   var _Pagination2 = _interopRequireDefault(_Pagination);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Well = __webpack_require__(105);
+  var _Well = __webpack_require__(104);
   
   var _Well2 = _interopRequireDefault(_Well);
   
@@ -4823,25 +4755,25 @@ module.exports =
   exports.default = Tables;
 
 /***/ },
-/* 103 */
+/* 102 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Pagination");
 
 /***/ },
-/* 104 */
+/* 103 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/PageHeader");
 
 /***/ },
-/* 105 */
+/* 104 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Well");
 
 /***/ },
-/* 106 */
+/* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -4858,7 +4790,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(107);
+  var _Button = __webpack_require__(106);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -4885,7 +4817,7 @@ module.exports =
   };
 
 /***/ },
-/* 107 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -4906,11 +4838,11 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Button = __webpack_require__(108);
+  var _Button = __webpack_require__(107);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -4932,7 +4864,7 @@ module.exports =
   exports.default = displayButtons;
 
 /***/ },
-/* 108 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -4981,7 +4913,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -5343,7 +5275,7 @@ module.exports =
   exports.default = Buttons;
 
 /***/ },
-/* 109 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5360,7 +5292,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _FlotCharts = __webpack_require__(110);
+  var _FlotCharts = __webpack_require__(109);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -5387,7 +5319,7 @@ module.exports =
   };
 
 /***/ },
-/* 110 */
+/* 109 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5404,7 +5336,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _FlotCharts = __webpack_require__(111);
+  var _FlotCharts = __webpack_require__(110);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -5424,7 +5356,7 @@ module.exports =
   exports.default = displayFlotCharts;
 
 /***/ },
-/* 111 */
+/* 110 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5473,7 +5405,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -5540,6 +5472,41 @@ module.exports =
   exports.default = FlotCharts;
 
 /***/ },
+/* 111 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _jsx2 = __webpack_require__(1);
+  
+  var _jsx3 = _interopRequireDefault(_jsx2);
+  
+  var _react = __webpack_require__(14);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Forms = __webpack_require__(112);
+  
+  var _Forms2 = _interopRequireDefault(_Forms);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var _ref = (0, _jsx3.default)(_Forms2.default, {});
+  
+  exports.default = {
+  
+    path: '/forms',
+  
+    action: function action() {
+      return _ref;
+    }
+  };
+
+/***/ },
 /* 112 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -5563,41 +5530,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var _ref = (0, _jsx3.default)(_Forms2.default, {});
-  
-  exports.default = {
-  
-    path: '/forms',
-  
-    action: function action() {
-      return _ref;
-    }
-  };
-
-/***/ },
-/* 113 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _jsx2 = __webpack_require__(1);
-  
-  var _jsx3 = _interopRequireDefault(_jsx2);
-  
-  var _react = __webpack_require__(14);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Forms = __webpack_require__(114);
-  
-  var _Forms2 = _interopRequireDefault(_Forms);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
   var title = 'Forms';
   
   var _ref = (0, _jsx3.default)(_Forms2.default, {});
@@ -5612,7 +5544,7 @@ module.exports =
   exports.default = displayForms;
 
 /***/ },
-/* 114 */
+/* 113 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5651,15 +5583,15 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(65);
   
-  var _FormControlFeedback = __webpack_require__(115);
+  var _FormControlFeedback = __webpack_require__(114);
   
   var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
   
-  var _FormControlStatic = __webpack_require__(116);
+  var _FormControlStatic = __webpack_require__(115);
   
   var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
   
-  var _InputGroupAddon = __webpack_require__(117);
+  var _InputGroupAddon = __webpack_require__(116);
   
   var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
   
@@ -5821,25 +5753,25 @@ module.exports =
   exports.default = Forms;
 
 /***/ },
-/* 115 */
+/* 114 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlFeedback");
 
 /***/ },
-/* 116 */
+/* 115 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlStatic");
 
 /***/ },
-/* 117 */
+/* 116 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/InputGroupAddon");
 
 /***/ },
-/* 118 */
+/* 117 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5856,7 +5788,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Grid = __webpack_require__(119);
+  var _Grid = __webpack_require__(118);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
@@ -5874,7 +5806,7 @@ module.exports =
   };
 
 /***/ },
-/* 119 */
+/* 118 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5899,11 +5831,11 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Grid = __webpack_require__(120);
+  var _Grid = __webpack_require__(119);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
@@ -5923,7 +5855,7 @@ module.exports =
   exports.default = displayGrid;
 
 /***/ },
-/* 120 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -5972,7 +5904,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -6192,7 +6124,7 @@ module.exports =
   exports.default = Grid;
 
 /***/ },
-/* 121 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6209,7 +6141,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Icons = __webpack_require__(122);
+  var _Icons = __webpack_require__(121);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
@@ -6227,7 +6159,7 @@ module.exports =
   };
 
 /***/ },
-/* 122 */
+/* 121 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6252,11 +6184,11 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Icons = __webpack_require__(123);
+  var _Icons = __webpack_require__(122);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
@@ -6276,7 +6208,7 @@ module.exports =
   exports.default = displayIcons;
 
 /***/ },
-/* 123 */
+/* 122 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6325,7 +6257,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -7377,7 +7309,7 @@ module.exports =
   exports.default = Icons;
 
 /***/ },
-/* 124 */
+/* 123 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7394,7 +7326,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MorrisjsCharts = __webpack_require__(125);
+  var _MorrisjsCharts = __webpack_require__(124);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
@@ -7412,7 +7344,7 @@ module.exports =
   };
 
 /***/ },
-/* 125 */
+/* 124 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7437,11 +7369,11 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _MorrisjsCharts = __webpack_require__(126);
+  var _MorrisjsCharts = __webpack_require__(125);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
@@ -7461,7 +7393,7 @@ module.exports =
   exports.default = displayMorrisjsCharts;
 
 /***/ },
-/* 126 */
+/* 125 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7510,7 +7442,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -7573,6 +7505,41 @@ module.exports =
   exports.default = MorrisjsCharts;
 
 /***/ },
+/* 126 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _jsx2 = __webpack_require__(1);
+  
+  var _jsx3 = _interopRequireDefault(_jsx2);
+  
+  var _react = __webpack_require__(14);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Notification = __webpack_require__(127);
+  
+  var _Notification2 = _interopRequireDefault(_Notification);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var _ref = (0, _jsx3.default)(_Notification2.default, {});
+  
+  exports.default = {
+  
+    path: '/notification',
+  
+    action: function action() {
+      return _ref;
+    }
+  };
+
+/***/ },
 /* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -7596,41 +7563,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var _ref = (0, _jsx3.default)(_Notification2.default, {});
-  
-  exports.default = {
-  
-    path: '/notification',
-  
-    action: function action() {
-      return _ref;
-    }
-  };
-
-/***/ },
-/* 128 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _jsx2 = __webpack_require__(1);
-  
-  var _jsx3 = _interopRequireDefault(_jsx2);
-  
-  var _react = __webpack_require__(14);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Notification = __webpack_require__(129);
-  
-  var _Notification2 = _interopRequireDefault(_Notification);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
   var title = 'Notification';
   // import Button from 'react-bootstrap/lib/Button';
   // import Panel from 'react-bootstrap/lib/Panel';
@@ -7649,7 +7581,7 @@ module.exports =
   exports.default = displayNotification;
 
 /***/ },
-/* 129 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7690,7 +7622,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Alert = __webpack_require__(130);
+  var _Alert = __webpack_require__(129);
   
   var _Alert2 = _interopRequireDefault(_Alert);
   
@@ -7698,23 +7630,23 @@ module.exports =
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _OverlayTrigger = __webpack_require__(131);
+  var _OverlayTrigger = __webpack_require__(130);
   
   var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
   
-  var _Tooltip = __webpack_require__(132);
+  var _Tooltip = __webpack_require__(131);
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Popover = __webpack_require__(133);
+  var _Popover = __webpack_require__(132);
   
   var _Popover2 = _interopRequireDefault(_Popover);
   
-  var _Modal = __webpack_require__(134);
+  var _Modal = __webpack_require__(133);
   
   var _Modal2 = _interopRequireDefault(_Modal);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -7964,34 +7896,69 @@ module.exports =
   exports.default = Notification;
 
 /***/ },
-/* 130 */
+/* 129 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Alert");
 
 /***/ },
-/* 131 */
+/* 130 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/OverlayTrigger");
 
 /***/ },
-/* 132 */
+/* 131 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Tooltip");
 
 /***/ },
-/* 133 */
+/* 132 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Popover");
 
 /***/ },
-/* 134 */
+/* 133 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Modal");
+
+/***/ },
+/* 134 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _jsx2 = __webpack_require__(1);
+  
+  var _jsx3 = _interopRequireDefault(_jsx2);
+  
+  var _react = __webpack_require__(14);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _PanelWells = __webpack_require__(135);
+  
+  var _PanelWells2 = _interopRequireDefault(_PanelWells);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var _ref = (0, _jsx3.default)(_PanelWells2.default, {});
+  
+  exports.default = {
+  
+    path: '/panelwells',
+  
+    action: function action() {
+      return _ref;
+    }
+  };
 
 /***/ },
 /* 135 */
@@ -8012,41 +7979,6 @@ module.exports =
   var _react2 = _interopRequireDefault(_react);
   
   var _PanelWells = __webpack_require__(136);
-  
-  var _PanelWells2 = _interopRequireDefault(_PanelWells);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var _ref = (0, _jsx3.default)(_PanelWells2.default, {});
-  
-  exports.default = {
-  
-    path: '/panelwells',
-  
-    action: function action() {
-      return _ref;
-    }
-  };
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _jsx2 = __webpack_require__(1);
-  
-  var _jsx3 = _interopRequireDefault(_jsx2);
-  
-  var _react = __webpack_require__(14);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _PanelWells = __webpack_require__(137);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
@@ -8077,7 +8009,7 @@ module.exports =
   exports.default = displayPanelWells;
 
 /***/ },
-/* 137 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8288,6 +8220,41 @@ module.exports =
   exports.default = PanelWells;
 
 /***/ },
+/* 137 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _jsx2 = __webpack_require__(1);
+  
+  var _jsx3 = _interopRequireDefault(_jsx2);
+  
+  var _react = __webpack_require__(14);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Typography = __webpack_require__(138);
+  
+  var _Typography2 = _interopRequireDefault(_Typography);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var _ref = (0, _jsx3.default)(_Typography2.default, {});
+  
+  exports.default = {
+  
+    path: '/typography',
+  
+    action: function action() {
+      return _ref;
+    }
+  };
+
+/***/ },
 /* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -8306,41 +8273,6 @@ module.exports =
   var _react2 = _interopRequireDefault(_react);
   
   var _Typography = __webpack_require__(139);
-  
-  var _Typography2 = _interopRequireDefault(_Typography);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var _ref = (0, _jsx3.default)(_Typography2.default, {});
-  
-  exports.default = {
-  
-    path: '/typography',
-  
-    action: function action() {
-      return _ref;
-    }
-  };
-
-/***/ },
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _jsx2 = __webpack_require__(1);
-  
-  var _jsx3 = _interopRequireDefault(_jsx2);
-  
-  var _react = __webpack_require__(14);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Typography = __webpack_require__(140);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
@@ -8370,7 +8302,7 @@ module.exports =
   exports.default = displayTypography;
 
 /***/ },
-/* 140 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8419,7 +8351,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(104);
+  var _PageHeader = __webpack_require__(103);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -8532,7 +8464,7 @@ module.exports =
   exports.default = Typography;
 
 /***/ },
-/* 141 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8549,7 +8481,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _blank = __webpack_require__(142);
+  var _blank = __webpack_require__(141);
   
   var _blank2 = _interopRequireDefault(_blank);
   
@@ -8566,7 +8498,7 @@ module.exports =
   };
 
 /***/ },
-/* 142 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8604,7 +8536,7 @@ module.exports =
   exports.default = displayBlank;
 
 /***/ },
-/* 143 */
+/* 142 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8621,7 +8553,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Register = __webpack_require__(144);
+  var _Register = __webpack_require__(143);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -8648,7 +8580,7 @@ module.exports =
   };
 
 /***/ },
-/* 144 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8669,7 +8601,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Register = __webpack_require__(145);
+  var _Register = __webpack_require__(144);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -8702,11 +8634,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Register2.default)(Register);
 
 /***/ },
-/* 145 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(146);
+      var content = __webpack_require__(145);
       var insertCss = __webpack_require__(25);
   
       if (typeof content === 'string') {
@@ -8719,7 +8651,7 @@ module.exports =
     
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(24)();
@@ -8736,7 +8668,7 @@ module.exports =
   };
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8761,7 +8693,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Content = __webpack_require__(148);
+  var _Content = __webpack_require__(147);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -8845,7 +8777,7 @@ module.exports =
       */
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -8886,7 +8818,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Content = __webpack_require__(149);
+  var _Content = __webpack_require__(148);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -8938,11 +8870,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Content2.default)(Content);
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(150);
+      var content = __webpack_require__(149);
       var insertCss = __webpack_require__(25);
   
       if (typeof content === 'string') {
@@ -8955,7 +8887,7 @@ module.exports =
     
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(24)();
@@ -8972,7 +8904,7 @@ module.exports =
   };
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -9025,7 +8957,7 @@ module.exports =
       */
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports) {
 
   module.exports = require("./assets");

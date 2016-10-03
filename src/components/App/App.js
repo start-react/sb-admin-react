@@ -52,7 +52,6 @@ class App extends Component {
   }
 
   render() {
-    console.log('props -->\n', this.props, '\n*******123\n');
     return !this.props.error ? (
       !this.props.login ? (
         <div>
