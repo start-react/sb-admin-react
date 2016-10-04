@@ -29,39 +29,80 @@ import register from './register';
 import content from './content';
 import error from './error';
 
-export default {
+import Header from '../components/Header';
 
-  path: '/',
+export default [
 
-  // keep in mind, routes are evaluated in order
-  children: [
-    home,
-    contact,
-    login,
-    table,
-    button,
-    flotcharts,
-    forms,
-    grid,
-    icons,
-    morrisjscharts,
-    notification,
-    panelwells,
-    typography,
-    register,
-    blank,
-
-    // place new routes before...
-    content,
-    error,
-  ],
-
-  async action({ next, render, context }) {
-    const component = await next();
-    if (component === undefined) return component;
-    return render(
-      <App context={context}>{component}</App>
-    );
+  {
+    path: '/login',
+    children: [
+      login,
+    ],
+    async action({ next, render, context }) {
+      console.log('inside login');
+      const component = await next();
+      console.log('inside login with component', component);
+      if (component === undefined) return component;
+      return render(
+        <App context={context}>{component}</App>
+      );
+    },
   },
 
-};
+
+  {
+    path: '/',
+
+  // keep in mind, routes are evaluated in order
+    children: [
+      home,
+      contact,
+      table,
+      button,
+      flotcharts,
+      forms,
+      grid,
+      icons,
+      morrisjscharts,
+      notification,
+      panelwells,
+      typography,
+      register,
+      blank,
+
+      // place new routes before...
+      content,
+      error,
+    ],
+
+    async action({ next, render, context }) {
+      // console.log('inside dashboard');
+      const component = await next();
+      // console.log('inside dasdboard component', component);
+      if (component === undefined) return component;
+      return render(
+        <div>
+          <Header />
+          <div id="page-wrapper" className="page-wrapper">
+            <App context={context}>{component}</App>
+          </div>
+        </div>
+      );
+    },
+  },
+  {
+    path: '/error',
+    children: [
+      error,
+    ],
+    async action({ next, render, context }) {
+      // console.log('inside error');
+      const component = await next();
+      // console.log('inside error with component', component);
+      if (component === undefined) return component;
+      return render(
+        <App context={context}>{component}</App>
+      );
+    },
+  },
+];

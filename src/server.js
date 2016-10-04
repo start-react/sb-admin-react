@@ -99,6 +99,7 @@ app.get('*', async (req, res, next) => {
         setMeta: (key, value) => (data[key] = value),
       },
       render(component, status = 200) {
+        console.log('inside render of UniversalRouter', component);
         css = new Set();
         statusCode = status;
         data.children = ReactDOM.renderToString(component);
@@ -107,11 +108,13 @@ app.get('*', async (req, res, next) => {
       },
     });
 
+    console.log('outside render func of UniversalRouter with statusCode', statusCode);
     const html = ReactDOM.renderToStaticMarkup(<Html {...data} />);
 
     res.status(statusCode);
     res.send(`<!doctype html>${html}`);
   } catch (err) {
+    // console.log('some error occured', err);
     next(err);
   }
 });

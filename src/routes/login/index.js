@@ -8,20 +8,15 @@
  */
 
 import React from 'react';
-import App from '../../components/App';
+// import App from '../../components/App';
 import Login from './Login';
 
 export default {
 
-  path: '/login',
+  path: '/',
 
-  action({ render, context }) {
-    return render(
-      <App context={context} login={true}>
-        <Login />
-      </App>
-    );
+  action() {
+    return <Login />;
   },
-
 
 };

@@ -5,6 +5,7 @@ import React, { Component } from 'react';
 // // import Pagination from 'react-bootstrap/lib/Pagination';
 // import PageHeader from 'react-bootstrap/lib/PageHeader';
 import { Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader } from 'react-bootstrap';
+import CustomPanel  from './panel';
 
 class PanelWells extends Component {
 
@@ -17,127 +18,100 @@ class PanelWells extends Component {
 
         <div className="row">
           <div className="col-lg-4">
-            <Panel
-              header={<span>Default Panel</span>}
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt .
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="default"
+              headerText="Default Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Primary Panel</span>} bsStyle="primary"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                   est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                   fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-primary"
+              headerText="Primary Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Success Panel</span>} bsStyle="success"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-success"
+              headerText="Success Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-4">
-            <Panel
-              header={<span>Info Panel</span>} bsStyle="info"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                   est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                    fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-info"
+              headerText="Info Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Warning Panel</span>} bsStyle="warning"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-warning"
+              headerText="Warning Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Danger Panel</span>} bsStyle="danger"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est
-                  vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-danger"
+              headerText="danger Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
         </div>
 
         <div className="row">
           <div className="col-lg-4">
-            <Panel
-              header={<span>Green Panel</span>} bsStyle="success"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                   fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-green"
+              headerText="Green Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Yellow Panel</span>} bsStyle="warning"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-red"
+              headerText="Red Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
           <div className="col-lg-4">
-            <Panel
-              header={<span>Red Panel</span>} bsStyle="danger"
-              footer={<span>Panel Footer</span>}
-            >
-              <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt
-                  est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et,
-                  fringilla augue.
-                </p>
-              </div>
-            </Panel>
+            <CustomPanel
+              style="panel-yellow"
+              headerText="Yellow Panel"
+              footerText="Panel Footer"
+              paragraph="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+              tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere
+              lectus et, fringilla augue."
+            />
           </div>
         </div>
 
@@ -150,7 +124,7 @@ class PanelWells extends Component {
                     <h4 className="panel-title">
                         Collapsible Group Item #1
                     </h4>
-                  } eventKey="1"
+                  } eventKey={1}
                 >
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                   incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
@@ -230,7 +204,7 @@ class PanelWells extends Component {
 
           <div className="col-lg-6">
             <Panel header={<span>Pill Tabs</span>} >
-              <Tabs id = "tabs2" bsStyle="pills" defaultActiveKey={1}>
+              <Tabs id="tabs2" bsStyle="pills" defaultActiveKey={1}>
                 <Tab eventKey={1} title="Home">
                   <h4>Home Tab</h4>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>

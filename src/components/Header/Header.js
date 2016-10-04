@@ -43,7 +43,7 @@ function Header() {
             </span>
           </Brand>
           <ul className="nav navbar-top-links navbar-right">
-            <Nav style={ {margin: 0} }>
+
               <NavDropdown title={<span><i className="fa fa-envelope fa-fw"></i></span>} id="navDropdown1">
                 <MenuItem eventKey="1">
                   <div> <strong>John Smith</strong> <span className="pull-right text-muted"> <em>Yesterday</em> </span> </div>
@@ -149,7 +149,7 @@ function Header() {
                     <span> <i className = "fa fa-sign-out fa-fw" /> Logout </span>
                   </MenuItem>
                 </NavDropdown>
-            </Nav>
+
           </ul>
           <Sidebar />
     </Navbar>

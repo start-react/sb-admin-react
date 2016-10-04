@@ -52,17 +52,8 @@ class App extends Component {
   }
 
   render() {
-    return !this.props.error ? (
-      !this.props.login ? (
-        <div>
-          <Header />
-            <div id="page-wrapper" className="page-wrapper">
-              {this.props.children}
-            </div>
-        </div>
-      ) : this.props.children
-    ) : this.props.children;
-
+    // console.log('\n********\n', this.props, '\n********12334\n');
+    return this.props.children;
   }
 
 }

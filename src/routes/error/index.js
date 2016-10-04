@@ -16,6 +16,7 @@ export default {
   path: '/error',
 
   action({ render, context, error }) {
+    // console.log('error obj inside error index.js', error);
     return render(
       <App context={context} error={error}>
         <ErrorPage error={error} />
