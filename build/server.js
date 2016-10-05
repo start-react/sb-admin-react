@@ -12126,41 +12126,6 @@ module.exports =
     value: true
   });
   
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Notification = __webpack_require__(120);
-  
-  var _Notification2 = _interopRequireDefault(_Notification);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'Notification';
-  // import Button from 'react-bootstrap/lib/Button';
-  // import Panel from 'react-bootstrap/lib/Panel';
-  // import PageHeader from 'react-bootstrap/lib/PageHeader';
-  
-  
-  function displayNotification(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_Notification2.default, null);
-  }
-  
-  displayNotification.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayNotification;
-
-/***/ },
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
   var _getPrototypeOf = __webpack_require__(55);
   
   var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
@@ -12234,6 +12199,7 @@ module.exports =
         alertVisibleD: true,
         showModal: false
       };
+      _this.handleAlertDismiss = _this.handleAlertDismiss.bind(_this);
       return _this;
     }
   
@@ -12711,6 +12677,7 @@ module.exports =
   exports.default = Notification;
 
 /***/ },
+/* 120 */,
 /* 121 */
 /***/ function(module, exports) {
 
