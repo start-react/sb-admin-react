@@ -1,0 +1,183 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "recharts",
+        "scope": null,
+        "escapedName": "recharts",
+        "name": "recharts",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/sahusoft/Sites/projects/sb-admin/boilerplate/react-starter-kit"
+    ]
+  ],
+  "_from": "recharts@latest",
+  "_id": "recharts@0.15.1",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/recharts",
+  "_nodeVersion": "5.1.0",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/recharts-0.15.1.tgz_1474866018352_0.5062410603277385"
+  },
+  "_npmUser": {
+    "name": "xile611",
+    "email": "327197681@qq.com"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "recharts",
+    "scope": null,
+    "escapedName": "recharts",
+    "name": "recharts",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/recharts/-/recharts-0.15.1.tgz",
+  "_shasum": "be68ac14d786b154a297939da048f7026f07d88b",
+  "_shrinkwrap": null,
+  "_spec": "recharts",
+  "_where": "/Users/sahusoft/Sites/projects/sb-admin/boilerplate/react-starter-kit",
+  "author": {
+    "name": "recharts group"
+  },
+  "bugs": {
+    "url": "https://github.com/recharts/recharts/issues"
+  },
+  "dependencies": {
+    "classnames": "2.2.5",
+    "core-js": "2.4.0",
+    "d3-scale": "1.0.0",
+    "d3-shape": "1.0.0",
+    "lodash": "4.13.1",
+    "react-container-dimensions": "1.2.0",
+    "react-smooth": "0.1.11",
+    "recharts-scale": "0.2.1",
+    "reduce-css-calc": "^1.3.0"
+  },
+  "description": "React charts",
+  "devDependencies": {
+    "babel-cli": "^6.10.0",
+    "babel-core": "^6.10.0",
+    "babel-eslint": "^6.1.0",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-lodash": "^3.2.0",
+    "babel-plugin-transform-class-properties": "^6.10.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-export-extensions": "^6.8.0",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-polyfill": "^6.9.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.0",
+    "chai": "^3.5.0",
+    "chai-enzyme": "^0.5.1",
+    "enzyme": "^2.3.0",
+    "escope": "^3.6.0",
+    "eslint": "^3.0.0",
+    "eslint-config-airbnb": "^9.0.1",
+    "eslint-plugin-import": "^1.10.0",
+    "eslint-plugin-jsx-a11y": "^1.5.0",
+    "eslint-plugin-react": "^5.2.0",
+    "estraverse-fb": "^1.3.1",
+    "isparta": "^4.0.0",
+    "istanbul-instrumenter-loader": "^0.2.0",
+    "json-loader": "^0.5.4",
+    "karma": "^1.1.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-coverage": "^1.0.0",
+    "karma-coveralls": "^1.1.2",
+    "karma-firefox-launcher": "^1.0.0",
+    "karma-mocha": "^1.1.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.7.0",
+    "mocha": "^2.5.0",
+    "pre-commit": "^1.1.3",
+    "react": "^15.0.0",
+    "react-addons-test-utils": "^15.0.0",
+    "react-addons-transition-group": "^15.0.0",
+    "react-dom": "^15.0.0",
+    "react-hot-loader": "^1.3.0",
+    "react-router": "^2.5.0",
+    "rimraf": "^2.5.3",
+    "sinon": "^1.17.4",
+    "webpack": "^1.13.1",
+    "webpack-bundle-size-analyzer": "^2.0.2",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "be68ac14d786b154a297939da048f7026f07d88b",
+    "tarball": "https://registry.npmjs.org/recharts/-/recharts-0.15.1.tgz"
+  },
+  "files": [
+    "*.md",
+    "demo",
+    "es6",
+    "lib",
+    "umd",
+    "src"
+  ],
+  "gitHead": "580ac55e4374ef2ef9ebeaf0adda8bc35f1ca36d",
+  "homepage": "https://github.com/recharts/recharts",
+  "jsnext:main": "es6/index",
+  "keywords": [
+    "react",
+    "reactjs",
+    "chart",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "lib/index",
+  "maintainers": [
+    {
+      "name": "arcthur",
+      "email": "arthurtemptation@gmail.com"
+    },
+    {
+      "name": "evilucifero",
+      "email": "himayue@hotmail.com"
+    },
+    {
+      "name": "xile611",
+      "email": "327197681@qq.com"
+    }
+  ],
+  "name": "recharts",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0",
+    "react-dom": "^0.14.0 || ^15.0.0",
+    "react-addons-transition-group": "^0.14.0 || ^15.0.0"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/recharts/recharts.git"
+  },
+  "scripts": {
+    "build": "npm run build-cjs && npm run build-es6 && rimraf umd && npm run build-umd && npm run build-min",
+    "build-cjs": "rimraf lib && babel ./src -d lib",
+    "build-es6": "rimraf es6 && babel ./src -d es6 --blacklist=es6.modules",
+    "build-min": "NODE_ENV=production webpack src/index.js umd/Recharts.min.js",
+    "build-umd": "NODE_ENV=development webpack src/index.js umd/Recharts.js",
+    "bundle-analyse": "NODE_ENV=production webpack src/index.js umd/Recharts.min.js --json | webpack-bundle-size-analyzer",
+    "demo": "webpack-dev-server  --progress --port 3000  --colors --content-base demo --hot --inline --config demo/webpack.config.js",
+    "lint": "eslint src",
+    "test": "karma start test/karma.conf.js"
+  },
+  "version": "0.15.1"
+}

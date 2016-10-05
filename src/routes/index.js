@@ -14,17 +14,17 @@ import App from '../components/App';
 import home from './home';
 import contact from './contact';
 import login from './login';
-import table from './dashboard-pages/Tables';
-import button from './dashboard-pages/Buttons';
-import flotcharts from './dashboard-pages/FlotCharts';
-import forms from './dashboard-pages/Forms';
-import grid from './dashboard-pages/Grid';
-import icons from './dashboard-pages/Icons';
-import morrisjscharts from './dashboard-pages/MorrisjsCharts';
-import notification from './dashboard-pages/Notification';
-import panelwells from './dashboard-pages/PanelWells';
-import typography from './dashboard-pages/Typography';
-import blank from './dashboard-pages/Blank';
+import table from './dashboardPages/tables';
+import button from './dashboardPages/buttons';
+import flotcharts from './dashboardPages/flotCharts';
+import forms from './dashboardPages/forms';
+import grid from './dashboardPages/grid';
+import icons from './dashboardPages/icons';
+import morrisjscharts from './dashboardPages/morrisjsCharts';
+import notification from './dashboardPages/notification';
+import panelwells from './dashboardPages/panelWells';
+import typography from './dashboardPages/typography';
+import blank from './dashboardPages/blank';
 import register from './register';
 import content from './content';
 import error from './error';
@@ -39,9 +39,7 @@ export default [
       login,
     ],
     async action({ next, render, context }) {
-      console.log('inside login');
       const component = await next();
-      console.log('inside login with component', component);
       if (component === undefined) return component;
       return render(
         <App context={context}>{component}</App>
