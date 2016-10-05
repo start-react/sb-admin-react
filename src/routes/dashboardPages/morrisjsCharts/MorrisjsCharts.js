@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import Button from 'react-bootstrap/lib/Button';
 import Panel from 'react-bootstrap/lib/Panel';
 import PageHeader from 'react-bootstrap/lib/PageHeader';
-import CustomPieCharts from '../../../components/CustomPieChart';
+import Donut from '../../../components/Donut';
 
 import {
   LineChart, Tooltip,
@@ -14,21 +14,21 @@ import {
 const title = 'MorrisjsCharts';
 
 const data = [
-      { name: 'Page A', uv: 4000, pv: 2400, amt: 2400 },
-      { name: 'Page B', uv: 3000, pv: 1398, amt: 2210 },
-      { name: 'Page C', uv: 2000, pv: 9800, amt: 2290 },
-      { name: 'Page D', uv: 2780, pv: 3908, amt: 2000 },
-      { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 },
-      { name: 'Page F', uv: 2390, pv: 3800, amt: 2500 },
-      { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 },
+      { name: 'Page A', uv: 4000, pv: 2400, amt: 2400, value: 600 },
+      { name: 'Page B', uv: 3000, pv: 1398, amt: 2210, value: 300 },
+      { name: 'Page C', uv: 2000, pv: 9800, amt: 2290, value: 500 },
+      { name: 'Page D', uv: 2780, pv: 3908, amt: 2000, value: 400 },
+      { name: 'Page E', uv: 1890, pv: 4800, amt: 2181, value: 200 },
+      { name: 'Page F', uv: 2390, pv: 3800, amt: 2500, value: 700 },
+      { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 },
 ];
 
-const data1 = [
-  {name: 'Group A', value: 600},
-  {name: 'Group B', value: 300},
-  {name: 'Group C', value: 300},
-  {name: 'Group D', value: 200}
-];
+// const data1 = [
+//   {name: 'Group A', value: 600},
+//   {name: 'Group B', value: 300},
+//   {name: 'Group C', value: 300},
+//   {name: 'Group D', value: 200}
+// ];
 
 
 function displayMorrisjsCharts(props, context) {
@@ -98,7 +98,7 @@ function displayMorrisjsCharts(props, context) {
           <div className="col-lg-6">
             <Panel header={<span>Donut Chart Example</span>} >
               <div>
-                <CustomPieCharts data={data1} dataKey="uv" color="#8884d8" />
+                <Donut data={data} color="#8884d8" innerRadius="60" outerRadius="80" />
               </div>
             </Panel>
           </div>

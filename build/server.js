@@ -4146,6 +4146,12 @@ module.exports =
   
   var _Widget2 = _interopRequireDefault(_Widget);
   
+  var _Donut = __webpack_require__(234);
+  
+  var _Donut2 = _interopRequireDefault(_Donut);
+  
+  var _recharts = __webpack_require__(161);
+  
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   // import Header from '../../components/Header/Header.js';
@@ -4158,6 +4164,8 @@ module.exports =
                                  * This source code is licensed under the MIT license found in the
                                  * LICENSE.txt file in the root directory of this source tree.
                                  */
+  
+  var data = [{ name: 'Page A', uv: 4000, pv: 2400, amt: 2400, value: 600 }, { name: 'Page B', uv: 3000, pv: 1398, amt: 2210, value: 300 }, { name: 'Page C', uv: 2000, pv: 9800, amt: 2290, value: 500 }, { name: 'Page D', uv: 2780, pv: 3908, amt: 2000, value: 400 }, { name: 'Page E', uv: 1890, pv: 4800, amt: 2181, value: 200 }, { name: 'Page F', uv: 2390, pv: 3800, amt: 2500, value: 700 }, { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 }];
   
   function Home(_ref, context) {
     var news = _ref.news;
@@ -4270,7 +4278,21 @@ module.exports =
             _react2.default.createElement(
               'div',
               null,
-              'Panel contents'
+              _react2.default.createElement(
+                _recharts.ResponsiveContainer,
+                { width: '100%', aspect: 2 },
+                _react2.default.createElement(
+                  _recharts.AreaChart,
+                  { data: data, margin: { top: 10, right: 30, left: 0, bottom: 0 } },
+                  _react2.default.createElement(_recharts.XAxis, { dataKey: 'name' }),
+                  _react2.default.createElement(_recharts.YAxis, null),
+                  _react2.default.createElement(_recharts.CartesianGrid, { stroke: '#ccc' }),
+                  _react2.default.createElement(_recharts.Tooltip, null),
+                  _react2.default.createElement(_recharts.Area, { type: 'monotone', dataKey: 'uv', stackId: '1', stroke: '#8884d8', fill: '#8884d8' }),
+                  _react2.default.createElement(_recharts.Area, { type: 'monotone', dataKey: 'pv', stackId: '1', stroke: '#82ca9d', fill: '#82ca9d' }),
+                  _react2.default.createElement(_recharts.Area, { type: 'monotone', dataKey: 'amt', stackId: '1', stroke: '#ffc658', fill: '#ffc658' })
+                )
+              )
             )
           ),
           _react2.default.createElement(
@@ -4314,7 +4336,21 @@ module.exports =
             _react2.default.createElement(
               'div',
               null,
-              'Panel contents'
+              _react2.default.createElement(
+                _recharts.ResponsiveContainer,
+                { width: '100%', aspect: 2 },
+                _react2.default.createElement(
+                  _recharts.BarChart,
+                  { data: data, margin: { top: 10, right: 30, left: 0, bottom: 0 } },
+                  _react2.default.createElement(_recharts.CartesianGrid, { stroke: '#ccc' }),
+                  _react2.default.createElement(_recharts.XAxis, { dataKey: 'name' }),
+                  _react2.default.createElement(_recharts.YAxis, null),
+                  _react2.default.createElement(_recharts.Tooltip, null),
+                  _react2.default.createElement(_recharts.Bar, { dataKey: 'pv', stackId: '1', fill: '#8884d8' }),
+                  _react2.default.createElement(_recharts.Bar, { dataKey: 'uv', stackId: '1', fill: '#82ca9d' }),
+                  _react2.default.createElement(_recharts.Bar, { type: 'monotone', dataKey: 'amt', fill: '#ffc658' })
+                )
+              )
             )
           ),
           _react2.default.createElement(
@@ -4502,7 +4538,7 @@ module.exports =
             _react2.default.createElement(
               'div',
               null,
-              'Panel contents'
+              _react2.default.createElement(_Donut2.default, { data: data, color: '#8884d8', innerRadius: '35', outerRadius: '55' })
             )
           )
         )
@@ -11951,9 +11987,9 @@ module.exports =
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _CustomPieChart = __webpack_require__(118);
+  var _Donut = __webpack_require__(234);
   
-  var _CustomPieChart2 = _interopRequireDefault(_CustomPieChart);
+  var _Donut2 = _interopRequireDefault(_Donut);
   
   var _recharts = __webpack_require__(161);
   
@@ -11963,9 +11999,15 @@ module.exports =
   
   var title = 'MorrisjsCharts';
   
-  var data = [{ name: 'Page A', uv: 4000, pv: 2400, amt: 2400 }, { name: 'Page B', uv: 3000, pv: 1398, amt: 2210 }, { name: 'Page C', uv: 2000, pv: 9800, amt: 2290 }, { name: 'Page D', uv: 2780, pv: 3908, amt: 2000 }, { name: 'Page E', uv: 1890, pv: 4800, amt: 2181 }, { name: 'Page F', uv: 2390, pv: 3800, amt: 2500 }, { name: 'Page G', uv: 3490, pv: 4300, amt: 2100 }];
+  var data = [{ name: 'Page A', uv: 4000, pv: 2400, amt: 2400, value: 600 }, { name: 'Page B', uv: 3000, pv: 1398, amt: 2210, value: 300 }, { name: 'Page C', uv: 2000, pv: 9800, amt: 2290, value: 500 }, { name: 'Page D', uv: 2780, pv: 3908, amt: 2000, value: 400 }, { name: 'Page E', uv: 1890, pv: 4800, amt: 2181, value: 200 }, { name: 'Page F', uv: 2390, pv: 3800, amt: 2500, value: 700 }, { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 }];
   
-  var data1 = [{ name: 'Group A', value: 600 }, { name: 'Group B', value: 300 }, { name: 'Group C', value: 300 }, { name: 'Group D', value: 200 }];
+  // const data1 = [
+  //   {name: 'Group A', value: 600},
+  //   {name: 'Group B', value: 300},
+  //   {name: 'Group C', value: 300},
+  //   {name: 'Group D', value: 200}
+  // ];
+  
   
   function displayMorrisjsCharts(props, context) {
     context.setTitle(title);
@@ -12093,7 +12135,7 @@ module.exports =
             _react2.default.createElement(
               'div',
               null,
-              _react2.default.createElement(_CustomPieChart2.default, { data: data1, dataKey: 'uv', color: '#8884d8' })
+              _react2.default.createElement(_Donut2.default, { data: data, color: '#8884d8', innerRadius: '60', outerRadius: '80' })
             )
           )
         ),
@@ -12138,178 +12180,7 @@ module.exports =
   exports.default = displayMorrisjsCharts;
 
 /***/ },
-/* 118 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _PieChart = __webpack_require__(119);
-  
-  var _PieChart2 = _interopRequireDefault(_PieChart);
-  
-  var _Pie = __webpack_require__(146);
-  
-  var _Pie2 = _interopRequireDefault(_Pie);
-  
-  var _Sector = __webpack_require__(149);
-  
-  var _Sector2 = _interopRequireDefault(_Sector);
-  
-  var _ResponsiveContainer = __webpack_require__(158);
-  
-  var _ResponsiveContainer2 = _interopRequireDefault(_ResponsiveContainer);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  // import { PieCharts, Pie, Sector, ResponsiveContainer } from '../../vendor/recharts';
-  var CustomPieCharts = function (_Component) {
-    (0, _inherits3.default)(CustomPieCharts, _Component);
-  
-    function CustomPieCharts(props) {
-      (0, _classCallCheck3.default)(this, CustomPieCharts);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (CustomPieCharts.__proto__ || (0, _getPrototypeOf2.default)(CustomPieCharts)).call(this, props));
-  
-      _this.state = {
-        activeIndex: 0
-      };
-      // this.onPieEnter = this.onPieEnter.bind(this);
-      return _this;
-    }
-  
-    (0, _createClass3.default)(CustomPieCharts, [{
-      key: 'onPieEnter',
-      value: function onPieEnter(data, index) {
-        this.setState({
-          activeIndex: index
-        });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var _this2 = this;
-  
-        return _react2.default.createElement(
-          _ResponsiveContainer2.default,
-          { width: '100%', aspect: 2, margin: { top: 10, right: 30, left: 0, bottom: 0 } },
-          _react2.default.createElement(
-            _PieChart2.default,
-            { onMouseEnter: function onMouseEnter(data, index) {
-                _this2.onPieEnter(data, index);
-              } },
-            _react2.default.createElement(_Pie2.default, {
-              activeIndex: this.state.activeIndex,
-              activeShape: renderActiveShape,
-              data: this.props.data,
-              cx: 250,
-              cy: 120,
-              innerRadius: 60,
-              outerRadius: 80,
-              fill: this.props.color
-            })
-          )
-        );
-      }
-    }]);
-    return CustomPieCharts;
-  }(_react.Component);
-  
-  var renderActiveShape = function renderActiveShape(props) {
-    var RADIAN = Math.PI / 180;
-    var cx = props.cx;
-    var cy = props.cy;
-    var midAngle = props.midAngle;
-    var innerRadius = props.innerRadius;
-    var outerRadius = props.outerRadius;
-    var startAngle = props.startAngle;
-    var endAngle = props.endAngle;
-    var fill = props.fill;
-    var payload = props.payload;
-    var percent = props.percent;
-    var value = props.value;
-  
-    var sin = Math.sin(-RADIAN * midAngle);
-    var cos = Math.cos(-RADIAN * midAngle);
-    var sx = cx + (outerRadius + 10) * cos;
-    var sy = cy + (outerRadius + 10) * sin;
-    var mx = cx + (outerRadius + 30) * cos;
-    var my = cy + (outerRadius + 30) * sin;
-    var ex = mx + (cos >= 0 ? 1 : -1) * 22;
-    var ey = my;
-    var textAnchor = cos >= 0 ? 'start' : 'end';
-  
-    return _react2.default.createElement(
-      'g',
-      null,
-      _react2.default.createElement(
-        'text',
-        { x: cx, y: cy, dy: 8, textAnchor: 'middle', fill: fill },
-        payload.name
-      ),
-      _react2.default.createElement(_Sector2.default, {
-        cx: cx,
-        cy: cy,
-        innerRadius: innerRadius,
-        outerRadius: outerRadius,
-        startAngle: startAngle,
-        endAngle: endAngle,
-        fill: fill
-      }),
-      _react2.default.createElement(_Sector2.default, {
-        cx: cx,
-        cy: cy,
-        startAngle: startAngle,
-        endAngle: endAngle,
-        innerRadius: outerRadius + 6,
-        outerRadius: outerRadius + 10,
-        fill: fill
-      }),
-      _react2.default.createElement('path', { d: 'M' + sx + ',' + sy + 'L' + mx + ',' + my + 'L' + ex + ',' + ey, stroke: fill, fill: 'none' }),
-      _react2.default.createElement('circle', { cx: ex, cy: ey, r: 2, fill: fill, stroke: 'none' }),
-      _react2.default.createElement(
-        'text',
-        { x: ex + (cos >= 0 ? 1 : -1) * 12, y: ey, textAnchor: textAnchor, fill: '#333' },
-        'PV ' + value
-      ),
-      _react2.default.createElement(
-        'text',
-        { x: ex + (cos >= 0 ? 1 : -1) * 12, y: ey, dy: 18, textAnchor: textAnchor, fill: '#999' },
-        '(Rate ' + (percent * 100).toFixed(2) + '%)'
-      )
-    );
-  };
-  
-  exports.default = CustomPieCharts;
-
-/***/ },
+/* 118 */,
 /* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -31954,6 +31825,178 @@ module.exports =
 /***/ function(module, exports) {
 
   module.exports = require("./assets");
+
+/***/ },
+/* 232 */,
+/* 233 */,
+/* 234 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _getPrototypeOf = __webpack_require__(55);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(56);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(57);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(58);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(59);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(13);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _PieChart = __webpack_require__(119);
+  
+  var _PieChart2 = _interopRequireDefault(_PieChart);
+  
+  var _Pie = __webpack_require__(146);
+  
+  var _Pie2 = _interopRequireDefault(_Pie);
+  
+  var _Sector = __webpack_require__(149);
+  
+  var _Sector2 = _interopRequireDefault(_Sector);
+  
+  var _ResponsiveContainer = __webpack_require__(158);
+  
+  var _ResponsiveContainer2 = _interopRequireDefault(_ResponsiveContainer);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  // import { PieCharts, Pie, Sector, ResponsiveContainer } from '../../vendor/recharts';
+  var Donut = function (_Component) {
+    (0, _inherits3.default)(Donut, _Component);
+  
+    function Donut(props) {
+      (0, _classCallCheck3.default)(this, Donut);
+  
+      var _this = (0, _possibleConstructorReturn3.default)(this, (Donut.__proto__ || (0, _getPrototypeOf2.default)(Donut)).call(this, props));
+  
+      _this.state = {
+        activeIndex: 0
+      };
+      // this.onPieEnter = this.onPieEnter.bind(this);
+      return _this;
+    }
+  
+    (0, _createClass3.default)(Donut, [{
+      key: 'onPieEnter',
+      value: function onPieEnter(data, index) {
+        this.setState({
+          activeIndex: index
+        });
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _this2 = this;
+  
+        return _react2.default.createElement(
+          _ResponsiveContainer2.default,
+          { width: '100%', aspect: 2 },
+          _react2.default.createElement(
+            _PieChart2.default,
+            { margin: { top: 10, right: 30, left: 0, bottom: 0 }, onMouseEnter: function onMouseEnter(data, index) {
+                _this2.onPieEnter(data, index);
+              } },
+            _react2.default.createElement(_Pie2.default, {
+              activeIndex: this.state.activeIndex,
+              activeShape: renderActiveShape,
+              data: this.props.data,
+              innerRadius: this.props.innerRadius,
+              outerRadius: this.props.outerRadius,
+              fill: this.props.color
+            })
+          )
+        );
+      }
+    }]);
+    return Donut;
+  }(_react.Component);
+  
+  var renderActiveShape = function renderActiveShape(props) {
+    var RADIAN = Math.PI / 180;
+    var cx = props.cx;
+    var cy = props.cy;
+    var midAngle = props.midAngle;
+    var innerRadius = props.innerRadius;
+    var outerRadius = props.outerRadius;
+    var startAngle = props.startAngle;
+    var endAngle = props.endAngle;
+    var fill = props.fill;
+    var payload = props.payload;
+    var percent = props.percent;
+    var value = props.value;
+  
+    var sin = Math.sin(-RADIAN * midAngle);
+    var cos = Math.cos(-RADIAN * midAngle);
+    var sx = cx + (outerRadius + 5) * cos;
+    var sy = cy + (outerRadius + 5) * sin;
+    var mx = cx + (outerRadius + 10) * cos;
+    var my = cy + (outerRadius + 10) * sin;
+    var ex = mx + (cos >= 0 ? 1 : -1) * 11;
+    var ey = my;
+    var textAnchor = cos >= 0 ? 'start' : 'end';
+  
+    return _react2.default.createElement(
+      'g',
+      null,
+      _react2.default.createElement(
+        'text',
+        { x: cx, y: cy, dy: 8, textAnchor: 'middle', fill: fill },
+        payload.name
+      ),
+      _react2.default.createElement(_Sector2.default, {
+        cx: cx,
+        cy: cy,
+        innerRadius: innerRadius,
+        outerRadius: outerRadius,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        fill: fill
+      }),
+      _react2.default.createElement(_Sector2.default, {
+        cx: cx,
+        cy: cy,
+        startAngle: startAngle,
+        endAngle: endAngle,
+        innerRadius: outerRadius + 6,
+        outerRadius: outerRadius + 10,
+        fill: fill
+      }),
+      _react2.default.createElement('path', { d: 'M' + sx + ',' + sy + 'L' + mx + ',' + my + 'L' + ex + ',' + ey, stroke: fill, fill: 'none' }),
+      _react2.default.createElement('circle', { cx: ex, cy: ey, r: 2, fill: fill, stroke: 'none' }),
+      _react2.default.createElement(
+        'text',
+        { x: ex + (cos >= 0 ? 1 : -1) * 12, y: ey, textAnchor: textAnchor, fill: '#333' },
+        'Value ' + value
+      ),
+      _react2.default.createElement(
+        'text',
+        { x: ex + (cos >= 0 ? 1 : -1) * 12, y: ey, dy: 18, textAnchor: textAnchor, fill: 'red' },
+        '(Rate ' + (percent * 100).toFixed(2) + '%)'
+      )
+    );
+  };
+  
+  exports.default = Donut;
 
 /***/ }
 /******/ ]);
