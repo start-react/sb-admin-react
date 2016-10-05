@@ -136,7 +136,7 @@ module.exports =
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(151);
+  var _assets = __webpack_require__(141);
   
   var _assets2 = _interopRequireDefault(_assets);
   
@@ -246,7 +246,7 @@ module.exports =
                           render: function render(component) {
                             var status = arguments.length <= 1 || arguments[1] === undefined ? 200 : arguments[1];
   
-                            console.log('inside render of UniversalRouter', component);
+                            // console.log('inside render of UniversalRouter', component);
                             css = new _set2.default();
                             statusCode = status;
                             data.children = _server2.default.renderToString(component);
@@ -257,14 +257,14 @@ module.exports =
   
                       case 5:
   
-                        console.log('outside render func of UniversalRouter with statusCode', statusCode);
+                        // console.log('outside render func of UniversalRouter with statusCode', statusCode);
                         html = _server2.default.renderToStaticMarkup(_react2.default.createElement(_Html2.default, data));
   
   
                         res.status(statusCode);
                         res.send('<!doctype html>' + html);
   
-                      case 9:
+                      case 8:
                       case 'end':
                         return _context.stop();
                     }
@@ -2118,55 +2118,55 @@ module.exports =
   
   var _Tables2 = _interopRequireDefault(_Tables);
   
-  var _Buttons = __webpack_require__(104);
+  var _Buttons = __webpack_require__(103);
   
   var _Buttons2 = _interopRequireDefault(_Buttons);
   
-  var _FlotCharts = __webpack_require__(107);
+  var _FlotCharts = __webpack_require__(105);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
-  var _Forms = __webpack_require__(110);
+  var _Forms = __webpack_require__(107);
   
   var _Forms2 = _interopRequireDefault(_Forms);
   
-  var _Grid = __webpack_require__(116);
+  var _Grid = __webpack_require__(112);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
-  var _Icons = __webpack_require__(119);
+  var _Icons = __webpack_require__(114);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
-  var _MorrisjsCharts = __webpack_require__(122);
+  var _MorrisjsCharts = __webpack_require__(116);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
-  var _Notification = __webpack_require__(125);
+  var _Notification = __webpack_require__(118);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
-  var _PanelWells = __webpack_require__(133);
+  var _PanelWells = __webpack_require__(126);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
-  var _Typography = __webpack_require__(137);
+  var _Typography = __webpack_require__(128);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
-  var _Blank = __webpack_require__(140);
+  var _Blank = __webpack_require__(130);
   
   var _Blank2 = _interopRequireDefault(_Blank);
   
-  var _register = __webpack_require__(142);
+  var _register = __webpack_require__(132);
   
   var _register2 = _interopRequireDefault(_register);
   
-  var _content = __webpack_require__(146);
+  var _content = __webpack_require__(136);
   
   var _content2 = _interopRequireDefault(_content);
   
-  var _error = __webpack_require__(150);
+  var _error = __webpack_require__(140);
   
   var _error2 = _interopRequireDefault(_error);
   
@@ -2640,14 +2640,14 @@ module.exports =
           { className: 'nav navbar-top-links navbar-right' },
           _react2.default.createElement(
             _reactBootstrap.NavDropdown,
-            { title: _react2.default.createElement(
+            { bsClass: 'dropdown', title: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-envelope fa-fw' })
               ), id: 'navDropdown1' },
             _react2.default.createElement(
               _reactBootstrap.MenuItem,
-              { eventKey: '1' },
+              { style: { width: 300 }, eventKey: '1' },
               _react2.default.createElement(
                 'div',
                 null,
@@ -2746,7 +2746,7 @@ module.exports =
             _react2.default.createElement(_reactBootstrap.MenuItem, { divider: true }),
             _react2.default.createElement(
               _reactBootstrap.MenuItem,
-              { eventKey: '4' },
+              { eventKey: '4', className: 'text-center' },
               _react2.default.createElement(
                 'strong',
                 null,
@@ -5107,77 +5107,6 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Tables = __webpack_require__(100);
-  
-  var _Tables2 = _interopRequireDefault(_Tables);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  // import { Panel, Input, Button } from 'react-bootstrap';
-  // import Header from '../../components/Header/Header.js';
-  // import Input from 'react-bootstrap/lib/InputGroup';
-  
-  // import withStyles from 'isomorphic-style-loader/lib/withStyles';
-  // import s from './Table.css';
-  var title = 'Table';
-  
-  // function handleLogin() {
-  //   console.log('login function');
-  // }
-  
-  
-  function displayTable(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_Tables2.default, null);
-  }
-  
-  displayTable.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayTable;
-
-/***/ },
-/* 100 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
   var _Button = __webpack_require__(94);
   
   var _Button2 = _interopRequireDefault(_Button);
@@ -5186,1384 +5115,1378 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Pagination = __webpack_require__(101);
+  var _Pagination = __webpack_require__(100);
   
   var _Pagination2 = _interopRequireDefault(_Pagination);
   
-  var _PageHeader = __webpack_require__(102);
+  var _PageHeader = __webpack_require__(101);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Well = __webpack_require__(103);
+  var _Well = __webpack_require__(102);
   
   var _Well2 = _interopRequireDefault(_Well);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var Tables = function (_Component) {
-    (0, _inherits3.default)(Tables, _Component);
+  var title = 'Table';
   
-    function Tables() {
-      (0, _classCallCheck3.default)(this, Tables);
-      return (0, _possibleConstructorReturn3.default)(this, (Tables.__proto__ || (0, _getPrototypeOf2.default)(Tables)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Tables, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
+  function displayTable(props, context) {
+    context.setTitle(title);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'col-lg-12' },
+        _react2.default.createElement(
+          _PageHeader2.default,
           null,
-          _react2.default.createElement(
-            'div',
-            { className: 'col-lg-12' },
-            _react2.default.createElement(
-              _PageHeader2.default,
+          'Tables'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'col-lg-12' },
+        _react2.default.createElement(
+          _Panel2.default,
+          { header: _react2.default.createElement(
+              'span',
               null,
-              'Tables'
-            )
-          ),
+              'DataTables Advanced Tables'
+            ) },
           _react2.default.createElement(
             'div',
-            { className: 'col-lg-12' },
+            null,
             _react2.default.createElement(
-              _Panel2.default,
-              { header: _react2.default.createElement(
-                  'span',
-                  null,
-                  'DataTables Advanced Tables'
-                ) },
+              'div',
+              { className: 'dataTable_wrapper' },
               _react2.default.createElement(
                 'div',
-                null,
+                {
+                  id: 'dataTables-example_wrapper',
+                  className: 'dataTables_wrapper form-inline dt-bootstrap no-footer'
+                },
                 _react2.default.createElement(
                   'div',
-                  { className: 'dataTable_wrapper' },
+                  { className: 'row' },
                   _react2.default.createElement(
                     'div',
-                    {
-                      id: 'dataTables-example_wrapper',
-                      className: 'dataTables_wrapper form-inline dt-bootstrap no-footer'
-                    },
+                    { className: 'col-sm-9' },
                     _react2.default.createElement(
                       'div',
-                      { className: 'row' },
+                      { className: 'dataTables_length', id: 'dataTables-example_length' },
                       _react2.default.createElement(
-                        'div',
-                        { className: 'col-sm-9' },
+                        'label',
+                        null,
+                        ' Show',
                         _react2.default.createElement(
-                          'div',
-                          { className: 'dataTables_length', id: 'dataTables-example_length' },
-                          _react2.default.createElement(
-                            'label',
-                            null,
-                            ' Show',
-                            _react2.default.createElement(
-                              'select',
-                              {
-                                name: 'dataTables-example_length',
-                                'aria-controls': 'dataTables-example',
-                                className: 'form-control input-sm'
-                              },
-                              _react2.default.createElement(
-                                'option',
-                                { value: '10' },
-                                '10'
-                              ),
-                              _react2.default.createElement(
-                                'option',
-                                { value: '25' },
-                                '25'
-                              ),
-                              _react2.default.createElement(
-                                'option',
-                                { value: '50' },
-                                '50'
-                              ),
-                              _react2.default.createElement(
-                                'option',
-                                { value: '100' },
-                                '100'
-                              )
-                            ),
-                            'entries'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'col-sm-3' },
-                        _react2.default.createElement(
-                          'div',
-                          { id: 'dataTables-example_filter', className: 'dataTables_filter' },
-                          _react2.default.createElement(
-                            'label',
-                            null,
-                            'Search:',
-                            _react2.default.createElement('input', {
-                              type: 'search',
-                              className: 'form-control input-sm',
-                              placeholder: '',
-                              'aria-controls': 'dataTables-example'
-                            })
-                          )
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'row' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'col-sm-12' },
-                        _react2.default.createElement(
-                          'table',
+                          'select',
                           {
-                            className: 'table table-striped table-bordered table-hover dataTable no-footer',
-                            id: 'dataTables-example',
-                            role: 'grid',
-                            'aria-describedby': 'dataTables-example_info'
+                            name: 'dataTables-example_length',
+                            'aria-controls': 'dataTables-example',
+                            className: 'form-control input-sm'
                           },
                           _react2.default.createElement(
-                            'thead',
-                            null,
-                            _react2.default.createElement(
-                              'tr',
-                              { role: 'row' },
-                              _react2.default.createElement(
-                                'th',
-                                {
-                                  className: 'sorting_asc',
-                                  tabIndex: '0',
-                                  'aria-controls': 'dataTables-example',
-                                  rowSpan: '1',
-                                  colSpan: '1',
-                                  'aria-label': 'Rendering engine: activate to sort column descending',
-                                  'aria-sort': 'ascending',
-                                  style: { width: 265 }
-                                },
-                                'Rendering engine'
-                              ),
-                              _react2.default.createElement(
-                                'th',
-                                {
-                                  className: 'sorting',
-                                  tabIndex: '0',
-                                  'aria-controls': 'dataTables-example',
-                                  rowSpan: '1',
-                                  colSpan: '1',
-                                  'aria-label': 'Browser: activate to sort column ascending',
-                                  style: { width: 321 }
-                                },
-                                'Browser'
-                              ),
-                              _react2.default.createElement(
-                                'th',
-                                {
-                                  className: 'sorting',
-                                  tabIndex: '0',
-                                  'aria-controls': 'dataTables-example',
-                                  rowSpan: '1',
-                                  colSpan: '1',
-                                  'aria-label': 'Platform(s): activate to sort column ascending',
-                                  style: { width: 299 }
-                                },
-                                'Platform(s)'
-                              ),
-                              _react2.default.createElement(
-                                'th',
-                                {
-                                  className: 'sorting',
-                                  tabIndex: '0',
-                                  'aria-controls': 'dataTables-example',
-                                  rowSpan: '1',
-                                  colSpan: '1',
-                                  'aria-label': 'Engine version: activate to sort column ascending',
-                                  style: { width: 231 }
-                                },
-                                'Engine version'
-                              ),
-                              _react2.default.createElement(
-                                'th',
-                                {
-                                  className: 'sorting',
-                                  tabIndex: '0',
-                                  'aria-controls': 'dataTables-example',
-                                  rowSpan: '1',
-                                  colSpan: '1',
-                                  'aria-label': 'CSS grade: activate to sort column ascending',
-                                  style: { width: 180 }
-                                },
-                                'CSS grade'
-                              )
-                            )
+                            'option',
+                            { value: '10' },
+                            '10'
                           ),
                           _react2.default.createElement(
-                            'tbody',
-                            null,
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA odd', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Firefox 1.0'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 98+ / OSX.2+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.7'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA even', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Firefox 1.5'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 98+ / OSX.2+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA odd', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Firefox 2.0'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 98+ / OSX.2+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA even', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Firefox 3.0'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 2k+ / OSX.3+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.9'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA odd', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Camino 1.0'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'OSX.2+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA even', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Camino 1.5'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'OSX.3+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA odd', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Netscape 7.2'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 95+ / Mac OS 8.6-9.2'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.7'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA even', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Netscape Browser 8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 98SE+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.7'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA odd', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Netscape Navigator 9'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 98+ / OSX.2+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1.8'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            ),
-                            _react2.default.createElement(
-                              'tr',
-                              { className: 'gradeA even', role: 'row' },
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'sorting_1' },
-                                'Gecko'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Mozilla 1.0'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                null,
-                                'Win 95+ / OSX.1+'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                '1'
-                              ),
-                              _react2.default.createElement(
-                                'td',
-                                { className: 'center' },
-                                'A'
-                              )
-                            )
+                            'option',
+                            { value: '25' },
+                            '25'
+                          ),
+                          _react2.default.createElement(
+                            'option',
+                            { value: '50' },
+                            '50'
+                          ),
+                          _react2.default.createElement(
+                            'option',
+                            { value: '100' },
+                            '100'
                           )
-                        )
+                        ),
+                        'entries'
                       )
-                    ),
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-sm-3' },
                     _react2.default.createElement(
                       'div',
-                      { className: 'row' },
+                      { id: 'dataTables-example_filter', className: 'dataTables_filter' },
                       _react2.default.createElement(
-                        'div',
-                        { className: 'col-sm-6' },
-                        _react2.default.createElement(
-                          'div',
-                          {
-                            className: 'dataTables_info',
-                            id: 'dataTables-example_info',
-                            role: 'status',
-                            'aria-live': 'polite'
-                          },
-                          'Showing 1 to 10 of 57 entries'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'col-sm-6 pullRight ' },
-                        _react2.default.createElement(_Pagination2.default, {
-                          activePage: 1,
-                          items: 6,
-                          first: true,
-                          last: true,
-                          prev: true,
-                          next: true,
-                          onSelect: function onSelect(pageNumber) {}
+                        'label',
+                        null,
+                        'Search:',
+                        _react2.default.createElement('input', {
+                          type: 'search',
+                          className: 'form-control input-sm',
+                          placeholder: '',
+                          'aria-controls': 'dataTables-example'
                         })
                       )
                     )
                   )
                 ),
                 _react2.default.createElement(
-                  _Well2.default,
+                  'div',
+                  { className: 'row' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-sm-12' },
+                    _react2.default.createElement(
+                      'table',
+                      {
+                        className: 'table table-striped table-bordered table-hover dataTable no-footer',
+                        id: 'dataTables-example',
+                        role: 'grid',
+                        'aria-describedby': 'dataTables-example_info'
+                      },
+                      _react2.default.createElement(
+                        'thead',
+                        null,
+                        _react2.default.createElement(
+                          'tr',
+                          { role: 'row' },
+                          _react2.default.createElement(
+                            'th',
+                            {
+                              className: 'sorting_asc',
+                              tabIndex: '0',
+                              'aria-controls': 'dataTables-example',
+                              rowSpan: '1',
+                              colSpan: '1',
+                              'aria-label': 'Rendering engine: activate to sort column descending',
+                              'aria-sort': 'ascending',
+                              style: { width: 265 }
+                            },
+                            'Rendering engine'
+                          ),
+                          _react2.default.createElement(
+                            'th',
+                            {
+                              className: 'sorting',
+                              tabIndex: '0',
+                              'aria-controls': 'dataTables-example',
+                              rowSpan: '1',
+                              colSpan: '1',
+                              'aria-label': 'Browser: activate to sort column ascending',
+                              style: { width: 321 }
+                            },
+                            'Browser'
+                          ),
+                          _react2.default.createElement(
+                            'th',
+                            {
+                              className: 'sorting',
+                              tabIndex: '0',
+                              'aria-controls': 'dataTables-example',
+                              rowSpan: '1',
+                              colSpan: '1',
+                              'aria-label': 'Platform(s): activate to sort column ascending',
+                              style: { width: 299 }
+                            },
+                            'Platform(s)'
+                          ),
+                          _react2.default.createElement(
+                            'th',
+                            {
+                              className: 'sorting',
+                              tabIndex: '0',
+                              'aria-controls': 'dataTables-example',
+                              rowSpan: '1',
+                              colSpan: '1',
+                              'aria-label': 'Engine version: activate to sort column ascending',
+                              style: { width: 231 }
+                            },
+                            'Engine version'
+                          ),
+                          _react2.default.createElement(
+                            'th',
+                            {
+                              className: 'sorting',
+                              tabIndex: '0',
+                              'aria-controls': 'dataTables-example',
+                              rowSpan: '1',
+                              colSpan: '1',
+                              'aria-label': 'CSS grade: activate to sort column ascending',
+                              style: { width: 180 }
+                            },
+                            'CSS grade'
+                          )
+                        )
+                      ),
+                      _react2.default.createElement(
+                        'tbody',
+                        null,
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA odd', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Firefox 1.0'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 98+ / OSX.2+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.7'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA even', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Firefox 1.5'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 98+ / OSX.2+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA odd', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Firefox 2.0'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 98+ / OSX.2+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA even', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Firefox 3.0'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 2k+ / OSX.3+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.9'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA odd', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Camino 1.0'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'OSX.2+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA even', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Camino 1.5'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'OSX.3+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA odd', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Netscape 7.2'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 95+ / Mac OS 8.6-9.2'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.7'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA even', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Netscape Browser 8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 98SE+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.7'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA odd', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Netscape Navigator 9'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 98+ / OSX.2+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1.8'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        ),
+                        _react2.default.createElement(
+                          'tr',
+                          { className: 'gradeA even', role: 'row' },
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'sorting_1' },
+                            'Gecko'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Mozilla 1.0'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            null,
+                            'Win 95+ / OSX.1+'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            '1'
+                          ),
+                          _react2.default.createElement(
+                            'td',
+                            { className: 'center' },
+                            'A'
+                          )
+                        )
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'div',
+                  { className: 'row' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-sm-6' },
+                    _react2.default.createElement(
+                      'div',
+                      {
+                        className: 'dataTables_info',
+                        id: 'dataTables-example_info',
+                        role: 'status',
+                        'aria-live': 'polite'
+                      },
+                      'Showing 1 to 10 of 57 entries'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-sm-6 pullRight ' },
+                    _react2.default.createElement(_Pagination2.default, {
+                      activePage: 1,
+                      items: 6,
+                      first: true,
+                      last: true,
+                      prev: true,
+                      next: true,
+                      onSelect: function onSelect() {
+                        // function for Pagination
+                      }
+                    })
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              _Well2.default,
+              null,
+              _react2.default.createElement(
+                'h4',
+                null,
+                'DataTables Usage Information'
+              ),
+              _react2.default.createElement(
+                'p',
+                null,
+                'DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at ',
+                _react2.default.createElement(
+                  'a',
+                  { target: '_blank', rel: 'noopener noreferrer', href: 'https://datatables.net/' },
+                  '\'https://datatables.net/\''
+                ),
+                '.'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsSize: 'large', block: true, href: 'https://datatables.net/' },
+                'View DataTables Documentation'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row ng-scope' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Kitchen Sink '
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table table-striped table-bordered table-hover' },
+                _react2.default.createElement(
+                  'thead',
                   null,
                   _react2.default.createElement(
-                    'h4',
+                    'tr',
                     null,
-                    'DataTables Usage Information'
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo '
+                    )
                   ),
                   _react2.default.createElement(
-                    'p',
+                    'tr',
                     null,
-                    'DataTables is a very flexible, advanced tables plugin for jQuery. In SB Admin, we are using a specialized version of DataTables built for Bootstrap 3. We have also customized the table headings to use Font Awesome icons in place of images. For complete documentation on DataTables, visit their website at ',
                     _react2.default.createElement(
-                      'a',
-                      { target: '_blank', href: 'https://datatables.net/' },
-                      '\'https://datatables.net/\''
+                      'td',
+                      null,
+                      '2 '
                     ),
-                    '.'
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat '
+                    )
                   ),
                   _react2.default.createElement(
-                    _Button2.default,
-                    { bsSize: 'large', block: true, href: 'https://datatables.net/' },
-                    'View DataTables Documentation'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row ng-scope' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
+                    'tr',
                     null,
-                    'Kitchen Sink '
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table table-striped table-bordered table-hover' },
                     _react2.default.createElement(
-                      'thead',
+                      'td',
                       null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username '
-                        )
-                      )
+                      '3 '
                     ),
                     _react2.default.createElement(
-                      'tbody',
+                      'td',
                       null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo '
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat '
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter '
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Basic Table'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username '
-                        )
-                      )
+                      'Larry '
                     ),
                     _react2.default.createElement(
-                      'tbody',
+                      'td',
                       null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo '
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter'
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row ng-scope' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Striped Rows '
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table table-striped' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username '
-                        )
-                      )
+                      'the Bird '
                     ),
                     _react2.default.createElement(
-                      'tbody',
+                      'td',
                       null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo '
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter '
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Bordered Table '
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive table-bordered' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username '
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'tbody',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter '
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row ng-scope' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Hover Rows '
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table table-hover' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username'
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'tbody',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter '
-                        )
-                      )
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Context Classes '
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'First Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Last Name '
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Username '
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'tbody',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        { className: 'success' },
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Mark '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Otto '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@mdo'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        { className: 'info' },
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '2 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Jacob '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Thornton '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@fat'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        { className: 'warning' },
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '3 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Larry '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'the Bird '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@twitter'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        { className: 'danger' },
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '4 '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'John '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Smith '
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '@jsmith '
-                        )
-                      )
+                      '@twitter '
                     )
                   )
                 )
               )
             )
           )
-        );
-      }
-    }]);
-    return Tables;
-  }(_react.Component);
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Basic Table'
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table' },
+                _react2.default.createElement(
+                  'thead',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo '
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '2 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '3 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Larry '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'the Bird '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@twitter'
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row ng-scope' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Striped Rows '
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table table-striped' },
+                _react2.default.createElement(
+                  'thead',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo '
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '2 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '3 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Larry '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'the Bird '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@twitter '
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Bordered Table '
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive table-bordered' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table' },
+                _react2.default.createElement(
+                  'thead',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '2 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '3 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Larry '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'the Bird '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@twitter '
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row ng-scope' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Hover Rows '
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table table-hover' },
+                _react2.default.createElement(
+                  'thead',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username'
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '2 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '3 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Larry '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'the Bird '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@twitter '
+                    )
+                  )
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Context Classes '
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'table-responsive' },
+              _react2.default.createElement(
+                'table',
+                { className: 'table' },
+                _react2.default.createElement(
+                  'thead',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      '# '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'First Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Last Name '
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Username '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    { className: 'success' },
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Mark '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Otto '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@mdo'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    { className: 'info' },
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '2 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Jacob '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Thornton '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@fat'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    { className: 'warning' },
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '3 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Larry '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'the Bird '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@twitter'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    { className: 'danger' },
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '4 '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'John '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Smith '
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '@jsmith '
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    );
+  }
   
-  exports.default = Tables;
+  displayTable.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  
+  exports.default = displayTable;
 
 /***/ },
-/* 101 */
+/* 100 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Pagination");
 
 /***/ },
-/* 102 */
+/* 101 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/PageHeader");
 
 /***/ },
-/* 103 */
+/* 102 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Well");
 
 /***/ },
-/* 104 */
+/* 103 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -6576,7 +6499,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(105);
+  var _Button = __webpack_require__(104);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -6601,6 +6524,566 @@ module.exports =
   };
 
 /***/ },
+/* 104 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _react = __webpack_require__(13);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Button = __webpack_require__(94);
+  
+  var _Button2 = _interopRequireDefault(_Button);
+  
+  var _Panel = __webpack_require__(95);
+  
+  var _Panel2 = _interopRequireDefault(_Panel);
+  
+  var _PageHeader = __webpack_require__(101);
+  
+  var _PageHeader2 = _interopRequireDefault(_PageHeader);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var title = 'Buttons';
+  
+  function displayButtons(props, context) {
+    context.setTitle(title);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _PageHeader2.default,
+            null,
+            'Buttons'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Default Buttons'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Normal Buttons'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _Button2.default,
+                null,
+                'Default'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary' },
+                'Primary'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'success' },
+                'Success'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'info' },
+                'Info'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'warning' },
+                'Warning'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'danger' },
+                'Danger'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link' },
+                'Link'
+              )
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Disabled Buttons'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _Button2.default,
+                { disabled: true },
+                'Default'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', disabled: true },
+                'Primary'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'success', disabled: true },
+                'Success'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'info', disabled: true },
+                'Info'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'warning', disabled: true },
+                'Warning'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'danger', disabled: true },
+                'Danger'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', disabled: true },
+                'Link'
+              )
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Button Sizes'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', bsSize: 'large' },
+                'Large button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary' },
+                'Default button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', bsSize: 'small' },
+                'Small button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', bsSize: 'xsmall' },
+                'Mini button'
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', bsSize: 'large', block: true },
+                'Block level button'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Circle Icon Buttons with Font Awesome Icons'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Normal Circle Buttons'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'primary', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-list' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'success', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-link' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'info', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'warning', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-times' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'danger', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-heart' })
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Large Circle Buttons'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', bsStyle: 'primary', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-list' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', bsStyle: 'success', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-link' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', bsStyle: 'info', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', bsStyle: 'warning', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-times' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsSize: 'large', bsStyle: 'danger', className: 'btn-circle' },
+              _react2.default.createElement('i', { className: 'fa fa-heart' })
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Extra Large Circle Buttons'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'primary', className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-list' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'success', className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-link' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'info', className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-check' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'warning', className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-times' })
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'danger', className: 'btn-circle btn-xl' },
+              _react2.default.createElement('i', { className: 'fa fa-heart' })
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Outline Buttons with Smooth Transition'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Outline Buttons'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _Button2.default,
+                { className: 'btn-outline' },
+                'Default'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline' },
+                'Primary'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'success', className: 'btn-outline' },
+                'Success'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'info', className: 'btn-outline' },
+                'Info'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'warning', className: 'btn-outline' },
+                'Warning'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'danger', className: 'btn-outline' },
+                'Danger'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-outline' },
+                'Link'
+              )
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Outline Button Sizes'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline', bsSize: 'large' },
+                'Large button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline' },
+                'Default button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline', bsSize: 'small' },
+                'Small button'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline', bsSize: 'xsmall' },
+                'Mini button'
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'primary', className: 'btn-outline', bsSize: 'large', block: true },
+                'Block level button'
+              )
+            )
+          ),
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Social Buttons with Font Awesome Icons'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Social Buttons'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              {
+                bsStyle: 'link',
+                className: 'btn-social { btn-bitbucket }', block: true
+              },
+              _react2.default.createElement('i', { className: 'fa fa-bitbucket' }),
+              ' Sign in with Bitbucket'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-dropbox', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-dropbox' }),
+              ' Sign in with Dropbox'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-facebook', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-facebook' }),
+              ' Sign in with Facebook'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-flickr', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-flickr' }),
+              ' Sign in with Flickr'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-github', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-github' }),
+              ' Sign in with GitHub'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-google-plus', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-google-plus' }),
+              ' Sign in with Google'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-instagram', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-instagram' }),
+              ' Sign in with Instagram'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-linkedin', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-linkedin' }),
+              ' Sign in with LinkedIn'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-pinterest', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-pinterest' }),
+              ' Sign in with Pinterest'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-tumblr', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-tumblr' }),
+              ' Sign in with Tumblr'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-twitter', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-twitter' }),
+              ' Sign in with Twitter'
+            ),
+            _react2.default.createElement(
+              _Button2.default,
+              { bsStyle: 'link', className: 'btn-social btn-vk', block: true },
+              _react2.default.createElement('i', { className: 'fa fa-vk' }),
+              ' Sign in with VK'
+            ),
+            _react2.default.createElement('hr', null),
+            _react2.default.createElement(
+              'div',
+              { className: 'text-center' },
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-bitbucket' },
+                _react2.default.createElement('i', { className: 'fa fa-bitbucket' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-dropbox' },
+                _react2.default.createElement('i', { className: 'fa fa-dropbox' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-facebook' },
+                _react2.default.createElement('i', { className: 'fa fa-facebook' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-flickr' },
+                _react2.default.createElement('i', { className: 'fa fa-flickr' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-github' },
+                _react2.default.createElement('i', { className: 'fa fa-github' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-google-plus' },
+                _react2.default.createElement('i', { className: 'fa fa-google-plus' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-instagram' },
+                _react2.default.createElement('i', { className: 'fa fa-instagram' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-linkedin' },
+                _react2.default.createElement('i', { className: 'fa fa-linkedin' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-pinterest' },
+                _react2.default.createElement('i', { className: 'fa fa-pinterest' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-tumblr' },
+                _react2.default.createElement('i', { className: 'fa fa-tumblr' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-twitter' },
+                _react2.default.createElement('i', { className: 'fa fa-twitter' })
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsStyle: 'link', className: 'btn-social-icon btn-vk' },
+                _react2.default.createElement('i', { className: 'fa fa-vk' })
+              )
+            )
+          )
+        )
+      )
+    );
+  }
+  
+  displayButtons.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  
+  exports.default = displayButtons;
+
+/***/ },
 /* 105 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -6614,639 +7097,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  var _Button = __webpack_require__(106);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  var title = 'Buttons';
-  // import Well from 'react-bootstrap/lib/Well';
-  
-  function displayButtons(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_Button2.default, null);
-  }
-  
-  displayButtons.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayButtons;
-
-/***/ },
-/* 106 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Buttons = function (_Component) {
-    (0, _inherits3.default)(Buttons, _Component);
-  
-    function Buttons() {
-      (0, _classCallCheck3.default)(this, Buttons);
-      return (0, _possibleConstructorReturn3.default)(this, (Buttons.__proto__ || (0, _getPrototypeOf2.default)(Buttons)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Buttons, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _PageHeader2.default,
-                null,
-                'Buttons'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Default Buttons'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Normal Buttons'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _Button2.default,
-                    null,
-                    'Default'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary' },
-                    'Primary'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'success' },
-                    'Success'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'info' },
-                    'Info'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'warning' },
-                    'Warning'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'danger' },
-                    'Danger'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link' },
-                    'Link'
-                  )
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Disabled Buttons'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { disabled: true },
-                    'Default'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', disabled: true },
-                    'Primary'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'success', disabled: true },
-                    'Success'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'info', disabled: true },
-                    'Info'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'warning', disabled: true },
-                    'Warning'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'danger', disabled: true },
-                    'Danger'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', disabled: true },
-                    'Link'
-                  )
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Button Sizes'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', bsSize: 'large' },
-                    'Large button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary' },
-                    'Default button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', bsSize: 'small' },
-                    'Small button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', bsSize: 'xsmall' },
-                    'Mini button'
-                  ),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', bsSize: 'large', block: true },
-                    'Block level button'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Circle Icon Buttons with Font Awesome Icons'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Normal Circle Buttons'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'primary', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-list' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'success', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-link' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'info', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'warning', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-times' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'danger', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-heart' })
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Large Circle Buttons'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', bsStyle: 'primary', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-list' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', bsStyle: 'success', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-link' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', bsStyle: 'info', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', bsStyle: 'warning', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-times' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsSize: 'large', bsStyle: 'danger', className: 'btn-circle' },
-                  _react2.default.createElement('i', { className: 'fa fa-heart' })
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Extra Large Circle Buttons'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'primary', className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-list' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'success', className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-link' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'info', className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-check' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'warning', className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-times' })
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'danger', className: 'btn-circle btn-xl' },
-                  _react2.default.createElement('i', { className: 'fa fa-heart' })
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Outline Buttons with Smooth Transition'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Outline Buttons'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { className: 'btn-outline' },
-                    'Default'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline' },
-                    'Primary'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'success', className: 'btn-outline' },
-                    'Success'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'info', className: 'btn-outline' },
-                    'Info'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'warning', className: 'btn-outline' },
-                    'Warning'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'danger', className: 'btn-outline' },
-                    'Danger'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-outline' },
-                    'Link'
-                  )
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Outline Button Sizes'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline', bsSize: 'large' },
-                    'Large button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline' },
-                    'Default button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline', bsSize: 'small' },
-                    'Small button'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline', bsSize: 'xsmall' },
-                    'Mini button'
-                  ),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'primary', className: 'btn-outline', bsSize: 'large', block: true },
-                    'Block level button'
-                  )
-                )
-              ),
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Social Buttons with Font Awesome Icons'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Social Buttons'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social { btn-bitbucket }', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-bitbucket' }),
-                  ' Sign in with Bitbucket'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-dropbox', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-dropbox' }),
-                  ' Sign in with Dropbox'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-facebook', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-facebook' }),
-                  ' Sign in with Facebook'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-flickr', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-flickr' }),
-                  ' Sign in with Flickr'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-github', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-github' }),
-                  ' Sign in with GitHub'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-google-plus', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-google-plus' }),
-                  ' Sign in with Google'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-instagram', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-instagram' }),
-                  ' Sign in with Instagram'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-linkedin', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-linkedin' }),
-                  ' Sign in with LinkedIn'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-pinterest', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-pinterest' }),
-                  ' Sign in with Pinterest'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-tumblr', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-tumblr' }),
-                  ' Sign in with Tumblr'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-twitter', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-twitter' }),
-                  ' Sign in with Twitter'
-                ),
-                _react2.default.createElement(
-                  _Button2.default,
-                  { bsStyle: 'link', className: 'btn-social btn-vk', block: true },
-                  _react2.default.createElement('i', { className: 'fa fa-vk' }),
-                  ' Sign in with VK'
-                ),
-                _react2.default.createElement('hr', null),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'text-center' },
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-bitbucket' },
-                    _react2.default.createElement('i', { className: 'fa fa-bitbucket' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-dropbox' },
-                    _react2.default.createElement('i', { className: 'fa fa-dropbox' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-facebook' },
-                    _react2.default.createElement('i', { className: 'fa fa-facebook' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-flickr' },
-                    _react2.default.createElement('i', { className: 'fa fa-flickr' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-github' },
-                    _react2.default.createElement('i', { className: 'fa fa-github' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-google-plus' },
-                    _react2.default.createElement('i', { className: 'fa fa-google-plus' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-instagram' },
-                    _react2.default.createElement('i', { className: 'fa fa-instagram' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-linkedin' },
-                    _react2.default.createElement('i', { className: 'fa fa-linkedin' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-pinterest' },
-                    _react2.default.createElement('i', { className: 'fa fa-pinterest' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-tumblr' },
-                    _react2.default.createElement('i', { className: 'fa fa-tumblr' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-twitter' },
-                    _react2.default.createElement('i', { className: 'fa fa-twitter' })
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsStyle: 'link', className: 'btn-social-icon btn-vk' },
-                    _react2.default.createElement('i', { className: 'fa fa-vk' })
-                  )
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return Buttons;
-  }(_react.Component);
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  
-  
-  exports.default = Buttons;
-
-/***/ },
-/* 107 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _FlotCharts = __webpack_require__(108);
+  var _FlotCharts = __webpack_require__(106);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -7271,7 +7122,7 @@ module.exports =
   };
 
 /***/ },
-/* 108 */
+/* 106 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7283,61 +7134,6 @@ module.exports =
   var _react = __webpack_require__(13);
   
   var _react2 = _interopRequireDefault(_react);
-  
-  var _FlotCharts = __webpack_require__(109);
-  
-  var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'Flot Charts';
-  
-  function displayFlotCharts(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_FlotCharts2.default, null);
-  }
-  
-  displayFlotCharts.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayFlotCharts;
-
-/***/ },
-/* 109 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
   
   var _Button = __webpack_require__(94);
   
@@ -7347,174 +7143,166 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(102);
+  var _PageHeader = __webpack_require__(101);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var FlotCharts = function (_Component) {
-    (0, _inherits3.default)(FlotCharts, _Component);
+  var title = 'Flot Charts';
   
-    function FlotCharts() {
-      (0, _classCallCheck3.default)(this, FlotCharts);
-      return (0, _possibleConstructorReturn3.default)(this, (FlotCharts.__proto__ || (0, _getPrototypeOf2.default)(FlotCharts)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(FlotCharts, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
+  function displayFlotCharts(props, context) {
+    context.setTitle(title);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
           'div',
-          null,
+          { className: 'col-lg-12' },
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _PageHeader2.default,
+            _PageHeader2.default,
+            null,
+            'Flot'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
                 null,
-                'Flot'
-              )
+                'Line Chart Example'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              'Panel contents'
             )
-          ),
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Pie Chart Example'
+              ) },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Line Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
+              null,
+              'Panel contents'
             )
-          ),
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Multiple Axes Line Chart Example'
+              ) },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Pie Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Moving Line Chart Example'
+              ) },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Multiple Axes Line Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Bar Chart Example'
+              ) },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Moving Line Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Flot Charts Usage'
+              ) },
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-6' },
+              null,
               _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Bar Chart Example'
-                  ) },
+                'p',
+                null,
+                'Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website, ',
                 _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
+                  'a',
+                  { target: '_blank', href: 'http://www.flotcharts.org/' },
+                  'http://www.flotcharts.org/'
+                ),
+                '.'
+              ),
               _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Flot Charts Usage'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website, ',
-                    _react2.default.createElement(
-                      'a',
-                      { target: '_blank', href: 'http://www.flotcharts.org/' },
-                      'http://www.flotcharts.org/'
-                    ),
-                    '.'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsSize: 'large', block: true, href: 'http://www.flotcharts.org/' },
-                    'View Flot Charts Documentation'
-                  )
-                )
+                _Button2.default,
+                { bsSize: 'large', block: true, href: 'http://www.flotcharts.org/' },
+                'View Flot Charts Documentation'
               )
             )
           )
-        );
-      }
-    }]);
-    return FlotCharts;
-  }(_react.Component);
+        )
+      )
+    );
+  }
   
-  exports.default = FlotCharts;
+  displayFlotCharts.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  
+  exports.default = displayFlotCharts;
 
 /***/ },
-/* 110 */
+/* 107 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7527,7 +7315,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Forms = __webpack_require__(111);
+  var _Forms = __webpack_require__(108);
   
   var _Forms2 = _interopRequireDefault(_Forms);
   
@@ -7543,7 +7331,7 @@ module.exports =
   };
 
 /***/ },
-/* 111 */
+/* 108 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -7556,9 +7344,19 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Forms = __webpack_require__(112);
+  var _reactBootstrap = __webpack_require__(64);
   
-  var _Forms2 = _interopRequireDefault(_Forms);
+  var _FormControlFeedback = __webpack_require__(109);
+  
+  var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
+  
+  var _FormControlStatic = __webpack_require__(110);
+  
+  var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
+  
+  var _InputGroupAddon = __webpack_require__(111);
+  
+  var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -7566,12 +7364,498 @@ module.exports =
   
   function displayForms(props, context) {
     context.setTitle(title);
-    return _react2.default.createElement(_Forms2.default, null);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _reactBootstrap.PageHeader,
+            null,
+            'Forms'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Basic Form Elements'
+              ) },
+            _react2.default.createElement(
+              'div',
+              { className: 'row' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-6' },
+                _react2.default.createElement(
+                  _reactBootstrap.Form,
+                  null,
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    {
+                      controlId: 'formBasicText'
+                    },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Text Input'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, {
+                      type: 'text'
+                    }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null),
+                    _react2.default.createElement(
+                      _reactBootstrap.HelpBlock,
+                      null,
+                      'Example block-level help text here.'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formBasicText2' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Text Input'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, {
+                      type: 'text',
+                      placeholder: 'Enter Text'
+                    }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null)
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Static text'
+                    ),
+                    _react2.default.createElement(
+                      _FormControlStatic2.default,
+                      null,
+                      'email@example.com'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    {
+                      controlId: 'formBasicFile'
+                    },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'File Input'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, {
+                      type: 'file'
+                    }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null)
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsTextarea' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Textarea'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: 'textarea' })
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsCheckbox' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'CheckBox'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.Checkbox,
+                      null,
+                      'Checkbox #1 '
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.Checkbox,
+                      null,
+                      ' Checkbox #2 '
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.Checkbox,
+                      null,
+                      ' Checkbox #3 '
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Inline CheckBox'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.Col,
+                      null,
+                      _react2.default.createElement(
+                        _reactBootstrap.Checkbox,
+                        { inline: true },
+                        '1'
+                      ),
+                      ' ',
+                      _react2.default.createElement(
+                        _reactBootstrap.Checkbox,
+                        { inline: true },
+                        '2'
+                      ),
+                      ' ',
+                      _react2.default.createElement(
+                        _reactBootstrap.Checkbox,
+                        { inline: true },
+                        '3'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Inline Radio'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.Col,
+                      null,
+                      _react2.default.createElement(
+                        _reactBootstrap.Radio,
+                        { inline: true },
+                        '1'
+                      ),
+                      ' ',
+                      _react2.default.createElement(
+                        _reactBootstrap.Radio,
+                        { inline: true },
+                        '2'
+                      ),
+                      ' ',
+                      _react2.default.createElement(
+                        _reactBootstrap.Radio,
+                        { inline: true },
+                        '3'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsSelect' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Select'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.FormControl,
+                      { componentClass: 'select', placeholder: 'select' },
+                      _react2.default.createElement(
+                        'option',
+                        { value: '1' },
+                        '1'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '2' },
+                        '2'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '3' },
+                        '3'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '4' },
+                        '4'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '5' },
+                        '5'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsSelectMultiple' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Multiple select'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.FormControl,
+                      { componentClass: 'select', multiple: true },
+                      _react2.default.createElement(
+                        'option',
+                        { value: '1' },
+                        '1'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '2' },
+                        '2'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '3' },
+                        '3'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '4' },
+                        '4'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '5' },
+                        '5'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.Button,
+                      { type: 'submit' },
+                      'Submit Button'
+                    ),
+                    '  ',
+                    _react2.default.createElement(
+                      _reactBootstrap.Button,
+                      { type: 'reset' },
+                      'Reset Button'
+                    )
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-lg-6' },
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  'Disabled Form States'
+                ),
+                _react2.default.createElement(
+                  _reactBootstrap.Form,
+                  null,
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlDisableState' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      ' Disabled Input '
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Disabled Input', disabled: true })
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsDisableSelect' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Disabled Select'
+                    ),
+                    _react2.default.createElement(
+                      _reactBootstrap.FormControl,
+                      { componentClass: 'select', placeholder: 'select', disabled: true },
+                      _react2.default.createElement(
+                        'option',
+                        { value: '1' },
+                        '1'
+                      ),
+                      _react2.default.createElement(
+                        'option',
+                        { value: '2' },
+                        '2'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsDisabledCheckbox' },
+                    _react2.default.createElement(
+                      _reactBootstrap.Checkbox,
+                      { disabled: true },
+                      'Disabled CheckBox'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formControlsDisabledButton' },
+                    _react2.default.createElement(
+                      _reactBootstrap.Button,
+                      { bsStyle: 'primary', type: 'submit', disabled: true },
+                      'Disabled Button '
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  'Form Validation States'
+                ),
+                _react2.default.createElement(
+                  _reactBootstrap.Form,
+                  null,
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formValidationSuccess2', validationState: 'success' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Input with success'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null)
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formValidationWarning1', validationState: 'warning' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Input with warning'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null)
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    { controlId: 'formValidationWarning1', validationState: 'error' },
+                    _react2.default.createElement(
+                      _reactBootstrap.ControlLabel,
+                      null,
+                      'Input with Error'
+                    ),
+                    _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                    _react2.default.createElement(_FormControlFeedback2.default, null)
+                  )
+                ),
+                _react2.default.createElement(
+                  'h1',
+                  null,
+                  'Input Groups'
+                ),
+                _react2.default.createElement(
+                  _reactBootstrap.Form,
+                  null,
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.InputGroup,
+                      null,
+                      _react2.default.createElement(
+                        _InputGroupAddon2.default,
+                        null,
+                        '@'
+                      ),
+                      _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' })
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.InputGroup,
+                      null,
+                      _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                      _react2.default.createElement(
+                        _InputGroupAddon2.default,
+                        null,
+                        '.00'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.InputGroup,
+                      null,
+                      _react2.default.createElement(
+                        _InputGroupAddon2.default,
+                        null,
+                        '$'
+                      ),
+                      _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                      _react2.default.createElement(
+                        _InputGroupAddon2.default,
+                        null,
+                        '.00'
+                      )
+                    )
+                  ),
+                  _react2.default.createElement(
+                    _reactBootstrap.FormGroup,
+                    null,
+                    _react2.default.createElement(
+                      _reactBootstrap.InputGroup,
+                      null,
+                      _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
+                      _react2.default.createElement(
+                        _InputGroupAddon2.default,
+                        null,
+                        _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'music' })
+                      )
+                    )
+                  )
+                )
+              )
+            )
+          )
+        )
+      )
+    );
   }
   
   displayForms.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
   
   exports.default = displayForms;
+
+/***/ },
+/* 109 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-bootstrap/lib/FormControlFeedback");
+
+/***/ },
+/* 110 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-bootstrap/lib/FormControlStatic");
+
+/***/ },
+/* 111 */
+/***/ function(module, exports) {
+
+  module.exports = require("react-bootstrap/lib/InputGroupAddon");
 
 /***/ },
 /* 112 */
@@ -7583,551 +7867,4037 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(55);
+  var _react = __webpack_require__(13);
   
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  var _react2 = _interopRequireDefault(_react);
   
-  var _classCallCheck2 = __webpack_require__(56);
+  var _Grid = __webpack_require__(113);
   
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  var _Grid2 = _interopRequireDefault(_Grid);
   
-  var _createClass2 = __webpack_require__(57);
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var _createClass3 = _interopRequireDefault(_createClass2);
+  exports.default = {
   
-  var _possibleConstructorReturn2 = __webpack_require__(58);
+    path: '/grid',
   
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+    action: function action() {
+      return _react2.default.createElement(_Grid2.default, null);
+    }
+  };
+
+/***/ },
+/* 113 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
   
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
   
   var _react = __webpack_require__(13);
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactBootstrap = __webpack_require__(64);
+  var _Panel = __webpack_require__(95);
   
-  var _FormControlFeedback = __webpack_require__(113);
+  var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
+  var _PageHeader = __webpack_require__(101);
   
-  var _FormControlStatic = __webpack_require__(114);
-  
-  var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
-  
-  var _InputGroupAddon = __webpack_require__(115);
-  
-  var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
+  var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var Forms = function (_Component) {
-    (0, _inherits3.default)(Forms, _Component);
+  var title = 'Grid';
   
-    function Forms() {
-      (0, _classCallCheck3.default)(this, Forms);
-      return (0, _possibleConstructorReturn3.default)(this, (Forms.__proto__ || (0, _getPrototypeOf2.default)(Forms)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Forms, [{
-      key: 'render',
-      //eslint-disable-line
-      value: function render() {
-        return _react2.default.createElement(
+  function displayGrid(props, context) {
+    context.setTitle(title);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
           'div',
-          null,
+          { className: 'col-lg-12' },
           _react2.default.createElement(
-            'div',
-            { className: 'row' },
+            _PageHeader2.default,
+            null,
+            'Grid'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Grid options'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'See how aspects of the Bootstrap grid system work across multiple devices with a handy table.'
+            ),
             _react2.default.createElement(
               'div',
-              { className: 'col-lg-12' },
+              { className: 'table-responsive' },
               _react2.default.createElement(
-                _reactBootstrap.PageHeader,
-                null,
-                'Forms'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _reactBootstrap.Panel,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Basic Form Elements'
-                  ) },
+                'table',
+                { className: 'table table-bordered table-striped' },
                 _react2.default.createElement(
-                  'div',
-                  { className: 'row' },
+                  'thead',
+                  null,
                   _react2.default.createElement(
-                    'div',
-                    { className: 'col-lg-6' },
+                    'tr',
+                    null,
+                    _react2.default.createElement('th', null),
                     _react2.default.createElement(
-                      _reactBootstrap.Form,
+                      'th',
+                      null,
+                      'Extra small devices',
+                      _react2.default.createElement(
+                        'small',
+                        null,
+                        'Phones (<768px)'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Small devices',
+                      _react2.default.createElement(
+                        'small',
+                        null,
+                        'Tablets (≥768px)'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Medium devices',
+                      _react2.default.createElement(
+                        'small',
+                        null,
+                        'Desktops (≥992px)'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Large devices',
+                      _react2.default.createElement(
+                        'small',
+                        null,
+                        'Desktops (≥1200px)'
+                      )
+                    )
+                  )
+                ),
+                _react2.default.createElement(
+                  'tbody',
+                  null,
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Grid behavior'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'Horizontal at all times'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { colSpan: '3' },
+                      'Collapsed to start, horizontal above breakpoints'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Max container width'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      'None (auto)'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '750px'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '970px'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '1170px'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Class prefix'
+                    ),
+                    _react2.default.createElement(
+                      'td',
                       null,
                       _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        {
-                          controlId: 'formBasicText'
-                        },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Text Input'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, {
-                          type: 'text'
-                        }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null),
-                        _react2.default.createElement(
-                          _reactBootstrap.HelpBlock,
-                          null,
-                          'Example block-level help text here.'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formBasicText2' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Text Input'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, {
-                          type: 'text',
-                          placeholder: 'Enter Text'
-                        }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null)
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
+                        'code',
                         null,
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Static text'
-                        ),
-                        _react2.default.createElement(
-                          _FormControlStatic2.default,
-                          null,
-                          'email@example.com'
-                        )
-                      ),
+                        '.col-xs-'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
                       _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        {
-                          controlId: 'formBasicFile'
-                        },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'File Input'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, {
-                          type: 'file'
-                        }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null)
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsTextarea' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Textarea'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, { componentClass: 'textarea', placeholder: 'textarea' })
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsCheckbox' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'CheckBox'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.Checkbox,
-                          null,
-                          'Checkbox #1 '
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.Checkbox,
-                          null,
-                          ' Checkbox #2 '
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.Checkbox,
-                          null,
-                          ' Checkbox #3 '
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
+                        'code',
                         null,
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Inline CheckBox'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.Col,
-                          null,
-                          _react2.default.createElement(
-                            _reactBootstrap.Checkbox,
-                            { inline: true },
-                            '1'
-                          ),
-                          ' ',
-                          _react2.default.createElement(
-                            _reactBootstrap.Checkbox,
-                            { inline: true },
-                            '2'
-                          ),
-                          ' ',
-                          _react2.default.createElement(
-                            _reactBootstrap.Checkbox,
-                            { inline: true },
-                            '3'
-                          )
-                        )
-                      ),
+                        '.col-sm-'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
                       _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
+                        'code',
                         null,
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Inline Radio'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.Col,
-                          null,
-                          _react2.default.createElement(
-                            _reactBootstrap.Radio,
-                            { inline: true },
-                            '1'
-                          ),
-                          ' ',
-                          _react2.default.createElement(
-                            _reactBootstrap.Radio,
-                            { inline: true },
-                            '2'
-                          ),
-                          ' ',
-                          _react2.default.createElement(
-                            _reactBootstrap.Radio,
-                            { inline: true },
-                            '3'
-                          )
-                        )
-                      ),
+                        '.col-md-'
+                      )
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
                       _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsSelect' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Select'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.FormControl,
-                          { componentClass: 'select', placeholder: 'select' },
-                          _react2.default.createElement(
-                            'option',
-                            { value: '1' },
-                            '1'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '2' },
-                            '2'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '3' },
-                            '3'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '4' },
-                            '4'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '5' },
-                            '5'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsSelectMultiple' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Multiple select'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.FormControl,
-                          { componentClass: 'select', multiple: true },
-                          _react2.default.createElement(
-                            'option',
-                            { value: '1' },
-                            '1'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '2' },
-                            '2'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '3' },
-                            '3'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '4' },
-                            '4'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '5' },
-                            '5'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
+                        'code',
                         null,
-                        _react2.default.createElement(
-                          _reactBootstrap.Button,
-                          { type: 'submit' },
-                          'Submit Button'
-                        ),
-                        '  ',
-                        _react2.default.createElement(
-                          _reactBootstrap.Button,
-                          { type: 'reset' },
-                          'Reset Button'
-                        )
+                        '.col-lg-'
                       )
                     )
                   ),
                   _react2.default.createElement(
-                    'div',
-                    { className: 'col-lg-6' },
+                    'tr',
+                    null,
                     _react2.default.createElement(
-                      'h1',
+                      'th',
                       null,
-                      'Disabled Form States'
+                      '# of columns'
                     ),
                     _react2.default.createElement(
-                      _reactBootstrap.Form,
-                      null,
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlDisableState' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          ' Disabled Input '
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text', placeholder: 'Disabled Input', disabled: true })
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsDisableSelect' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Disabled Select'
-                        ),
-                        _react2.default.createElement(
-                          _reactBootstrap.FormControl,
-                          { componentClass: 'select', placeholder: 'select', disabled: true },
-                          _react2.default.createElement(
-                            'option',
-                            { value: '1' },
-                            '1'
-                          ),
-                          _react2.default.createElement(
-                            'option',
-                            { value: '2' },
-                            '2'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsDisabledCheckbox' },
-                        _react2.default.createElement(
-                          _reactBootstrap.Checkbox,
-                          { disabled: true },
-                          'Disabled CheckBox'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formControlsDisabledButton' },
-                        _react2.default.createElement(
-                          _reactBootstrap.Button,
-                          { bsStyle: 'primary', type: 'submit', disabled: true },
-                          'Disabled Button '
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'h1',
-                      null,
-                      'Form Validation States'
-                    ),
-                    _react2.default.createElement(
-                      _reactBootstrap.Form,
-                      null,
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formValidationSuccess2', validationState: 'success' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Input with success'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null)
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formValidationWarning1', validationState: 'warning' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Input with warning'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null)
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        { controlId: 'formValidationWarning1', validationState: 'error' },
-                        _react2.default.createElement(
-                          _reactBootstrap.ControlLabel,
-                          null,
-                          'Input with Error'
-                        ),
-                        _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                        _react2.default.createElement(_FormControlFeedback2.default, null)
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'h1',
-                      null,
-                      'Input Groups'
-                    ),
-                    _react2.default.createElement(
-                      _reactBootstrap.Form,
-                      null,
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        null,
-                        _react2.default.createElement(
-                          _reactBootstrap.InputGroup,
-                          null,
-                          _react2.default.createElement(
-                            _InputGroupAddon2.default,
-                            null,
-                            '@'
-                          ),
-                          _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' })
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        null,
-                        _react2.default.createElement(
-                          _reactBootstrap.InputGroup,
-                          null,
-                          _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                          _react2.default.createElement(
-                            _InputGroupAddon2.default,
-                            null,
-                            '.00'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        null,
-                        _react2.default.createElement(
-                          _reactBootstrap.InputGroup,
-                          null,
-                          _react2.default.createElement(
-                            _InputGroupAddon2.default,
-                            null,
-                            '$'
-                          ),
-                          _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                          _react2.default.createElement(
-                            _InputGroupAddon2.default,
-                            null,
-                            '.00'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        _reactBootstrap.FormGroup,
-                        null,
-                        _react2.default.createElement(
-                          _reactBootstrap.InputGroup,
-                          null,
-                          _react2.default.createElement(_reactBootstrap.FormControl, { type: 'text' }),
-                          _react2.default.createElement(
-                            _InputGroupAddon2.default,
-                            null,
-                            _react2.default.createElement(_reactBootstrap.Glyphicon, { glyph: 'music' })
-                          )
-                        )
-                      )
+                      'td',
+                      { colSpan: '4' },
+                      '12'
                     )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Max column width'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { className: 'text-muted' },
+                      'Auto'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '60px'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '78px'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      null,
+                      '95px'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Gutter width'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { colSpan: '4' },
+                      '30px (15px on each side of a column)'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Nestable'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { colSpan: '4' },
+                      'Yes'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Offsets'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { colSpan: '4' },
+                      'Yes'
+                    )
+                  ),
+                  _react2.default.createElement(
+                    'tr',
+                    null,
+                    _react2.default.createElement(
+                      'th',
+                      null,
+                      'Column ordering'
+                    ),
+                    _react2.default.createElement(
+                      'td',
+                      { colSpan: '4' },
+                      'Yes'
+                    )
+                  )
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-'
+              ),
+              ' class to an element will not only affect its styling on medium devices but also on large devices if a',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-lg-'
+              ),
+              ' class is not present.'
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Example: Stacked-to-horizontal'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Using a single set of',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-*'
+              ),
+              ' grid classes, you can create a default grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.row'
+              ),
+              '.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-1' },
+                '.col-md-1'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-8' },
+                '.col-md-8'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4' },
+                '.col-md-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4' },
+                '.col-md-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4' },
+                '.col-md-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4' },
+                '.col-md-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-6' },
+                '.col-md-6'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-6' },
+                '.col-md-6'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Example: Mobile and desktop'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Dont want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-xs-*'
+              ),
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-*'
+              ),
+              ' to your columns. See the example below for a better idea of how it all works.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-12 col-md-8' },
+                '.col-xs-12 .col-md-8'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-md-4' },
+                '.col-xs-6 .col-md-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-md-4' },
+                '.col-xs-6 .col-md-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-md-4' },
+                '.col-xs-6 .col-md-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-md-4' },
+                '.col-xs-6 .col-md-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6' },
+                '.col-xs-6'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6' },
+                '.col-xs-6'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Example: Mobile, tablet, desktops'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Build on the previous example by creating even more dynamic and powerful layouts with tablet',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-sm-*'
+              ),
+              ' classes.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-12 col-sm-6 col-md-8' },
+                '.col-xs-12 .col-sm-6 .col-md-8'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-md-4' },
+                '.col-xs-6 .col-md-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-4' },
+                '.col-xs-6 .col-sm-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-4' },
+                '.col-xs-6 .col-sm-4'
+              ),
+              _react2.default.createElement('div', { className: 'clearfix visible-xs' }),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-4' },
+                '.col-xs-6 .col-sm-4'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              { id: 'grid-responsive-resets' },
+              'Responsive column resets'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'With the four tiers of grids available you\'re bound to run into issues where, at certain breakpoints, your columns don\'t clear quite right as one is taller than the other. To fix that, use a combination of a',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.clearfix'
+              ),
+              ' and our ',
+              _react2.default.createElement(
+                'a',
+                { href: 'javascript:void(0)' },
+                'responsive utility classes'
+              ),
+              '.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-3' },
+                '.col-xs-6 .col-sm-3',
+                _react2.default.createElement('br', null),
+                'Resize your viewport or check it out on your phone for an example.'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-3' },
+                '.col-xs-6 .col-sm-3'
+              ),
+              _react2.default.createElement('div', { className: 'clearfix visible-xs' }),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-3' },
+                '.col-xs-6 .col-sm-3'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-xs-6 col-sm-3' },
+                '.col-xs-6 .col-sm-3'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              { id: 'grid-offsetting' },
+              'Offsetting columns'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Move columns to the right using',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-offset-*'
+              ),
+              ' classes. These classes increase the left margin of a column by',
+              _react2.default.createElement(
+                'code',
+                null,
+                '*'
+              ),
+              ' columns. For example,',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-offset-4'
+              ),
+              ' moves',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-4'
+              ),
+              ' over four columns.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4' },
+                '.col-md-4'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-4 col-md-offset-4' },
+                '.col-md-4 .col-md-offset-4'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-3 col-md-offset-3' },
+                '.col-md-3 .col-md-offset-3'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-3 col-md-offset-3' },
+                '.col-md-3 .col-md-offset-3'
+              )
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-6 col-md-offset-3' },
+                '.col-md-6 .col-md-offset-3'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              { id: 'grid-nesting' },
+              'Nesting columns'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'To nest your content with the default grid, add a new',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.row'
+              ),
+              ' and set of',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-*'
+              ),
+              ' columns within an existing',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-*'
+              ),
+              ' column. Nested rows should include a set of columns that add up to 12.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-9' },
+                'Level 1: .col-md-9',
+                _react2.default.createElement(
+                  'div',
+                  { className: 'row show-grid' },
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-md-6' },
+                    'Level 2: .col-md-6'
+                  ),
+                  _react2.default.createElement(
+                    'div',
+                    { className: 'col-md-6' },
+                    'Level 2: .col-md-6'
                   )
                 )
               )
             )
           )
-        );
-      }
-    }]);
-    return Forms;
-  }(_react.Component);
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            null,
+            _react2.default.createElement(
+              'h3',
+              { id: 'grid-column-ordering' },
+              'Column ordering'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Easily change the order of our built-in grid columns with',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-push-*'
+              ),
+              ' and',
+              _react2.default.createElement(
+                'code',
+                null,
+                '.col-md-pull-*'
+              ),
+              ' modifier classes.'
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'row show-grid' },
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-9 col-md-push-3' },
+                '.col-md-9 .col-md-push-3'
+              ),
+              _react2.default.createElement(
+                'div',
+                { className: 'col-md-3 col-md-pull-9' },
+                '.col-md-3 .col-md-pull-9'
+              )
+            )
+          )
+        )
+      )
+    );
+  }
   
-  exports.default = Forms;
-
-/***/ },
-/* 113 */
-/***/ function(module, exports) {
-
-  module.exports = require("react-bootstrap/lib/FormControlFeedback");
+  displayGrid.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  
+  exports.default = displayGrid;
 
 /***/ },
 /* 114 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("react-bootstrap/lib/FormControlStatic");
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _react = __webpack_require__(13);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Icons = __webpack_require__(115);
+  
+  var _Icons2 = _interopRequireDefault(_Icons);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  exports.default = {
+  
+    path: '/icons',
+  
+    action: function action() {
+      return _react2.default.createElement(_Icons2.default, null);
+    }
+  };
 
 /***/ },
 /* 115 */
-/***/ function(module, exports) {
+/***/ function(module, exports, __webpack_require__) {
 
-  module.exports = require("react-bootstrap/lib/InputGroupAddon");
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _react = __webpack_require__(13);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _Panel = __webpack_require__(95);
+  
+  var _Panel2 = _interopRequireDefault(_Panel);
+  
+  var _PageHeader = __webpack_require__(101);
+  
+  var _PageHeader2 = _interopRequireDefault(_PageHeader);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  var title = 'Icons';
+  
+  function displayIcons(props, context) {
+    context.setTitle(title);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'col-lg-12' },
+        _react2.default.createElement(
+          _PageHeader2.default,
+          null,
+          'Icons'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'col-lg-12' },
+        _react2.default.createElement(
+          _Panel2.default,
+          { header: _react2.default.createElement(
+              'span',
+              null,
+              'All available icons'
+            ) },
+          _react2.default.createElement(
+            'div',
+            { className: 'row' },
+            _react2.default.createElement(
+              'div',
+              { className: 'fa col-lg-3' },
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-glass' },
+                ' fa-glass '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-music' },
+                ' fa-music '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-search' },
+                ' fa-search '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-envelope-o' },
+                ' fa-envelope-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-heart' },
+                ' fa-heart '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star' },
+                ' fa-star '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star-o' },
+                ' fa-star-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-user' },
+                ' fa-user '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-film' },
+                ' fa-film '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-th-large' },
+                ' fa-th-large '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-th' },
+                ' fa-th '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-th-list' },
+                ' fa-th-list '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-check' },
+                ' fa-check '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-times' },
+                ' fa-times '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-search-plus' },
+                ' fa-search-plus '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-search-minus' },
+                ' fa-search-minus '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-power-off' },
+                ' fa-power-off '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-signal' },
+                ' fa-signal '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gear' },
+                ' fa-gear '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cog' },
+                ' fa-cog '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-trash-o' },
+                ' fa-trash-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-home' },
+                ' fa-home '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-o' },
+                ' fa-file-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-clock-o' },
+                ' fa-clock-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-road' },
+                ' fa-road '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-download' },
+                ' fa-download '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-o-down' },
+                ' fa-arrow-circle-o-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-o-up' },
+                ' fa-arrow-circle-o-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-inbox' },
+                ' fa-inbox '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-play-circle-o' },
+                ' fa-play-circle-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rotate-right' },
+                ' fa-rotate-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-repeat' },
+                ' fa-repeat '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-refresh' },
+                ' fa-refresh '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-list-alt' },
+                ' fa-list-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-lock' },
+                ' fa-lock '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flag' },
+                ' fa-flag '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-headphones' },
+                ' fa-headphones '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-volume-off' },
+                ' fa-volume-off '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-volume-down' },
+                ' fa-volume-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-volume-up' },
+                ' fa-volume-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-qrcode' },
+                ' fa-qrcode '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-barcode' },
+                ' fa-barcode '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tag' },
+                ' fa-tag '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tags' },
+                ' fa-tags '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-book' },
+                ' fa-book '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bookmark' },
+                ' fa-bookmark '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-print' },
+                ' fa-print '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-camera' },
+                ' fa-camera '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-font' },
+                ' fa-font '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bold' },
+                ' fa-bold '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-italic' },
+                ' fa-italic '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-text-height' },
+                ' fa-text-height '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-text-width' },
+                ' fa-text-width '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-align-left' },
+                ' fa-align-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-align-center' },
+                ' fa-align-center '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-align-right' },
+                ' fa-align-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-align-justify' },
+                ' fa-align-justify '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-list' },
+                ' fa-list '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dedent' },
+                ' fa-dedent '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-outdent' },
+                ' fa-outdent '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-indent' },
+                ' fa-indent '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-video-camera' },
+                ' fa-video-camera '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-photo' },
+                ' fa-photo '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-image' },
+                ' fa-image '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-picture-o' },
+                ' fa-picture-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pencil' },
+                ' fa-pencil '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-map-marker' },
+                ' fa-map-marker '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-adjust' },
+                ' fa-adjust '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tint' },
+                ' fa-tint '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-edit' },
+                ' fa-edit '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pencil-square-o' },
+                ' fa-pencil-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-share-square-o' },
+                ' fa-share-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-check-square-o' },
+                ' fa-check-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrows' },
+                ' fa-arrows '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-step-backward' },
+                ' fa-step-backward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fast-backward' },
+                ' fa-fast-backward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-backward' },
+                ' fa-backward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-play' },
+                ' fa-play '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pause' },
+                ' fa-pause '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stop' },
+                ' fa-stop '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-forward' },
+                ' fa-forward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fast-forward' },
+                ' fa-fast-forward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-step-forward' },
+                ' fa-step-forward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-eject' },
+                ' fa-eject '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-left' },
+                ' fa-chevron-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-right' },
+                ' fa-chevron-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-plus-circle' },
+                ' fa-plus-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-minus-circle' },
+                ' fa-minus-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-times-circle' },
+                ' fa-times-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-check-circle' },
+                ' fa-check-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-question-circle' },
+                ' fa-question-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-info-circle' },
+                ' fa-info-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-crosshairs' },
+                ' fa-crosshairs '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-times-circle-o' },
+                ' fa-times-circle-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-check-circle-o' },
+                ' fa-check-circle-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ban' },
+                ' fa-ban '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-left' },
+                ' fa-arrow-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-right' },
+                ' fa-arrow-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-up' },
+                ' fa-arrow-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-down' },
+                ' fa-arrow-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mail-forward' },
+                ' fa-mail-forward '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-share' },
+                ' fa-share '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-expand' },
+                ' fa-expand '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-compress' },
+                ' fa-compress '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-plus' },
+                ' fa-plus '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-minus' },
+                ' fa-minus '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-asterisk' },
+                ' fa-asterisk '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-exclamation-circle' },
+                ' fa-exclamation-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gift' },
+                ' fa-gift '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-leaf' },
+                ' fa-leaf '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fire' },
+                ' fa-fire '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-eye' },
+                ' fa-eye '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-eye-slash' },
+                ' fa-eye-slash '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-warning' },
+                ' fa-warning '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-exclamation-triangle' },
+                ' fa-exclamation-triangle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-plane' },
+                ' fa-plane '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-calendar' },
+                ' fa-calendar '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-random' },
+                ' fa-random '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-comment' },
+                ' fa-comment '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-magnet' },
+                ' fa-magnet '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-up' },
+                ' fa-chevron-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-down' },
+                ' fa-chevron-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-retweet' },
+                ' fa-retweet '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-shopping-cart' },
+                ' fa-shopping-cart '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-folder' },
+                ' fa-folder '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-folder-open' },
+                ' fa-folder-open '
+              ),
+              _react2.default.createElement('br', null),
+              ' '
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'fa col-lg-3' },
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrows-v' },
+                ' fa-arrows-v '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrows-h' },
+                ' fa-arrows-h '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bar-chart-o' },
+                ' fa-bar-chart-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-twitter-square' },
+                ' fa-twitter-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-facebook-square' },
+                ' fa-facebook-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-camera-retro' },
+                ' fa-camera-retro '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-key' },
+                ' fa-key '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gears' },
+                ' fa-gears '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cogs' },
+                ' fa-cogs '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-comments' },
+                ' fa-comments '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-thumbs-o-up' },
+                ' fa-thumbs-o-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-thumbs-o-down' },
+                ' fa-thumbs-o-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star-half' },
+                ' fa-star-half '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-heart-o' },
+                ' fa-heart-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sign-out' },
+                ' fa-sign-out '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-linkedin-square' },
+                ' fa-linkedin-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-thumb-tack' },
+                ' fa-thumb-tack '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-external-link' },
+                ' fa-external-link '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sign-in' },
+                ' fa-sign-in '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-trophy' },
+                ' fa-trophy '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-github-square' },
+                ' fa-github-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-upload' },
+                ' fa-upload '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-lemon-o' },
+                ' fa-lemon-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-phone' },
+                ' fa-phone '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-square-o' },
+                ' fa-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bookmark-o' },
+                ' fa-bookmark-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-phone-square' },
+                ' fa-phone-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-twitter' },
+                ' fa-twitter '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-facebook' },
+                ' fa-facebook '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-github' },
+                ' fa-github '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-unlock' },
+                ' fa-unlock '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-credit-card' },
+                ' fa-credit-card '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rss' },
+                ' fa-rss '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hdd-o' },
+                ' fa-hdd-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bullhorn' },
+                ' fa-bullhorn '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bell' },
+                ' fa-bell '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-certificate' },
+                ' fa-certificate '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hand-o-right' },
+                ' fa-hand-o-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hand-o-left' },
+                ' fa-hand-o-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hand-o-up' },
+                ' fa-hand-o-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hand-o-down' },
+                ' fa-hand-o-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-left' },
+                ' fa-arrow-circle-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-right' },
+                ' fa-arrow-circle-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-up' },
+                ' fa-arrow-circle-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-down' },
+                ' fa-arrow-circle-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-globe' },
+                ' fa-globe '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-wrench' },
+                ' fa-wrench '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tasks' },
+                ' fa-tasks '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-filter' },
+                ' fa-filter '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-briefcase' },
+                ' fa-briefcase '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrows-alt' },
+                ' fa-arrows-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-group' },
+                ' fa-group '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-users' },
+                ' fa-users '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chain' },
+                ' fa-chain '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-link' },
+                ' fa-link '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cloud' },
+                ' fa-cloud '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flask' },
+                ' fa-flask '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cut' },
+                ' fa-cut '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-scissors' },
+                ' fa-scissors '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-copy' },
+                ' fa-copy '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-files-o' },
+                ' fa-files-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paperclip' },
+                ' fa-paperclip '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-save' },
+                ' fa-save '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-floppy-o' },
+                ' fa-floppy-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-square' },
+                ' fa-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-navicon' },
+                ' fa-navicon '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-reorder' },
+                ' fa-reorder '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bars' },
+                ' fa-bars '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-list-ul' },
+                ' fa-list-ul '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-list-ol' },
+                ' fa-list-ol '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-strikethrough' },
+                ' fa-strikethrough '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-underline' },
+                ' fa-underline '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-table' },
+                ' fa-table '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-magic' },
+                ' fa-magic '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-truck' },
+                ' fa-truck '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pinterest' },
+                ' fa-pinterest '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pinterest-square' },
+                ' fa-pinterest-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-google-plus-square' },
+                ' fa-google-plus-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-google-plus' },
+                ' fa-google-plus '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-money' },
+                ' fa-money '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-down' },
+                ' fa-caret-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-up' },
+                ' fa-caret-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-left' },
+                ' fa-caret-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-right' },
+                ' fa-caret-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-columns' },
+                ' fa-columns '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-unsorted' },
+                ' fa-unsorted '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort' },
+                ' fa-sort '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-down' },
+                ' fa-sort-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-desc' },
+                ' fa-sort-desc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-up' },
+                ' fa-sort-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-asc' },
+                ' fa-sort-asc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-envelope' },
+                ' fa-envelope '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-linkedin' },
+                ' fa-linkedin '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rotate-left' },
+                ' fa-rotate-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-undo' },
+                ' fa-undo '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-legal' },
+                ' fa-legal '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gavel' },
+                ' fa-gavel '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dashboard' },
+                ' fa-dashboard '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tachometer' },
+                ' fa-tachometer '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-comment-o' },
+                ' fa-comment-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-comments-o' },
+                ' fa-comments-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flash' },
+                ' fa-flash '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bolt' },
+                ' fa-bolt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sitemap' },
+                ' fa-sitemap '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-umbrella' },
+                ' fa-umbrella '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paste' },
+                ' fa-paste '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-clipboard' },
+                ' fa-clipboard '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-lightbulb-o' },
+                ' fa-lightbulb-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-exchange' },
+                ' fa-exchange '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cloud-download' },
+                ' fa-cloud-download '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cloud-upload' },
+                ' fa-cloud-upload '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-user-md' },
+                ' fa-user-md '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stethoscope' },
+                ' fa-stethoscope '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-suitcase' },
+                ' fa-suitcase '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bell-o' },
+                ' fa-bell-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-coffee' },
+                ' fa-coffee '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cutlery' },
+                ' fa-cutlery '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-text-o' },
+                ' fa-file-text-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-building-o' },
+                ' fa-building-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hospital-o' },
+                ' fa-hospital-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ambulance' },
+                ' fa-ambulance '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-medkit' },
+                ' fa-medkit '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fighter-jet' },
+                ' fa-fighter-jet '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-beer' },
+                ' fa-beer '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-h-square' },
+                ' fa-h-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-plus-square' },
+                ' fa-plus-square '
+              ),
+              _react2.default.createElement('br', null)
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'fa col-lg-3' },
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-double-left' },
+                ' fa-angle-double-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-double-right' },
+                ' fa-angle-double-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-double-up' },
+                ' fa-angle-double-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-double-down' },
+                ' fa-angle-double-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-left' },
+                ' fa-angle-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-right' },
+                ' fa-angle-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-up' },
+                ' fa-angle-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-angle-down' },
+                ' fa-angle-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-desktop' },
+                ' fa-desktop '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-laptop' },
+                ' fa-laptop '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tablet' },
+                ' fa-tablet '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mobile-phone' },
+                ' fa-mobile-phone '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mobile' },
+                ' fa-mobile '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-circle-o' },
+                ' fa-circle-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-quote-left' },
+                ' fa-quote-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-quote-right' },
+                ' fa-quote-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-spinner' },
+                ' fa-spinner '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-circle' },
+                ' fa-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mail-reply' },
+                ' fa-mail-reply '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-reply' },
+                ' fa-reply '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-github-alt' },
+                ' fa-github-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-folder-o' },
+                ' fa-folder-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-folder-open-o' },
+                ' fa-folder-open-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-smile-o' },
+                ' fa-smile-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-frown-o' },
+                ' fa-frown-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-meh-o' },
+                ' fa-meh-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gamepad' },
+                ' fa-gamepad '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-keyboard-o' },
+                ' fa-keyboard-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flag-o' },
+                ' fa-flag-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flag-checkered' },
+                ' fa-flag-checkered '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-terminal' },
+                ' fa-terminal '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-code' },
+                ' fa-code '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mail-reply-all' },
+                ' fa-mail-reply-all '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-reply-all' },
+                ' fa-reply-all '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star-half-empty' },
+                ' fa-star-half-empty '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star-half-full' },
+                ' fa-star-half-full '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-star-half-o' },
+                ' fa-star-half-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-location-arrow' },
+                ' fa-location-arrow '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-crop' },
+                ' fa-crop '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-code-fork' },
+                ' fa-code-fork '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-unlink' },
+                ' fa-unlink '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chain-broken' },
+                ' fa-chain-broken '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-question' },
+                ' fa-question '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-info' },
+                ' fa-info '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-exclamation' },
+                ' fa-exclamation '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-superscript' },
+                ' fa-superscript '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-subscript' },
+                ' fa-subscript '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-eraser' },
+                ' fa-eraser '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-puzzle-piece' },
+                ' fa-puzzle-piece '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-microphone' },
+                ' fa-microphone '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-microphone-slash' },
+                ' fa-microphone-slash '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-shield' },
+                ' fa-shield '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-calendar-o' },
+                ' fa-calendar-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fire-extinguisher' },
+                ' fa-fire-extinguisher '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rocket' },
+                ' fa-rocket '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-maxcdn' },
+                ' fa-maxcdn '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-circle-left' },
+                ' fa-chevron-circle-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-circle-right' },
+                ' fa-chevron-circle-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-circle-up' },
+                ' fa-chevron-circle-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-chevron-circle-down' },
+                ' fa-chevron-circle-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-html5' },
+                ' fa-html5 '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-css3' },
+                ' fa-css3 '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-anchor' },
+                ' fa-anchor '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-unlock-alt' },
+                ' fa-unlock-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bullseye' },
+                ' fa-bullseye '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ellipsis-h' },
+                ' fa-ellipsis-h '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ellipsis-v' },
+                ' fa-ellipsis-v '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rss-square' },
+                ' fa-rss-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-play-circle' },
+                ' fa-play-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ticket' },
+                ' fa-ticket '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-minus-square' },
+                ' fa-minus-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-minus-square-o' },
+                ' fa-minus-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-level-up' },
+                ' fa-level-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-level-down' },
+                ' fa-level-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-check-square' },
+                ' fa-check-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pencil-square' },
+                ' fa-pencil-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-external-link-square' },
+                ' fa-external-link-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-share-square' },
+                ' fa-share-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-compass' },
+                ' fa-compass '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-toggle-down' },
+                ' fa-toggle-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-square-o-down' },
+                ' fa-caret-square-o-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-toggle-up' },
+                ' fa-toggle-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-square-o-up' },
+                ' fa-caret-square-o-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-toggle-right' },
+                ' fa-toggle-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-square-o-right' },
+                ' fa-caret-square-o-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-euro' },
+                ' fa-euro '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-eur' },
+                ' fa-eur '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gbp' },
+                ' fa-gbp '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dollar' },
+                ' fa-dollar '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-usd' },
+                ' fa-usd '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rupee' },
+                ' fa-rupee '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-inr' },
+                ' fa-inr '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cny' },
+                ' fa-cny '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rmb' },
+                ' fa-rmb '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-yen' },
+                ' fa-yen '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-jpy' },
+                ' fa-jpy '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ruble' },
+                ' fa-ruble '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rouble' },
+                ' fa-rouble '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rub' },
+                ' fa-rub '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-won' },
+                ' fa-won '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-krw' },
+                ' fa-krw '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bitcoin' },
+                ' fa-bitcoin '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-btc' },
+                ' fa-btc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file' },
+                ' fa-file '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-text' },
+                ' fa-file-text '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-alpha-asc' },
+                ' fa-sort-alpha-asc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-alpha-desc' },
+                ' fa-sort-alpha-desc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-amount-asc' },
+                ' fa-sort-amount-asc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-amount-desc' },
+                ' fa-sort-amount-desc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-numeric-asc' },
+                ' fa-sort-numeric-asc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sort-numeric-desc' },
+                ' fa-sort-numeric-desc '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-thumbs-up' },
+                ' fa-thumbs-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-thumbs-down' },
+                ' fa-thumbs-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-youtube-square' },
+                ' fa-youtube-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-youtube' },
+                ' fa-youtube '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-xing' },
+                ' fa-xing '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-xing-square' },
+                ' fa-xing-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-youtube-play' },
+                ' fa-youtube-play '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dropbox' },
+                ' fa-dropbox '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stack-overflow' },
+                ' fa-stack-overflow '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-instagram' },
+                ' fa-instagram '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-flickr' },
+                ' fa-flickr '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-adn' },
+                ' fa-adn '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bitbucket' },
+                ' fa-bitbucket '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bitbucket-square' },
+                ' fa-bitbucket-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tumblr' },
+                ' fa-tumblr '
+              ),
+              _react2.default.createElement('br', null),
+              ' '
+            ),
+            _react2.default.createElement(
+              'div',
+              { className: 'fa col-lg-3' },
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tumblr-square' },
+                ' fa-tumblr-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-long-arrow-down' },
+                ' fa-long-arrow-down '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-long-arrow-up' },
+                ' fa-long-arrow-up '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-long-arrow-left' },
+                ' fa-long-arrow-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-long-arrow-right' },
+                ' fa-long-arrow-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-apple' },
+                ' fa-apple '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-windows' },
+                ' fa-windows '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-android' },
+                ' fa-android '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-linux' },
+                ' fa-linux '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dribbble' },
+                ' fa-dribbble '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-skype' },
+                ' fa-skype '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-foursquare' },
+                ' fa-foursquare '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-trello' },
+                ' fa-trello '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-female' },
+                ' fa-female '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-male' },
+                ' fa-male '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-gittip' },
+                ' fa-gittip '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sun-o' },
+                ' fa-sun-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-moon-o' },
+                ' fa-moon-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-archive' },
+                ' fa-archive '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bug' },
+                ' fa-bug '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-vk' },
+                ' fa-vk '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-weibo' },
+                ' fa-weibo '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-renren' },
+                ' fa-renren '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pagelines' },
+                ' fa-pagelines '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stack-exchange' },
+                ' fa-stack-exchange '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-o-right' },
+                ' fa-arrow-circle-o-right '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-arrow-circle-o-left' },
+                ' fa-arrow-circle-o-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-toggle-left' },
+                ' fa-toggle-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-caret-square-o-left' },
+                ' fa-caret-square-o-left '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-dot-circle-o' },
+                ' fa-dot-circle-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-wheelchair' },
+                ' fa-wheelchair '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-vimeo-square' },
+                ' fa-vimeo-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-turkish-lira' },
+                ' fa-turkish-lira '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-try' },
+                ' fa-try '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-plus-square-o' },
+                ' fa-plus-square-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-space-shuttle' },
+                ' fa-space-shuttle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-slack' },
+                ' fa-slack '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-envelope-square' },
+                ' fa-envelope-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-wordpress' },
+                ' fa-wordpress '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-openid' },
+                ' fa-openid '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-institution' },
+                ' fa-institution '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bank' },
+                ' fa-bank '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-university' },
+                ' fa-university '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-mortar-board' },
+                ' fa-mortar-board '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-graduation-cap' },
+                ' fa-graduation-cap '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-yahoo' },
+                ' fa-yahoo '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-google' },
+                ' fa-google '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-reddit' },
+                ' fa-reddit '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-reddit-square' },
+                ' fa-reddit-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stumbleupon-circle' },
+                ' fa-stumbleupon-circle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-stumbleupon' },
+                ' fa-stumbleupon '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-delicious' },
+                ' fa-delicious '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-digg' },
+                ' fa-digg '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pied-piper-square' },
+                ' fa-pied-piper-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pied-piper' },
+                ' fa-pied-piper '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-pied-piper-alt' },
+                ' fa-pied-piper-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-drupal' },
+                ' fa-drupal '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-joomla' },
+                ' fa-joomla '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-language' },
+                ' fa-language '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-fax' },
+                ' fa-fax '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-building' },
+                ' fa-building '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-child' },
+                ' fa-child '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paw' },
+                ' fa-paw '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-spoon' },
+                ' fa-spoon '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cube' },
+                ' fa-cube '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cubes' },
+                ' fa-cubes '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-behance' },
+                ' fa-behance '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-behance-square' },
+                ' fa-behance-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-steam' },
+                ' fa-steam '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-steam-square' },
+                ' fa-steam-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-recycle' },
+                ' fa-recycle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-automobile' },
+                ' fa-automobile '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-car' },
+                ' fa-car '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-cab' },
+                ' fa-cab '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-taxi' },
+                ' fa-taxi '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tree' },
+                ' fa-tree '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-spotify' },
+                ' fa-spotify '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-deviantart' },
+                ' fa-deviantart '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-soundcloud' },
+                ' fa-soundcloud '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-database' },
+                ' fa-database '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-pdf-o' },
+                ' fa-file-pdf-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-word-o' },
+                ' fa-file-word-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-excel-o' },
+                ' fa-file-excel-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-powerpoint-o' },
+                ' fa-file-powerpoint-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-photo-o' },
+                ' fa-file-photo-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-picture-o' },
+                ' fa-file-picture-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-image-o' },
+                ' fa-file-image-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-zip-o' },
+                ' fa-file-zip-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-archive-o' },
+                ' fa-file-archive-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-sound-o' },
+                ' fa-file-sound-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-audio-o' },
+                ' fa-file-audio-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-movie-o' },
+                ' fa-file-movie-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-video-o' },
+                ' fa-file-video-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-file-code-o' },
+                ' fa-file-code-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-vine' },
+                ' fa-vine '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-codepen' },
+                ' fa-codepen '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-jsfiddle' },
+                ' fa-jsfiddle '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-life-bouy' },
+                ' fa-life-bouy '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-life-saver' },
+                ' fa-life-saver '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-support' },
+                ' fa-support '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-life-ring' },
+                ' fa-life-ring '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-circle-o-notch' },
+                ' fa-circle-o-notch '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ra' },
+                ' fa-ra '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-rebel' },
+                ' fa-rebel '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-ge' },
+                ' fa-ge '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-empire' },
+                ' fa-empire '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-git-square' },
+                ' fa-git-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-git' },
+                ' fa-git '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-hacker-news' },
+                ' fa-hacker-news '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-tencent-weibo' },
+                ' fa-tencent-weibo '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-qq' },
+                ' fa-qq '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-wechat' },
+                ' fa-wechat '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-weixin' },
+                ' fa-weixin '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-send' },
+                ' fa-send '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paper-plane' },
+                ' fa-paper-plane '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-send-o' },
+                ' fa-send-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paper-plane-o' },
+                ' fa-paper-plane-o '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-history' },
+                ' fa-history '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-circle-thin' },
+                ' fa-circle-thin '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-header' },
+                ' fa-header '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-paragraph' },
+                ' fa-paragraph '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-sliders' },
+                ' fa-sliders '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-share-alt' },
+                ' fa-share-alt '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-share-alt-square' },
+                ' fa-share-alt-square '
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'p',
+                { className: 'fa fa-bomb' },
+                ' fa-bomb '
+              ),
+              _react2.default.createElement('br', null)
+            )
+          )
+        )
+      )
+    );
+  }
+  
+  displayIcons.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  
+  exports.default = displayIcons;
 
 /***/ },
 /* 116 */
@@ -8143,18 +11913,18 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Grid = __webpack_require__(117);
+  var _MorrisjsCharts = __webpack_require__(117);
   
-  var _Grid2 = _interopRequireDefault(_Grid);
+  var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   exports.default = {
   
-    path: '/grid',
+    path: '/morrisjscharts',
   
     action: function action() {
-      return _react2.default.createElement(_Grid2.default, null);
+      return _react2.default.createElement(_MorrisjsCharts2.default, null);
     }
   };
 
@@ -8180,26 +11950,142 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(102);
+  var _PageHeader = __webpack_require__(101);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Grid = __webpack_require__(118);
-  
-  var _Grid2 = _interopRequireDefault(_Grid);
-  
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var title = 'Grid';
+  var title = 'MorrisjsCharts';
   
-  function displayGrid(props, context) {
+  function displayMorrisjsCharts(props, context) {
     context.setTitle(title);
-    return _react2.default.createElement(_Grid2.default, null);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _PageHeader2.default,
+            null,
+            'Morris.js Charts'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Area Chart Example'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Bar Chart Example'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Line Chart Example'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Donut Chart Example'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              'Panel contents'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Morris.js Usage'
+              ) },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Morris Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin, we are using the most recent version of Morris.js which includes the resize functions, which makes the charts fully responsive. The documentation for Morris.js is available on their website,',
+                _react2.default.createElement(
+                  'a',
+                  { target: '_blank', rel: 'noopener noreferrer', href: 'http://morrisjs.github.io/morris.js/' },
+                  '\'http://morrisjs.github.io/morris.js/>\''
+                ),
+                '.'
+              ),
+              _react2.default.createElement(
+                _Button2.default,
+                { bsSize: 'large', block: true, href: 'http://morrisjs.github.io/morris.js/' },
+                'View Morris.js Documentation'
+              )
+            )
+          )
+        )
+      )
+    );
   }
   
-  displayGrid.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
+  displayMorrisjsCharts.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
   
-  exports.default = displayGrid;
+  exports.default = displayMorrisjsCharts;
 
 /***/ },
 /* 118 */
@@ -8211,4913 +12097,11 @@ module.exports =
     value: true
   });
   
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
   var _react = __webpack_require__(13);
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Grid = function (_Component) {
-    (0, _inherits3.default)(Grid, _Component);
-  
-    function Grid() {
-      (0, _classCallCheck3.default)(this, Grid);
-      return (0, _possibleConstructorReturn3.default)(this, (Grid.__proto__ || (0, _getPrototypeOf2.default)(Grid)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Grid, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _PageHeader2.default,
-                null,
-                'Grid'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'Grid options'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'See how aspects of the Bootstrap grid system work across multiple devices with a handy table.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'table-responsive' },
-                  _react2.default.createElement(
-                    'table',
-                    { className: 'table table-bordered table-striped' },
-                    _react2.default.createElement(
-                      'thead',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement('th', null),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Extra small devices',
-                          _react2.default.createElement(
-                            'small',
-                            null,
-                            'Phones (<768px)'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Small devices',
-                          _react2.default.createElement(
-                            'small',
-                            null,
-                            'Tablets (≥768px)'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Medium devices',
-                          _react2.default.createElement(
-                            'small',
-                            null,
-                            'Desktops (≥992px)'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Large devices',
-                          _react2.default.createElement(
-                            'small',
-                            null,
-                            'Desktops (≥1200px)'
-                          )
-                        )
-                      )
-                    ),
-                    _react2.default.createElement(
-                      'tbody',
-                      null,
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Grid behavior'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'Horizontal at all times'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '3' },
-                          'Collapsed to start, horizontal above breakpoints'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Max container width'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          'None (auto)'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '750px'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '970px'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '1170px'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Class prefix'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          _react2.default.createElement(
-                            'code',
-                            null,
-                            '.col-xs-'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          _react2.default.createElement(
-                            'code',
-                            null,
-                            '.col-sm-'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          _react2.default.createElement(
-                            'code',
-                            null,
-                            '.col-md-'
-                          )
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          _react2.default.createElement(
-                            'code',
-                            null,
-                            '.col-lg-'
-                          )
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          '# of columns'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '4' },
-                          '12'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Max column width'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { className: 'text-muted' },
-                          'Auto'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '60px'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '78px'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          null,
-                          '95px'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Gutter width'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '4' },
-                          '30px (15px on each side of a column)'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Nestable'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '4' },
-                          'Yes'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Offsets'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '4' },
-                          'Yes'
-                        )
-                      ),
-                      _react2.default.createElement(
-                        'tr',
-                        null,
-                        _react2.default.createElement(
-                          'th',
-                          null,
-                          'Column ordering'
-                        ),
-                        _react2.default.createElement(
-                          'td',
-                          { colSpan: '4' },
-                          'Yes'
-                        )
-                      )
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-'
-                  ),
-                  ' class to an element will not only affect its styling on medium devices but also on large devices if a',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-lg-'
-                  ),
-                  ' class is not present.'
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'Example: Stacked-to-horizontal'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Using a single set of',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-*'
-                  ),
-                  ' grid classes, you can create a default grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.row'
-                  ),
-                  '.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-1' },
-                    '.col-md-1'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-8' },
-                    '.col-md-8'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    '.col-md-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    '.col-md-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    '.col-md-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    '.col-md-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-6' },
-                    '.col-md-6'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-6' },
-                    '.col-md-6'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'Example: Mobile and desktop'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Dont want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-xs-*'
-                  ),
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-*'
-                  ),
-                  ' to your columns. See the example below for a better idea of how it all works.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-12 col-md-8' },
-                    '.col-xs-12 .col-md-8'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-md-4' },
-                    '.col-xs-6 .col-md-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-md-4' },
-                    '.col-xs-6 .col-md-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-md-4' },
-                    '.col-xs-6 .col-md-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-md-4' },
-                    '.col-xs-6 .col-md-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6' },
-                    '.col-xs-6'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6' },
-                    '.col-xs-6'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'Example: Mobile, tablet, desktops'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Build on the previous example by creating even more dynamic and powerful layouts with tablet',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-sm-*'
-                  ),
-                  ' classes.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-12 col-sm-6 col-md-8' },
-                    '.col-xs-12 .col-sm-6 .col-md-8'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-md-4' },
-                    '.col-xs-6 .col-md-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-4' },
-                    '.col-xs-6 .col-sm-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-4' },
-                    '.col-xs-6 .col-sm-4'
-                  ),
-                  _react2.default.createElement('div', { className: 'clearfix visible-xs' }),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-4' },
-                    '.col-xs-6 .col-sm-4'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  { id: 'grid-responsive-resets' },
-                  'Responsive column resets'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'With the four tiers of grids available you\'re bound to run into issues where, at certain breakpoints, your columns don\'t clear quite right as one is taller than the other. To fix that, use a combination of a',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.clearfix'
-                  ),
-                  ' and our ',
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'javascript:void(0)' },
-                    'responsive utility classes'
-                  ),
-                  '.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-3' },
-                    '.col-xs-6 .col-sm-3',
-                    _react2.default.createElement('br', null),
-                    'Resize your viewport or check it out on your phone for an example.'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-3' },
-                    '.col-xs-6 .col-sm-3'
-                  ),
-                  _react2.default.createElement('div', { className: 'clearfix visible-xs' }),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-3' },
-                    '.col-xs-6 .col-sm-3'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-xs-6 col-sm-3' },
-                    '.col-xs-6 .col-sm-3'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  { id: 'grid-offsetting' },
-                  'Offsetting columns'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Move columns to the right using',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-offset-*'
-                  ),
-                  ' classes. These classes increase the left margin of a column by',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '*'
-                  ),
-                  ' columns. For example,',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-offset-4'
-                  ),
-                  ' moves',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-4'
-                  ),
-                  ' over four columns.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4' },
-                    '.col-md-4'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-4 col-md-offset-4' },
-                    '.col-md-4 .col-md-offset-4'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-3 col-md-offset-3' },
-                    '.col-md-3 .col-md-offset-3'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-3 col-md-offset-3' },
-                    '.col-md-3 .col-md-offset-3'
-                  )
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-6 col-md-offset-3' },
-                    '.col-md-6 .col-md-offset-3'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  { id: 'grid-nesting' },
-                  'Nesting columns'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'To nest your content with the default grid, add a new',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.row'
-                  ),
-                  ' and set of',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-*'
-                  ),
-                  ' columns within an existing',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-*'
-                  ),
-                  ' column. Nested rows should include a set of columns that add up to 12.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9' },
-                    'Level 1: .col-md-9',
-                    _react2.default.createElement(
-                      'div',
-                      { className: 'row show-grid' },
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'col-md-6' },
-                        'Level 2: .col-md-6'
-                      ),
-                      _react2.default.createElement(
-                        'div',
-                        { className: 'col-md-6' },
-                        'Level 2: .col-md-6'
-                      )
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                null,
-                _react2.default.createElement(
-                  'h3',
-                  { id: 'grid-column-ordering' },
-                  'Column ordering'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Easily change the order of our built-in grid columns with',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-push-*'
-                  ),
-                  ' and',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '.col-md-pull-*'
-                  ),
-                  ' modifier classes.'
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'row show-grid' },
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-9 col-md-push-3' },
-                    '.col-md-9 .col-md-push-3'
-                  ),
-                  _react2.default.createElement(
-                    'div',
-                    { className: 'col-md-3 col-md-pull-9' },
-                    '.col-md-3 .col-md-pull-9'
-                  )
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return Grid;
-  }(_react.Component);
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  
-  
-  exports.default = Grid;
-
-/***/ },
-/* 119 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Icons = __webpack_require__(120);
-  
-  var _Icons2 = _interopRequireDefault(_Icons);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = {
-  
-    path: '/icons',
-  
-    action: function action() {
-      return _react2.default.createElement(_Icons2.default, null);
-    }
-  };
-
-/***/ },
-/* 120 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  var _Icons = __webpack_require__(121);
-  
-  var _Icons2 = _interopRequireDefault(_Icons);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'Icons';
-  
-  function displayIcons(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_Icons2.default, null);
-  }
-  
-  displayIcons.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayIcons;
-
-/***/ },
-/* 121 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Icons = function (_Component) {
-    (0, _inherits3.default)(Icons, _Component);
-  
-    function Icons() {
-      (0, _classCallCheck3.default)(this, Icons);
-      return (0, _possibleConstructorReturn3.default)(this, (Icons.__proto__ || (0, _getPrototypeOf2.default)(Icons)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Icons, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'col-lg-12' },
-            _react2.default.createElement(
-              _PageHeader2.default,
-              null,
-              'Icons'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'col-lg-12' },
-            _react2.default.createElement(
-              _Panel2.default,
-              { header: _react2.default.createElement(
-                  'span',
-                  null,
-                  'All available icons'
-                ) },
-              _react2.default.createElement(
-                'div',
-                { className: 'row' },
-                _react2.default.createElement(
-                  'div',
-                  { className: 'fa col-lg-3' },
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-glass' },
-                    ' fa-glass '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-music' },
-                    ' fa-music '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-search' },
-                    ' fa-search '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-envelope-o' },
-                    ' fa-envelope-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-heart' },
-                    ' fa-heart '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star' },
-                    ' fa-star '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star-o' },
-                    ' fa-star-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-user' },
-                    ' fa-user '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-film' },
-                    ' fa-film '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-th-large' },
-                    ' fa-th-large '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-th' },
-                    ' fa-th '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-th-list' },
-                    ' fa-th-list '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-check' },
-                    ' fa-check '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-times' },
-                    ' fa-times '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-search-plus' },
-                    ' fa-search-plus '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-search-minus' },
-                    ' fa-search-minus '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-power-off' },
-                    ' fa-power-off '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-signal' },
-                    ' fa-signal '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gear' },
-                    ' fa-gear '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cog' },
-                    ' fa-cog '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-trash-o' },
-                    ' fa-trash-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-home' },
-                    ' fa-home '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-o' },
-                    ' fa-file-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-clock-o' },
-                    ' fa-clock-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-road' },
-                    ' fa-road '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-download' },
-                    ' fa-download '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-o-down' },
-                    ' fa-arrow-circle-o-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-o-up' },
-                    ' fa-arrow-circle-o-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-inbox' },
-                    ' fa-inbox '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-play-circle-o' },
-                    ' fa-play-circle-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rotate-right' },
-                    ' fa-rotate-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-repeat' },
-                    ' fa-repeat '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-refresh' },
-                    ' fa-refresh '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-list-alt' },
-                    ' fa-list-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-lock' },
-                    ' fa-lock '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flag' },
-                    ' fa-flag '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-headphones' },
-                    ' fa-headphones '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-volume-off' },
-                    ' fa-volume-off '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-volume-down' },
-                    ' fa-volume-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-volume-up' },
-                    ' fa-volume-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-qrcode' },
-                    ' fa-qrcode '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-barcode' },
-                    ' fa-barcode '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tag' },
-                    ' fa-tag '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tags' },
-                    ' fa-tags '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-book' },
-                    ' fa-book '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bookmark' },
-                    ' fa-bookmark '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-print' },
-                    ' fa-print '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-camera' },
-                    ' fa-camera '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-font' },
-                    ' fa-font '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bold' },
-                    ' fa-bold '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-italic' },
-                    ' fa-italic '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-text-height' },
-                    ' fa-text-height '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-text-width' },
-                    ' fa-text-width '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-align-left' },
-                    ' fa-align-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-align-center' },
-                    ' fa-align-center '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-align-right' },
-                    ' fa-align-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-align-justify' },
-                    ' fa-align-justify '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-list' },
-                    ' fa-list '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dedent' },
-                    ' fa-dedent '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-outdent' },
-                    ' fa-outdent '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-indent' },
-                    ' fa-indent '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-video-camera' },
-                    ' fa-video-camera '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-photo' },
-                    ' fa-photo '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-image' },
-                    ' fa-image '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-picture-o' },
-                    ' fa-picture-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pencil' },
-                    ' fa-pencil '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-map-marker' },
-                    ' fa-map-marker '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-adjust' },
-                    ' fa-adjust '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tint' },
-                    ' fa-tint '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-edit' },
-                    ' fa-edit '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pencil-square-o' },
-                    ' fa-pencil-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-share-square-o' },
-                    ' fa-share-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-check-square-o' },
-                    ' fa-check-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrows' },
-                    ' fa-arrows '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-step-backward' },
-                    ' fa-step-backward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fast-backward' },
-                    ' fa-fast-backward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-backward' },
-                    ' fa-backward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-play' },
-                    ' fa-play '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pause' },
-                    ' fa-pause '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stop' },
-                    ' fa-stop '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-forward' },
-                    ' fa-forward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fast-forward' },
-                    ' fa-fast-forward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-step-forward' },
-                    ' fa-step-forward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-eject' },
-                    ' fa-eject '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-left' },
-                    ' fa-chevron-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-right' },
-                    ' fa-chevron-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-plus-circle' },
-                    ' fa-plus-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-minus-circle' },
-                    ' fa-minus-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-times-circle' },
-                    ' fa-times-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-check-circle' },
-                    ' fa-check-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-question-circle' },
-                    ' fa-question-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-info-circle' },
-                    ' fa-info-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-crosshairs' },
-                    ' fa-crosshairs '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-times-circle-o' },
-                    ' fa-times-circle-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-check-circle-o' },
-                    ' fa-check-circle-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ban' },
-                    ' fa-ban '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-left' },
-                    ' fa-arrow-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-right' },
-                    ' fa-arrow-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-up' },
-                    ' fa-arrow-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-down' },
-                    ' fa-arrow-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mail-forward' },
-                    ' fa-mail-forward '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-share' },
-                    ' fa-share '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-expand' },
-                    ' fa-expand '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-compress' },
-                    ' fa-compress '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-plus' },
-                    ' fa-plus '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-minus' },
-                    ' fa-minus '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-asterisk' },
-                    ' fa-asterisk '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-exclamation-circle' },
-                    ' fa-exclamation-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gift' },
-                    ' fa-gift '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-leaf' },
-                    ' fa-leaf '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fire' },
-                    ' fa-fire '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-eye' },
-                    ' fa-eye '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-eye-slash' },
-                    ' fa-eye-slash '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-warning' },
-                    ' fa-warning '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-exclamation-triangle' },
-                    ' fa-exclamation-triangle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-plane' },
-                    ' fa-plane '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-calendar' },
-                    ' fa-calendar '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-random' },
-                    ' fa-random '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-comment' },
-                    ' fa-comment '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-magnet' },
-                    ' fa-magnet '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-up' },
-                    ' fa-chevron-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-down' },
-                    ' fa-chevron-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-retweet' },
-                    ' fa-retweet '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-shopping-cart' },
-                    ' fa-shopping-cart '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-folder' },
-                    ' fa-folder '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-folder-open' },
-                    ' fa-folder-open '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'fa col-lg-3' },
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrows-v' },
-                    ' fa-arrows-v '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrows-h' },
-                    ' fa-arrows-h '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bar-chart-o' },
-                    ' fa-bar-chart-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-twitter-square' },
-                    ' fa-twitter-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-facebook-square' },
-                    ' fa-facebook-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-camera-retro' },
-                    ' fa-camera-retro '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-key' },
-                    ' fa-key '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gears' },
-                    ' fa-gears '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cogs' },
-                    ' fa-cogs '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-comments' },
-                    ' fa-comments '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-thumbs-o-up' },
-                    ' fa-thumbs-o-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-thumbs-o-down' },
-                    ' fa-thumbs-o-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star-half' },
-                    ' fa-star-half '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-heart-o' },
-                    ' fa-heart-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sign-out' },
-                    ' fa-sign-out '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-linkedin-square' },
-                    ' fa-linkedin-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-thumb-tack' },
-                    ' fa-thumb-tack '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-external-link' },
-                    ' fa-external-link '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sign-in' },
-                    ' fa-sign-in '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-trophy' },
-                    ' fa-trophy '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-github-square' },
-                    ' fa-github-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-upload' },
-                    ' fa-upload '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-lemon-o' },
-                    ' fa-lemon-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-phone' },
-                    ' fa-phone '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-square-o' },
-                    ' fa-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bookmark-o' },
-                    ' fa-bookmark-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-phone-square' },
-                    ' fa-phone-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-twitter' },
-                    ' fa-twitter '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-facebook' },
-                    ' fa-facebook '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-github' },
-                    ' fa-github '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-unlock' },
-                    ' fa-unlock '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-credit-card' },
-                    ' fa-credit-card '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rss' },
-                    ' fa-rss '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hdd-o' },
-                    ' fa-hdd-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bullhorn' },
-                    ' fa-bullhorn '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bell' },
-                    ' fa-bell '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-certificate' },
-                    ' fa-certificate '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hand-o-right' },
-                    ' fa-hand-o-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hand-o-left' },
-                    ' fa-hand-o-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hand-o-up' },
-                    ' fa-hand-o-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hand-o-down' },
-                    ' fa-hand-o-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-left' },
-                    ' fa-arrow-circle-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-right' },
-                    ' fa-arrow-circle-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-up' },
-                    ' fa-arrow-circle-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-down' },
-                    ' fa-arrow-circle-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-globe' },
-                    ' fa-globe '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-wrench' },
-                    ' fa-wrench '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tasks' },
-                    ' fa-tasks '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-filter' },
-                    ' fa-filter '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-briefcase' },
-                    ' fa-briefcase '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrows-alt' },
-                    ' fa-arrows-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-group' },
-                    ' fa-group '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-users' },
-                    ' fa-users '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chain' },
-                    ' fa-chain '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-link' },
-                    ' fa-link '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cloud' },
-                    ' fa-cloud '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flask' },
-                    ' fa-flask '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cut' },
-                    ' fa-cut '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-scissors' },
-                    ' fa-scissors '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-copy' },
-                    ' fa-copy '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-files-o' },
-                    ' fa-files-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paperclip' },
-                    ' fa-paperclip '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-save' },
-                    ' fa-save '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-floppy-o' },
-                    ' fa-floppy-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-square' },
-                    ' fa-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-navicon' },
-                    ' fa-navicon '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-reorder' },
-                    ' fa-reorder '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bars' },
-                    ' fa-bars '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-list-ul' },
-                    ' fa-list-ul '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-list-ol' },
-                    ' fa-list-ol '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-strikethrough' },
-                    ' fa-strikethrough '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-underline' },
-                    ' fa-underline '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-table' },
-                    ' fa-table '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-magic' },
-                    ' fa-magic '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-truck' },
-                    ' fa-truck '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pinterest' },
-                    ' fa-pinterest '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pinterest-square' },
-                    ' fa-pinterest-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-google-plus-square' },
-                    ' fa-google-plus-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-google-plus' },
-                    ' fa-google-plus '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-money' },
-                    ' fa-money '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-down' },
-                    ' fa-caret-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-up' },
-                    ' fa-caret-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-left' },
-                    ' fa-caret-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-right' },
-                    ' fa-caret-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-columns' },
-                    ' fa-columns '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-unsorted' },
-                    ' fa-unsorted '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort' },
-                    ' fa-sort '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-down' },
-                    ' fa-sort-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-desc' },
-                    ' fa-sort-desc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-up' },
-                    ' fa-sort-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-asc' },
-                    ' fa-sort-asc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-envelope' },
-                    ' fa-envelope '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-linkedin' },
-                    ' fa-linkedin '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rotate-left' },
-                    ' fa-rotate-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-undo' },
-                    ' fa-undo '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-legal' },
-                    ' fa-legal '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gavel' },
-                    ' fa-gavel '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dashboard' },
-                    ' fa-dashboard '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tachometer' },
-                    ' fa-tachometer '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-comment-o' },
-                    ' fa-comment-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-comments-o' },
-                    ' fa-comments-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flash' },
-                    ' fa-flash '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bolt' },
-                    ' fa-bolt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sitemap' },
-                    ' fa-sitemap '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-umbrella' },
-                    ' fa-umbrella '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paste' },
-                    ' fa-paste '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-clipboard' },
-                    ' fa-clipboard '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-lightbulb-o' },
-                    ' fa-lightbulb-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-exchange' },
-                    ' fa-exchange '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cloud-download' },
-                    ' fa-cloud-download '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cloud-upload' },
-                    ' fa-cloud-upload '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-user-md' },
-                    ' fa-user-md '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stethoscope' },
-                    ' fa-stethoscope '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-suitcase' },
-                    ' fa-suitcase '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bell-o' },
-                    ' fa-bell-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-coffee' },
-                    ' fa-coffee '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cutlery' },
-                    ' fa-cutlery '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-text-o' },
-                    ' fa-file-text-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-building-o' },
-                    ' fa-building-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hospital-o' },
-                    ' fa-hospital-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ambulance' },
-                    ' fa-ambulance '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-medkit' },
-                    ' fa-medkit '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fighter-jet' },
-                    ' fa-fighter-jet '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-beer' },
-                    ' fa-beer '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-h-square' },
-                    ' fa-h-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-plus-square' },
-                    ' fa-plus-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'fa col-lg-3' },
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-double-left' },
-                    ' fa-angle-double-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-double-right' },
-                    ' fa-angle-double-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-double-up' },
-                    ' fa-angle-double-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-double-down' },
-                    ' fa-angle-double-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-left' },
-                    ' fa-angle-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-right' },
-                    ' fa-angle-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-up' },
-                    ' fa-angle-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-angle-down' },
-                    ' fa-angle-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-desktop' },
-                    ' fa-desktop '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-laptop' },
-                    ' fa-laptop '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tablet' },
-                    ' fa-tablet '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mobile-phone' },
-                    ' fa-mobile-phone '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mobile' },
-                    ' fa-mobile '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-circle-o' },
-                    ' fa-circle-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-quote-left' },
-                    ' fa-quote-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-quote-right' },
-                    ' fa-quote-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-spinner' },
-                    ' fa-spinner '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-circle' },
-                    ' fa-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mail-reply' },
-                    ' fa-mail-reply '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-reply' },
-                    ' fa-reply '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-github-alt' },
-                    ' fa-github-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-folder-o' },
-                    ' fa-folder-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-folder-open-o' },
-                    ' fa-folder-open-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-smile-o' },
-                    ' fa-smile-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-frown-o' },
-                    ' fa-frown-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-meh-o' },
-                    ' fa-meh-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gamepad' },
-                    ' fa-gamepad '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-keyboard-o' },
-                    ' fa-keyboard-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flag-o' },
-                    ' fa-flag-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flag-checkered' },
-                    ' fa-flag-checkered '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-terminal' },
-                    ' fa-terminal '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-code' },
-                    ' fa-code '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mail-reply-all' },
-                    ' fa-mail-reply-all '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-reply-all' },
-                    ' fa-reply-all '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star-half-empty' },
-                    ' fa-star-half-empty '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star-half-full' },
-                    ' fa-star-half-full '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-star-half-o' },
-                    ' fa-star-half-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-location-arrow' },
-                    ' fa-location-arrow '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-crop' },
-                    ' fa-crop '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-code-fork' },
-                    ' fa-code-fork '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-unlink' },
-                    ' fa-unlink '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chain-broken' },
-                    ' fa-chain-broken '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-question' },
-                    ' fa-question '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-info' },
-                    ' fa-info '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-exclamation' },
-                    ' fa-exclamation '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-superscript' },
-                    ' fa-superscript '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-subscript' },
-                    ' fa-subscript '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-eraser' },
-                    ' fa-eraser '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-puzzle-piece' },
-                    ' fa-puzzle-piece '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-microphone' },
-                    ' fa-microphone '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-microphone-slash' },
-                    ' fa-microphone-slash '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-shield' },
-                    ' fa-shield '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-calendar-o' },
-                    ' fa-calendar-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fire-extinguisher' },
-                    ' fa-fire-extinguisher '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rocket' },
-                    ' fa-rocket '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-maxcdn' },
-                    ' fa-maxcdn '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-circle-left' },
-                    ' fa-chevron-circle-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-circle-right' },
-                    ' fa-chevron-circle-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-circle-up' },
-                    ' fa-chevron-circle-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-chevron-circle-down' },
-                    ' fa-chevron-circle-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-html5' },
-                    ' fa-html5 '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-css3' },
-                    ' fa-css3 '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-anchor' },
-                    ' fa-anchor '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-unlock-alt' },
-                    ' fa-unlock-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bullseye' },
-                    ' fa-bullseye '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ellipsis-h' },
-                    ' fa-ellipsis-h '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ellipsis-v' },
-                    ' fa-ellipsis-v '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rss-square' },
-                    ' fa-rss-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-play-circle' },
-                    ' fa-play-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ticket' },
-                    ' fa-ticket '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-minus-square' },
-                    ' fa-minus-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-minus-square-o' },
-                    ' fa-minus-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-level-up' },
-                    ' fa-level-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-level-down' },
-                    ' fa-level-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-check-square' },
-                    ' fa-check-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pencil-square' },
-                    ' fa-pencil-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-external-link-square' },
-                    ' fa-external-link-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-share-square' },
-                    ' fa-share-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-compass' },
-                    ' fa-compass '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-toggle-down' },
-                    ' fa-toggle-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-square-o-down' },
-                    ' fa-caret-square-o-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-toggle-up' },
-                    ' fa-toggle-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-square-o-up' },
-                    ' fa-caret-square-o-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-toggle-right' },
-                    ' fa-toggle-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-square-o-right' },
-                    ' fa-caret-square-o-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-euro' },
-                    ' fa-euro '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-eur' },
-                    ' fa-eur '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gbp' },
-                    ' fa-gbp '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dollar' },
-                    ' fa-dollar '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-usd' },
-                    ' fa-usd '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rupee' },
-                    ' fa-rupee '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-inr' },
-                    ' fa-inr '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cny' },
-                    ' fa-cny '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rmb' },
-                    ' fa-rmb '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-yen' },
-                    ' fa-yen '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-jpy' },
-                    ' fa-jpy '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ruble' },
-                    ' fa-ruble '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rouble' },
-                    ' fa-rouble '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rub' },
-                    ' fa-rub '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-won' },
-                    ' fa-won '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-krw' },
-                    ' fa-krw '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bitcoin' },
-                    ' fa-bitcoin '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-btc' },
-                    ' fa-btc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file' },
-                    ' fa-file '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-text' },
-                    ' fa-file-text '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-alpha-asc' },
-                    ' fa-sort-alpha-asc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-alpha-desc' },
-                    ' fa-sort-alpha-desc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-amount-asc' },
-                    ' fa-sort-amount-asc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-amount-desc' },
-                    ' fa-sort-amount-desc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-numeric-asc' },
-                    ' fa-sort-numeric-asc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sort-numeric-desc' },
-                    ' fa-sort-numeric-desc '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-thumbs-up' },
-                    ' fa-thumbs-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-thumbs-down' },
-                    ' fa-thumbs-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-youtube-square' },
-                    ' fa-youtube-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-youtube' },
-                    ' fa-youtube '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-xing' },
-                    ' fa-xing '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-xing-square' },
-                    ' fa-xing-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-youtube-play' },
-                    ' fa-youtube-play '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dropbox' },
-                    ' fa-dropbox '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stack-overflow' },
-                    ' fa-stack-overflow '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-instagram' },
-                    ' fa-instagram '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-flickr' },
-                    ' fa-flickr '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-adn' },
-                    ' fa-adn '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bitbucket' },
-                    ' fa-bitbucket '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bitbucket-square' },
-                    ' fa-bitbucket-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tumblr' },
-                    ' fa-tumblr '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' '
-                ),
-                _react2.default.createElement(
-                  'div',
-                  { className: 'fa col-lg-3' },
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tumblr-square' },
-                    ' fa-tumblr-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-long-arrow-down' },
-                    ' fa-long-arrow-down '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-long-arrow-up' },
-                    ' fa-long-arrow-up '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-long-arrow-left' },
-                    ' fa-long-arrow-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-long-arrow-right' },
-                    ' fa-long-arrow-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-apple' },
-                    ' fa-apple '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-windows' },
-                    ' fa-windows '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-android' },
-                    ' fa-android '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-linux' },
-                    ' fa-linux '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dribbble' },
-                    ' fa-dribbble '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-skype' },
-                    ' fa-skype '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-foursquare' },
-                    ' fa-foursquare '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-trello' },
-                    ' fa-trello '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-female' },
-                    ' fa-female '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-male' },
-                    ' fa-male '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-gittip' },
-                    ' fa-gittip '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sun-o' },
-                    ' fa-sun-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-moon-o' },
-                    ' fa-moon-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-archive' },
-                    ' fa-archive '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bug' },
-                    ' fa-bug '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-vk' },
-                    ' fa-vk '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-weibo' },
-                    ' fa-weibo '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-renren' },
-                    ' fa-renren '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pagelines' },
-                    ' fa-pagelines '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stack-exchange' },
-                    ' fa-stack-exchange '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-o-right' },
-                    ' fa-arrow-circle-o-right '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-arrow-circle-o-left' },
-                    ' fa-arrow-circle-o-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-toggle-left' },
-                    ' fa-toggle-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-caret-square-o-left' },
-                    ' fa-caret-square-o-left '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-dot-circle-o' },
-                    ' fa-dot-circle-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-wheelchair' },
-                    ' fa-wheelchair '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-vimeo-square' },
-                    ' fa-vimeo-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-turkish-lira' },
-                    ' fa-turkish-lira '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-try' },
-                    ' fa-try '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-plus-square-o' },
-                    ' fa-plus-square-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-space-shuttle' },
-                    ' fa-space-shuttle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-slack' },
-                    ' fa-slack '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-envelope-square' },
-                    ' fa-envelope-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-wordpress' },
-                    ' fa-wordpress '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-openid' },
-                    ' fa-openid '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-institution' },
-                    ' fa-institution '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bank' },
-                    ' fa-bank '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-university' },
-                    ' fa-university '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-mortar-board' },
-                    ' fa-mortar-board '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-graduation-cap' },
-                    ' fa-graduation-cap '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-yahoo' },
-                    ' fa-yahoo '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-google' },
-                    ' fa-google '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-reddit' },
-                    ' fa-reddit '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-reddit-square' },
-                    ' fa-reddit-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stumbleupon-circle' },
-                    ' fa-stumbleupon-circle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-stumbleupon' },
-                    ' fa-stumbleupon '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-delicious' },
-                    ' fa-delicious '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-digg' },
-                    ' fa-digg '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pied-piper-square' },
-                    ' fa-pied-piper-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pied-piper' },
-                    ' fa-pied-piper '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-pied-piper-alt' },
-                    ' fa-pied-piper-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-drupal' },
-                    ' fa-drupal '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-joomla' },
-                    ' fa-joomla '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-language' },
-                    ' fa-language '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-fax' },
-                    ' fa-fax '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-building' },
-                    ' fa-building '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-child' },
-                    ' fa-child '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paw' },
-                    ' fa-paw '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-spoon' },
-                    ' fa-spoon '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cube' },
-                    ' fa-cube '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cubes' },
-                    ' fa-cubes '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-behance' },
-                    ' fa-behance '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-behance-square' },
-                    ' fa-behance-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-steam' },
-                    ' fa-steam '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-steam-square' },
-                    ' fa-steam-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-recycle' },
-                    ' fa-recycle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-automobile' },
-                    ' fa-automobile '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-car' },
-                    ' fa-car '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-cab' },
-                    ' fa-cab '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-taxi' },
-                    ' fa-taxi '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tree' },
-                    ' fa-tree '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-spotify' },
-                    ' fa-spotify '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-deviantart' },
-                    ' fa-deviantart '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-soundcloud' },
-                    ' fa-soundcloud '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-database' },
-                    ' fa-database '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-pdf-o' },
-                    ' fa-file-pdf-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-word-o' },
-                    ' fa-file-word-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-excel-o' },
-                    ' fa-file-excel-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-powerpoint-o' },
-                    ' fa-file-powerpoint-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-photo-o' },
-                    ' fa-file-photo-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-picture-o' },
-                    ' fa-file-picture-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-image-o' },
-                    ' fa-file-image-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-zip-o' },
-                    ' fa-file-zip-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-archive-o' },
-                    ' fa-file-archive-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-sound-o' },
-                    ' fa-file-sound-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-audio-o' },
-                    ' fa-file-audio-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-movie-o' },
-                    ' fa-file-movie-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-video-o' },
-                    ' fa-file-video-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-file-code-o' },
-                    ' fa-file-code-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-vine' },
-                    ' fa-vine '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-codepen' },
-                    ' fa-codepen '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-jsfiddle' },
-                    ' fa-jsfiddle '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-life-bouy' },
-                    ' fa-life-bouy '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-life-saver' },
-                    ' fa-life-saver '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-support' },
-                    ' fa-support '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-life-ring' },
-                    ' fa-life-ring '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-circle-o-notch' },
-                    ' fa-circle-o-notch '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ra' },
-                    ' fa-ra '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-rebel' },
-                    ' fa-rebel '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-ge' },
-                    ' fa-ge '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-empire' },
-                    ' fa-empire '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-git-square' },
-                    ' fa-git-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-git' },
-                    ' fa-git '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-hacker-news' },
-                    ' fa-hacker-news '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-tencent-weibo' },
-                    ' fa-tencent-weibo '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-qq' },
-                    ' fa-qq '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-wechat' },
-                    ' fa-wechat '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-weixin' },
-                    ' fa-weixin '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-send' },
-                    ' fa-send '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paper-plane' },
-                    ' fa-paper-plane '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-send-o' },
-                    ' fa-send-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paper-plane-o' },
-                    ' fa-paper-plane-o '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-history' },
-                    ' fa-history '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-circle-thin' },
-                    ' fa-circle-thin '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-header' },
-                    ' fa-header '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-paragraph' },
-                    ' fa-paragraph '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-sliders' },
-                    ' fa-sliders '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-share-alt' },
-                    ' fa-share-alt '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-share-alt-square' },
-                    ' fa-share-alt-square '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' ',
-                  _react2.default.createElement(
-                    'p',
-                    { className: 'fa fa-bomb' },
-                    ' fa-bomb '
-                  ),
-                  _react2.default.createElement('br', null),
-                  ' '
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return Icons;
-  }(_react.Component);
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  
-  
-  exports.default = Icons;
-
-/***/ },
-/* 122 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _MorrisjsCharts = __webpack_require__(123);
-  
-  var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  exports.default = {
-  
-    path: '/morrisjscharts',
-  
-    action: function action() {
-      return _react2.default.createElement(_MorrisjsCharts2.default, null);
-    }
-  };
-
-/***/ },
-/* 123 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  var _MorrisjsCharts = __webpack_require__(124);
-  
-  var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'MorrisjsCharts';
-  
-  function displayMorrisjsCharts(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(_MorrisjsCharts2.default, null);
-  }
-  
-  displayMorrisjsCharts.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = displayMorrisjsCharts;
-
-/***/ },
-/* 124 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var MorrisjsCharts = function (_Component) {
-    (0, _inherits3.default)(MorrisjsCharts, _Component);
-  
-    function MorrisjsCharts() {
-      (0, _classCallCheck3.default)(this, MorrisjsCharts);
-      return (0, _possibleConstructorReturn3.default)(this, (MorrisjsCharts.__proto__ || (0, _getPrototypeOf2.default)(MorrisjsCharts)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(MorrisjsCharts, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _PageHeader2.default,
-                null,
-                'Morris.js Charts'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Area Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Bar Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Line Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Donut Chart Example'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  'Panel contents'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Morris.js Usage'
-                  ) },
-                _react2.default.createElement(
-                  'div',
-                  null,
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin, we are using the most recent version of Morris.js which includes the resize function, which makes the charts fully responsive. The documentation for Morris.js is available on their website, ',
-                    _react2.default.createElement(
-                      'a',
-                      { target: '_blank', href: 'http://morrisjs.github.io/morris.js/' },
-                      'http://morrisjs.github.io/morris.js/'
-                    ),
-                    '.'
-                  ),
-                  _react2.default.createElement(
-                    _Button2.default,
-                    { bsSize: 'large', block: true, href: 'http://morrisjs.github.io/morris.js/' },
-                    'View Morris.js Documentation'
-                  )
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return MorrisjsCharts;
-  }(_react.Component);
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  
-  
-  exports.default = MorrisjsCharts;
-
-/***/ },
-/* 125 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Notification = __webpack_require__(126);
+  var _Notification = __webpack_require__(119);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
@@ -13133,7 +12117,7 @@ module.exports =
   };
 
 /***/ },
-/* 126 */
+/* 119 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13146,7 +12130,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Notification = __webpack_require__(127);
+  var _Notification = __webpack_require__(120);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
@@ -13168,7 +12152,7 @@ module.exports =
   exports.default = displayNotification;
 
 /***/ },
-/* 127 */
+/* 120 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13205,7 +12189,7 @@ module.exports =
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Alert = __webpack_require__(128);
+  var _Alert = __webpack_require__(121);
   
   var _Alert2 = _interopRequireDefault(_Alert);
   
@@ -13213,23 +12197,23 @@ module.exports =
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _OverlayTrigger = __webpack_require__(129);
+  var _OverlayTrigger = __webpack_require__(122);
   
   var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
   
-  var _Tooltip = __webpack_require__(130);
+  var _Tooltip = __webpack_require__(123);
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Popover = __webpack_require__(131);
+  var _Popover = __webpack_require__(124);
   
   var _Popover2 = _interopRequireDefault(_Popover);
   
-  var _Modal = __webpack_require__(132);
+  var _Modal = __webpack_require__(125);
   
   var _Modal2 = _interopRequireDefault(_Modal);
   
-  var _PageHeader = __webpack_require__(102);
+  var _PageHeader = __webpack_require__(101);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -13727,37 +12711,37 @@ module.exports =
   exports.default = Notification;
 
 /***/ },
-/* 128 */
+/* 121 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Alert");
 
 /***/ },
-/* 129 */
+/* 122 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/OverlayTrigger");
 
 /***/ },
-/* 130 */
+/* 123 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Tooltip");
 
 /***/ },
-/* 131 */
+/* 124 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Popover");
 
 /***/ },
-/* 132 */
+/* 125 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Modal");
 
 /***/ },
-/* 133 */
+/* 126 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13770,7 +12754,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _PanelWells = __webpack_require__(134);
+  var _PanelWells = __webpack_require__(127);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
@@ -13786,7 +12770,7 @@ module.exports =
   };
 
 /***/ },
-/* 134 */
+/* 127 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13799,28 +12783,581 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _PanelWells = __webpack_require__(135);
-  
-  var _PanelWells2 = _interopRequireDefault(_PanelWells);
+  var _reactBootstrap = __webpack_require__(64);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  // import {Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader} from 'react-bootstrap';
-  
-  // import Button from 'react-bootstrap/lib/Button';
-  // import Panel from 'react-bootstrap/lib/Panel';
-  // import PageHeader from 'react-bootstrap/lib/PageHeader';
-  // import Accordion from 'react-bootstrap/lib/Accordion';
-  // import Well from 'react-bootstrap/lib/Well';
-  // import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-  // import Tabs from 'react-bootstrap/lib/Tabs';
-  // import Tab from 'react-bootstrap/lib/Tab';
   
   var title = 'PanelWells';
   
   function displayPanelWells(props, context) {
     context.setTitle(title);
-    return _react2.default.createElement(_PanelWells2.default, null);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'col-lg-12' },
+        _react2.default.createElement(
+          _reactBootstrap.PageHeader,
+          null,
+          'Panels and Wells'
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Default Panel'
+              ),
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt . est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Primary Panel'
+              ), className: 'panel-primary',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Success Panel'
+              ), className: 'panel-success',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Info Panel'
+              ), className: 'panel-info',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Warning Panel'
+              ), className: 'panel-warning',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Danger Panel'
+              ), className: 'panel-danger',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Green Panel'
+              ), className: 'panel-green',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Yellow Panel'
+              ), className: 'panel-yellow',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            {
+              header: _react2.default.createElement(
+                'span',
+                null,
+                'Red Panel'
+              ), className: 'panel-red',
+              footer: _react2.default.createElement(
+                'span',
+                null,
+                'Panel Footer'
+              )
+            },
+            _react2.default.createElement(
+              'div',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Collapsible Accordion Panel Group'
+              ) },
+            _react2.default.createElement(
+              _reactBootstrap.Accordion,
+              null,
+              _react2.default.createElement(
+                _reactBootstrap.Panel,
+                {
+                  header: _react2.default.createElement(
+                    'h4',
+                    { className: 'panel-title' },
+                    'Collapsible Group Item #1'
+                  ), eventKey: '1'
+                },
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Panel,
+                {
+                  header: _react2.default.createElement(
+                    'h4',
+                    { className: 'panel-title' },
+                    'Collapsible Group Item #2'
+                  ), eventKey: '2'
+                },
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Panel,
+                {
+                  header: _react2.default.createElement(
+                    'h4',
+                    { className: 'panel-title' },
+                    'Collapsible Group Item #3'
+                  ), eventKey: '3'
+                },
+                'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Basic Tabs'
+              ) },
+            _react2.default.createElement(
+              _reactBootstrap.Tabs,
+              { id: 'tabs1', defaultActiveKey: 1 },
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 1, title: 'Home' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Home Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 2, title: 'Profile' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Profile Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 3, title: 'Messages' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Messages Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 4, title: 'Settings' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Settings Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-6' },
+          _react2.default.createElement(
+            _reactBootstrap.Panel,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Pill Tabs'
+              ) },
+            _react2.default.createElement(
+              _reactBootstrap.Tabs,
+              { id: 'tabs2', bsStyle: 'pills', defaultActiveKey: 1 },
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 1, title: 'Home' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Home Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 2, title: 'Profile' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Profile Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 3, title: 'Messages' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Messages Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              ),
+              _react2.default.createElement(
+                _reactBootstrap.Tab,
+                { eventKey: 4, title: 'Settings' },
+                _react2.default.createElement(
+                  'h4',
+                  null,
+                  'Settings Tab'
+                ),
+                _react2.default.createElement(
+                  'p',
+                  null,
+                  'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+                )
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Well,
+            null,
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Normal Well'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Well,
+            { bsSize: 'large' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Large Well'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _reactBootstrap.Well,
+            { bsSize: 'small' },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Small Well'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _reactBootstrap.Jumbotron,
+            null,
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Jumbotron'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing.'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                _reactBootstrap.Button,
+                { bsStyle: 'primary', bsSize: 'large' },
+                'Learn more'
+              )
+            )
+          )
+        )
+      )
+    );
   }
   
   displayPanelWells.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
@@ -13828,556 +13365,7 @@ module.exports =
   exports.default = displayPanelWells;
 
 /***/ },
-/* 135 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _reactBootstrap = __webpack_require__(64);
-  
-  var _panel = __webpack_require__(136);
-  
-  var _panel2 = _interopRequireDefault(_panel);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  // import classNames from 'classnames';
-  // import Button from 'react-bootstrap/lib/Button';
-  // import Panel from 'react-bootstrap/lib/Panel';
-  // // import Pagination from 'react-bootstrap/lib/Pagination';
-  // import PageHeader from 'react-bootstrap/lib/PageHeader';
-  var PanelWells = function (_Component) {
-    (0, _inherits3.default)(PanelWells, _Component);
-  
-    function PanelWells() {
-      (0, _classCallCheck3.default)(this, PanelWells);
-      return (0, _possibleConstructorReturn3.default)(this, (PanelWells.__proto__ || (0, _getPrototypeOf2.default)(PanelWells)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(PanelWells, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'col-lg-12' },
-            _react2.default.createElement(
-              _reactBootstrap.PageHeader,
-              null,
-              'Panels and Wells'
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'default',
-                headerText: 'Default Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-primary',
-                headerText: 'Primary Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-success',
-                headerText: 'Success Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-info',
-                headerText: 'Info Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-warning',
-                headerText: 'Warning Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-danger',
-                headerText: 'danger Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-green',
-                headerText: 'Green Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-red',
-                headerText: 'Red Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(_panel2.default, {
-                style: 'panel-yellow',
-                headerText: 'Yellow Panel',
-                footerText: 'Panel Footer',
-                paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-              })
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _reactBootstrap.Panel,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Collapsible Accordion Panel Group'
-                  ) },
-                _react2.default.createElement(
-                  _reactBootstrap.Accordion,
-                  null,
-                  _react2.default.createElement(
-                    _reactBootstrap.Panel,
-                    {
-                      header: _react2.default.createElement(
-                        'h4',
-                        { className: 'panel-title' },
-                        'Collapsible Group Item #1'
-                      ), eventKey: 1
-                    },
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Panel,
-                    {
-                      header: _react2.default.createElement(
-                        'h4',
-                        { className: 'panel-title' },
-                        'Collapsible Group Item #2'
-                      ), eventKey: '2'
-                    },
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Panel,
-                    {
-                      header: _react2.default.createElement(
-                        'h4',
-                        { className: 'panel-title' },
-                        'Collapsible Group Item #3'
-                      ), eventKey: '3'
-                    },
-                    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _reactBootstrap.Panel,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Basic Tabs'
-                  ) },
-                _react2.default.createElement(
-                  _reactBootstrap.Tabs,
-                  { id: 'tabs1', defaultActiveKey: 1 },
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 1, title: 'Home' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Home Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 2, title: 'Profile' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Profile Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 3, title: 'Messages' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Messages Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 4, title: 'Settings' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Settings Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-6' },
-              _react2.default.createElement(
-                _reactBootstrap.Panel,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Pill Tabs'
-                  ) },
-                _react2.default.createElement(
-                  _reactBootstrap.Tabs,
-                  { id: 'tabs2', bsStyle: 'pills', defaultActiveKey: 1 },
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 1, title: 'Home' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Home Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 2, title: 'Profile' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Profile Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 3, title: 'Messages' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Messages Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  ),
-                  _react2.default.createElement(
-                    _reactBootstrap.Tab,
-                    { eventKey: 4, title: 'Settings' },
-                    _react2.default.createElement(
-                      'h4',
-                      null,
-                      'Settings Tab'
-                    ),
-                    _react2.default.createElement(
-                      'p',
-                      null,
-                      'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                    )
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _reactBootstrap.Well,
-                null,
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Normal Well'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _reactBootstrap.Well,
-                { bsSize: 'large' },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Large Well'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _reactBootstrap.Well,
-                { bsSize: 'small' },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Small Well'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _reactBootstrap.Jumbotron,
-                null,
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  'Jumbotron'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    _reactBootstrap.Button,
-                    { bsStyle: 'primary', bsSize: 'large' },
-                    'Learn more'
-                  )
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return PanelWells;
-  }(_react.Component);
-  
-  exports.default = PanelWells;
-
-/***/ },
-/* 136 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _reactBootstrap = __webpack_require__(64);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var CustomPanel = function (_Component) {
-    (0, _inherits3.default)(CustomPanel, _Component);
-  
-    function CustomPanel() {
-      (0, _classCallCheck3.default)(this, CustomPanel);
-      return (0, _possibleConstructorReturn3.default)(this, (CustomPanel.__proto__ || (0, _getPrototypeOf2.default)(CustomPanel)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(CustomPanel, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          _reactBootstrap.Panel,
-          {
-            header: _react2.default.createElement(
-              'span',
-              null,
-              this.props.headerText
-            ),
-            className: this.props.style,
-            footer: _react2.default.createElement(
-              'span',
-              null,
-              this.props.footerText
-            )
-          },
-          this.props.paragraph
-        );
-      }
-    }]);
-    return CustomPanel;
-  }(_react.Component);
-  
-  CustomPanel.propTypes = {
-    style: _react2.default.PropTypes.string,
-    headerText: _react2.default.PropTypes.string,
-    footerText: _react2.default.PropTypes.string,
-    paragraph: _react2.default.PropTypes.string
-  };
-  exports.default = CustomPanel;
-
-/***/ },
-/* 137 */
+/* 128 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -14390,7 +13378,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Typography = __webpack_require__(138);
+  var _Typography = __webpack_require__(129);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
@@ -14406,7 +13394,7 @@ module.exports =
   };
 
 /***/ },
-/* 138 */
+/* 129 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -14419,27 +13407,596 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Typography = __webpack_require__(139);
+  var _Panel = __webpack_require__(95);
   
-  var _Typography2 = _interopRequireDefault(_Typography);
+  var _Panel2 = _interopRequireDefault(_Panel);
+  
+  var _PageHeader = __webpack_require__(101);
+  
+  var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  // import {Panel, Accordion, Well, Jumbotron, Button, Tabs, Tab, PageHeader} from 'react-bootstrap';
-  // import Button from 'react-bootstrap/lib/Button';
-  // import Panel from 'react-bootstrap/lib/Panel';
-  // import PageHeader from 'react-bootstrap/lib/PageHeader';
-  // import Accordion from 'react-bootstrap/lib/Accordion';
-  // import Well from 'react-bootstrap/lib/Well';
-  // import Jumbotron from 'react-bootstrap/lib/Jumbotron';
-  // import Tabs from 'react-bootstrap/lib/Tabs';
-  // import Tab from 'react-bootstrap/lib/Tab';
   
   var title = 'Typography';
   
   function displayTypography(props, context) {
     context.setTitle(title);
-    return _react2.default.createElement(_Typography2.default, null);
+    return _react2.default.createElement(
+      'div',
+      null,
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-12' },
+          _react2.default.createElement(
+            _PageHeader2.default,
+            null,
+            'Typography'
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Headings'
+              ) },
+            _react2.default.createElement(
+              'h1',
+              null,
+              'Heading 1',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            ),
+            _react2.default.createElement(
+              'h2',
+              null,
+              'Heading 2',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            ),
+            _react2.default.createElement(
+              'h3',
+              null,
+              'Heading 3',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Heading 4',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            ),
+            _react2.default.createElement(
+              'h5',
+              null,
+              'Heading 5',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            ),
+            _react2.default.createElement(
+              'h6',
+              null,
+              'Heading 6',
+              _react2.default.createElement(
+                'small',
+                null,
+                'Sub-heading'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Paragraphs'
+              ) },
+            _react2.default.createElement(
+              'p',
+              { className: 'lead' },
+              'This is an example of lead body copy.'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              'This is an example of standard paragraph text. This is an example of ',
+              _react2.default.createElement(
+                'a',
+                { href: 'javascript:void(0)' },
+                'link anchor text'
+              ),
+              ' within body copy.'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'small',
+                null,
+                'This is an example of small, fine print text.'
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'strong',
+                null,
+                'This is an example of strong, bold text.'
+              )
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'em',
+                null,
+                'This is an example of emphasized, italic text.'
+              )
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Alignment Helpers'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-left' },
+              'Left aligned text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-center' },
+              'Center aligned text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-right' },
+              'Right aligned text.'
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Emphasis Classes'
+              ) },
+            _react2.default.createElement(
+              'p',
+              { className: 'text-muted' },
+              'This is an example of muted text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-primary' },
+              'This is an example of primary text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-success' },
+              'This is an example of success text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-info' },
+              'This is an example of info text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-warning' },
+              'This is an example of warning text.'
+            ),
+            _react2.default.createElement(
+              'p',
+              { className: 'text-danger' },
+              'This is an example of danger text.'
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Abbreviations'
+              ) },
+            _react2.default.createElement(
+              'p',
+              null,
+              'The abbreviation of the word attribute is',
+              _react2.default.createElement(
+                'abbr',
+                { title: 'attribute' },
+                'attr'
+              ),
+              '.'
+            ),
+            _react2.default.createElement(
+              'p',
+              null,
+              _react2.default.createElement(
+                'abbr',
+                { title: 'HyperText Markup Language', className: 'initialism' },
+                'HTML'
+              ),
+              'is an abbreviation for a programming language.'
+            ),
+            _react2.default.createElement('br', null),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Addresses'
+            ),
+            _react2.default.createElement(
+              'address',
+              null,
+              _react2.default.createElement(
+                'strong',
+                null,
+                'Twitter, Inc.'
+              ),
+              _react2.default.createElement('br', null),
+              '795 Folsom Ave, Suite 600',
+              _react2.default.createElement('br', null),
+              'San Francisco, CA 94107',
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'abbr',
+                { title: 'Phone' },
+                'P:'
+              ),
+              '(123) 456-7890'
+            ),
+            _react2.default.createElement(
+              'address',
+              null,
+              _react2.default.createElement(
+                'strong',
+                null,
+                'Full Name'
+              ),
+              _react2.default.createElement('br', null),
+              _react2.default.createElement(
+                'a',
+                { href: 'mailto:#' },
+                'first.last@example.com'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Blockquotes'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Default Blockquote'
+            ),
+            _react2.default.createElement(
+              'blockquote',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Blockquote with Citation'
+            ),
+            _react2.default.createElement(
+              'blockquote',
+              null,
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
+              ),
+              _react2.default.createElement(
+                'small',
+                null,
+                'Someone famous in',
+                _react2.default.createElement(
+                  'cite',
+                  { title: 'Source Title' },
+                  'Source Title'
+                )
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Right Aligned Blockquote'
+            ),
+            _react2.default.createElement(
+              'blockquote',
+              { className: 'pull-right' },
+              _react2.default.createElement(
+                'p',
+                null,
+                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Lists'
+              ) },
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Unordered List'
+            ),
+            _react2.default.createElement(
+              'ul',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                _react2.default.createElement(
+                  'ul',
+                  null,
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'List Item'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'List Item'
+                  ),
+                  _react2.default.createElement(
+                    'li',
+                    null,
+                    'List Item'
+                  )
+                )
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Ordered List'
+            ),
+            _react2.default.createElement(
+              'ol',
+              null,
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Unstyled List'
+            ),
+            _react2.default.createElement(
+              'ul',
+              { className: 'list-unstyled' },
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              )
+            ),
+            _react2.default.createElement(
+              'h4',
+              null,
+              'Inline List'
+            ),
+            _react2.default.createElement(
+              'ul',
+              { className: 'list-inline' },
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              ),
+              _react2.default.createElement(
+                'li',
+                null,
+                'List Item'
+              )
+            )
+          )
+        )
+      ),
+      _react2.default.createElement(
+        'div',
+        { className: 'row' },
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Description Lists'
+              ) },
+            _react2.default.createElement(
+              'dl',
+              null,
+              _react2.default.createElement(
+                'dt',
+                null,
+                'Standard Description List'
+              ),
+              _react2.default.createElement(
+                'dd',
+                null,
+                'Description Text'
+              ),
+              _react2.default.createElement(
+                'dt',
+                null,
+                'Description List Title'
+              ),
+              _react2.default.createElement(
+                'dd',
+                null,
+                'Description List Text'
+              )
+            ),
+            _react2.default.createElement(
+              'dl',
+              { className: 'dl-horizontal' },
+              _react2.default.createElement(
+                'dt',
+                null,
+                'Horizontal Description List'
+              ),
+              _react2.default.createElement(
+                'dd',
+                null,
+                'Description Text'
+              ),
+              _react2.default.createElement(
+                'dt',
+                null,
+                'Description List Title'
+              ),
+              _react2.default.createElement(
+                'dd',
+                null,
+                'Description List Text'
+              )
+            )
+          )
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'col-lg-4' },
+          _react2.default.createElement(
+            _Panel2.default,
+            { header: _react2.default.createElement(
+                'span',
+                null,
+                'Code'
+              ) },
+            _react2.default.createElement(
+              'p',
+              null,
+              'This is an example of an inline code element within body copy. Wrap inline code within a',
+              _react2.default.createElement(
+                'code',
+                null,
+                '<code>...</code>'
+              ),
+              'tag.'
+            ),
+            _react2.default.createElement(
+              'pre',
+              null,
+              'This is an example of preformatted text.'
+            )
+          )
+        )
+      )
+    );
   }
   
   displayTypography.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
@@ -14447,655 +14004,7 @@ module.exports =
   exports.default = displayTypography;
 
 /***/ },
-/* 139 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _classnames = __webpack_require__(75);
-  
-  var _classnames2 = _interopRequireDefault(_classnames);
-  
-  var _Button = __webpack_require__(94);
-  
-  var _Button2 = _interopRequireDefault(_Button);
-  
-  var _Panel = __webpack_require__(95);
-  
-  var _Panel2 = _interopRequireDefault(_Panel);
-  
-  var _PageHeader = __webpack_require__(102);
-  
-  var _PageHeader2 = _interopRequireDefault(_PageHeader);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var Typography = function (_Component) {
-    (0, _inherits3.default)(Typography, _Component);
-  
-    function Typography() {
-      (0, _classCallCheck3.default)(this, Typography);
-      return (0, _possibleConstructorReturn3.default)(this, (Typography.__proto__ || (0, _getPrototypeOf2.default)(Typography)).apply(this, arguments));
-    }
-  
-    (0, _createClass3.default)(Typography, [{
-      key: 'render',
-      value: function render() {
-        return _react2.default.createElement(
-          'div',
-          null,
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-12' },
-              _react2.default.createElement(
-                _PageHeader2.default,
-                null,
-                'Typography'
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Headings'
-                  ) },
-                _react2.default.createElement(
-                  'h1',
-                  null,
-                  'Heading 1',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h2',
-                  null,
-                  'Heading 2',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h3',
-                  null,
-                  'Heading 3',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Heading 4',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h5',
-                  null,
-                  'Heading 5',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h6',
-                  null,
-                  'Heading 6',
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Sub-heading'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Paragraphs'
-                  ) },
-                _react2.default.createElement(
-                  'p',
-                  { className: 'lead' },
-                  'This is an example of lead body copy.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'This is an example of standard paragraph text. This is an example of ',
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'javascript:void(0)' },
-                    'link anchor text'
-                  ),
-                  ' within body copy.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'This is an example of small, fine print text.'
-                  )
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    'strong',
-                    null,
-                    'This is an example of strong, bold text.'
-                  )
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    'em',
-                    null,
-                    'This is an example of emphasized, italic text.'
-                  )
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Alignment Helpers'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-left' },
-                  'Left aligned text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-center' },
-                  'Center aligned text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-right' },
-                  'Right aligned text.'
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Emphasis Classes'
-                  ) },
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-muted' },
-                  'This is an example of muted text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-primary' },
-                  'This is an example of primary text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-success' },
-                  'This is an example of success text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-info' },
-                  'This is an example of info text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-warning' },
-                  'This is an example of warning text.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  { className: 'text-danger' },
-                  'This is an example of danger text.'
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Abbreviations'
-                  ) },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'The abbreviation of the word attribute is',
-                  _react2.default.createElement(
-                    'abbr',
-                    { title: 'attribute' },
-                    'attr'
-                  ),
-                  '.'
-                ),
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  _react2.default.createElement(
-                    'abbr',
-                    { title: 'HyperText Markup Language', className: 'initialism' },
-                    'HTML'
-                  ),
-                  'is an abbreviation for a programming language.'
-                ),
-                _react2.default.createElement('br', null),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Addresses'
-                ),
-                _react2.default.createElement(
-                  'address',
-                  null,
-                  _react2.default.createElement(
-                    'strong',
-                    null,
-                    'Twitter, Inc.'
-                  ),
-                  _react2.default.createElement('br', null),
-                  '795 Folsom Ave, Suite 600',
-                  _react2.default.createElement('br', null),
-                  'San Francisco, CA 94107',
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                    'abbr',
-                    { title: 'Phone' },
-                    'P:'
-                  ),
-                  '(123) 456-7890'
-                ),
-                _react2.default.createElement(
-                  'address',
-                  null,
-                  _react2.default.createElement(
-                    'strong',
-                    null,
-                    'Full Name'
-                  ),
-                  _react2.default.createElement('br', null),
-                  _react2.default.createElement(
-                    'a',
-                    { href: 'mailto:#' },
-                    'first.last@example.com'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Blockquotes'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Default Blockquote'
-                ),
-                _react2.default.createElement(
-                  'blockquote',
-                  null,
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Blockquote with Citation'
-                ),
-                _react2.default.createElement(
-                  'blockquote',
-                  null,
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
-                  ),
-                  _react2.default.createElement(
-                    'small',
-                    null,
-                    'Someone famous in',
-                    _react2.default.createElement(
-                      'cite',
-                      { title: 'Source Title' },
-                      'Source Title'
-                    )
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Right Aligned Blockquote'
-                ),
-                _react2.default.createElement(
-                  'blockquote',
-                  { className: 'pull-right' },
-                  _react2.default.createElement(
-                    'p',
-                    null,
-                    'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Lists'
-                  ) },
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Unordered List'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  null,
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    _react2.default.createElement(
-                      'ul',
-                      null,
-                      _react2.default.createElement(
-                        'li',
-                        null,
-                        'List Item'
-                      ),
-                      _react2.default.createElement(
-                        'li',
-                        null,
-                        'List Item'
-                      ),
-                      _react2.default.createElement(
-                        'li',
-                        null,
-                        'List Item'
-                      )
-                    )
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Ordered List'
-                ),
-                _react2.default.createElement(
-                  'ol',
-                  null,
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Unstyled List'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'list-unstyled' },
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  )
-                ),
-                _react2.default.createElement(
-                  'h4',
-                  null,
-                  'Inline List'
-                ),
-                _react2.default.createElement(
-                  'ul',
-                  { className: 'list-inline' },
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  ),
-                  _react2.default.createElement(
-                    'li',
-                    null,
-                    'List Item'
-                  )
-                )
-              )
-            )
-          ),
-          _react2.default.createElement(
-            'div',
-            { className: 'row' },
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Description Lists'
-                  ) },
-                _react2.default.createElement(
-                  'dl',
-                  null,
-                  _react2.default.createElement(
-                    'dt',
-                    null,
-                    'Standard Description List'
-                  ),
-                  _react2.default.createElement(
-                    'dd',
-                    null,
-                    'Description Text'
-                  ),
-                  _react2.default.createElement(
-                    'dt',
-                    null,
-                    'Description List Title'
-                  ),
-                  _react2.default.createElement(
-                    'dd',
-                    null,
-                    'Description List Text'
-                  )
-                ),
-                _react2.default.createElement(
-                  'dl',
-                  { className: 'dl-horizontal' },
-                  _react2.default.createElement(
-                    'dt',
-                    null,
-                    'Horizontal Description List'
-                  ),
-                  _react2.default.createElement(
-                    'dd',
-                    null,
-                    'Description Text'
-                  ),
-                  _react2.default.createElement(
-                    'dt',
-                    null,
-                    'Description List Title'
-                  ),
-                  _react2.default.createElement(
-                    'dd',
-                    null,
-                    'Description List Text'
-                  )
-                )
-              )
-            ),
-            _react2.default.createElement(
-              'div',
-              { className: 'col-lg-4' },
-              _react2.default.createElement(
-                _Panel2.default,
-                { header: _react2.default.createElement(
-                    'span',
-                    null,
-                    'Code'
-                  ) },
-                _react2.default.createElement(
-                  'p',
-                  null,
-                  'This is an example of an inline code element within body copy. Wrap inline code within a',
-                  _react2.default.createElement(
-                    'code',
-                    null,
-                    '<code>...</code>'
-                  ),
-                  'tag.'
-                ),
-                _react2.default.createElement(
-                  'pre',
-                  null,
-                  'This is an example of preformatted text.'
-                )
-              )
-            )
-          )
-        );
-      }
-    }]);
-    return Typography;
-  }(_react.Component);
-  // import Pagination from 'react-bootstrap/lib/Pagination';
-  
-  
-  exports.default = Typography;
-
-/***/ },
-/* 140 */
+/* 130 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15108,7 +14017,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _blank = __webpack_require__(141);
+  var _blank = __webpack_require__(131);
   
   var _blank2 = _interopRequireDefault(_blank);
   
@@ -15123,7 +14032,7 @@ module.exports =
   };
 
 /***/ },
-/* 141 */
+/* 131 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15167,7 +14076,7 @@ module.exports =
   exports.default = displayBlank;
 
 /***/ },
-/* 142 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15180,7 +14089,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Register = __webpack_require__(143);
+  var _Register = __webpack_require__(133);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -15205,7 +14114,7 @@ module.exports =
   };
 
 /***/ },
-/* 143 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15222,7 +14131,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Register = __webpack_require__(144);
+  var _Register = __webpack_require__(134);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -15264,11 +14173,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Register2.default)(Register);
 
 /***/ },
-/* 144 */
+/* 134 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(145);
+      var content = __webpack_require__(135);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -15298,7 +14207,7 @@ module.exports =
     
 
 /***/ },
-/* 145 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -15315,7 +14224,7 @@ module.exports =
   };
 
 /***/ },
-/* 146 */
+/* 136 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15340,7 +14249,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Content = __webpack_require__(147);
+  var _Content = __webpack_require__(137);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -15424,7 +14333,7 @@ module.exports =
       */
 
 /***/ },
-/* 147 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15461,7 +14370,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Content = __webpack_require__(148);
+  var _Content = __webpack_require__(138);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -15525,11 +14434,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Content2.default)(Content);
 
 /***/ },
-/* 148 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(149);
+      var content = __webpack_require__(139);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -15559,7 +14468,7 @@ module.exports =
     
 
 /***/ },
-/* 149 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -15576,7 +14485,7 @@ module.exports =
   };
 
 /***/ },
-/* 150 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15625,7 +14534,7 @@ module.exports =
       */
 
 /***/ },
-/* 151 */
+/* 141 */
 /***/ function(module, exports) {
 
   module.exports = require("./assets");

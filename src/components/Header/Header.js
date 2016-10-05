@@ -44,8 +44,8 @@ function Header() {
           </Brand>
           <ul className="nav navbar-top-links navbar-right">
 
-              <NavDropdown title={<span><i className="fa fa-envelope fa-fw"></i></span>} id="navDropdown1">
-                <MenuItem eventKey="1">
+              <NavDropdown bsClass="dropdown" title={<span><i className="fa fa-envelope fa-fw"></i></span>} id="navDropdown1">
+                <MenuItem style={ {width: 300} } eventKey="1">
                   <div> <strong>John Smith</strong> <span className="pull-right text-muted"> <em>Yesterday</em> </span> </div>
                   <div> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                 </MenuItem>
@@ -60,7 +60,7 @@ function Header() {
                   <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
                 </MenuItem>
                 <MenuItem divider />
-                <MenuItem eventKey="4">
+                <MenuItem eventKey="4" className="text-center">
                   <strong>Read All Messages</strong> <i className="fa fa-angle-right"></i>
                 </MenuItem>
               </NavDropdown>
