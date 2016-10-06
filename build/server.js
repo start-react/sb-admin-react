@@ -24097,15 +24097,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
   exports.default = {
   
     path: '/button',
@@ -24695,15 +24686,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
   exports.default = {
   
     path: '/flotcharts',
@@ -24863,7 +24845,8 @@ module.exports =
                 { width: '100%', aspect: 2 },
                 _react2.default.createElement(
                   _recharts.BarChart,
-                  { data: BarChartData,
+                  {
+                    data: BarChartData,
                     margin: { top: 5, right: 30, left: 20, bottom: 5 }
                   },
                   _react2.default.createElement(_recharts.XAxis, { dataKey: 'name' }),
@@ -24928,11 +24911,11 @@ module.exports =
               _react2.default.createElement(
                 'p',
                 null,
-                'Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website, ',
+                'Flot is a pure JavaScript plotting library for jQuery, with a focus on simple usage, attractive looks, and interactive features. In SB Admin, we are using the most recent version of Flot along with a few plugins to enhance the user experience. The Flot plugins being used are the tooltip plugin for hoverable tooltips, and the resize plugin for fully responsive charts. The documentation for Flot Charts is available on their website,',
                 _react2.default.createElement(
                   'a',
-                  { target: '_blank', href: 'http://www.flotcharts.org/' },
-                  'http://www.flotcharts.org/'
+                  { target: '_blank', rel: 'noopener noreferrer', href: 'http://www.flotcharts.org/' },
+                  '"http://www.flotcharts.org/"'
                 ),
                 '.'
               ),
