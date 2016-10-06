@@ -32,15 +32,16 @@ class Sidebar extends Component {
             </li>
 
             <li>
-              <a href="#" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
+              <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
                 <i className="fa fa-dashboard fa-fw" /> &nbsp;Dashboard
               </a>
             </li>
 
             <li className={classNames({ active: !this.state.chartsElementsCollapsed })}>
               <a
-                href="#"
-                onClick={() => {
+                href=""
+                onClick={(e) => {
+                  e.preventDefault();
                   this.setState({ chartsElementsCollapsed: !this.state.chartsElementsCollapsed });
                   return false;
                 }}

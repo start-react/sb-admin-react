@@ -3231,7 +3231,7 @@ module.exports =
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: '#', onClick: function onClick(e) {
+                  { href: '', onClick: function onClick(e) {
                       e.preventDefault();_history2.default.push('/');
                     } },
                   _react2.default.createElement('i', { className: 'fa fa-dashboard fa-fw' }),
@@ -3244,8 +3244,9 @@ module.exports =
                 _react2.default.createElement(
                   'a',
                   {
-                    href: '#',
-                    onClick: function onClick() {
+                    href: '',
+                    onClick: function onClick(e) {
+                      e.preventDefault();
                       _this2.setState({ chartsElementsCollapsed: !_this2.state.chartsElementsCollapsed });
                       return false;
                     }
@@ -4209,22 +4210,26 @@ module.exports =
         _react2.default.createElement(
           'div',
           { className: 'col-lg-3 col-md-6' },
-          _react2.default.createElement(_Widget2.default, { style: 'panel-yellow',
+          _react2.default.createElement(_Widget2.default, {
+            style: 'panel-yellow',
             icon: 'fa fa-shopping-cart fa-5x',
             count: '124',
             headerText: 'New Orders!',
             footerText: 'View Details',
-            linkTo: '/' })
+            linkTo: '/'
+          })
         ),
         _react2.default.createElement(
           'div',
           { className: 'col-lg-3 col-md-6' },
-          _react2.default.createElement(_Widget2.default, { style: 'panel-red',
+          _react2.default.createElement(_Widget2.default, {
+            style: 'panel-red',
             icon: 'fa fa-support fa-5x',
             count: '13',
             headerText: 'Support Tickets!',
             footerText: 'View Details',
-            linkTo: '/' })
+            linkTo: '/'
+          })
         )
       ),
       _react2.default.createElement(
@@ -4235,7 +4240,8 @@ module.exports =
           { className: 'col-lg-8' },
           _react2.default.createElement(
             _reactBootstrap.Panel,
-            { header: _react2.default.createElement(
+            {
+              header: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
@@ -4293,7 +4299,8 @@ module.exports =
           ),
           _react2.default.createElement(
             _reactBootstrap.Panel,
-            { header: _react2.default.createElement(
+            {
+              header: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
@@ -4351,7 +4358,8 @@ module.exports =
           ),
           _react2.default.createElement(
             _reactBootstrap.Panel,
-            { header: _react2.default.createElement(
+            {
+              header: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-clock-o fa-fw' }),
@@ -4481,7 +4489,8 @@ module.exports =
           { className: 'col-lg-4' },
           _react2.default.createElement(
             _reactBootstrap.Panel,
-            { header: _react2.default.createElement(
+            {
+              header: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-bell fa-fw' }),
@@ -4493,7 +4502,9 @@ module.exports =
               null,
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-comment fa-fw' }),
                 ' New Comment',
                 _react2.default.createElement(
@@ -4508,7 +4519,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-twitter fa-fw' }),
                 ' 3 New Followers',
                 _react2.default.createElement(
@@ -4523,7 +4536,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-envelope fa-fw' }),
                 ' Message Sent',
                 _react2.default.createElement(
@@ -4538,7 +4553,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-tasks fa-fw' }),
                 ' New Task',
                 _react2.default.createElement(
@@ -4553,7 +4570,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-upload fa-fw' }),
                 ' Server Rebooted',
                 _react2.default.createElement(
@@ -4568,7 +4587,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-bolt fa-fw' }),
                 ' Server Crashed!',
                 _react2.default.createElement(
@@ -4583,7 +4604,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-warning fa-fw' }),
                 ' Server Not Responding',
                 _react2.default.createElement(
@@ -4598,7 +4621,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-shopping-cart fa-fw' }),
                 ' New Order Placed',
                 _react2.default.createElement(
@@ -4613,7 +4638,9 @@ module.exports =
               ),
               _react2.default.createElement(
                 _reactBootstrap.ListGroupItem,
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 _react2.default.createElement('i', { className: 'fa fa-money fa-fw' }),
                 ' Payment Received',
                 _react2.default.createElement(
@@ -4635,7 +4662,8 @@ module.exports =
           ),
           _react2.default.createElement(
             _reactBootstrap.Panel,
-            { header: _react2.default.createElement(
+            {
+              header: _react2.default.createElement(
                 'span',
                 null,
                 _react2.default.createElement('i', { className: 'fa fa-bar-chart-o fa-fw' }),
