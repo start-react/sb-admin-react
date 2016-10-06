@@ -372,7 +372,7 @@ table.dataTable thead .sorting:after {
 }
 
 
-// Timeline
+/*Timeline*/
 .timeline {
     position: relative;
     padding: 20px 0 20px;
@@ -381,7 +381,7 @@ table.dataTable thead .sorting:after {
 
 .timeline:before {
     content: " ";
-    /*position: absolute;*/
+    position: absolute;
     top: 0;
     bottom: 0;
     left: 50%;
