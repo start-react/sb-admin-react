@@ -14,16 +14,6 @@ import App from '../components/App';
 import home from './home';
 import contact from './contact';
 import login from './login';
-import table from './dashboardPages/tables';
-import button from './dashboardPages/buttons';
-import flotcharts from './dashboardPages/flotCharts';
-import forms from './dashboardPages/forms';
-import grid from './dashboardPages/grid';
-import icons from './dashboardPages/icons';
-import morrisjscharts from './dashboardPages/morrisjsCharts';
-import notification from './dashboardPages/notification';
-import panelwells from './dashboardPages/panelWells';
-import typography from './dashboardPages/typography';
 import blank from './dashboardPages/blank';
 import register from './register';
 import content from './content';
@@ -55,16 +45,6 @@ export default [
     children: [
       home,
       contact,
-      table,
-      button,
-      flotcharts,
-      forms,
-      grid,
-      icons,
-      morrisjscharts,
-      notification,
-      panelwells,
-      typography,
       register,
       blank,
 
