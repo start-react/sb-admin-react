@@ -35,7 +35,8 @@ async function copy({ watch } = {}) {
   ]);
 
   await Promise.all([
-    ncp('node_modules/bootstrap-social/bootstrap-social.css', 'build/public/css/bootstrap-social.css'),
+    ncp('node_modules/bootstrap-social/bootstrap-social.css',
+    'build/public/css/bootstrap-social.css'),
   ]);
 
   await fs.writeFile('./build/package.json', JSON.stringify({

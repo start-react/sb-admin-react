@@ -1,18 +1,5 @@
 import React, { Component } from 'react';
 import classNames from 'classnames';
-import Link from '../Link';
-// import withStyles from 'isomorphic-style-loader/lib/withStyles';
-// import {
-//   Nav,
-//   NavItem,
-//   NavDropdown,
-//   MenuItem,
-//   ProgressBar,
-// } from 'react-bootstrap';
-// import Link from '../Link';
-// import s from './Header.css';
-// import Navbar from 'react-bootstrap/lib/Navbar';
-// import $ from "jquery";
 import history from '../../core/history';
 
 class Sidebar extends Component {
@@ -45,7 +32,7 @@ class Sidebar extends Component {
             </li>
 
             <li>
-              <a href="" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
+              <a href="#" onClick={(e) => { e.preventDefault(); history.push('/'); }} >
                 <i className="fa fa-dashboard fa-fw" /> &nbsp;Dashboard
               </a>
             </li>
@@ -75,7 +62,10 @@ class Sidebar extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/morrisjscharts'); }} >
+                  <a
+                    href=""
+                    onClick={(e) => { e.preventDefault(); history.push('/morrisjscharts'); }}
+                  >
                     Morrisjs Charts
                   </a>
                 </li>
@@ -96,11 +86,22 @@ class Sidebar extends Component {
             </li>
 
             <li className={classNames({ active: !this.state.uiElementsCollapsed })}>
-              <a href="#" onClick={ () => { this.setState({uiElementsCollapsed: !this.state.uiElementsCollapsed}); return false; } }>
-                <i className="fa fa-edit fa-fw" /> UI Elements<span className="fa arrow"></span>
-                </a>
+              <a
+                href=""
+                onClick={() => {
+                  this.setState({ uiElementsCollapsed: !this.state.uiElementsCollapsed,
+                }); return false;
+                }}
+              >
+                <i className="fa fa-edit fa-fw" /> UI Elements<span className="fa arrow" />
+              </a>
 
-              <ul className={classNames({'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed})}>
+              <ul
+                className={classNames({
+                  'nav nav-second-level': true,
+                  collapse: this.state.uiElementsCollapsed,
+                })}
+              >
                 <li>
                   <a href="" onClick={(e) => { e.preventDefault(); history.push('/panelwells'); }} >
                     Panels And Wells
@@ -112,7 +113,10 @@ class Sidebar extends Component {
                   </a>
                 </li>
                 <li>
-                  <a href="" onClick={(e) => { e.preventDefault(); history.push('/notification'); }} >
+                  <a
+                    href=""
+                    onClick={(e) => { e.preventDefault(); history.push('/notification'); }}
+                  >
                     Notification
                   </a>
                 </li>

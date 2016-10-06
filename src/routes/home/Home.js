@@ -22,8 +22,8 @@ import StatWidget from '../../components/Widget';
 import Donut from '../../components/Donut';
 
 import {
-  LineChart, Tooltip,
-  Line, XAxis, YAxis, Area,
+  Tooltip,
+  XAxis, YAxis, Area,
   CartesianGrid, AreaChart, Bar, BarChart,
   ResponsiveContainer } from '../../vendor/recharts';
 
@@ -44,46 +44,50 @@ function Home({ news }, context) {
   context.setTitle(title);
   return (
     <div>
-        <div className="row">
-          <div className="col-lg-12">
-            <PageHeader>Dashboard</PageHeader>
-          </div>
+      <div className="row">
+        <div className="col-lg-12">
+          <PageHeader>Dashboard</PageHeader>
         </div>
+      </div>
 
-        <div className="row">
-          <div className="col-lg-3 col-md-6">
-            <StatWidget style="panel-primary"
-                    icon="fa fa-comments fa-5x"
-                    count="26"
-                    headerText="New Comments!"
-                    footerText="View Details"
-                    linkTo="/" />
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <StatWidget style = "panel-green"
-                    icon = "fa fa-tasks fa-5x"
-                    count = "12"
-                    headerText="New Tasks!"
-                    footerText="View Details"
-                    linkTo="/" />
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <StatWidget style="panel-yellow"
-                    icon="fa fa-shopping-cart fa-5x"
-                    count="124"
-                    headerText="New Orders!"
-                    footerText="View Details"
-                    linkTo="/" />
-          </div>
-          <div className="col-lg-3 col-md-6">
-            <StatWidget style="panel-red"
-                    icon="fa fa-support fa-5x"
-                    count="13"
-                    headerText="Support Tickets!"
-                    footerText="View Details"
-                    linkTo="/" />
-          </div>
+      <div className="row">
+        <div className="col-lg-3 col-md-6">
+          <StatWidget
+            style="panel-primary"
+            icon="fa fa-comments fa-5x"
+            count="26"
+            headerText="New Comments!"
+            footerText="View Details"
+            linkTo="/"
+          />
         </div>
+        <div className="col-lg-3 col-md-6">
+          <StatWidget
+            style="panel-green"
+            icon="fa fa-tasks fa-5x"
+            count="12"
+            headerText="New Tasks!"
+            footerText="View Details"
+            linkTo="/"
+          />
+        </div>
+        <div className="col-lg-3 col-md-6">
+        <StatWidget style="panel-yellow"
+                icon="fa fa-shopping-cart fa-5x"
+                count="124"
+                headerText="New Orders!"
+                footerText="View Details"
+                linkTo="/" />
+        </div>
+        <div className="col-lg-3 col-md-6">
+          <StatWidget style="panel-red"
+                  icon="fa fa-support fa-5x"
+                  count="13"
+                  headerText="Support Tickets!"
+                  footerText="View Details"
+                  linkTo="/" />
+        </div>
+      </div>
 
         <div className="row">
           <div className="col-lg-8">
@@ -247,7 +251,7 @@ function Home({ news }, context) {
               </span>}
             >
               <div>
-                <Donut data={data} color="#8884d8" innerRadius="35" outerRadius="55" />
+                <Donut data={data} color="#8884d8" innerRadius="70%" outerRadius="90%" />
               </div>
             </Panel>
 

@@ -16,8 +16,6 @@ import {
   MenuItem,
   ProgressBar,
 } from 'react-bootstrap';
-import Link from '../Link';
-// import s from './Header.css';
 import Navbar, {Brand} from 'react-bootstrap/lib/Navbar';
 import history from '../../core/history';
 import $ from "jquery";

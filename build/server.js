@@ -136,7 +136,7 @@ module.exports =
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(233);
+  var _assets = __webpack_require__(232);
   
   var _assets2 = _interopRequireDefault(_assets);
   
@@ -2106,67 +2106,67 @@ module.exports =
   
   var _home2 = _interopRequireDefault(_home);
   
-  var _contact = __webpack_require__(181);
+  var _contact = __webpack_require__(180);
   
   var _contact2 = _interopRequireDefault(_contact);
   
-  var _login = __webpack_require__(185);
+  var _login = __webpack_require__(184);
   
   var _login2 = _interopRequireDefault(_login);
   
-  var _tables = __webpack_require__(191);
+  var _tables = __webpack_require__(190);
   
   var _tables2 = _interopRequireDefault(_tables);
   
-  var _buttons = __webpack_require__(196);
+  var _buttons = __webpack_require__(195);
   
   var _buttons2 = _interopRequireDefault(_buttons);
   
-  var _flotCharts = __webpack_require__(198);
+  var _flotCharts = __webpack_require__(197);
   
   var _flotCharts2 = _interopRequireDefault(_flotCharts);
   
-  var _forms = __webpack_require__(200);
+  var _forms = __webpack_require__(199);
   
   var _forms2 = _interopRequireDefault(_forms);
   
-  var _grid = __webpack_require__(205);
+  var _grid = __webpack_require__(204);
   
   var _grid2 = _interopRequireDefault(_grid);
   
-  var _icons = __webpack_require__(207);
+  var _icons = __webpack_require__(206);
   
   var _icons2 = _interopRequireDefault(_icons);
   
-  var _morrisjsCharts = __webpack_require__(209);
+  var _morrisjsCharts = __webpack_require__(208);
   
   var _morrisjsCharts2 = _interopRequireDefault(_morrisjsCharts);
   
-  var _notification = __webpack_require__(211);
+  var _notification = __webpack_require__(210);
   
   var _notification2 = _interopRequireDefault(_notification);
   
-  var _panelWells = __webpack_require__(218);
+  var _panelWells = __webpack_require__(217);
   
   var _panelWells2 = _interopRequireDefault(_panelWells);
   
-  var _typography = __webpack_require__(220);
+  var _typography = __webpack_require__(219);
   
   var _typography2 = _interopRequireDefault(_typography);
   
-  var _blank = __webpack_require__(222);
+  var _blank = __webpack_require__(221);
   
   var _blank2 = _interopRequireDefault(_blank);
   
-  var _register = __webpack_require__(224);
+  var _register = __webpack_require__(223);
   
   var _register2 = _interopRequireDefault(_register);
   
-  var _content = __webpack_require__(228);
+  var _content = __webpack_require__(227);
   
   var _content2 = _interopRequireDefault(_content);
   
-  var _error = __webpack_require__(232);
+  var _error = __webpack_require__(231);
   
   var _error2 = _interopRequireDefault(_error);
   
@@ -2378,11 +2378,11 @@ module.exports =
   
   var _Header2 = _interopRequireDefault(_Header);
   
-  var _Feedback = __webpack_require__(77);
+  var _Feedback = __webpack_require__(74);
   
   var _Feedback2 = _interopRequireDefault(_Feedback);
   
-  var _Footer = __webpack_require__(80);
+  var _Footer = __webpack_require__(77);
   
   var _Footer2 = _interopRequireDefault(_Footer);
   
@@ -2558,39 +2558,32 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(64);
   
-  var _Link = __webpack_require__(65);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _Navbar = __webpack_require__(72);
+  var _Navbar = __webpack_require__(65);
   
   var _Navbar2 = _interopRequireDefault(_Navbar);
   
-  var _history = __webpack_require__(68);
+  var _history = __webpack_require__(66);
   
   var _history2 = _interopRequireDefault(_history);
   
-  var _jquery = __webpack_require__(73);
+  var _jquery = __webpack_require__(70);
   
   var _jquery2 = _interopRequireDefault(_jquery);
   
-  var _Sidebar = __webpack_require__(74);
+  var _Sidebar = __webpack_require__(71);
   
   var _Sidebar2 = _interopRequireDefault(_Sidebar);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  // import s from './Header.css';
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  var logo = __webpack_require__(76);
+  var logo = __webpack_require__(73); /**
+                                     * React Starter Kit (https://www.reactstarterkit.com/)
+                                     *
+                                     * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+                                     *
+                                     * This source code is licensed under the MIT license found in the
+                                     * LICENSE.txt file in the root directory of this source tree.
+                                     */
   
   function Header() {
     return _react2.default.createElement(
@@ -3076,146 +3069,12 @@ module.exports =
 
 /***/ },
 /* 65 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ function(module, exports) {
 
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _extends2 = __webpack_require__(66);
-  
-  var _extends3 = _interopRequireDefault(_extends2);
-  
-  var _objectWithoutProperties2 = __webpack_require__(67);
-  
-  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
-  
-  var _getPrototypeOf = __webpack_require__(55);
-  
-  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
-  
-  var _classCallCheck2 = __webpack_require__(56);
-  
-  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
-  
-  var _createClass2 = __webpack_require__(57);
-  
-  var _createClass3 = _interopRequireDefault(_createClass2);
-  
-  var _possibleConstructorReturn2 = __webpack_require__(58);
-  
-  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
-  
-  var _inherits2 = __webpack_require__(59);
-  
-  var _inherits3 = _interopRequireDefault(_inherits2);
-  
-  var _react = __webpack_require__(13);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _history = __webpack_require__(68);
-  
-  var _history2 = _interopRequireDefault(_history);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  function isLeftClickEvent(event) {
-    return event.button === 0;
-  }
-  
-  function isModifiedEvent(event) {
-    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
-  }
-  
-  var Link = function (_Component) {
-    (0, _inherits3.default)(Link, _Component);
-  
-    function Link() {
-      var _ref;
-  
-      var _temp, _this, _ret;
-  
-      (0, _classCallCheck3.default)(this, Link);
-  
-      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
-        args[_key] = arguments[_key];
-      }
-  
-      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Link.__proto__ || (0, _getPrototypeOf2.default)(Link)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
-        var allowTransition = true;
-  
-        if (_this.props.onClick) {
-          _this.props.onClick(event);
-        }
-  
-        if (isModifiedEvent(event) || !isLeftClickEvent(event)) {
-          return;
-        }
-  
-        if (event.defaultPrevented === true) {
-          allowTransition = false;
-        }
-  
-        event.preventDefault();
-  
-        if (allowTransition) {
-          if (_this.props.to) {
-            _history2.default.push(_this.props.to);
-          } else {
-            _history2.default.push({
-              pathname: event.currentTarget.pathname,
-              search: event.currentTarget.search
-            });
-          }
-        }
-      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
-    } // eslint-disable-line react/prefer-stateless-function
-  
-    (0, _createClass3.default)(Link, [{
-      key: 'render',
-      value: function render() {
-        var _props = this.props;
-        var to = _props.to;
-        var props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
-  
-        return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
-      }
-    }]);
-    return Link;
-  }(_react.Component);
-  
-  Link.propTypes = {
-    to: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
-    onClick: _react.PropTypes.func
-  };
-  exports.default = Link;
+  module.exports = require("react-bootstrap/lib/Navbar");
 
 /***/ },
 /* 66 */
-/***/ function(module, exports) {
-
-  module.exports = require("babel-runtime/helpers/extends");
-
-/***/ },
-/* 67 */
-/***/ function(module, exports) {
-
-  module.exports = require("babel-runtime/helpers/objectWithoutProperties");
-
-/***/ },
-/* 68 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3224,15 +3083,15 @@ module.exports =
     value: true
   });
   
-  var _createBrowserHistory = __webpack_require__(69);
+  var _createBrowserHistory = __webpack_require__(67);
   
   var _createBrowserHistory2 = _interopRequireDefault(_createBrowserHistory);
   
-  var _createMemoryHistory = __webpack_require__(70);
+  var _createMemoryHistory = __webpack_require__(68);
   
   var _createMemoryHistory2 = _interopRequireDefault(_createMemoryHistory);
   
-  var _useQueries = __webpack_require__(71);
+  var _useQueries = __webpack_require__(69);
   
   var _useQueries2 = _interopRequireDefault(_useQueries);
   
@@ -3250,37 +3109,31 @@ module.exports =
   exports.default = history;
 
 /***/ },
-/* 69 */
+/* 67 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createBrowserHistory");
 
 /***/ },
-/* 70 */
+/* 68 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/createMemoryHistory");
 
 /***/ },
-/* 71 */
+/* 69 */
 /***/ function(module, exports) {
 
   module.exports = require("history/lib/useQueries");
 
 /***/ },
-/* 72 */
-/***/ function(module, exports) {
-
-  module.exports = require("react-bootstrap/lib/Navbar");
-
-/***/ },
-/* 73 */
+/* 70 */
 /***/ function(module, exports) {
 
   module.exports = require("jquery");
 
 /***/ },
-/* 74 */
+/* 71 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3313,15 +3166,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _Link = __webpack_require__(65);
-  
-  var _Link2 = _interopRequireDefault(_Link);
-  
-  var _history = __webpack_require__(68);
+  var _history = __webpack_require__(66);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -3382,7 +3231,7 @@ module.exports =
                 null,
                 _react2.default.createElement(
                   'a',
-                  { href: '', onClick: function onClick(e) {
+                  { href: '#', onClick: function onClick(e) {
                       e.preventDefault();_history2.default.push('/');
                     } },
                   _react2.default.createElement('i', { className: 'fa fa-dashboard fa-fw' }),
@@ -3429,9 +3278,12 @@ module.exports =
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '', onClick: function onClick(e) {
+                      {
+                        href: '',
+                        onClick: function onClick(e) {
                           e.preventDefault();_history2.default.push('/morrisjscharts');
-                        } },
+                        }
+                      },
                       'Morrisjs Charts'
                     )
                   )
@@ -3466,16 +3318,25 @@ module.exports =
                 { className: (0, _classnames2.default)({ active: !this.state.uiElementsCollapsed }) },
                 _react2.default.createElement(
                   'a',
-                  { href: '#', onClick: function onClick() {
-                      _this2.setState({ uiElementsCollapsed: !_this2.state.uiElementsCollapsed });return false;
-                    } },
+                  {
+                    href: '',
+                    onClick: function onClick() {
+                      _this2.setState({ uiElementsCollapsed: !_this2.state.uiElementsCollapsed
+                      });return false;
+                    }
+                  },
                   _react2.default.createElement('i', { className: 'fa fa-edit fa-fw' }),
                   ' UI Elements',
                   _react2.default.createElement('span', { className: 'fa arrow' })
                 ),
                 _react2.default.createElement(
                   'ul',
-                  { className: (0, _classnames2.default)({ 'nav nav-second-level': true, 'collapse': this.state.uiElementsCollapsed }) },
+                  {
+                    className: (0, _classnames2.default)({
+                      'nav nav-second-level': true,
+                      collapse: this.state.uiElementsCollapsed
+                    })
+                  },
                   _react2.default.createElement(
                     'li',
                     null,
@@ -3503,9 +3364,12 @@ module.exports =
                     null,
                     _react2.default.createElement(
                       'a',
-                      { href: '', onClick: function onClick(e) {
+                      {
+                        href: '',
+                        onClick: function onClick(e) {
                           e.preventDefault();_history2.default.push('/notification');
-                        } },
+                        }
+                      },
                       'Notification'
                     )
                   ),
@@ -3733,36 +3597,23 @@ module.exports =
     }]);
     return Sidebar;
   }(_react.Component);
-  // import withStyles from 'isomorphic-style-loader/lib/withStyles';
-  // import {
-  //   Nav,
-  //   NavItem,
-  //   NavDropdown,
-  //   MenuItem,
-  //   ProgressBar,
-  // } from 'react-bootstrap';
-  // import Link from '../Link';
-  // import s from './Header.css';
-  // import Navbar from 'react-bootstrap/lib/Navbar';
-  // import $ from "jquery";
-  
   
   exports.default = Sidebar;
 
 /***/ },
-/* 75 */
+/* 72 */
 /***/ function(module, exports) {
 
   module.exports = require("classnames");
 
 /***/ },
-/* 76 */
+/* 73 */
 /***/ function(module, exports) {
 
   module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAAmCAYAAACyAQkgAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGODdGMTE3NDA3MjA2ODExODA4M0E3MjY3MTQwRTY5RSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1RTIzNTA3RUM5OEExMUU0QjRCOUUwQTIyNkYzQTlCNiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1RTIzNTA3REM5OEExMUU0QjRCOUUwQTIyNkYzQTlCNiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChNYWNpbnRvc2gpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6Rjk3RjExNzQwNzIwNjgxMTgwODNBNzI2NzE0MEU2OUUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6Rjg3RjExNzQwNzIwNjgxMTgwODNBNzI2NzE0MEU2OUUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5xbRMYAAAIAklEQVR42qyZC5BNdRzH//9zd++6a1msRwi7SCrPXmZkSjU1pSmPEnrNoEQhjGEKq2xEKZRJHiEkRNIMkple8kiZyGu9GcZrsezL7tp7/n1/Z7+X47rn3mu2/8xnz7nnnP///M7v/3v9/6uNMSo3qFTOFaV8Wnk2A3A7GYem/HkEFKiba5VABo+HMcgleaWNk/p+DG55d0yQP5vzjPo6x1aB6JL2gqQTcJbOK6fBcjAd7IshYH0wALxAQaWdxZgTMOa0Ukg6vL5PtUr2HsAKaasMf4Le9ASLQXWwAMwHl8FAsAtMBIEI/SwwFGSDUXxGxpkDysBUMFKeNTG+NOGqxFCm1p7TNQ6U4OsfwnGHq+9T4AMwEjwOerm0Wwcs4PWTYDD4BhTzfj2wBWOOwXsX8pnoGo3R7gW3gbkuIaWVgVXgbjANtAWbQHvQBPxBIZeClmCeS0hFwaaCyuCRWELEI+hdPG7wuC8vHwJ6g1SwGmyk040GPcEFj76beWyj4p36KK22y3mitfkUdCp/i5bHx+hzLuwdFdJovO1W0J/nQXp42/9r8HgEzeWxRpRnAnSU5mAYp7sW+BbcEqVfatg74hDUGC9O8Jge5ZkpoAOYyvPlYChoAuYC7dGvAY/HYgWoazaqPePTQR5bq+tvJ1GTEpJep739CboBHzgE9oMnwfvgY3CZhFoLZ0ytspXSFXamw+AU6AD6gvtBK2aoFIYXaTU5/ZHaO4wMknKPg92MIk8w3+yuiNcHGN+eB9X4ew7vFYGjFE5U8SXYw+v5dCZJFFVAY6ZPSZDHGLbuAa9wLNvSesr2QrPkYlCvu2LUpZAAkrEaoga4IxBZ0FRO5SB6snzxeQq6iNN4kFMuGWUlUvWrutx6fM50loebU0pSJxKDT8bQaiiuLWZ/SQj9wAhwMVGrZ9bn2l0h2AU8N5sh7rTk6E41LAhq3eD1z1IzkzilnzLEPMj7aUyR8jETHQ0aNaKKz6l8bodfyBRuB+twfSfS8uFqPlUVxzH4LSaUychwiBqW1h2aaOb36axAgr6MwmgkyAYDpEhKpN+4Bc1iNSTTPIZT9hbT5l7wCx2jHq/Xx8vHlRpzsE9tS92VrCfiXEJSO8nzmML2df1qdGYDqxAfUhgst9NEji2z04P2v5HHTKbqN0Ap+Jxp2+fY6Hlk7P2XzYAE7aS7XfKFIDuCScg0P8wiRIqRAyzxFPqqgqBJ10rLR23l8znQwmbMWsifJee/RpMpYJyd6RQ715pEhBliTmJmGLf38VKTc7xUj7T2FJlaWwvMGL+lc3Czk4eQigXISTpBGm2tUG74IUzzZL3aVkY+5F3ej9Sy6Hz9KOBij+ckXXeBTDsg3/Ct+XYLC1LfB2OuC/uaxdDh1aSw+Irnf9OxrraGSVqE+AKMlaIYEX6hT5n0sDF+A9/xfCVNyqsVwHanwUwt2OlDbhvVccRU7TqGP1/CMCS2PV5r3R3h5ue8oEqzdMQxrJt4n/PwVk6pTEejKJ3SXLFP4uBLHs/JWioTmnji7BWTsbfIPOy/JmhH0JXnncGdUd5XhUlCYvKvFlNfFoP3GnCHR8fO9Pj57DM6lJUQR60iaE5fr+UEGTzJUsWuLC4eb9NEJAW/6PGuuuAHFtwfSeYKqV86vscv3EY7C6+WXnalw+nMMIORVdSFMpW0JtfekqC1xOBlYC1i9bo6fr2xSUCvL7Wdfj2Z6STNDnUWd+URIMn1DomtA8FOal8y3ijHBjbl2WrGaRshxtFHF1z7jBnpEh1mrmN/WMTh/hqGpuqMrzVxvVWKTx0sstVL0OwzeEayUjGc8ydEg9lVfSo/t0xVw71/cK8e64R9TjIxyH5aPcZ03IerBCkLL3IdNqsEHXukWTek0O/Bz4x3shh7k1xw1Y13sip62/kQrSbDYbpY5eeL3MWYaPKs7UTssbiXTnPZx8AeWj8tw6NVS4LGh1k4h+fGU1lnHA+FoGX46nCNhq8+O7Io6YmvD7juF1MLTVnYzGPqlYxyhfVBIqe1ASt/P4WsR0cJ7WoEsVRf+WiqXppeySlK8t1CSGHSrFL06kmE+RH8ztR5ik7XjkaewUySwimL1QqYnrOZATewbGxvGzO8TWXrWOvkitWjjWk3C+jx83ndT633ojOeZ54u4bjyoZ+AZq7CuThsySw7KA9wpXss9lLEe4khNOXx37DrpSAPzAQzQBqXI6vACtAcNAOrQSa4CIrDxtjFY/P4liKhZUjk3NTgaiD3zl3DqJVB1MwJMJmFS1/lLcVx5rhG/8dSpFocK8VimsB6CmgzTnYPea9Hy4tjhevaJIsy8y5dxKoFJA3Pdo27JGwLyHuj0CgTa5fMSXOonpyaMpIo6H82eG3TK1rrS4fJpYYH08HGRekjaVv2Zc9YMdSQ0CZFq0kZvogr5SRc21agds85YysUFg96rDKlWv+QqU9qgKc53euYlluyqjoXoW/7YgT0bmnWjpbJMaZehKkFS63pu5EqUDdS4F+mPBP1CduiSeQafjuF3MadvC2soCTsrAXPMXe/6lonhbaAhmDaC1IsJxtWbEsHQpZgsEzgB7+CRWABOABWgAwwAXTgtZB954CngAhTGcwGR8ASMBf8BW4FWbH2RuPyelTqytL2Uqs8fE1wlWYnuUqdzjDktfU/jXtQ/dm3B++dKa++zGdxVezGRHe3QgSaU6VXw2yAqdMwXhbd5KacnzssUgMcxSD58o+G2jCiVF/0jv8JMABBEldD7PKL3QAAAABJRU5ErkJggg=="
 
 /***/ },
-/* 77 */
+/* 74 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3779,7 +3630,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Feedback = __webpack_require__(78);
+  var _Feedback = __webpack_require__(75);
   
   var _Feedback2 = _interopRequireDefault(_Feedback);
   
@@ -3827,11 +3678,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Feedback2.default)(Feedback);
 
 /***/ },
-/* 78 */
+/* 75 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(79);
+      var content = __webpack_require__(76);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -3861,7 +3712,7 @@ module.exports =
     
 
 /***/ },
-/* 79 */
+/* 76 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -3880,7 +3731,7 @@ module.exports =
   };
 
 /***/ },
-/* 80 */
+/* 77 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -3897,11 +3748,11 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Footer = __webpack_require__(81);
+  var _Footer = __webpack_require__(78);
   
   var _Footer2 = _interopRequireDefault(_Footer);
   
-  var _Link = __webpack_require__(65);
+  var _Link = __webpack_require__(80);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -3965,11 +3816,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Footer2.default)(Footer);
 
 /***/ },
-/* 81 */
+/* 78 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(82);
+      var content = __webpack_require__(79);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -3999,7 +3850,7 @@ module.exports =
     
 
 /***/ },
-/* 82 */
+/* 79 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -4018,6 +3869,146 @@ module.exports =
   	"spacer": "Footer_spacer_3HO",
   	"link": "Footer_link_1sU"
   };
+
+/***/ },
+/* 80 */
+/***/ function(module, exports, __webpack_require__) {
+
+  'use strict';
+  
+  Object.defineProperty(exports, "__esModule", {
+    value: true
+  });
+  
+  var _extends2 = __webpack_require__(81);
+  
+  var _extends3 = _interopRequireDefault(_extends2);
+  
+  var _objectWithoutProperties2 = __webpack_require__(82);
+  
+  var _objectWithoutProperties3 = _interopRequireDefault(_objectWithoutProperties2);
+  
+  var _getPrototypeOf = __webpack_require__(55);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(56);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(57);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(58);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(59);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
+  var _react = __webpack_require__(13);
+  
+  var _react2 = _interopRequireDefault(_react);
+  
+  var _history = __webpack_require__(66);
+  
+  var _history2 = _interopRequireDefault(_history);
+  
+  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+  
+  /**
+   * React Starter Kit (https://www.reactstarterkit.com/)
+   *
+   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
+   *
+   * This source code is licensed under the MIT license found in the
+   * LICENSE.txt file in the root directory of this source tree.
+   */
+  
+  function isLeftClickEvent(event) {
+    return event.button === 0;
+  }
+  
+  function isModifiedEvent(event) {
+    return !!(event.metaKey || event.altKey || event.ctrlKey || event.shiftKey);
+  }
+  
+  var Link = function (_Component) {
+    (0, _inherits3.default)(Link, _Component);
+  
+    function Link() {
+      var _ref;
+  
+      var _temp, _this, _ret;
+  
+      (0, _classCallCheck3.default)(this, Link);
+  
+      for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+        args[_key] = arguments[_key];
+      }
+  
+      return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Link.__proto__ || (0, _getPrototypeOf2.default)(Link)).call.apply(_ref, [this].concat(args))), _this), _this.handleClick = function (event) {
+        var allowTransition = true;
+  
+        if (_this.props.onClick) {
+          _this.props.onClick(event);
+        }
+  
+        if (isModifiedEvent(event) || !isLeftClickEvent(event)) {
+          return;
+        }
+  
+        if (event.defaultPrevented === true) {
+          allowTransition = false;
+        }
+  
+        event.preventDefault();
+  
+        if (allowTransition) {
+          if (_this.props.to) {
+            _history2.default.push(_this.props.to);
+          } else {
+            _history2.default.push({
+              pathname: event.currentTarget.pathname,
+              search: event.currentTarget.search
+            });
+          }
+        }
+      }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
+    } // eslint-disable-line react/prefer-stateless-function
+  
+    (0, _createClass3.default)(Link, [{
+      key: 'render',
+      value: function render() {
+        var _props = this.props;
+        var to = _props.to;
+        var props = (0, _objectWithoutProperties3.default)(_props, ['to']); // eslint-disable-line no-use-before-define
+  
+        return _react2.default.createElement('a', (0, _extends3.default)({ href: _history2.default.createHref(to) }, props, { onClick: this.handleClick }));
+      }
+    }]);
+    return Link;
+  }(_react.Component);
+  
+  Link.propTypes = {
+    to: _react.PropTypes.oneOfType([_react.PropTypes.string, _react.PropTypes.object]).isRequired,
+    onClick: _react.PropTypes.func
+  };
+  exports.default = Link;
+
+/***/ },
+/* 81 */
+/***/ function(module, exports) {
+
+  module.exports = require("babel-runtime/helpers/extends");
+
+/***/ },
+/* 82 */
+/***/ function(module, exports) {
+
+  module.exports = require("babel-runtime/helpers/objectWithoutProperties");
 
 /***/ },
 /* 83 */
@@ -4150,7 +4141,7 @@ module.exports =
   
   var _Donut2 = _interopRequireDefault(_Donut);
   
-  var _recharts = __webpack_require__(133);
+  var _recharts = __webpack_require__(132);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -4193,22 +4184,26 @@ module.exports =
         _react2.default.createElement(
           'div',
           { className: 'col-lg-3 col-md-6' },
-          _react2.default.createElement(_Widget2.default, { style: 'panel-primary',
+          _react2.default.createElement(_Widget2.default, {
+            style: 'panel-primary',
             icon: 'fa fa-comments fa-5x',
             count: '26',
             headerText: 'New Comments!',
             footerText: 'View Details',
-            linkTo: '/' })
+            linkTo: '/'
+          })
         ),
         _react2.default.createElement(
           'div',
           { className: 'col-lg-3 col-md-6' },
-          _react2.default.createElement(_Widget2.default, { style: 'panel-green',
+          _react2.default.createElement(_Widget2.default, {
+            style: 'panel-green',
             icon: 'fa fa-tasks fa-5x',
             count: '12',
             headerText: 'New Tasks!',
             footerText: 'View Details',
-            linkTo: '/' })
+            linkTo: '/'
+          })
         ),
         _react2.default.createElement(
           'div',
@@ -4649,7 +4644,7 @@ module.exports =
             _react2.default.createElement(
               'div',
               null,
-              _react2.default.createElement(_Donut2.default, { data: data, color: '#8884d8', innerRadius: '35', outerRadius: '55' })
+              _react2.default.createElement(_Donut2.default, { data: data, color: '#8884d8', innerRadius: '70%', outerRadius: '90%' })
             )
           )
         )
@@ -4743,7 +4738,7 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(64);
   
-  var _Link = __webpack_require__(65);
+  var _Link = __webpack_require__(80);
   
   var _Link2 = _interopRequireDefault(_Link);
   
@@ -4866,56 +4861,6 @@ module.exports =
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
   // import { PieCharts, Pie, Sector, ResponsiveContainer } from '../../vendor/recharts';
-  var Donut = function (_Component) {
-    (0, _inherits3.default)(Donut, _Component);
-  
-    function Donut(props) {
-      (0, _classCallCheck3.default)(this, Donut);
-  
-      var _this = (0, _possibleConstructorReturn3.default)(this, (Donut.__proto__ || (0, _getPrototypeOf2.default)(Donut)).call(this, props));
-  
-      _this.state = {
-        activeIndex: 0
-      };
-      // this.onPieEnter = this.onPieEnter.bind(this);
-      return _this;
-    }
-  
-    (0, _createClass3.default)(Donut, [{
-      key: 'onPieEnter',
-      value: function onPieEnter(data, index) {
-        this.setState({
-          activeIndex: index
-        });
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var _this2 = this;
-  
-        return _react2.default.createElement(
-          _ResponsiveContainer2.default,
-          { width: '100%', aspect: 2 },
-          _react2.default.createElement(
-            _PieChart2.default,
-            { margin: { top: 10, right: 30, left: 0, bottom: 0 }, onMouseEnter: function onMouseEnter(data, index) {
-                _this2.onPieEnter(data, index);
-              } },
-            _react2.default.createElement(_Pie2.default, {
-              activeIndex: this.state.activeIndex,
-              activeShape: renderActiveShape,
-              data: this.props.data,
-              innerRadius: this.props.innerRadius,
-              outerRadius: this.props.outerRadius,
-              fill: this.props.color
-            })
-          )
-        );
-      }
-    }]);
-    return Donut;
-  }(_react.Component);
-  
   var renderActiveShape = function renderActiveShape(props) {
     var RADIAN = Math.PI / 180;
     var cx = props.cx;
@@ -4970,7 +4915,12 @@ module.exports =
       _react2.default.createElement('circle', { cx: ex, cy: ey, r: 2, fill: fill, stroke: 'none' }),
       _react2.default.createElement(
         'text',
-        { x: ex + (cos >= 0 ? 1 : -1) * 12, y: ey, textAnchor: textAnchor, fill: '#333' },
+        {
+          x: ex + (cos >= 0 ? 1 : -1) * 12,
+          y: ey,
+          textAnchor: textAnchor,
+          fill: '#333'
+        },
         'Value ' + value
       ),
       _react2.default.createElement(
@@ -4981,6 +4931,65 @@ module.exports =
     );
   };
   
+  var Donut = function (_Component) {
+    (0, _inherits3.default)(Donut, _Component);
+  
+    function Donut(props) {
+      (0, _classCallCheck3.default)(this, Donut);
+  
+      var _this = (0, _possibleConstructorReturn3.default)(this, (Donut.__proto__ || (0, _getPrototypeOf2.default)(Donut)).call(this, props));
+  
+      _this.state = {
+        activeIndex: 0
+      };
+      // this.onPieEnter = this.onPieEnter.bind(this);
+      return _this;
+    }
+  
+    (0, _createClass3.default)(Donut, [{
+      key: 'onPieEnter',
+      value: function onPieEnter(data, index) {
+        this.setState({
+          activeIndex: index
+        });
+      }
+    }, {
+      key: 'render',
+      value: function render() {
+        var _this2 = this;
+  
+        return _react2.default.createElement(
+          _ResponsiveContainer2.default,
+          { width: '100%', aspect: 2 },
+          _react2.default.createElement(
+            _PieChart2.default,
+            {
+              margin: { top: 10, right: 30, left: 0, bottom: 0 },
+              onMouseEnter: function onMouseEnter(data, index) {
+                _this2.onPieEnter(data, index);
+              }
+            },
+            _react2.default.createElement(_Pie2.default, {
+              activeIndex: this.state.activeIndex,
+              activeShape: renderActiveShape,
+              data: this.props.data,
+              innerRadius: this.props.innerRadius,
+              outerRadius: this.props.outerRadius,
+              fill: this.props.color
+            })
+          )
+        );
+      }
+    }]);
+    return Donut;
+  }(_react.Component);
+  
+  Donut.propTypes = {
+    data: _react2.default.PropTypes.array,
+    innerRadius: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+    outerRadius: _react2.default.PropTypes.oneOfType([_react2.default.PropTypes.string, _react2.default.PropTypes.number]),
+    color: _react2.default.PropTypes.string
+  };
   exports.default = Donut;
 
 /***/ },
@@ -5047,7 +5056,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -5415,7 +5424,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -6539,7 +6548,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -7407,7 +7416,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -7846,7 +7855,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -7954,7 +7963,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -8180,7 +8189,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -8404,7 +8413,7 @@ module.exports =
   
   var _reduceCssCalc2 = _interopRequireDefault(_reduceCssCalc);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -9159,8 +9168,7 @@ module.exports =
   };
 
 /***/ },
-/* 132 */,
-/* 133 */
+/* 132 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -9170,9 +9178,9 @@ module.exports =
   });
   exports.ComposedChart = exports.RadialBarChart = exports.AreaChart = exports.ScatterChart = exports.RadarChart = exports.Sankey = exports.Treemap = exports.PieChart = exports.BarChart = exports.LineChart = exports.ZAxis = exports.YAxis = exports.XAxis = exports.Scatter = exports.Bar = exports.Area = exports.Line = exports.CartesianGrid = exports.CartesianAxis = exports.ReferenceArea = exports.ReferenceDot = exports.ReferenceLine = exports.Brush = exports.RadialBar = exports.Radar = exports.Pie = exports.PolarAngleAxis = exports.PolarRadiusAxis = exports.PolarGrid = exports.Symbols = exports.Cross = exports.Dot = exports.Polygon = exports.Rectangle = exports.Curve = exports.Sector = exports.Text = exports.Cell = exports.ResponsiveContainer = exports.Tooltip = exports.Legend = exports.Layer = exports.Surface = undefined;
   
-  __webpack_require__(134);
+  __webpack_require__(133);
   
-  __webpack_require__(135);
+  __webpack_require__(134);
   
   var _Surface2 = __webpack_require__(95);
   
@@ -9210,19 +9218,19 @@ module.exports =
   
   var _Curve3 = _interopRequireDefault(_Curve2);
   
-  var _Rectangle2 = __webpack_require__(136);
+  var _Rectangle2 = __webpack_require__(135);
   
   var _Rectangle3 = _interopRequireDefault(_Rectangle2);
   
-  var _Polygon2 = __webpack_require__(138);
+  var _Polygon2 = __webpack_require__(137);
   
   var _Polygon3 = _interopRequireDefault(_Polygon2);
   
-  var _Dot2 = __webpack_require__(139);
+  var _Dot2 = __webpack_require__(138);
   
   var _Dot3 = _interopRequireDefault(_Dot2);
   
-  var _Cross2 = __webpack_require__(140);
+  var _Cross2 = __webpack_require__(139);
   
   var _Cross3 = _interopRequireDefault(_Cross2);
   
@@ -9230,15 +9238,15 @@ module.exports =
   
   var _Symbols3 = _interopRequireDefault(_Symbols2);
   
-  var _PolarGrid2 = __webpack_require__(141);
+  var _PolarGrid2 = __webpack_require__(140);
   
   var _PolarGrid3 = _interopRequireDefault(_PolarGrid2);
   
-  var _PolarRadiusAxis2 = __webpack_require__(142);
+  var _PolarRadiusAxis2 = __webpack_require__(141);
   
   var _PolarRadiusAxis3 = _interopRequireDefault(_PolarRadiusAxis2);
   
-  var _PolarAngleAxis2 = __webpack_require__(144);
+  var _PolarAngleAxis2 = __webpack_require__(143);
   
   var _PolarAngleAxis3 = _interopRequireDefault(_PolarAngleAxis2);
   
@@ -9246,71 +9254,71 @@ module.exports =
   
   var _Pie3 = _interopRequireDefault(_Pie2);
   
-  var _Radar2 = __webpack_require__(145);
+  var _Radar2 = __webpack_require__(144);
   
   var _Radar3 = _interopRequireDefault(_Radar2);
   
-  var _RadialBar2 = __webpack_require__(146);
+  var _RadialBar2 = __webpack_require__(145);
   
   var _RadialBar3 = _interopRequireDefault(_RadialBar2);
   
-  var _Brush2 = __webpack_require__(148);
+  var _Brush2 = __webpack_require__(147);
   
   var _Brush3 = _interopRequireDefault(_Brush2);
   
-  var _ReferenceLine2 = __webpack_require__(151);
+  var _ReferenceLine2 = __webpack_require__(150);
   
   var _ReferenceLine3 = _interopRequireDefault(_ReferenceLine2);
   
-  var _ReferenceDot2 = __webpack_require__(153);
+  var _ReferenceDot2 = __webpack_require__(152);
   
   var _ReferenceDot3 = _interopRequireDefault(_ReferenceDot2);
   
-  var _ReferenceArea2 = __webpack_require__(154);
+  var _ReferenceArea2 = __webpack_require__(153);
   
   var _ReferenceArea3 = _interopRequireDefault(_ReferenceArea2);
   
-  var _CartesianAxis2 = __webpack_require__(155);
+  var _CartesianAxis2 = __webpack_require__(154);
   
   var _CartesianAxis3 = _interopRequireDefault(_CartesianAxis2);
   
-  var _CartesianGrid2 = __webpack_require__(156);
+  var _CartesianGrid2 = __webpack_require__(155);
   
   var _CartesianGrid3 = _interopRequireDefault(_CartesianGrid2);
   
-  var _Line2 = __webpack_require__(157);
+  var _Line2 = __webpack_require__(156);
   
   var _Line3 = _interopRequireDefault(_Line2);
   
-  var _Area2 = __webpack_require__(158);
+  var _Area2 = __webpack_require__(157);
   
   var _Area3 = _interopRequireDefault(_Area2);
   
-  var _Bar2 = __webpack_require__(159);
+  var _Bar2 = __webpack_require__(158);
   
   var _Bar3 = _interopRequireDefault(_Bar2);
   
-  var _Scatter2 = __webpack_require__(160);
+  var _Scatter2 = __webpack_require__(159);
   
   var _Scatter3 = _interopRequireDefault(_Scatter2);
   
-  var _XAxis2 = __webpack_require__(161);
+  var _XAxis2 = __webpack_require__(160);
   
   var _XAxis3 = _interopRequireDefault(_XAxis2);
   
-  var _YAxis2 = __webpack_require__(162);
+  var _YAxis2 = __webpack_require__(161);
   
   var _YAxis3 = _interopRequireDefault(_YAxis2);
   
-  var _ZAxis2 = __webpack_require__(163);
+  var _ZAxis2 = __webpack_require__(162);
   
   var _ZAxis3 = _interopRequireDefault(_ZAxis2);
   
-  var _LineChart2 = __webpack_require__(164);
+  var _LineChart2 = __webpack_require__(163);
   
   var _LineChart3 = _interopRequireDefault(_LineChart2);
   
-  var _BarChart2 = __webpack_require__(171);
+  var _BarChart2 = __webpack_require__(170);
   
   var _BarChart3 = _interopRequireDefault(_BarChart2);
   
@@ -9318,31 +9326,31 @@ module.exports =
   
   var _PieChart3 = _interopRequireDefault(_PieChart2);
   
-  var _Treemap2 = __webpack_require__(172);
+  var _Treemap2 = __webpack_require__(171);
   
   var _Treemap3 = _interopRequireDefault(_Treemap2);
   
-  var _Sankey2 = __webpack_require__(173);
+  var _Sankey2 = __webpack_require__(172);
   
   var _Sankey3 = _interopRequireDefault(_Sankey2);
   
-  var _RadarChart2 = __webpack_require__(176);
+  var _RadarChart2 = __webpack_require__(175);
   
   var _RadarChart3 = _interopRequireDefault(_RadarChart2);
   
-  var _ScatterChart2 = __webpack_require__(177);
+  var _ScatterChart2 = __webpack_require__(176);
   
   var _ScatterChart3 = _interopRequireDefault(_ScatterChart2);
   
-  var _AreaChart2 = __webpack_require__(178);
+  var _AreaChart2 = __webpack_require__(177);
   
   var _AreaChart3 = _interopRequireDefault(_AreaChart2);
   
-  var _RadialBarChart2 = __webpack_require__(179);
+  var _RadialBarChart2 = __webpack_require__(178);
   
   var _RadialBarChart3 = _interopRequireDefault(_RadialBarChart2);
   
-  var _ComposedChart2 = __webpack_require__(180);
+  var _ComposedChart2 = __webpack_require__(179);
   
   var _ComposedChart3 = _interopRequireDefault(_ComposedChart2);
   
@@ -9395,7 +9403,7 @@ module.exports =
   exports.ComposedChart = _ComposedChart3.default;
 
 /***/ },
-/* 134 */
+/* 133 */
 /***/ function(module, exports, __webpack_require__) {
 
   "use strict";
@@ -9429,13 +9437,13 @@ module.exports =
   }
 
 /***/ },
-/* 135 */
+/* 134 */
 /***/ function(module, exports) {
 
   module.exports = require("core-js/es6/math");
 
 /***/ },
-/* 136 */
+/* 135 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -9502,11 +9510,11 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _reactDom = __webpack_require__(137);
+  var _reactDom = __webpack_require__(136);
   
   var _reactSmooth = __webpack_require__(116);
   
@@ -9704,13 +9712,13 @@ module.exports =
   exports.default = Rectangle;
 
 /***/ },
-/* 137 */
+/* 136 */
 /***/ function(module, exports) {
 
   module.exports = require("react-dom");
 
 /***/ },
-/* 138 */
+/* 137 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -9777,7 +9785,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -9860,7 +9868,7 @@ module.exports =
   exports.default = Polygon;
 
 /***/ },
-/* 139 */
+/* 138 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -9927,7 +9935,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -9999,7 +10007,7 @@ module.exports =
   exports.default = Dot;
 
 /***/ },
-/* 140 */
+/* 139 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -10070,7 +10078,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -10158,7 +10166,7 @@ module.exports =
   exports.default = Cross;
 
 /***/ },
-/* 141 */
+/* 140 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -10419,7 +10427,7 @@ module.exports =
   exports.default = PolarGrid;
 
 /***/ },
-/* 142 */
+/* 141 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -10462,7 +10470,7 @@ module.exports =
   
   var _isString3 = _interopRequireDefault(_isString2);
   
-  var _maxBy2 = __webpack_require__(143);
+  var _maxBy2 = __webpack_require__(142);
   
   var _maxBy3 = _interopRequireDefault(_maxBy2);
   
@@ -10745,13 +10753,13 @@ module.exports =
   exports.default = PolarRadiusAxis;
 
 /***/ },
-/* 143 */
+/* 142 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/maxBy");
 
 /***/ },
-/* 144 */
+/* 143 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -10828,11 +10836,11 @@ module.exports =
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
-  var _Polygon = __webpack_require__(138);
+  var _Polygon = __webpack_require__(137);
   
   var _Polygon2 = _interopRequireDefault(_Polygon);
   
@@ -11059,7 +11067,7 @@ module.exports =
   exports.default = PolarAngleAxis;
 
 /***/ },
-/* 145 */
+/* 144 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -11130,17 +11138,17 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _Polygon = __webpack_require__(138);
+  var _Polygon = __webpack_require__(137);
   
   var _Polygon2 = _interopRequireDefault(_Polygon);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -11407,7 +11415,7 @@ module.exports =
   exports.default = Radar;
 
 /***/ },
-/* 146 */
+/* 145 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -11446,7 +11454,7 @@ module.exports =
     value: true
   });
   
-  var _uniqueId2 = __webpack_require__(147);
+  var _uniqueId2 = __webpack_require__(146);
   
   var _uniqueId3 = _interopRequireDefault(_uniqueId2);
   
@@ -11482,7 +11490,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -11840,13 +11848,13 @@ module.exports =
   exports.default = RadialBar;
 
 /***/ },
-/* 147 */
+/* 146 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/uniqueId");
 
 /***/ },
-/* 148 */
+/* 147 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -11877,7 +11885,7 @@ module.exports =
     value: true
   });
   
-  var _range2 = __webpack_require__(149);
+  var _range2 = __webpack_require__(148);
   
   var _range3 = _interopRequireDefault(_range2);
   
@@ -11903,11 +11911,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _d3Scale = __webpack_require__(150);
+  var _d3Scale = __webpack_require__(149);
   
   var _PureRender = __webpack_require__(104);
   
@@ -12390,19 +12398,19 @@ module.exports =
   exports.default = Brush;
 
 /***/ },
-/* 149 */
+/* 148 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/range");
 
 /***/ },
-/* 150 */
+/* 149 */
 /***/ function(module, exports) {
 
   module.exports = require("d3-scale");
 
 /***/ },
-/* 151 */
+/* 150 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -12431,7 +12439,7 @@ module.exports =
   
   var _assign2 = _interopRequireDefault2(_assign);
   
-  var _isIterable2 = __webpack_require__(152);
+  var _isIterable2 = __webpack_require__(151);
   
   var _isIterable3 = _interopRequireDefault2(_isIterable2);
   
@@ -12721,13 +12729,13 @@ module.exports =
   exports.default = ReferenceLine;
 
 /***/ },
-/* 152 */
+/* 151 */
 /***/ function(module, exports) {
 
   module.exports = require("babel-runtime/core-js/is-iterable");
 
 /***/ },
-/* 153 */
+/* 152 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -12810,7 +12818,7 @@ module.exports =
   
   var _Layer2 = _interopRequireDefault(_Layer);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -12977,7 +12985,7 @@ module.exports =
   exports.default = ReferenceDot;
 
 /***/ },
-/* 154 */
+/* 153 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13060,7 +13068,7 @@ module.exports =
   
   var _Layer2 = _interopRequireDefault(_Layer);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -13274,7 +13282,7 @@ module.exports =
   exports.default = ReferenceArea;
 
 /***/ },
-/* 155 */
+/* 154 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13770,7 +13778,7 @@ module.exports =
   exports.default = CartesianAxis;
 
 /***/ },
-/* 156 */
+/* 155 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -13966,7 +13974,7 @@ module.exports =
   exports.default = CartesianGrid;
 
 /***/ },
-/* 157 */
+/* 156 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -14051,13 +14059,13 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(137);
+  var _reactDom = __webpack_require__(136);
   
   var _reactSmooth = __webpack_require__(116);
   
   var _reactSmooth2 = _interopRequireDefault(_reactSmooth);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -14069,7 +14077,7 @@ module.exports =
   
   var _Curve2 = _interopRequireDefault(_Curve);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -14457,7 +14465,7 @@ module.exports =
   exports.default = Line;
 
 /***/ },
-/* 158 */
+/* 157 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -14532,7 +14540,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -14540,7 +14548,7 @@ module.exports =
   
   var _Curve2 = _interopRequireDefault(_Curve);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -14911,7 +14919,7 @@ module.exports =
   exports.default = Area;
 
 /***/ },
-/* 159 */
+/* 158 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -14982,7 +14990,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -14990,7 +14998,7 @@ module.exports =
   
   var _reactSmooth2 = _interopRequireDefault(_reactSmooth);
   
-  var _Rectangle = __webpack_require__(136);
+  var _Rectangle = __webpack_require__(135);
   
   var _Rectangle2 = _interopRequireDefault(_Rectangle);
   
@@ -15253,7 +15261,7 @@ module.exports =
   exports.default = Bar;
 
 /***/ },
-/* 160 */
+/* 159 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15320,7 +15328,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -15557,7 +15565,7 @@ module.exports =
   exports.default = Scatter;
 
 /***/ },
-/* 161 */
+/* 160 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15697,7 +15705,7 @@ module.exports =
   exports.default = XAxis;
 
 /***/ },
-/* 162 */
+/* 161 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15837,7 +15845,7 @@ module.exports =
   exports.default = YAxis;
 
 /***/ },
-/* 163 */
+/* 162 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15948,7 +15956,7 @@ module.exports =
   exports.default = ZAxis;
 
 /***/ },
-/* 164 */
+/* 163 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -15988,7 +15996,7 @@ module.exports =
   
   var _isFunction3 = _interopRequireDefault(_isFunction2);
   
-  var _isNil2 = __webpack_require__(165);
+  var _isNil2 = __webpack_require__(164);
   
   var _isNil3 = _interopRequireDefault(_isNil2);
   
@@ -16032,15 +16040,15 @@ module.exports =
   
   var _Curve2 = _interopRequireDefault(_Curve);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
-  var _generateCategoricalChart = __webpack_require__(166);
+  var _generateCategoricalChart = __webpack_require__(165);
   
   var _generateCategoricalChart2 = _interopRequireDefault(_generateCategoricalChart);
   
-  var _Line = __webpack_require__(157);
+  var _Line = __webpack_require__(156);
   
   var _Line2 = _interopRequireDefault(_Line);
   
@@ -16050,7 +16058,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
   var _DataUtils = __webpack_require__(128);
   
@@ -16283,13 +16291,13 @@ module.exports =
   exports.LineChart = LineChart;
 
 /***/ },
-/* 165 */
+/* 164 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/isNil");
 
 /***/ },
-/* 166 */
+/* 165 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -16332,15 +16340,15 @@ module.exports =
   
   var _isNumber3 = _interopRequireDefault(_isNumber2);
   
-  var _range2 = __webpack_require__(149);
+  var _range2 = __webpack_require__(148);
   
   var _range3 = _interopRequireDefault(_range2);
   
-  var _isNil2 = __webpack_require__(165);
+  var _isNil2 = __webpack_require__(164);
   
   var _isNil3 = _interopRequireDefault(_isNil2);
   
-  var _uniqueId2 = __webpack_require__(147);
+  var _uniqueId2 = __webpack_require__(146);
   
   var _uniqueId3 = _interopRequireDefault(_uniqueId2);
   
@@ -16368,13 +16376,13 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(137);
+  var _reactDom = __webpack_require__(136);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _d3Scale = __webpack_require__(150);
+  var _d3Scale = __webpack_require__(149);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -16398,35 +16406,35 @@ module.exports =
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _CartesianAxis = __webpack_require__(155);
+  var _CartesianAxis = __webpack_require__(154);
   
   var _CartesianAxis2 = _interopRequireDefault(_CartesianAxis);
   
-  var _CartesianGrid = __webpack_require__(156);
+  var _CartesianGrid = __webpack_require__(155);
   
   var _CartesianGrid2 = _interopRequireDefault(_CartesianGrid);
   
-  var _ReferenceLine = __webpack_require__(151);
+  var _ReferenceLine = __webpack_require__(150);
   
   var _ReferenceLine2 = _interopRequireDefault(_ReferenceLine);
   
-  var _ReferenceDot = __webpack_require__(153);
+  var _ReferenceDot = __webpack_require__(152);
   
   var _ReferenceDot2 = _interopRequireDefault(_ReferenceDot);
   
-  var _ReferenceArea = __webpack_require__(154);
+  var _ReferenceArea = __webpack_require__(153);
   
   var _ReferenceArea2 = _interopRequireDefault(_ReferenceArea);
   
-  var _XAxis = __webpack_require__(161);
+  var _XAxis = __webpack_require__(160);
   
   var _XAxis2 = _interopRequireDefault(_XAxis);
   
-  var _YAxis = __webpack_require__(162);
+  var _YAxis = __webpack_require__(161);
   
   var _YAxis2 = _interopRequireDefault(_YAxis);
   
-  var _Brush = __webpack_require__(148);
+  var _Brush = __webpack_require__(147);
   
   var _Brush2 = _interopRequireDefault(_Brush);
   
@@ -16438,9 +16446,9 @@ module.exports =
   
   var _DataUtils = __webpack_require__(128);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
-  var _Events = __webpack_require__(169);
+  var _Events = __webpack_require__(168);
   
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -17356,7 +17364,7 @@ module.exports =
   exports.default = generateCategoricalChart;
 
 /***/ },
-/* 167 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -17380,7 +17388,7 @@ module.exports =
   });
   exports.getTicksOfScale = exports.getLegendProps = exports.getMainColorOfGraphicItem = exports.calculateActiveTickIndex = exports.getTicksOfAxis = exports.getCoordinatesOfGrid = exports.isCategorialAxis = exports.getDomainOfItemsWithSameAxis = exports.getDomainOfStackGroups = exports.getDomainOfDataByKey = exports.calculateDomainOfTicks = exports.getStackedDataOfItem = exports.getStackGroupsByAxisId = exports.getStackedData = exports.detectReferenceElementsDomain = undefined;
   
-  var _uniqueId2 = __webpack_require__(147);
+  var _uniqueId2 = __webpack_require__(146);
   
   var _uniqueId3 = _interopRequireDefault(_uniqueId2);
   
@@ -17404,15 +17412,15 @@ module.exports =
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _ReferenceDot = __webpack_require__(153);
+  var _ReferenceDot = __webpack_require__(152);
   
   var _ReferenceDot2 = _interopRequireDefault(_ReferenceDot);
   
-  var _ReferenceLine = __webpack_require__(151);
+  var _ReferenceLine = __webpack_require__(150);
   
   var _ReferenceLine2 = _interopRequireDefault(_ReferenceLine);
   
-  var _ReferenceArea = __webpack_require__(154);
+  var _ReferenceArea = __webpack_require__(153);
   
   var _ReferenceArea2 = _interopRequireDefault(_ReferenceArea);
   
@@ -17420,7 +17428,7 @@ module.exports =
   
   var _Legend2 = _interopRequireDefault(_Legend);
   
-  var _rechartsScale = __webpack_require__(168);
+  var _rechartsScale = __webpack_require__(167);
   
   var _d3Shape = __webpack_require__(111);
   
@@ -17857,13 +17865,13 @@ module.exports =
   };
 
 /***/ },
-/* 168 */
+/* 167 */
 /***/ function(module, exports) {
 
   module.exports = require("recharts-scale");
 
 /***/ },
-/* 169 */
+/* 168 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -17873,7 +17881,7 @@ module.exports =
   });
   exports.SYNC_EVENT = exports.eventCenter = undefined;
   
-  var _events = __webpack_require__(170);
+  var _events = __webpack_require__(169);
   
   var _events2 = _interopRequireDefault(_events);
   
@@ -17891,13 +17899,13 @@ module.exports =
   var SYNC_EVENT = exports.SYNC_EVENT = 'recharts.syncMouseEvents';
 
 /***/ },
-/* 170 */
+/* 169 */
 /***/ function(module, exports) {
 
   module.exports = require("events");
 
 /***/ },
-/* 171 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -17977,7 +17985,7 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Rectangle = __webpack_require__(136);
+  var _Rectangle = __webpack_require__(135);
   
   var _Rectangle2 = _interopRequireDefault(_Rectangle);
   
@@ -17985,7 +17993,7 @@ module.exports =
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _generateCategoricalChart = __webpack_require__(166);
+  var _generateCategoricalChart = __webpack_require__(165);
   
   var _generateCategoricalChart2 = _interopRequireDefault(_generateCategoricalChart);
   
@@ -17993,7 +18001,7 @@ module.exports =
   
   var _Cell2 = _interopRequireDefault(_Cell);
   
-  var _Bar = __webpack_require__(159);
+  var _Bar = __webpack_require__(158);
   
   var _Bar2 = _interopRequireDefault(_Bar);
   
@@ -18001,7 +18009,7 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
   var _AnimationDecorator = __webpack_require__(126);
   
@@ -18374,7 +18382,7 @@ module.exports =
   exports.BarChart = BarChart;
 
 /***/ },
-/* 172 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -18449,13 +18457,13 @@ module.exports =
   
   var _Layer2 = _interopRequireDefault(_Layer);
   
-  var _Rectangle = __webpack_require__(136);
+  var _Rectangle = __webpack_require__(135);
   
   var _Rectangle2 = _interopRequireDefault(_Rectangle);
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -18966,7 +18974,7 @@ module.exports =
   exports.default = Treemap;
 
 /***/ },
-/* 173 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -19009,15 +19017,15 @@ module.exports =
   
   var _isFunction3 = _interopRequireDefault(_isFunction2);
   
-  var _sumBy2 = __webpack_require__(174);
+  var _sumBy2 = __webpack_require__(173);
   
   var _sumBy3 = _interopRequireDefault(_sumBy2);
   
-  var _min2 = __webpack_require__(175);
+  var _min2 = __webpack_require__(174);
   
   var _min3 = _interopRequireDefault(_min2);
   
-  var _maxBy2 = __webpack_require__(143);
+  var _maxBy2 = __webpack_require__(142);
   
   var _maxBy3 = _interopRequireDefault(_maxBy2);
   
@@ -19061,11 +19069,11 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Rectangle = __webpack_require__(136);
+  var _Rectangle = __webpack_require__(135);
   
   var _Rectangle2 = _interopRequireDefault(_Rectangle);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -19695,19 +19703,19 @@ module.exports =
   exports.default = Sankey;
 
 /***/ },
-/* 174 */
+/* 173 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/sumBy");
 
 /***/ },
-/* 175 */
+/* 174 */
 /***/ function(module, exports) {
 
   module.exports = require("lodash/min");
 
 /***/ },
-/* 176 */
+/* 175 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -19742,7 +19750,7 @@ module.exports =
     value: true
   });
   
-  var _range2 = __webpack_require__(149);
+  var _range2 = __webpack_require__(148);
   
   var _range3 = _interopRequireDefault(_range2);
   
@@ -19774,17 +19782,17 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _reactDom = __webpack_require__(137);
+  var _reactDom = __webpack_require__(136);
   
   var _reactDom2 = _interopRequireDefault(_reactDom);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _d3Scale = __webpack_require__(150);
+  var _d3Scale = __webpack_require__(149);
   
-  var _rechartsScale = __webpack_require__(168);
+  var _rechartsScale = __webpack_require__(167);
   
   var _Surface = __webpack_require__(95);
   
@@ -19802,19 +19810,19 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Radar = __webpack_require__(145);
+  var _Radar = __webpack_require__(144);
   
   var _Radar2 = _interopRequireDefault(_Radar);
   
-  var _PolarGrid = __webpack_require__(141);
+  var _PolarGrid = __webpack_require__(140);
   
   var _PolarGrid2 = _interopRequireDefault(_PolarGrid);
   
-  var _PolarAngleAxis = __webpack_require__(144);
+  var _PolarAngleAxis = __webpack_require__(143);
   
   var _PolarAngleAxis2 = _interopRequireDefault(_PolarAngleAxis);
   
-  var _PolarRadiusAxis = __webpack_require__(142);
+  var _PolarRadiusAxis = __webpack_require__(141);
   
   var _PolarRadiusAxis2 = _interopRequireDefault(_PolarRadiusAxis);
   
@@ -20358,7 +20366,7 @@ module.exports =
   exports.default = RadarChart;
 
 /***/ },
-/* 177 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -20425,11 +20433,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _d3Scale = __webpack_require__(150);
+  var _d3Scale = __webpack_require__(149);
   
   var _Surface = __webpack_require__(95);
   
@@ -20451,43 +20459,43 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Cross = __webpack_require__(140);
+  var _Cross = __webpack_require__(139);
   
   var _Cross2 = _interopRequireDefault(_Cross);
   
-  var _CartesianAxis = __webpack_require__(155);
+  var _CartesianAxis = __webpack_require__(154);
   
   var _CartesianAxis2 = _interopRequireDefault(_CartesianAxis);
   
-  var _CartesianGrid = __webpack_require__(156);
+  var _CartesianGrid = __webpack_require__(155);
   
   var _CartesianGrid2 = _interopRequireDefault(_CartesianGrid);
   
-  var _Scatter = __webpack_require__(160);
+  var _Scatter = __webpack_require__(159);
   
   var _Scatter2 = _interopRequireDefault(_Scatter);
   
-  var _XAxis = __webpack_require__(161);
+  var _XAxis = __webpack_require__(160);
   
   var _XAxis2 = _interopRequireDefault(_XAxis);
   
-  var _YAxis = __webpack_require__(162);
+  var _YAxis = __webpack_require__(161);
   
   var _YAxis2 = _interopRequireDefault(_YAxis);
   
-  var _ZAxis = __webpack_require__(163);
+  var _ZAxis = __webpack_require__(162);
   
   var _ZAxis2 = _interopRequireDefault(_ZAxis);
   
-  var _ReferenceLine = __webpack_require__(151);
+  var _ReferenceLine = __webpack_require__(150);
   
   var _ReferenceLine2 = _interopRequireDefault(_ReferenceLine);
   
-  var _ReferenceDot = __webpack_require__(153);
+  var _ReferenceDot = __webpack_require__(152);
   
   var _ReferenceDot2 = _interopRequireDefault(_ReferenceDot);
   
-  var _ReferenceArea = __webpack_require__(154);
+  var _ReferenceArea = __webpack_require__(153);
   
   var _ReferenceArea2 = _interopRequireDefault(_ReferenceArea);
   
@@ -20501,7 +20509,7 @@ module.exports =
   
   var _LogUtils = __webpack_require__(131);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -21065,7 +21073,7 @@ module.exports =
   exports.default = ScatterChart;
 
 /***/ },
-/* 178 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21109,7 +21117,7 @@ module.exports =
   
   var _isFunction3 = _interopRequireDefault(_isFunction2);
   
-  var _isNil2 = __webpack_require__(165);
+  var _isNil2 = __webpack_require__(164);
   
   var _isNil3 = _interopRequireDefault(_isNil2);
   
@@ -21149,7 +21157,7 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
@@ -21159,13 +21167,13 @@ module.exports =
   
   var _ReactUtils = __webpack_require__(96);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
-  var _generateCategoricalChart = __webpack_require__(166);
+  var _generateCategoricalChart = __webpack_require__(165);
   
   var _generateCategoricalChart2 = _interopRequireDefault(_generateCategoricalChart);
   
-  var _Area = __webpack_require__(158);
+  var _Area = __webpack_require__(157);
   
   var _Area2 = _interopRequireDefault(_Area);
   
@@ -21458,7 +21466,7 @@ module.exports =
   exports.AreaChart = AreaChart;
 
 /***/ },
-/* 179 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21493,7 +21501,7 @@ module.exports =
     value: true
   });
   
-  var _range2 = __webpack_require__(149);
+  var _range2 = __webpack_require__(148);
   
   var _range3 = _interopRequireDefault(_range2);
   
@@ -21525,17 +21533,17 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
-  var _d3Scale = __webpack_require__(150);
+  var _d3Scale = __webpack_require__(149);
   
   var _Surface = __webpack_require__(95);
   
   var _Surface2 = _interopRequireDefault(_Surface);
   
-  var _RadialBar = __webpack_require__(146);
+  var _RadialBar = __webpack_require__(145);
   
   var _RadialBar2 = _interopRequireDefault(_RadialBar);
   
@@ -21982,7 +21990,7 @@ module.exports =
   exports.default = RadialBarChart;
 
 /***/ },
-/* 180 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22045,7 +22053,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _classnames = __webpack_require__(75);
+  var _classnames = __webpack_require__(72);
   
   var _classnames2 = _interopRequireDefault(_classnames);
   
@@ -22061,15 +22069,15 @@ module.exports =
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Line = __webpack_require__(157);
+  var _Line = __webpack_require__(156);
   
   var _Line2 = _interopRequireDefault(_Line);
   
-  var _Bar = __webpack_require__(159);
+  var _Bar = __webpack_require__(158);
   
   var _Bar2 = _interopRequireDefault(_Bar);
   
-  var _Area = __webpack_require__(158);
+  var _Area = __webpack_require__(157);
   
   var _Area2 = _interopRequireDefault(_Area);
   
@@ -22077,15 +22085,15 @@ module.exports =
   
   var _Curve2 = _interopRequireDefault(_Curve);
   
-  var _Dot = __webpack_require__(139);
+  var _Dot = __webpack_require__(138);
   
   var _Dot2 = _interopRequireDefault(_Dot);
   
-  var _Rectangle = __webpack_require__(136);
+  var _Rectangle = __webpack_require__(135);
   
   var _Rectangle2 = _interopRequireDefault(_Rectangle);
   
-  var _generateCategoricalChart = __webpack_require__(166);
+  var _generateCategoricalChart = __webpack_require__(165);
   
   var _generateCategoricalChart2 = _interopRequireDefault(_generateCategoricalChart);
   
@@ -22097,13 +22105,13 @@ module.exports =
   
   var _PureRender2 = _interopRequireDefault(_PureRender);
   
-  var _CartesianUtils = __webpack_require__(167);
+  var _CartesianUtils = __webpack_require__(166);
   
-  var _AreaChart = __webpack_require__(178);
+  var _AreaChart = __webpack_require__(177);
   
-  var _LineChart = __webpack_require__(164);
+  var _LineChart = __webpack_require__(163);
   
-  var _BarChart = __webpack_require__(171);
+  var _BarChart = __webpack_require__(170);
   
   function _interopRequireDefault(obj) {
     return obj && obj.__esModule ? obj : { default: obj };
@@ -22213,7 +22221,7 @@ module.exports =
   exports.default = (0, _generateCategoricalChart2.default)(ComposedChart, [_Line2.default, _Area2.default, _Bar2.default]);
 
 /***/ },
-/* 181 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22226,7 +22234,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Contact = __webpack_require__(182);
+  var _Contact = __webpack_require__(181);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -22251,7 +22259,7 @@ module.exports =
   };
 
 /***/ },
-/* 182 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22268,7 +22276,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Contact = __webpack_require__(183);
+  var _Contact = __webpack_require__(182);
   
   var _Contact2 = _interopRequireDefault(_Contact);
   
@@ -22310,11 +22318,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Contact2.default)(Contact);
 
 /***/ },
-/* 183 */
+/* 182 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(184);
+      var content = __webpack_require__(183);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -22344,7 +22352,7 @@ module.exports =
     
 
 /***/ },
-/* 184 */
+/* 183 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -22361,7 +22369,7 @@ module.exports =
   };
 
 /***/ },
-/* 185 */
+/* 184 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22374,7 +22382,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Login = __webpack_require__(186);
+  var _Login = __webpack_require__(185);
   
   var _Login2 = _interopRequireDefault(_Login);
   
@@ -22400,7 +22408,7 @@ module.exports =
   // import App from '../../components/App';
 
 /***/ },
-/* 186 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22413,11 +22421,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
@@ -22427,11 +22435,11 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Login = __webpack_require__(189);
+  var _Login = __webpack_require__(188);
   
   var _Login2 = _interopRequireDefault(_Login);
   
-  var _history = __webpack_require__(68);
+  var _history = __webpack_require__(66);
   
   var _history2 = _interopRequireDefault(_history);
   
@@ -22533,23 +22541,23 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Login2.default)(Login);
 
 /***/ },
-/* 187 */
+/* 186 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Button");
 
 /***/ },
-/* 188 */
+/* 187 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Panel");
 
 /***/ },
-/* 189 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(190);
+      var content = __webpack_require__(189);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -22579,7 +22587,7 @@ module.exports =
     
 
 /***/ },
-/* 190 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -22606,7 +22614,7 @@ module.exports =
   };
 
 /***/ },
-/* 191 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22619,7 +22627,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Table = __webpack_require__(192);
+  var _Table = __webpack_require__(191);
   
   var _Table2 = _interopRequireDefault(_Table);
   
@@ -22644,7 +22652,7 @@ module.exports =
   };
 
 /***/ },
-/* 192 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22657,23 +22665,23 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Pagination = __webpack_require__(193);
+  var _Pagination = __webpack_require__(192);
   
   var _Pagination2 = _interopRequireDefault(_Pagination);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Well = __webpack_require__(195);
+  var _Well = __webpack_require__(194);
   
   var _Well2 = _interopRequireDefault(_Well);
   
@@ -24018,25 +24026,25 @@ module.exports =
   exports.default = displayTable;
 
 /***/ },
-/* 193 */
+/* 192 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Pagination");
 
 /***/ },
-/* 194 */
+/* 193 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/PageHeader");
 
 /***/ },
-/* 195 */
+/* 194 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Well");
 
 /***/ },
-/* 196 */
+/* 195 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24049,7 +24057,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(197);
+  var _Button = __webpack_require__(196);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -24074,7 +24082,7 @@ module.exports =
   };
 
 /***/ },
-/* 197 */
+/* 196 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24087,15 +24095,15 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -24634,7 +24642,7 @@ module.exports =
   exports.default = displayButtons;
 
 /***/ },
-/* 198 */
+/* 197 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24647,7 +24655,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _FlotCharts = __webpack_require__(199);
+  var _FlotCharts = __webpack_require__(198);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -24672,7 +24680,7 @@ module.exports =
   };
 
 /***/ },
-/* 199 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24685,19 +24693,19 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _recharts = __webpack_require__(133);
+  var _recharts = __webpack_require__(132);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -24911,7 +24919,7 @@ module.exports =
   exports.default = displayFlotCharts;
 
 /***/ },
-/* 200 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24924,7 +24932,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Forms = __webpack_require__(201);
+  var _Forms = __webpack_require__(200);
   
   var _Forms2 = _interopRequireDefault(_Forms);
   
@@ -24940,7 +24948,7 @@ module.exports =
   };
 
 /***/ },
-/* 201 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24955,15 +24963,15 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(64);
   
-  var _FormControlFeedback = __webpack_require__(202);
+  var _FormControlFeedback = __webpack_require__(201);
   
   var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
   
-  var _FormControlStatic = __webpack_require__(203);
+  var _FormControlStatic = __webpack_require__(202);
   
   var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
   
-  var _InputGroupAddon = __webpack_require__(204);
+  var _InputGroupAddon = __webpack_require__(203);
   
   var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
   
@@ -25449,25 +25457,25 @@ module.exports =
   exports.default = displayForms;
 
 /***/ },
-/* 202 */
+/* 201 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlFeedback");
 
 /***/ },
-/* 203 */
+/* 202 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlStatic");
 
 /***/ },
-/* 204 */
+/* 203 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/InputGroupAddon");
 
 /***/ },
-/* 205 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -25480,7 +25488,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Grid = __webpack_require__(206);
+  var _Grid = __webpack_require__(205);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
@@ -25496,7 +25504,7 @@ module.exports =
   };
 
 /***/ },
-/* 206 */
+/* 205 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -25509,11 +25517,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -26381,7 +26389,7 @@ module.exports =
   exports.default = displayGrid;
 
 /***/ },
-/* 207 */
+/* 206 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26394,7 +26402,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Icons = __webpack_require__(208);
+  var _Icons = __webpack_require__(207);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
@@ -26410,7 +26418,7 @@ module.exports =
   };
 
 /***/ },
-/* 208 */
+/* 207 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -26423,11 +26431,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -29509,7 +29517,7 @@ module.exports =
   exports.default = displayIcons;
 
 /***/ },
-/* 209 */
+/* 208 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29522,7 +29530,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MorrisjsCharts = __webpack_require__(210);
+  var _MorrisjsCharts = __webpack_require__(209);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
@@ -29538,7 +29546,7 @@ module.exports =
   };
 
 /***/ },
-/* 210 */
+/* 209 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29551,15 +29559,15 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -29567,7 +29575,7 @@ module.exports =
   
   var _Donut2 = _interopRequireDefault(_Donut);
   
-  var _recharts = __webpack_require__(133);
+  var _recharts = __webpack_require__(132);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -29757,7 +29765,7 @@ module.exports =
   exports.default = displayMorrisjsCharts;
 
 /***/ },
-/* 211 */
+/* 210 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29770,7 +29778,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Notification = __webpack_require__(212);
+  var _Notification = __webpack_require__(211);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
@@ -29786,7 +29794,7 @@ module.exports =
   };
 
 /***/ },
-/* 212 */
+/* 211 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29819,35 +29827,35 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Alert = __webpack_require__(213);
+  var _Alert = __webpack_require__(212);
   
   var _Alert2 = _interopRequireDefault(_Alert);
   
-  var _Button = __webpack_require__(187);
+  var _Button = __webpack_require__(186);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _OverlayTrigger = __webpack_require__(214);
+  var _OverlayTrigger = __webpack_require__(213);
   
   var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
   
-  var _Tooltip = __webpack_require__(215);
+  var _Tooltip = __webpack_require__(214);
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Popover = __webpack_require__(216);
+  var _Popover = __webpack_require__(215);
   
   var _Popover2 = _interopRequireDefault(_Popover);
   
-  var _Modal = __webpack_require__(217);
+  var _Modal = __webpack_require__(216);
   
   var _Modal2 = _interopRequireDefault(_Modal);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -30346,37 +30354,37 @@ module.exports =
   exports.default = Notification;
 
 /***/ },
-/* 213 */
+/* 212 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Alert");
 
 /***/ },
-/* 214 */
+/* 213 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/OverlayTrigger");
 
 /***/ },
-/* 215 */
+/* 214 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Tooltip");
 
 /***/ },
-/* 216 */
+/* 215 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Popover");
 
 /***/ },
-/* 217 */
+/* 216 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Modal");
 
 /***/ },
-/* 218 */
+/* 217 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -30389,7 +30397,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _PanelWells = __webpack_require__(219);
+  var _PanelWells = __webpack_require__(218);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
@@ -30405,7 +30413,7 @@ module.exports =
   };
 
 /***/ },
-/* 219 */
+/* 218 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31000,7 +31008,7 @@ module.exports =
   exports.default = displayPanelWells;
 
 /***/ },
-/* 220 */
+/* 219 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31013,7 +31021,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Typography = __webpack_require__(221);
+  var _Typography = __webpack_require__(220);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
@@ -31029,7 +31037,7 @@ module.exports =
   };
 
 /***/ },
-/* 221 */
+/* 220 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31042,11 +31050,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(188);
+  var _Panel = __webpack_require__(187);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(194);
+  var _PageHeader = __webpack_require__(193);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -31639,7 +31647,7 @@ module.exports =
   exports.default = displayTypography;
 
 /***/ },
-/* 222 */
+/* 221 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31652,7 +31660,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _blank = __webpack_require__(223);
+  var _blank = __webpack_require__(222);
   
   var _blank2 = _interopRequireDefault(_blank);
   
@@ -31667,7 +31675,7 @@ module.exports =
   };
 
 /***/ },
-/* 223 */
+/* 222 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31711,7 +31719,7 @@ module.exports =
   exports.default = displayBlank;
 
 /***/ },
-/* 224 */
+/* 223 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31724,7 +31732,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Register = __webpack_require__(225);
+  var _Register = __webpack_require__(224);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -31749,7 +31757,7 @@ module.exports =
   };
 
 /***/ },
-/* 225 */
+/* 224 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31766,7 +31774,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Register = __webpack_require__(226);
+  var _Register = __webpack_require__(225);
   
   var _Register2 = _interopRequireDefault(_Register);
   
@@ -31808,11 +31816,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Register2.default)(Register);
 
 /***/ },
-/* 226 */
+/* 225 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(227);
+      var content = __webpack_require__(226);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -31842,7 +31850,7 @@ module.exports =
     
 
 /***/ },
-/* 227 */
+/* 226 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -31859,7 +31867,7 @@ module.exports =
   };
 
 /***/ },
-/* 228 */
+/* 227 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31884,7 +31892,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Content = __webpack_require__(229);
+  var _Content = __webpack_require__(228);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -31968,7 +31976,7 @@ module.exports =
       */
 
 /***/ },
-/* 229 */
+/* 228 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -32005,7 +32013,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Content = __webpack_require__(230);
+  var _Content = __webpack_require__(229);
   
   var _Content2 = _interopRequireDefault(_Content);
   
@@ -32069,11 +32077,11 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Content2.default)(Content);
 
 /***/ },
-/* 230 */
+/* 229 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(231);
+      var content = __webpack_require__(230);
       var insertCss = __webpack_require__(24);
   
       if (typeof content === 'string') {
@@ -32103,7 +32111,7 @@ module.exports =
     
 
 /***/ },
-/* 231 */
+/* 230 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(23)();
@@ -32120,7 +32128,7 @@ module.exports =
   };
 
 /***/ },
-/* 232 */
+/* 231 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -32169,7 +32177,7 @@ module.exports =
       */
 
 /***/ },
-/* 233 */
+/* 232 */
 /***/ function(module, exports) {
 
   module.exports = require("./assets");
