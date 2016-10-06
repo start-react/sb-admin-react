@@ -78,7 +78,14 @@ function displayTypography(props, context) {
             <p>The abbreviation of the word attribute is
               <abbr title="attribute">attr</abbr>.</p>
             <p>
-              <abbr title="HyperText Markup Language" className="initialism">HTML</abbr>is an abbreviation for a programming language.</p>
+              <abbr
+                title="HyperText Markup Language"
+                className="initialism"
+              >
+                  HTML
+              </abbr>
+                is an abbreviation for a programming language.
+            </p>
             <br />
             <h4>Addresses</h4>
             <address>
@@ -100,18 +107,24 @@ function displayTypography(props, context) {
           <Panel header={<span>Blockquotes</span>} >
             <h4>Default Blockquote</h4>
             <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
+                ante.
+              </p>
             </blockquote>
             <h4>Blockquote with Citation</h4>
             <blockquote>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              </p>
               <small>Someone famous in
                 <cite title="Source Title">Source Title</cite>
               </small>
             </blockquote>
             <h4>Right Aligned Blockquote</h4>
             <blockquote className="pull-right">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+              <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+              </p>
             </blockquote>
           </Panel>
         </div>
@@ -172,8 +185,10 @@ function displayTypography(props, context) {
         </div>
         <div className="col-lg-4">
           <Panel header={<span>Code</span>} >
-            <p>This is an example of an inline code element within body copy. Wrap inline code within a
-              <code>&lt;code&gt;...&lt;/code&gt;</code>tag.</p>
+            <p>
+              This is an example of an inline code element within body copy. Wrap inline code
+              within a <code>&lt;code&gt;...&lt;/code&gt;</code>tag.
+            </p>
             <pre>This is an example of preformatted text.</pre>
           </Panel>
         </div>

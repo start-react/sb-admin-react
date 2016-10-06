@@ -88,7 +88,8 @@ class Sidebar extends Component {
             <li className={classNames({ active: !this.state.uiElementsCollapsed })}>
               <a
                 href=""
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   this.setState({ uiElementsCollapsed: !this.state.uiElementsCollapsed,
                 }); return false;
                 }}

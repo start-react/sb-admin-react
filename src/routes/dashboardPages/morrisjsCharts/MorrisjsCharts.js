@@ -23,107 +23,99 @@ const data = [
       { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 },
 ];
 
-// const data1 = [
-//   {name: 'Group A', value: 600},
-//   {name: 'Group B', value: 300},
-//   {name: 'Group C', value: 300},
-//   {name: 'Group D', value: 200}
-// ];
-
-
 function displayMorrisjsCharts(props, context) {
   context.setTitle(title);
   return (
     <div>
-        <div className="row">
-          <div className="col-lg-12">
-            <PageHeader>Morris.js Charts</PageHeader>
-          </div>
+      <div className="row">
+        <div className="col-lg-12">
+          <PageHeader>Morris.js Charts</PageHeader>
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="col-lg-6">
+          <Panel header={<span>Area Chart Example</span>} >
+            <div>
+              <ResponsiveContainer width="100%" aspect={2}>
+                <AreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} >
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <CartesianGrid stroke="#ccc" />
+                  <Tooltip />
+                  <Area type="monotone" dataKey="uv" stackId="1" stroke="#8884d8" fill="#8884d8" />
+                  <Area type="monotone" dataKey="pv" stackId="1" stroke="#82ca9d" fill="#82ca9d" />
+                  <Area type="monotone" dataKey="amt" stackId="1" stroke="#ffc658" fill="#ffc658" />
+                </AreaChart>
+              </ResponsiveContainer>
+            </div>
+          </Panel>
         </div>
 
-        <div className="row">
-          <div className="col-lg-6">
-            <Panel header={<span>Area Chart Example</span>} >
-              <div>
-                <ResponsiveContainer width="100%" aspect={2}>
-                  <AreaChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} >
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <CartesianGrid stroke="#ccc" />
-                    <Tooltip />
-                    <Area type='monotone' dataKey='uv' stackId="1" stroke='#8884d8' fill='#8884d8' />
-                    <Area type='monotone' dataKey='pv' stackId="1" stroke='#82ca9d' fill='#82ca9d' />
-                    <Area type='monotone' dataKey='amt' stackId="1" stroke='#ffc658' fill='#ffc658' />
-                  </AreaChart>
-                </ResponsiveContainer>
-              </div>
-            </Panel>
-          </div>
-
-          <div className="col-lg-6">
-            <Panel header={<span>Bar Chart Example</span>} >
-              <div>
-                <ResponsiveContainer width="100%" aspect={2}>
-                  <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} >
-                    <CartesianGrid stroke="#ccc" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Bar dataKey="pv" stackId="1" fill="#8884d8" />
-                    <Bar dataKey="uv" stackId="1" fill="#82ca9d" />
-                    <Bar type="monotone" dataKey="amt" fill="#ffc658" />
-                  </BarChart>
-                </ResponsiveContainer>
-              </div>
-            </Panel>
-          </div>
-
-          <div className="col-lg-6">
-            <Panel header={<span>Line Chart Example</span>} >
-              <div>
-                <ResponsiveContainer width="100%" aspect={2}>
-                  <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
-                    <CartesianGrid stroke="#ccc" />
-                    <XAxis dataKey="name" />
-                    <YAxis />
-                    <Tooltip />
-                    <Line type="monotone" dataKey="uv" stroke="#8884d8" />
-                    <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
-                    <Line type="monotone" dataKey="amt" stroke="#ffc658" />
-                  </LineChart>
-                </ResponsiveContainer>
-              </div>
-            </Panel>
-          </div>
-
-          <div className="col-lg-6">
-            <Panel header={<span>Donut Chart Example</span>} >
-              <div>
-                <Donut data={data} color="#8884d8" innerRadius="60" outerRadius="80" />
-              </div>
-            </Panel>
-          </div>
-
-          <div className="col-lg-12">
-            <Panel header={<span>Morris.js Usage</span>} >
-              <div>
-                <p>
-                  Morris
-                  Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin,
-                  we are using the most recent version of Morris.js which includes the resize
-                  functions, which makes the charts fully responsive. The documentation for
-                  Morris.js is available on their website,
-                  <a target="_blank" rel="noopener noreferrer" href="http://morrisjs.github.io/morris.js/" >
-                    'http://morrisjs.github.io/morris.js/'
-                  </a>.
-                </p>
-                <Button bsSize="large" block href="http://morrisjs.github.io/morris.js/">
-                  View Morris.js Documentation
-                </Button>
-              </div>
-            </Panel>
-          </div>
+        <div className="col-lg-6">
+          <Panel header={<span>Bar Chart Example</span>} >
+            <div>
+              <ResponsiveContainer width="100%" aspect={2}>
+                <BarChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }} >
+                  <CartesianGrid stroke="#ccc" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Bar dataKey="pv" stackId="1" fill="#8884d8" />
+                  <Bar dataKey="uv" stackId="1" fill="#82ca9d" />
+                  <Bar type="monotone" dataKey="amt" fill="#ffc658" />
+                </BarChart>
+              </ResponsiveContainer>
+            </div>
+          </Panel>
         </div>
+
+        <div className="col-lg-6">
+          <Panel header={<span>Line Chart Example</span>} >
+            <div>
+              <ResponsiveContainer width="100%" aspect={2}>
+                <LineChart data={data} margin={{ top: 10, right: 30, left: 0, bottom: 0 }}>
+                  <CartesianGrid stroke="#ccc" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Line type="monotone" dataKey="uv" stroke="#8884d8" />
+                  <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
+                  <Line type="monotone" dataKey="amt" stroke="#ffc658" />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
+          </Panel>
+        </div>
+
+        <div className="col-lg-6">
+          <Panel header={<span>Donut Chart Example</span>} >
+            <div>
+              <Donut data={data} color="#8884d8" innerRadius="60" outerRadius="80" />
+            </div>
+          </Panel>
+        </div>
+
+        <div className="col-lg-12">
+          <Panel header={<span>Morris.js Usage</span>} >
+            <div>
+              <p>
+                Morris
+                Morris.js is a jQuery based charting plugin created by Olly Smith. In SB Admin,
+                we are using the most recent version of Morris.js which includes the resize
+                functions, which makes the charts fully responsive. The documentation for
+                Morris.js is available on their website,
+                <a target="_blank" rel="noopener noreferrer" href="http://morrisjs.github.io/morris.js/" >
+                  'http://morrisjs.github.io/morris.js/'
+                </a>.
+              </p>
+              <Button bsSize="large" block href="http://morrisjs.github.io/morris.js/">
+                View Morris.js Documentation
+              </Button>
+            </div>
+          </Panel>
+        </div>
+      </div>
     </div>
   );
 }

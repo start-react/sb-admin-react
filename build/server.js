@@ -3320,7 +3320,8 @@ module.exports =
                   'a',
                   {
                     href: '',
-                    onClick: function onClick() {
+                    onClick: function onClick(e) {
+                      e.preventDefault();
                       _this2.setState({ uiElementsCollapsed: !_this2.state.uiElementsCollapsed
                       });return false;
                     }
@@ -22667,15 +22668,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
   exports.default = {
   
     path: '/table',
@@ -22770,14 +22762,15 @@ module.exports =
                       { className: 'dataTables_length', id: 'dataTables-example_length' },
                       _react2.default.createElement(
                         'label',
-                        null,
+                        { htmlFor: 'show' },
                         ' Show',
                         _react2.default.createElement(
                           'select',
                           {
                             name: 'dataTables-example_length',
                             'aria-controls': 'dataTables-example',
-                            className: 'form-control input-sm'
+                            className: 'form-control input-sm',
+                            id: 'show'
                           },
                           _react2.default.createElement(
                             'option',
@@ -22812,13 +22805,14 @@ module.exports =
                       { id: 'dataTables-example_filter', className: 'dataTables_filter' },
                       _react2.default.createElement(
                         'label',
-                        null,
+                        { htmlFor: 'search' },
                         'Search:',
                         _react2.default.createElement('input', {
                           type: 'search',
                           className: 'form-control input-sm',
                           placeholder: '',
-                          'aria-controls': 'dataTables-example'
+                          'aria-controls': 'dataTables-example',
+                          id: 'search'
                         })
                       )
                     )
@@ -26018,12 +26012,13 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Dont want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding',
+              'Dont want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding ',
               _react2.default.createElement(
                 'code',
                 null,
                 '.col-xs-*'
               ),
+              ' ',
               _react2.default.createElement(
                 'code',
                 null,
@@ -26098,7 +26093,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Build on the previous example by creating even more dynamic and powerful layouts with tablet',
+              'Build on the previous example by creating even more dynamic and powerful layouts with tablet ',
               _react2.default.createElement(
                 'code',
                 null,
@@ -26160,16 +26155,18 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'With the four tiers of grids available you\'re bound to run into issues where, at certain breakpoints, your columns don\'t clear quite right as one is taller than the other. To fix that, use a combination of a',
+              'With the four tiers of grids available you\'re bound to run into issues where, at certain breakpoints, your columns don\'t clear quite right as one is taller than the other. To fix that, use a combination of a ',
               _react2.default.createElement(
                 'code',
                 null,
                 '.clearfix'
               ),
-              ' and our ',
+              ' and our',
               _react2.default.createElement(
                 'a',
-                { href: 'javascript:void(0)' },
+                { href: '', onClick: function onClick(e) {
+                    e.preventDefault();
+                  } },
                 'responsive utility classes'
               ),
               '.'
@@ -26221,25 +26218,25 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Move columns to the right using',
+              'Move columns to the right using ',
               _react2.default.createElement(
                 'code',
                 null,
                 '.col-md-offset-*'
               ),
-              ' classes. These classes increase the left margin of a column by',
+              ' classes. These classes increase the left margin of a column by ',
               _react2.default.createElement(
                 'code',
                 null,
                 '*'
               ),
-              ' columns. For example,',
+              ' columns. For example, ',
               _react2.default.createElement(
                 'code',
                 null,
                 '.col-md-offset-4'
               ),
-              ' moves',
+              ' moves ',
               _react2.default.createElement(
                 'code',
                 null,
@@ -26304,7 +26301,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'To nest your content with the default grid, add a new',
+              'To nest your content with the default grid, add a new ',
               _react2.default.createElement(
                 'code',
                 null,
@@ -26316,7 +26313,7 @@ module.exports =
                 null,
                 '.col-md-*'
               ),
-              ' columns within an existing',
+              ' columns within an existing ',
               _react2.default.createElement(
                 'code',
                 null,
@@ -29602,14 +29599,6 @@ module.exports =
   
   var data = [{ name: 'Page A', uv: 4000, pv: 2400, amt: 2400, value: 600 }, { name: 'Page B', uv: 3000, pv: 1398, amt: 2210, value: 300 }, { name: 'Page C', uv: 2000, pv: 9800, amt: 2290, value: 500 }, { name: 'Page D', uv: 2780, pv: 3908, amt: 2000, value: 400 }, { name: 'Page E', uv: 1890, pv: 4800, amt: 2181, value: 200 }, { name: 'Page F', uv: 2390, pv: 3800, amt: 2500, value: 700 }, { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 }];
   
-  // const data1 = [
-  //   {name: 'Group A', value: 600},
-  //   {name: 'Group B', value: 300},
-  //   {name: 'Group C', value: 300},
-  //   {name: 'Group D', value: 200}
-  // ];
-  
-  
   function displayMorrisjsCharts(props, context) {
     context.setTitle(title);
     return _react2.default.createElement(
@@ -30945,7 +30934,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
             )
           )
         ),
@@ -30963,7 +30952,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
             )
           )
         ),
@@ -30981,7 +30970,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt est vitae ultrices accumsan. Aliquam ornare lacus adipiscing, posuere lectus et, fringilla augue.'
+              'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
             )
           )
         )
@@ -31320,7 +31309,10 @@ module.exports =
               null,
               _react2.default.createElement(
                 'abbr',
-                { title: 'HyperText Markup Language', className: 'initialism' },
+                {
+                  title: 'HyperText Markup Language',
+                  className: 'initialism'
+                },
                 'HTML'
               ),
               'is an abbreviation for a programming language.'
@@ -31640,7 +31632,7 @@ module.exports =
             _react2.default.createElement(
               'p',
               null,
-              'This is an example of an inline code element within body copy. Wrap inline code within a',
+              'This is an example of an inline code element within body copy. Wrap inline code within a ',
               _react2.default.createElement(
                 'code',
                 null,

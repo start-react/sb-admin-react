@@ -29,11 +29,12 @@ function displayTable(props, context) {
                 <div className="row">
                   <div className="col-sm-9">
                     <div className="dataTables_length" id="dataTables-example_length">
-                      <label> Show
+                      <label htmlFor={'show'}> Show
                         <select
                           name="dataTables-example_length"
                           aria-controls="dataTables-example"
                           className="form-control input-sm"
+                          id="show"
                         >
                           <option value="10">10</option>
                           <option value="25">25</option>
@@ -46,12 +47,13 @@ function displayTable(props, context) {
                   </div>
                   <div className="col-sm-3">
                     <div id="dataTables-example_filter" className="dataTables_filter">
-                      <label>Search:
+                      <label htmlFor={'search'}>Search:
                         <input
                           type="search"
                           className="form-control input-sm"
                           placeholder=""
                           aria-controls="dataTables-example"
+                          id="search"
                         />
                       </label>
                     </div>
