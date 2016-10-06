@@ -4732,6 +4732,26 @@ module.exports =
   
   var _defineProperty3 = _interopRequireDefault(_defineProperty2);
   
+  var _getPrototypeOf = __webpack_require__(55);
+  
+  var _getPrototypeOf2 = _interopRequireDefault(_getPrototypeOf);
+  
+  var _classCallCheck2 = __webpack_require__(56);
+  
+  var _classCallCheck3 = _interopRequireDefault(_classCallCheck2);
+  
+  var _createClass2 = __webpack_require__(57);
+  
+  var _createClass3 = _interopRequireDefault(_createClass2);
+  
+  var _possibleConstructorReturn2 = __webpack_require__(58);
+  
+  var _possibleConstructorReturn3 = _interopRequireDefault(_possibleConstructorReturn2);
+  
+  var _inherits2 = __webpack_require__(59);
+  
+  var _inherits3 = _interopRequireDefault(_inherits2);
+  
   var _react = __webpack_require__(13);
   
   var _react2 = _interopRequireDefault(_react);
@@ -4744,62 +4764,76 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  var StatWidget = _react2.default.createClass({
-    displayName: 'StatWidget',
-    // eslint-disable-line
-    render: function render() {
-      var _React$createElement;
+  var StatWidget = function (_Component) {
+    (0, _inherits3.default)(StatWidget, _Component);
   
-      return _react2.default.createElement(_reactBootstrap.Panel, (_React$createElement = {
-        className: 'stat'
-      }, (0, _defineProperty3.default)(_React$createElement, 'className', this.props.style), (0, _defineProperty3.default)(_React$createElement, 'header', _react2.default.createElement(
-        'div',
-        { className: 'row' },
-        _react2.default.createElement(
+    function StatWidget() {
+      (0, _classCallCheck3.default)(this, StatWidget);
+      return (0, _possibleConstructorReturn3.default)(this, (StatWidget.__proto__ || (0, _getPrototypeOf2.default)(StatWidget)).apply(this, arguments));
+    }
+  
+    (0, _createClass3.default)(StatWidget, [{
+      key: 'render',
+      value: function render() {
+        var _React$createElement;
+  
+        return _react2.default.createElement(_reactBootstrap.Panel, (_React$createElement = {
+          className: 'stat'
+        }, (0, _defineProperty3.default)(_React$createElement, 'className', this.props.style), (0, _defineProperty3.default)(_React$createElement, 'header', _react2.default.createElement(
           'div',
-          { className: 'col-xs-3' },
-          _react2.default.createElement('i', {
-            className: this.props.icon // eslint-disable-line
-          })
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'col-xs-9 text-right' },
+          { className: 'row' },
           _react2.default.createElement(
             'div',
-            { className: 'huge' },
-            this.props.count // eslint-disable-line
-  
+            { className: 'col-xs-3' },
+            _react2.default.createElement('i', {
+              className: this.props.icon
+            })
           ),
           _react2.default.createElement(
             'div',
-            null,
-            this.props.headerText // eslint-disable-line
-  
+            { className: 'col-xs-9 text-right' },
+            _react2.default.createElement(
+              'div',
+              { className: 'huge' },
+              this.props.count
+            ),
+            _react2.default.createElement(
+              'div',
+              null,
+              this.props.headerText
+            )
           )
-        )
-      )), (0, _defineProperty3.default)(_React$createElement, 'footer', _react2.default.createElement(
-        _Link2.default,
-        {
-          to: this.props.linkTo // eslint-disable-line
+        )), (0, _defineProperty3.default)(_React$createElement, 'footer', _react2.default.createElement(
+          _Link2.default,
+          {
+            to: this.props.linkTo // eslint-disable-line
   
-        },
-        _react2.default.createElement(
-          'span',
-          { className: 'pull-left' },
-          this.props.footerText // eslint-disable-line
+          },
+          _react2.default.createElement(
+            'span',
+            { className: 'pull-left' },
+            this.props.footerText
+          ),
+          _react2.default.createElement(
+            'span',
+            { className: 'pull-right' },
+            _react2.default.createElement('i', { className: 'fa fa-arrow-circle-right' })
+          ),
+          _react2.default.createElement('div', { className: 'clearfix' })
+        )), _React$createElement));
+      } // eslint-disable-line
   
-        ),
-        _react2.default.createElement(
-          'span',
-          { className: 'pull-right' },
-          _react2.default.createElement('i', { className: 'fa fa-arrow-circle-right' })
-        ),
-        _react2.default.createElement('div', { className: 'clearfix' })
-      )), _React$createElement));
-    }
-  });
+    }]);
+    return StatWidget;
+  }(_react.Component);
   
+  StatWidget.propTypes = {
+    style: _react2.default.PropTypes.string,
+    count: _react2.default.PropTypes.string,
+    headerText: _react2.default.PropTypes.string,
+    icon: _react2.default.PropTypes.string,
+    footerText: _react2.default.PropTypes.string
+  };
   exports.default = StatWidget;
 
 /***/ },

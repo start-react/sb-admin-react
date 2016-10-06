@@ -1,29 +1,36 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Panel } from 'react-bootstrap';
 import Link from '../Link';
 
-let StatWidget = React.createClass({ // eslint-disable-line
+class StatWidget extends Component{ // eslint-disable-line
+  static propTypes = {
+    style: React.PropTypes.string,
+    count: React.PropTypes.string,
+    headerText: React.PropTypes.string,
+    icon: React.PropTypes.string,
+    footerText: React.PropTypes.string,
+  }
   render() {
     return (
       <Panel
         className="stat"
-        className={this.props.style} // eslint-disable-line
+        className={this.props.style}
 
         header={<div className="row">
           <div className="col-xs-3">
             <i
-            className={this.props.icon} // eslint-disable-line
+              className={this.props.icon}
             />
           </div>
           <div className="col-xs-9 text-right">
             <div className="huge">
               {
-                this.props.count // eslint-disable-line
+                this.props.count
               }
             </div>
             <div>
               {
-                this.props.headerText // eslint-disable-line
+                this.props.headerText
               }
             </div>
           </div>
@@ -37,7 +44,7 @@ let StatWidget = React.createClass({ // eslint-disable-line
           >
             <span className="pull-left">
               {
-                this.props.footerText // eslint-disable-line
+                this.props.footerText
               }
             </span>
             <span className="pull-right"><i className="fa fa-arrow-circle-right" /></span>
@@ -46,7 +53,7 @@ let StatWidget = React.createClass({ // eslint-disable-line
       />
 
     );
-  },
-});
+  }
+}
 
 export default StatWidget;
