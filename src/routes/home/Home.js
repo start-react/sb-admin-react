@@ -150,7 +150,47 @@ function Home({ news }, context) {
               </span>}
             >
               <div>
-                Panel contents
+                <ul className="timeline">
+                  <li>
+                      <div className="timeline-badge"><i className="fa fa-check"></i>
+                      </div>
+                      <div className="timeline-panel">
+                          <div className="timeline-heading">
+                              <h4 className="timeline-title">Lorem ipsum dolor</h4>
+                              <p><small className="text-muted"><i className="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                              </p>
+                          </div>
+                          <div className="timeline-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit facere rem dicta, debitis.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li className="timeline-inverted">
+                      <div className="timeline-badge warning"><i className="fa fa-credit-card"></i>
+                      </div>
+                      <div className="timeline-panel">
+                          <div className="timeline-heading">
+                              <h4 className="timeline-title">Lorem ipsum dolor</h4>
+                          </div>
+                          <div className="timeline-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias, officia repellendus.</p>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque facere.</p>
+                          </div>
+                      </div>
+                  </li>
+                  <li>
+                      <div className="timeline-badge danger"><i className="fa fa-bomb"></i>
+                      </div>
+                      <div className="timeline-panel">
+                          <div className="timeline-heading">
+                              <h4 className="timeline-title">Lorem ipsum dolor</h4>
+                          </div>
+                          <div className="timeline-body">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi quisquam.</p>
+                          </div>
+                      </div>
+                  </li>
+                </ul>
               </div>
             </Panel>
 
