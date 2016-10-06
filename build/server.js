@@ -248,7 +248,7 @@ module.exports =
                             }
                           },
                           render: function render(component) {
-                            var status = arguments.length <= 1 || arguments[1] === undefined ? 200 : arguments[1];
+                            var status = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 200;
   
                             // console.log('inside render of UniversalRouter', component);
                             css = new _set2.default();
@@ -2564,7 +2564,7 @@ module.exports =
     title: 'Start React'
   });
   
-  var _ref2 = (0, _jsx3.default)('span', {}, void 0, ' SB Admin React - ');
+  var _ref2 = (0, _jsx3.default)('span', {}, void 0, '\xA0SB Admin React - ');
   
   var _ref3 = (0, _jsx3.default)('a', {
     href: 'http://startreact.com/',
@@ -3074,7 +3074,7 @@ module.exports =
           onClick: function onClick(e) {
             e.preventDefault();_history2.default.push('/');
           }
-        }, void 0, _ref2, '  Dashboard')), (0, _jsx3.default)('li', {
+        }, void 0, _ref2, ' \xA0Dashboard')), (0, _jsx3.default)('li', {
           className: (0, _classnames2.default)({ active: !this.state.chartsElementsCollapsed })
         }, void 0, (0, _jsx3.default)('a', {
           href: '',
@@ -3083,7 +3083,7 @@ module.exports =
             _this2.setState({ chartsElementsCollapsed: !_this2.state.chartsElementsCollapsed });
             return false;
           }
-        }, void 0, _ref3, '  Charts', _ref4), (0, _jsx3.default)('ul', {
+        }, void 0, _ref3, ' \xA0Charts', _ref4), (0, _jsx3.default)('ul', {
           className: (0, _classnames2.default)({
             'nav nav-second-level': true,
             collapse: this.state.chartsElementsCollapsed
@@ -3103,12 +3103,12 @@ module.exports =
           onClick: function onClick(e) {
             e.preventDefault();_history2.default.push('/table');
           }
-        }, void 0, _ref5, '  Tables')), (0, _jsx3.default)('li', {}, void 0, (0, _jsx3.default)('a', {
+        }, void 0, _ref5, ' \xA0Tables')), (0, _jsx3.default)('li', {}, void 0, (0, _jsx3.default)('a', {
           href: '',
           onClick: function onClick(e) {
             e.preventDefault();_history2.default.push('/forms');
           }
-        }, void 0, _ref6, '  Forms')), (0, _jsx3.default)('li', {
+        }, void 0, _ref6, ' \xA0Forms')), (0, _jsx3.default)('li', {
           className: (0, _classnames2.default)({ active: !this.state.uiElementsCollapsed })
         }, void 0, (0, _jsx3.default)('a', {
           href: '',
@@ -3163,7 +3163,7 @@ module.exports =
             });
             return false;
           }
-        }, void 0, _ref9, ' Multi-Level Dropdown', _ref10), (0, _jsx3.default)('ul', {
+        }, void 0, _ref9, '\xA0Multi-Level Dropdown', _ref10), (0, _jsx3.default)('ul', {
           className: (0, _classnames2.default)({
             'nav nav-second-level': true, collapse: this.state.multiLevelDropdownCollapsed
           })
@@ -3224,7 +3224,7 @@ module.exports =
             });
             return false;
           }
-        }, void 0, _ref12, ' Sample Pages', _ref13), (0, _jsx3.default)('ul', {
+        }, void 0, _ref12, '\xA0Sample Pages', _ref13), (0, _jsx3.default)('ul', {
           className: (0, _classnames2.default)({
             'nav nav-second-level': true,
             collapse: this.state.samplePagesCollapsed
@@ -3396,19 +3396,19 @@ module.exports =
       className: _Footer2.default.container
     }, void 0, (0, _jsx3.default)('span', {
       className: _Footer2.default.text
-    }, void 0, '© Your Company'), (0, _jsx3.default)('span', {
+    }, void 0, '\xA9 Your Company'), (0, _jsx3.default)('span', {
       className: _Footer2.default.spacer
-    }, void 0, '·'), (0, _jsx3.default)(_Link2.default, {
+    }, void 0, '\xB7'), (0, _jsx3.default)(_Link2.default, {
       className: _Footer2.default.link,
       to: '/'
     }, void 0, 'Home'), (0, _jsx3.default)('span', {
       className: _Footer2.default.spacer
-    }, void 0, '·'), (0, _jsx3.default)(_Link2.default, {
+    }, void 0, '\xB7'), (0, _jsx3.default)(_Link2.default, {
       className: _Footer2.default.link,
       to: '/privacy'
     }, void 0, 'Privacy'), (0, _jsx3.default)('span', {
       className: _Footer2.default.spacer
-    }, void 0, '·'), (0, _jsx3.default)(_Link2.default, {
+    }, void 0, '\xB7'), (0, _jsx3.default)(_Link2.default, {
       className: _Footer2.default.link,
       to: '/not-found'
     }, void 0, 'Not Found')));
@@ -23353,7 +23353,7 @@ module.exports =
     className: 'table-responsive'
   }, void 0, (0, _jsx3.default)('table', {
     className: 'table table-bordered table-striped'
-  }, void 0, (0, _jsx3.default)('thead', {}, void 0, (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}), (0, _jsx3.default)('th', {}, void 0, 'Extra small devices', (0, _jsx3.default)('small', {}, void 0, 'Phones (<768px)')), (0, _jsx3.default)('th', {}, void 0, 'Small devices', (0, _jsx3.default)('small', {}, void 0, 'Tablets (≥768px)')), (0, _jsx3.default)('th', {}, void 0, 'Medium devices', (0, _jsx3.default)('small', {}, void 0, 'Desktops (≥992px)')), (0, _jsx3.default)('th', {}, void 0, 'Large devices', (0, _jsx3.default)('small', {}, void 0, 'Desktops (≥1200px)')))), (0, _jsx3.default)('tbody', {}, void 0, (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}, void 0, 'Grid behavior'), (0, _jsx3.default)('td', {}, void 0, 'Horizontal at all times'), (0, _jsx3.default)('td', {
+  }, void 0, (0, _jsx3.default)('thead', {}, void 0, (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}), (0, _jsx3.default)('th', {}, void 0, 'Extra small devices', (0, _jsx3.default)('small', {}, void 0, 'Phones (<768px)')), (0, _jsx3.default)('th', {}, void 0, 'Small devices', (0, _jsx3.default)('small', {}, void 0, 'Tablets (\u2265768px)')), (0, _jsx3.default)('th', {}, void 0, 'Medium devices', (0, _jsx3.default)('small', {}, void 0, 'Desktops (\u2265992px)')), (0, _jsx3.default)('th', {}, void 0, 'Large devices', (0, _jsx3.default)('small', {}, void 0, 'Desktops (\u22651200px)')))), (0, _jsx3.default)('tbody', {}, void 0, (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}, void 0, 'Grid behavior'), (0, _jsx3.default)('td', {}, void 0, 'Horizontal at all times'), (0, _jsx3.default)('td', {
     colSpan: '3'
   }, void 0, 'Collapsed to start, horizontal above breakpoints')), (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}, void 0, 'Max container width'), (0, _jsx3.default)('td', {}, void 0, 'None (auto)'), (0, _jsx3.default)('td', {}, void 0, '750px'), (0, _jsx3.default)('td', {}, void 0, '970px'), (0, _jsx3.default)('td', {}, void 0, '1170px')), (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}, void 0, 'Class prefix'), (0, _jsx3.default)('td', {}, void 0, (0, _jsx3.default)('code', {}, void 0, '.col-xs-')), (0, _jsx3.default)('td', {}, void 0, (0, _jsx3.default)('code', {}, void 0, '.col-sm-')), (0, _jsx3.default)('td', {}, void 0, (0, _jsx3.default)('code', {}, void 0, '.col-md-')), (0, _jsx3.default)('td', {}, void 0, (0, _jsx3.default)('code', {}, void 0, '.col-lg-'))), (0, _jsx3.default)('tr', {}, void 0, (0, _jsx3.default)('th', {}, void 0, '# of columns'), (0, _jsx3.default)('td', {
     colSpan: '4'
