@@ -86,6 +86,7 @@ function displayMorrisjsCharts(props, context) {
                     <CartesianGrid stroke="#ccc" />
                     <XAxis dataKey="name" />
                     <YAxis />
+                    <Tooltip />
                     <Line type="monotone" dataKey="uv" stroke="#8884d8" />
                     <Line type="monotone" dataKey="pv" stroke="#82ca9d" />
                     <Line type="monotone" dataKey="amt" stroke="#ffc658" />

@@ -52,7 +52,7 @@ function Home({ news }, context) {
 
         <div className="row">
           <div className="col-lg-3 col-md-6">
-            <StatWidget style="primary"
+            <StatWidget style="panel-primary"
                     icon="fa fa-comments fa-5x"
                     count="26"
                     headerText="New Comments!"
@@ -60,7 +60,7 @@ function Home({ news }, context) {
                     linkTo="/" />
           </div>
           <div className="col-lg-3 col-md-6">
-            <StatWidget style = "success"
+            <StatWidget style = "panel-green"
                     icon = "fa fa-tasks fa-5x"
                     count = "12"
                     headerText="New Tasks!"
@@ -68,7 +68,7 @@ function Home({ news }, context) {
                     linkTo="/" />
           </div>
           <div className="col-lg-3 col-md-6">
-            <StatWidget style="warning"
+            <StatWidget style="panel-yellow"
                     icon="fa fa-shopping-cart fa-5x"
                     count="124"
                     headerText="New Orders!"
@@ -76,7 +76,7 @@ function Home({ news }, context) {
                     linkTo="/" />
           </div>
           <div className="col-lg-3 col-md-6">
-            <StatWidget style="danger"
+            <StatWidget style="panel-red"
                     icon="fa fa-support fa-5x"
                     count="13"
                     headerText="Support Tickets!"

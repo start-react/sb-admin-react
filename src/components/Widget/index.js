@@ -7,7 +7,7 @@ let StatWidget = React.createClass({ // eslint-disable-line
     return (
       <Panel
         className="stat"
-        bsStyle={this.props.style} // eslint-disable-line
+        className={this.props.style} // eslint-disable-line
 
         header={<div className="row">
           <div className="col-xs-3">
