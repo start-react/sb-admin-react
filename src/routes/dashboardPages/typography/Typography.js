@@ -42,7 +42,10 @@ function displayTypography(props, context) {
         <div className="col-lg-4">
           <Panel header={<span>Paragraphs</span>} >
             <p className="lead">This is an example of lead body copy.</p>
-            <p>This is an example of standard paragraph text. This is an example of <a href="javascript:void(0)">link anchor text</a> within body copy.</p>
+            <p>This is an example of standard paragraph text. This is an example of
+              <a href="" onClick={(e) => { e.preventDefault(); }}>link anchor text</a>
+               within body copy.
+            </p>
             <p>
               <small>This is an example of small, fine print text.</small>
             </p>

@@ -1,11 +1,4 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
+
 
 import React, { PropTypes } from 'react';
 import withStyles from 'isomorphic-style-loader/lib/withStyles';
@@ -15,8 +8,7 @@ import {
   Panel, PageHeader, ListGroup, ListGroupItem, Button,
 } from 'react-bootstrap';
 
-// import Header from '../../components/Header/Header.js';
-// import Sidebar from '../../components/Sidebar';
+
 import s from './Home.css';
 import StatWidget from '../../components/Widget';
 import Donut from '../../components/Donut';
