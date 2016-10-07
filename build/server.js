@@ -1515,9 +1515,6 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
-  // import register from './register';
-  // import contact from './contact';
-  // import content from './content';
   exports.default = [{
     path: '/login',
     children: [_login2.default],

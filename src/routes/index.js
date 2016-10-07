@@ -24,9 +24,6 @@ import notification from './dashboardPages/notification';
 import panelwells from './dashboardPages/panelWells';
 import typography from './dashboardPages/typography';
 import blank from './dashboardPages/blank';
-// import register from './register';
-// import contact from './contact';
-// import content from './content';
 import error from './error';
 
 import Header from '../components/Header';
