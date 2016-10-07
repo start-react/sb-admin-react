@@ -1,19 +1,10 @@
-/**
- * React Starter Kit (https://www.reactstarterkit.com/)
- *
- * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE.txt file in the root directory of this source tree.
- */
-
 import 'babel-polyfill';
 import path from 'path';
 import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import expressJwt from 'express-jwt';
-import expressGraphQL from 'express-graphql';
+// import expressGraphQL from 'express-graphql';
 import jwt from 'jsonwebtoken';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
@@ -23,8 +14,8 @@ import Html from './components/Html';
 import { ErrorPageWithoutStyle } from './routes/error/ErrorPage';
 import errorPageStyle from './routes/error/ErrorPage.css';
 import passport from './core/passport';
-import models from './data/models';
-import schema from './data/schema';
+// import models from './data/models';
+// import schema from './data/schema';
 import routes from './routes';
 import assets from './assets'; // eslint-disable-line import/no-unresolved
 import { port, auth } from './config';
@@ -72,12 +63,12 @@ app.get('/login/facebook/return',
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-app.use('/graphql', expressGraphQL(req => ({
-  schema,
-  graphiql: true,
-  rootValue: { request: req },
-  pretty: process.env.NODE_ENV !== 'production',
-})));
+// app.use('/graphql', expressGraphQL(req => ({
+//   schema,
+//   graphiql: true,
+//   rootValue: { request: req },
+//   pretty: process.env.NODE_ENV !== 'production',
+// })));
 
 //
 // Register server-side rendering middleware
@@ -142,13 +133,17 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res.send(`<!doctype html>${html}`);
 });
 
+app.listen(port, () => {
+  console.log(`The server is running at http://localhost:${port}/`);
+});
+
 //
 // Launch the server
 // -----------------------------------------------------------------------------
 /* eslint-disable no-console */
-models.sync().catch(err => console.error(err.stack)).then(() => {
-  app.listen(port, () => {
-    console.log(`The server is running at http://localhost:${port}/`);
-  });
-});
+// models.sync().catch(err => console.error(err.stack)).then(() => {
+//   app.listen(port, () => {
+//     console.log(`The server is running at http://localhost:${port}/`);
+//   });
+// });
 /* eslint-enable no-console */

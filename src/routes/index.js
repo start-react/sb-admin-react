@@ -12,7 +12,6 @@ import App from '../components/App';
 
 // Child routes
 import home from './home';
-import contact from './contact';
 import login from './login';
 import table from './dashboardPages/tables';
 import button from './dashboardPages/buttons';
@@ -25,8 +24,6 @@ import notification from './dashboardPages/notification';
 import panelwells from './dashboardPages/panelWells';
 import typography from './dashboardPages/typography';
 import blank from './dashboardPages/blank';
-import register from './register';
-import content from './content';
 import error from './error';
 
 import Header from '../components/Header';
@@ -54,7 +51,7 @@ export default [
   // keep in mind, routes are evaluated in order
     children: [
       home,
-      contact,
+      // contact,
       table,
       button,
       flotcharts,
@@ -65,11 +62,11 @@ export default [
       notification,
       panelwells,
       typography,
-      register,
+      // register,
       blank,
 
       // place new routes before...
-      content,
+      // content,
       error,
     ],
 

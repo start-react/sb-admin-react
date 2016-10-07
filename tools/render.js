@@ -15,9 +15,7 @@ import { host } from '../src/config';
 // Enter your paths here which you want to render as static
 const routes = [
   '/',
-  '/contact',
   '/login',
-  '/register',
   '/about',
   '/privacy',
   '/404', // https://help.github.com/articles/creating-a-custom-404-page-for-your-github-pages-site/

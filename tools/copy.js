@@ -23,7 +23,6 @@ async function copy({ watch } = {}) {
     ncp('node_modules/bootstrap/dist/css', 'build/public/css'),
     ncp('node_modules/bootstrap/dist/fonts', 'build/public/fonts'),
     ncp('src/public', 'build/public'),
-    ncp('src/content', 'build/content'),
   ]);
   await Promise.all([
     ncp('src/components/common/styles', 'build/public/css'),
