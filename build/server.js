@@ -124,7 +124,7 @@ module.exports =
   
   var _routes2 = _interopRequireDefault(_routes);
   
-  var _assets = __webpack_require__(213);
+  var _assets = __webpack_require__(205);
   
   var _assets2 = _interopRequireDefault(_assets);
   
@@ -1457,63 +1457,55 @@ module.exports =
   
   var _home2 = _interopRequireDefault(_home);
   
-  var _contact = __webpack_require__(165);
-  
-  var _contact2 = _interopRequireDefault(_contact);
-  
-  var _login = __webpack_require__(169);
+  var _login = __webpack_require__(165);
   
   var _login2 = _interopRequireDefault(_login);
   
-  var _tables = __webpack_require__(175);
+  var _tables = __webpack_require__(171);
   
   var _tables2 = _interopRequireDefault(_tables);
   
-  var _buttons = __webpack_require__(180);
+  var _buttons = __webpack_require__(176);
   
   var _buttons2 = _interopRequireDefault(_buttons);
   
-  var _flotCharts = __webpack_require__(182);
+  var _flotCharts = __webpack_require__(178);
   
   var _flotCharts2 = _interopRequireDefault(_flotCharts);
   
-  var _forms = __webpack_require__(184);
+  var _forms = __webpack_require__(180);
   
   var _forms2 = _interopRequireDefault(_forms);
   
-  var _grid = __webpack_require__(189);
+  var _grid = __webpack_require__(185);
   
   var _grid2 = _interopRequireDefault(_grid);
   
-  var _icons = __webpack_require__(191);
+  var _icons = __webpack_require__(187);
   
   var _icons2 = _interopRequireDefault(_icons);
   
-  var _morrisjsCharts = __webpack_require__(193);
+  var _morrisjsCharts = __webpack_require__(189);
   
   var _morrisjsCharts2 = _interopRequireDefault(_morrisjsCharts);
   
-  var _notification = __webpack_require__(195);
+  var _notification = __webpack_require__(191);
   
   var _notification2 = _interopRequireDefault(_notification);
   
-  var _panelWells = __webpack_require__(202);
+  var _panelWells = __webpack_require__(198);
   
   var _panelWells2 = _interopRequireDefault(_panelWells);
   
-  var _typography = __webpack_require__(204);
+  var _typography = __webpack_require__(200);
   
   var _typography2 = _interopRequireDefault(_typography);
   
-  var _blank = __webpack_require__(206);
+  var _blank = __webpack_require__(202);
   
   var _blank2 = _interopRequireDefault(_blank);
   
-  var _register = __webpack_require__(208);
-  
-  var _register2 = _interopRequireDefault(_register);
-  
-  var _error = __webpack_require__(212);
+  var _error = __webpack_require__(204);
   
   var _error2 = _interopRequireDefault(_error);
   
@@ -1523,6 +1515,8 @@ module.exports =
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
+  // import register from './register';
+  // import contact from './contact';
   // import content from './content';
   exports.default = [{
     path: '/login',
@@ -1571,7 +1565,11 @@ module.exports =
     path: '/',
   
     // keep in mind, routes are evaluated in order
-    children: [_home2.default, _contact2.default, _tables2.default, _buttons2.default, _flotCharts2.default, _forms2.default, _grid2.default, _icons2.default, _morrisjsCharts2.default, _notification2.default, _panelWells2.default, _typography2.default, _register2.default, _blank2.default,
+    children: [_home2.default,
+    // contact,
+    _tables2.default, _buttons2.default, _flotCharts2.default, _forms2.default, _grid2.default, _icons2.default, _morrisjsCharts2.default, _notification2.default, _panelWells2.default, _typography2.default,
+    // register,
+    _blank2.default,
   
     // place new routes before...
     // content,
@@ -21599,155 +21597,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Contact = __webpack_require__(166);
-  
-  var _Contact2 = _interopRequireDefault(_Contact);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  exports.default = {
-  
-    path: '/contact',
-  
-    action: function action() {
-      return _react2.default.createElement(_Contact2.default, null);
-    }
-  };
-
-/***/ },
-/* 166 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(12);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _withStyles = __webpack_require__(19);
-  
-  var _withStyles2 = _interopRequireDefault(_withStyles);
-  
-  var _Contact = __webpack_require__(167);
-  
-  var _Contact2 = _interopRequireDefault(_Contact);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'Contact Us'; /**
-                             * React Starter Kit (https://www.reactstarterkit.com/)
-                             *
-                             * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                             *
-                             * This source code is licensed under the MIT license found in the
-                             * LICENSE.txt file in the root directory of this source tree.
-                             */
-  
-  function Contact(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(
-      'div',
-      { className: _Contact2.default.root },
-      _react2.default.createElement(
-        'div',
-        { className: _Contact2.default.container },
-        _react2.default.createElement(
-          'h1',
-          null,
-          title
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          '...'
-        )
-      )
-    );
-  }
-  
-  Contact.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = (0, _withStyles2.default)(_Contact2.default)(Contact);
-
-/***/ },
-/* 167 */
-/***/ function(module, exports, __webpack_require__) {
-
-  
-      var content = __webpack_require__(168);
-      var insertCss = __webpack_require__(23);
-  
-      if (typeof content === 'string') {
-        content = [[module.id, content, '']];
-      }
-  
-      module.exports = content.locals || {};
-      module.exports._getCss = function() { return content.toString(); };
-      module.exports._insertCss = function(options) { return insertCss(content, options) };
-    
-      // Hot Module Replacement
-      // https://webpack.github.io/docs/hot-module-replacement
-      // Only activated in browser context
-      if (false) {
-        var removeCss = function() {};
-        module.hot.accept("!!./../../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../../node_modules/postcss-loader/index.js?pack=default!./Contact.css", function() {
-          content = require("!!./../../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../../node_modules/postcss-loader/index.js?pack=default!./Contact.css");
-  
-          if (typeof content === 'string') {
-            content = [[module.id, content, '']];
-          }
-  
-          removeCss = insertCss(content, { replace: true });
-        });
-        module.hot.dispose(function() { removeCss(); });
-      }
-    
-
-/***/ },
-/* 168 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(22)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n\n  /*\n   * Layout\n   * ======================================================================== */\n\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */  /* Extra small screen / phone */  /* Small screen / tablet */  /* Medium screen / desktop */ /* Large screen / wide desktop */\n}\n\n.Contact_root_1G9 {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Contact_container_2Tn {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./routes/contact/Contact.css","/./components/variables.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;;;;;;GAOG;;AAEH;EACE;;gFAE8E;;EAI9E;;gFAE8E;;EAI9E;;gFAE8E,EAErD,gCAAgC,EAChC,2BAA2B,EAC3B,6BAA6B,CAC7B,iCAAiC;CAC3D;;ADnBD;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAAoC;CACrC","file":"Contact.css","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.css';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: var(--max-content-width);\n}\n","/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n\n  --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n  /*\n   * Layout\n   * ======================================================================== */\n\n  --max-content-width: 1000px;\n\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */\n\n  --screen-xs-min: 480px;  /* Extra small screen / phone */\n  --screen-sm-min: 768px;  /* Small screen / tablet */\n  --screen-md-min: 992px;  /* Medium screen / desktop */\n  --screen-lg-min: 1200px; /* Large screen / wide desktop */\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"root": "Contact_root_1G9",
-  	"container": "Contact_container_2Tn"
-  };
-
-/***/ },
-/* 169 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(12);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Login = __webpack_require__(170);
+  var _Login = __webpack_require__(166);
   
   var _Login2 = _interopRequireDefault(_Login);
   
@@ -21773,7 +21623,7 @@ module.exports =
   // import App from '../../components/App';
 
 /***/ },
-/* 170 */
+/* 166 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21786,11 +21636,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
@@ -21800,7 +21650,7 @@ module.exports =
   
   var _withStyles2 = _interopRequireDefault(_withStyles);
   
-  var _Login = __webpack_require__(173);
+  var _Login = __webpack_require__(169);
   
   var _Login2 = _interopRequireDefault(_Login);
   
@@ -21906,23 +21756,23 @@ module.exports =
   exports.default = (0, _withStyles2.default)(_Login2.default)(Login);
 
 /***/ },
-/* 171 */
+/* 167 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Button");
 
 /***/ },
-/* 172 */
+/* 168 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Panel");
 
 /***/ },
-/* 173 */
+/* 169 */
 /***/ function(module, exports, __webpack_require__) {
 
   
-      var content = __webpack_require__(174);
+      var content = __webpack_require__(170);
       var insertCss = __webpack_require__(23);
   
       if (typeof content === 'string') {
@@ -21952,7 +21802,7 @@ module.exports =
     
 
 /***/ },
-/* 174 */
+/* 170 */
 /***/ function(module, exports, __webpack_require__) {
 
   exports = module.exports = __webpack_require__(22)();
@@ -21979,7 +21829,7 @@ module.exports =
   };
 
 /***/ },
-/* 175 */
+/* 171 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -21992,7 +21842,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Table = __webpack_require__(176);
+  var _Table = __webpack_require__(172);
   
   var _Table2 = _interopRequireDefault(_Table);
   
@@ -22008,7 +21858,7 @@ module.exports =
   };
 
 /***/ },
-/* 176 */
+/* 172 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -22021,23 +21871,23 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Pagination = __webpack_require__(177);
+  var _Pagination = __webpack_require__(173);
   
   var _Pagination2 = _interopRequireDefault(_Pagination);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
-  var _Well = __webpack_require__(179);
+  var _Well = __webpack_require__(175);
   
   var _Well2 = _interopRequireDefault(_Well);
   
@@ -23384,25 +23234,25 @@ module.exports =
   exports.default = displayTable;
 
 /***/ },
-/* 177 */
+/* 173 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Pagination");
 
 /***/ },
-/* 178 */
+/* 174 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/PageHeader");
 
 /***/ },
-/* 179 */
+/* 175 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Well");
 
 /***/ },
-/* 180 */
+/* 176 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23415,7 +23265,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(181);
+  var _Button = __webpack_require__(177);
   
   var _Button2 = _interopRequireDefault(_Button);
   
@@ -23431,7 +23281,7 @@ module.exports =
   };
 
 /***/ },
-/* 181 */
+/* 177 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -23444,15 +23294,15 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -23991,7 +23841,7 @@ module.exports =
   exports.default = displayButtons;
 
 /***/ },
-/* 182 */
+/* 178 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24004,7 +23854,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _FlotCharts = __webpack_require__(183);
+  var _FlotCharts = __webpack_require__(179);
   
   var _FlotCharts2 = _interopRequireDefault(_FlotCharts);
   
@@ -24020,7 +23870,7 @@ module.exports =
   };
 
 /***/ },
-/* 183 */
+/* 179 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24033,15 +23883,15 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -24260,7 +24110,7 @@ module.exports =
   exports.default = displayFlotCharts;
 
 /***/ },
-/* 184 */
+/* 180 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24273,7 +24123,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Forms = __webpack_require__(185);
+  var _Forms = __webpack_require__(181);
   
   var _Forms2 = _interopRequireDefault(_Forms);
   
@@ -24289,7 +24139,7 @@ module.exports =
   };
 
 /***/ },
-/* 185 */
+/* 181 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24304,15 +24154,15 @@ module.exports =
   
   var _reactBootstrap = __webpack_require__(49);
   
-  var _FormControlFeedback = __webpack_require__(186);
+  var _FormControlFeedback = __webpack_require__(182);
   
   var _FormControlFeedback2 = _interopRequireDefault(_FormControlFeedback);
   
-  var _FormControlStatic = __webpack_require__(187);
+  var _FormControlStatic = __webpack_require__(183);
   
   var _FormControlStatic2 = _interopRequireDefault(_FormControlStatic);
   
-  var _InputGroupAddon = __webpack_require__(188);
+  var _InputGroupAddon = __webpack_require__(184);
   
   var _InputGroupAddon2 = _interopRequireDefault(_InputGroupAddon);
   
@@ -24798,25 +24648,25 @@ module.exports =
   exports.default = displayForms;
 
 /***/ },
-/* 186 */
+/* 182 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlFeedback");
 
 /***/ },
-/* 187 */
+/* 183 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/FormControlStatic");
 
 /***/ },
-/* 188 */
+/* 184 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/InputGroupAddon");
 
 /***/ },
-/* 189 */
+/* 185 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24829,7 +24679,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Grid = __webpack_require__(190);
+  var _Grid = __webpack_require__(186);
   
   var _Grid2 = _interopRequireDefault(_Grid);
   
@@ -24845,7 +24695,7 @@ module.exports =
   };
 
 /***/ },
-/* 190 */
+/* 186 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -24858,11 +24708,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -25733,7 +25583,7 @@ module.exports =
   exports.default = displayGrid;
 
 /***/ },
-/* 191 */
+/* 187 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -25746,7 +25596,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Icons = __webpack_require__(192);
+  var _Icons = __webpack_require__(188);
   
   var _Icons2 = _interopRequireDefault(_Icons);
   
@@ -25762,7 +25612,7 @@ module.exports =
   };
 
 /***/ },
-/* 192 */
+/* 188 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -25775,11 +25625,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -28861,7 +28711,7 @@ module.exports =
   exports.default = displayIcons;
 
 /***/ },
-/* 193 */
+/* 189 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -28874,7 +28724,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _MorrisjsCharts = __webpack_require__(194);
+  var _MorrisjsCharts = __webpack_require__(190);
   
   var _MorrisjsCharts2 = _interopRequireDefault(_MorrisjsCharts);
   
@@ -28890,7 +28740,7 @@ module.exports =
   };
 
 /***/ },
-/* 194 */
+/* 190 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -28903,15 +28753,15 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -29101,7 +28951,7 @@ module.exports =
   exports.default = displayMorrisjsCharts;
 
 /***/ },
-/* 195 */
+/* 191 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29114,7 +28964,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Notification = __webpack_require__(196);
+  var _Notification = __webpack_require__(192);
   
   var _Notification2 = _interopRequireDefault(_Notification);
   
@@ -29130,7 +28980,7 @@ module.exports =
   };
 
 /***/ },
-/* 196 */
+/* 192 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29163,35 +29013,35 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _Alert = __webpack_require__(197);
+  var _Alert = __webpack_require__(193);
   
   var _Alert2 = _interopRequireDefault(_Alert);
   
-  var _Button = __webpack_require__(171);
+  var _Button = __webpack_require__(167);
   
   var _Button2 = _interopRequireDefault(_Button);
   
-  var _OverlayTrigger = __webpack_require__(198);
+  var _OverlayTrigger = __webpack_require__(194);
   
   var _OverlayTrigger2 = _interopRequireDefault(_OverlayTrigger);
   
-  var _Tooltip = __webpack_require__(199);
+  var _Tooltip = __webpack_require__(195);
   
   var _Tooltip2 = _interopRequireDefault(_Tooltip);
   
-  var _Popover = __webpack_require__(200);
+  var _Popover = __webpack_require__(196);
   
   var _Popover2 = _interopRequireDefault(_Popover);
   
-  var _Modal = __webpack_require__(201);
+  var _Modal = __webpack_require__(197);
   
   var _Modal2 = _interopRequireDefault(_Modal);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -29690,37 +29540,37 @@ module.exports =
   exports.default = Notification;
 
 /***/ },
-/* 197 */
+/* 193 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Alert");
 
 /***/ },
-/* 198 */
+/* 194 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/OverlayTrigger");
 
 /***/ },
-/* 199 */
+/* 195 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Tooltip");
 
 /***/ },
-/* 200 */
+/* 196 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Popover");
 
 /***/ },
-/* 201 */
+/* 197 */
 /***/ function(module, exports) {
 
   module.exports = require("react-bootstrap/lib/Modal");
 
 /***/ },
-/* 202 */
+/* 198 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -29733,7 +29583,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _PanelWells = __webpack_require__(203);
+  var _PanelWells = __webpack_require__(199);
   
   var _PanelWells2 = _interopRequireDefault(_PanelWells);
   
@@ -29749,7 +29599,7 @@ module.exports =
   };
 
 /***/ },
-/* 203 */
+/* 199 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -30344,7 +30194,7 @@ module.exports =
   exports.default = displayPanelWells;
 
 /***/ },
-/* 204 */
+/* 200 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -30357,7 +30207,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Typography = __webpack_require__(205);
+  var _Typography = __webpack_require__(201);
   
   var _Typography2 = _interopRequireDefault(_Typography);
   
@@ -30373,7 +30223,7 @@ module.exports =
   };
 
 /***/ },
-/* 205 */
+/* 201 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -30386,11 +30236,11 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Panel = __webpack_require__(172);
+  var _Panel = __webpack_require__(168);
   
   var _Panel2 = _interopRequireDefault(_Panel);
   
-  var _PageHeader = __webpack_require__(178);
+  var _PageHeader = __webpack_require__(174);
   
   var _PageHeader2 = _interopRequireDefault(_PageHeader);
   
@@ -30988,7 +30838,7 @@ module.exports =
   exports.default = displayTypography;
 
 /***/ },
-/* 206 */
+/* 202 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31001,7 +30851,7 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _blank = __webpack_require__(207);
+  var _blank = __webpack_require__(203);
   
   var _blank2 = _interopRequireDefault(_blank);
   
@@ -31016,7 +30866,7 @@ module.exports =
   };
 
 /***/ },
-/* 207 */
+/* 203 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31060,155 +30910,7 @@ module.exports =
   exports.default = displayBlank;
 
 /***/ },
-/* 208 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(12);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _Register = __webpack_require__(209);
-  
-  var _Register2 = _interopRequireDefault(_Register);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  /**
-   * React Starter Kit (https://www.reactstarterkit.com/)
-   *
-   * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-   *
-   * This source code is licensed under the MIT license found in the
-   * LICENSE.txt file in the root directory of this source tree.
-   */
-  
-  exports.default = {
-  
-    path: '/register',
-  
-    action: function action() {
-      return _react2.default.createElement(_Register2.default, null);
-    }
-  };
-
-/***/ },
-/* 209 */
-/***/ function(module, exports, __webpack_require__) {
-
-  'use strict';
-  
-  Object.defineProperty(exports, "__esModule", {
-    value: true
-  });
-  
-  var _react = __webpack_require__(12);
-  
-  var _react2 = _interopRequireDefault(_react);
-  
-  var _withStyles = __webpack_require__(19);
-  
-  var _withStyles2 = _interopRequireDefault(_withStyles);
-  
-  var _Register = __webpack_require__(210);
-  
-  var _Register2 = _interopRequireDefault(_Register);
-  
-  function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-  
-  var title = 'New User Registration'; /**
-                                        * React Starter Kit (https://www.reactstarterkit.com/)
-                                        *
-                                        * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.
-                                        *
-                                        * This source code is licensed under the MIT license found in the
-                                        * LICENSE.txt file in the root directory of this source tree.
-                                        */
-  
-  function Register(props, context) {
-    context.setTitle(title);
-    return _react2.default.createElement(
-      'div',
-      { className: _Register2.default.root },
-      _react2.default.createElement(
-        'div',
-        { className: _Register2.default.container },
-        _react2.default.createElement(
-          'h1',
-          null,
-          title
-        ),
-        _react2.default.createElement(
-          'p',
-          null,
-          '...'
-        )
-      )
-    );
-  }
-  
-  Register.contextTypes = { setTitle: _react.PropTypes.func.isRequired };
-  
-  exports.default = (0, _withStyles2.default)(_Register2.default)(Register);
-
-/***/ },
-/* 210 */
-/***/ function(module, exports, __webpack_require__) {
-
-  
-      var content = __webpack_require__(211);
-      var insertCss = __webpack_require__(23);
-  
-      if (typeof content === 'string') {
-        content = [[module.id, content, '']];
-      }
-  
-      module.exports = content.locals || {};
-      module.exports._getCss = function() { return content.toString(); };
-      module.exports._insertCss = function(options) { return insertCss(content, options) };
-    
-      // Hot Module Replacement
-      // https://webpack.github.io/docs/hot-module-replacement
-      // Only activated in browser context
-      if (false) {
-        var removeCss = function() {};
-        module.hot.accept("!!./../../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../../node_modules/postcss-loader/index.js?pack=default!./Register.css", function() {
-          content = require("!!./../../../node_modules/css-loader/index.js?{\"sourceMap\":true,\"modules\":true,\"localIdentName\":\"[name]_[local]_[hash:base64:3]\",\"minimize\":false}!./../../../node_modules/postcss-loader/index.js?pack=default!./Register.css");
-  
-          if (typeof content === 'string') {
-            content = [[module.id, content, '']];
-          }
-  
-          removeCss = insertCss(content, { replace: true });
-        });
-        module.hot.dispose(function() { removeCss(); });
-      }
-    
-
-/***/ },
-/* 211 */
-/***/ function(module, exports, __webpack_require__) {
-
-  exports = module.exports = __webpack_require__(22)();
-  // imports
-  
-  
-  // module
-  exports.push([module.id, "/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n\n  /*\n   * Layout\n   * ======================================================================== */\n\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */  /* Extra small screen / phone */  /* Small screen / tablet */  /* Medium screen / desktop */ /* Large screen / wide desktop */\n}\n\n.Register_root_1hu {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.Register_container_Ojh {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: 1000px;\n}\n", "", {"version":3,"sources":["/./routes/register/Register.css","/./components/variables.css"],"names":[],"mappings":"AAAA;;;;;;;GAOG;;ACPH;;;;;;;GAOG;;AAEH;EACE;;gFAE8E;;EAI9E;;gFAE8E;;EAI9E;;gFAE8E,EAErD,gCAAgC,EAChC,2BAA2B,EAC3B,6BAA6B,CAC7B,iCAAiC;CAC3D;;ADnBD;EACE,mBAAmB;EACnB,oBAAoB;CACrB;;AAED;EACE,eAAe;EACf,kBAAkB;EAClB,kBAAoC;CACrC","file":"Register.css","sourcesContent":["/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n@import '../../components/variables.css';\n\n.root {\n  padding-left: 20px;\n  padding-right: 20px;\n}\n\n.container {\n  margin: 0 auto;\n  padding: 0 0 40px;\n  max-width: var(--max-content-width);\n}\n","/**\n * React Starter Kit (https://www.reactstarterkit.com/)\n *\n * Copyright © 2014-2016 Kriasoft, LLC. All rights reserved.\n *\n * This source code is licensed under the MIT license found in the\n * LICENSE.txt file in the root directory of this source tree.\n */\n\n:root {\n  /*\n   * Typography\n   * ======================================================================== */\n\n  --font-family-base: 'Segoe UI', 'HelveticaNeue-Light', sans-serif;\n\n  /*\n   * Layout\n   * ======================================================================== */\n\n  --max-content-width: 1000px;\n\n  /*\n   * Media queries breakpoints\n   * ======================================================================== */\n\n  --screen-xs-min: 480px;  /* Extra small screen / phone */\n  --screen-sm-min: 768px;  /* Small screen / tablet */\n  --screen-md-min: 992px;  /* Medium screen / desktop */\n  --screen-lg-min: 1200px; /* Large screen / wide desktop */\n}\n"],"sourceRoot":"webpack://"}]);
-  
-  // exports
-  exports.locals = {
-  	"root": "Register_root_1hu",
-  	"container": "Register_container_Ojh"
-  };
-
-/***/ },
-/* 212 */
+/* 204 */
 /***/ function(module, exports, __webpack_require__) {
 
   'use strict';
@@ -31257,7 +30959,7 @@ module.exports =
       */
 
 /***/ },
-/* 213 */
+/* 205 */
 /***/ function(module, exports) {
 
   module.exports = require("./assets");
