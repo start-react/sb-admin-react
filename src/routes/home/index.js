@@ -16,7 +16,7 @@ export default {
   path: '/',
 
   async action() {
-    return <Home />
+    return <Home />;
     // const resp = await fetch('/graphql', {
     //   method: 'post',
     //   headers: {
