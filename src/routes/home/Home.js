@@ -32,7 +32,7 @@ const data = [
       { name: 'Page G', uv: 3490, pv: 4300, amt: 2100, value: 100 },
 ];
 
-function Home({ news }, context) {
+function Home(props, context) {
   context.setTitle(title);
   return (
     <div>
@@ -282,11 +282,11 @@ function Home({ news }, context) {
 }
 
 Home.propTypes = {
-  news: PropTypes.arrayOf(PropTypes.shape({
-    title: PropTypes.string.isRequired,
-    link: PropTypes.string.isRequired,
-    contentSnippet: PropTypes.string,
-  })).isRequired,
+  // news: PropTypes.arrayOf(PropTypes.shape({
+  //   title: PropTypes.string.isRequired,
+  //   link: PropTypes.string.isRequired,
+  //   contentSnippet: PropTypes.string,
+  // })).isRequired,
 };
 Home.contextTypes = { setTitle: PropTypes.func.isRequired };
 

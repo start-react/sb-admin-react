@@ -13,7 +13,7 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import expressJwt from 'express-jwt';
-import expressGraphQL from 'express-graphql';
+// import expressGraphQL from 'express-graphql';
 import jwt from 'jsonwebtoken';
 import React from 'react';
 import ReactDOM from 'react-dom/server';
@@ -72,12 +72,12 @@ app.get('/login/facebook/return',
 //
 // Register API middleware
 // -----------------------------------------------------------------------------
-app.use('/graphql', expressGraphQL(req => ({
-  schema,
-  graphiql: true,
-  rootValue: { request: req },
-  pretty: process.env.NODE_ENV !== 'production',
-})));
+// app.use('/graphql', expressGraphQL(req => ({
+//   schema,
+//   graphiql: true,
+//   rootValue: { request: req },
+//   pretty: process.env.NODE_ENV !== 'production',
+// })));
 
 //
 // Register server-side rendering middleware
@@ -142,13 +142,17 @@ app.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res.send(`<!doctype html>${html}`);
 });
 
+app.listen(port, () => {
+  console.log(`The server is running at http://localhost:${port}/`);
+});
+
 //
 // Launch the server
 // -----------------------------------------------------------------------------
 /* eslint-disable no-console */
-models.sync().catch(err => console.error(err.stack)).then(() => {
-  app.listen(port, () => {
-    console.log(`The server is running at http://localhost:${port}/`);
-  });
-});
+// models.sync().catch(err => console.error(err.stack)).then(() => {
+//   app.listen(port, () => {
+//     console.log(`The server is running at http://localhost:${port}/`);
+//   });
+// });
 /* eslint-enable no-console */
