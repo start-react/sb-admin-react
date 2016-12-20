@@ -146,7 +146,7 @@ function Header() {
                   <MenuItem eventKey = "4" onClick = {(event) => { history.push('/login');}}>
                     <span> <i className = "fa fa-sign-out fa-fw" /> Logout </span>
                   </MenuItem>
-                </NavDropdown>
+            </NavDropdown>
 
           </ul>
           <Sidebar />
