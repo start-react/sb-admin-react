@@ -1,6 +1,6 @@
 
 import React from 'react';
-import Forms from './Forms';
+import Forms from './forms';
 
 export default {
 

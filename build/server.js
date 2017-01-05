@@ -23857,9 +23857,9 @@ module.exports =
   
   var _react2 = _interopRequireDefault(_react);
   
-  var _Forms = __webpack_require__(175);
+  var _forms = __webpack_require__(175);
   
-  var _Forms2 = _interopRequireDefault(_Forms);
+  var _forms2 = _interopRequireDefault(_forms);
   
   function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
   
@@ -23868,7 +23868,7 @@ module.exports =
     path: '/forms',
   
     action: function action() {
-      return _react2.default.createElement(_Forms2.default, null);
+      return _react2.default.createElement(_forms2.default, null);
     }
   };
 
