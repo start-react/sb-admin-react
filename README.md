@@ -9,18 +9,18 @@ Find out more [Free React.js and React Native Themes at StartReact.com](http://w
 ## [Demo](http://sb-admin-react.geekydev.com:3009/)
 
 ## Installation
-####1. Clone this project or Download that ZIP file
+#### 1. Clone this project or Download that ZIP file
 
 ```sh
 $ git clone https://github.com/start-react/sb-admin-react.git
 ```
 
-####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
+#### 2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
 
 More details here
 https://nodejs.org/en/download/
 
-####3. On the command prompt run the following commands
+#### 3. On the command prompt run the following commands
 
 ```sh
 $ cd `project-directory`
@@ -32,12 +32,12 @@ $ npm install
 $ npm start
 ```
 
-####4. To build
+#### 4. To build
 ```sh
 $ npm run build
 ```
 
-####5. To clean up old build products
+#### 5. To clean up old build products
 ```sh
 $ npm run clean
 ```
